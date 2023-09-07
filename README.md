@@ -1,4 +1,4 @@
-# tbfightersd.org
+# tbfighters.org
 Source Code of the tbfighters.org website, written in vanilla HTML, CSS and JavaScript to keep a light footprint.
 
 ## Contributing
