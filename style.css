@@ -224,7 +224,9 @@ h3 {
 }
 
 #more {
-	background-color: #999999;
+	background-image: url('img/helix-fade.png');
+		background-attachment: fixed;
+		background-position: left center;
 }
 
 
