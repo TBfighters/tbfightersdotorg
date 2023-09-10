@@ -119,6 +119,8 @@ h3 {
 	width: 100%;
 	padding: 60px 0px;
 	background-repeat: no-repeat;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
 }
 
 
@@ -190,7 +192,9 @@ h3 {
 }
 
 #curability {
-	background-color: #999999;
+	background-image: url('img/drug-crystals.jpg');
+	background-attachment: fixed;
+	background-position: center;
 }
 
 #danaher {
@@ -244,6 +248,9 @@ h3 {
 	padding: .5em;
 }
 
+.footer-link {
+	color: #505050;
+}
 
 /* mobile styles */
 @media only screen and (min-width: 993px) {
