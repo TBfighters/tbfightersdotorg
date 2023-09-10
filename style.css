@@ -5,6 +5,14 @@
 
 html {
 	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+/* Disables smooth scrolling if the user has enabled reduced motion for accessibility reasons. */
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
 }
 
 /* body and general */
