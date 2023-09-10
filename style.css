@@ -3,6 +3,9 @@
 	margin: 0px;
 }
 
+html {
+	overflow-x: hidden;
+}
 
 /* body and general */
 body {
