@@ -103,6 +103,7 @@ h3 {
 	background-color: #D7211E;
 	border: 4px solid #000000;
 	color: #000000;
+	transition: all 0.2s ease-in-out;
 }
 
 .sticky-button:hover,
@@ -141,6 +142,7 @@ h3 {
 	color: #121212;
 	font-size: 1.4em;
 	margin: .5em 0;
+	transition: all 0.2s ease-in-out;
 }
 
 .wrapper .button:hover,
@@ -148,8 +150,9 @@ h3 {
 .wrapper .button:focus {
 	background-color: #F5F5F5;
 	color: #D7211E;
-	border-color: #121212;
+	border-color: #D7211E;
 }
+
 
 @keyframes bob {
 	0% {
@@ -168,7 +171,7 @@ h3 {
 
 /* specific section wrappers */
 #top {
-	padding-top: 80px;
+	padding-top: 15vh;
 }
 
 #top .fa-arrow-down:before {
@@ -178,6 +181,10 @@ h3 {
 
 #top .fa-arrow-down {
 	animation: bob 2s ease-in-out infinite;
+}
+
+.scroll-arrow {
+	margin-top: 10vh;
 }
 
 #top .wrapper p {
