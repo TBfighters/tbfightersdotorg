@@ -1,5 +1,124 @@
 <style>
+/* resets */
 * {
 	margin: 0px;
 }
+
+
+/* body and general */
+body {
+	background-color: #000000;
+	font-size: 18px;
+	line-height: 1.1em;
+	color: #FFFFFF;
+	font-family: 'Atkinson Hyperlegible';
+	font-weight: 400;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+a {
+	color: #FFFFFF;
+	font-weight: 700;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus {
+	color: #E54543;
+}
+
+
+/* font styles */
+.red {
+	color: #E54543;
+}
+h1 {
+	font-size: 5.0em;
+	text-transform: uppercase;
+}
+h2 {
+	font-size: 2.5em;
+}
+h1, h2, h3 {
+	line-height: 1em;
+	margin-bottom: 0.6em;
+}
+.wrap-centered {
+	text-align: center;
+}
+.wrapper p {
+	font-size: 1.4em;
+	line-height: 1.1em;
+}
+
+
+/* top bar */
+
+
+/* section containers */
+
+.container {
+	display: block;
+	width: 100%;
+	padding: 50px 0px;
+}
+
+/* wrapper elements */
+
+.wrapper {
+	margin: 0 auto;
+	display: block;
+	width: 99.9%;
+	max-width:1000px;
+	clear: both;
+}
+#top {
+}
+#top .fa-arrow-down:before {
+	font-size: 3.0em;
+	color: #FFFFFF;
+}
+
+#top .wrapper p {
+	font-size: 2em;
+	line-height: 1.1em;
+}
+#primer {
+}
+#curability {
+	background-color: #404040;
+}
+#danaher {
+}
+#issue {
+	background-color: #404040;
+}
+#join {
+}
+#join h2 {
+	font-size: 5.0em;
+	text-transform: uppercase;
+}
+#more {
+	background-color: #404040;
+}
+
+
+/* images */
+
+.wrap-image .image {
+	width: 400px;
+	height: 400px;
+	background-color: #666666;
+}
+.image-left {
+	float: left;
+	margin-right: 30px;
+}
+.image-right {
+	float: right;
+	margin-left: 30px;
+}
+
+/* footer */
+
 </style>
