@@ -261,6 +261,10 @@ h3 {
 	color: #505050;
 }
 
+.too-small {
+	font-size: 0.6em;
+}
+
 /* mobile styles */
 @media only screen and (min-width: 993px) {
 	.wrapper {
