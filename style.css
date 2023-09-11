@@ -220,15 +220,19 @@ h3 {
 }
 
 #top .wrapper p {
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
 	font-size: 32px;
 	line-height: 1.1em;
+	gap: 16px;
 }
 #top img {
 	width: 200px;
 	float:right;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 650px) {
 	#top .wrapper p {
 		display: flex;
 		flex-direction: column;
