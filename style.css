@@ -1,4 +1,4 @@
-/* resets */
+/* resets and accessibility */
 * {
 	margin: 0px;
 }
@@ -15,6 +15,14 @@ html {
 	}
 }
 
+*:focus {
+	/* inner indicator */
+	outline: 2px #F9F9F9 solid;
+	outline-offset: 0;
+	/* outer indicator */
+	box-shadow: 0 0 0 4px #193146;
+}
+
 /* body and general */
 body {
 	background-color: #F5F5F5;
@@ -29,7 +37,7 @@ body {
 }
 
 a {
-	color: #0981D6;
+	color: #121212;
 	font-weight: 700;
 	text-decoration: underline;
 }
@@ -37,7 +45,7 @@ a {
 a:hover,
 a:active,
 a:focus {
-	color: #0C568A;
+	color: #D7211E;
 }
 
 
@@ -66,13 +74,11 @@ h3 {
 .wrap-centered {
 	text-align: center;
 }
-
-.wrapper p {
-	font-size: 1.4em;
+.wrapper p, .wrapper li {
+	font-size: 24px;
 	line-height: 1.1em;
 	margin-bottom: .6em;
 }
-
 .button {
 	display: inline-block;
 	-webkit-border-radius: 6px;
@@ -81,7 +87,9 @@ h3 {
 	padding: 12px 18px;
 	text-decoration: none;
 }
-
+.indent {
+	margin-left: 32px;
+}
 
 /* top bar */
 .sticky {
@@ -124,6 +132,13 @@ h3 {
 	padding-bottom: 25vh;
 }
 
+.container-full {
+	display: block;
+	width: 100%;
+	padding: 60px 0px;
+	background-repeat: no-repeat;
+}
+
 
 /* wrappers general */
 .wrapper {
@@ -134,6 +149,12 @@ h3 {
 	clear: both;
 	position: relative;
 	z-index: 10;
+}
+
+.wrapper-full {
+	margin: 0 auto;
+	display: block;
+	width: 80%;
 }
 
 .wrapper .button {
@@ -183,13 +204,17 @@ h3 {
 	animation: bob 2s ease-in-out infinite;
 }
 
-.scroll-arrow {
+#top .scroll-arrow {
 	margin-top: 10vh;
 }
 
 #top .wrapper p {
-	font-size: 2em;
+	font-size: 32px;
 	line-height: 1.1em;
+}
+#top img {
+	width: 200px;
+	float:right;
 }
 
 #primer {
@@ -200,7 +225,6 @@ h3 {
 
 #curability {
 	background-image: url('img/drug-crystals.jpg');
-	background-attachment: fixed;
 	background-position: center;
 }
 
@@ -219,8 +243,14 @@ h3 {
 #join {}
 
 #join h2 {
-	font-size: 5.0em;
+	font-size: 3.5em;
 	text-transform: uppercase;
+}
+
+#join p, #join li {
+	font-size: 28px;
+	line-height: 1.1em;
+	margin-bottom: 1em;
 }
 
 #more {
@@ -228,8 +258,6 @@ h3 {
 		background-attachment: fixed;
 		background-position: left center;
 }
-
-
 /* images */
 .wrap-image .image {
 	width: 400px;
@@ -257,10 +285,14 @@ h3 {
 	padding: .5em;
 }
 
-.footer-link {
+.site-foot a {
 	color: #505050;
 }
-
+.site-foot a:hover,
+.site-foot a:active,
+.site-foot a:focus {
+	color: #D7211E;
+}
 .too-small {
 	font-size: 0.6em;
 }
