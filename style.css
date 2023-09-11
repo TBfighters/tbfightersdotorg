@@ -299,11 +299,11 @@ h3 {
 
 /* footer */
 .site-foot {
-	width: 100%;
+	width: calc(100% - 2em);
 	color: #505050;
 	text-align: center;
 	font-size: 1em;
-	padding: .5em;
+	padding: 0.5em 1em;
 }
 
 .site-foot a {
