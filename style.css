@@ -101,6 +101,7 @@ h3 {
 	font-size: 1.25em;
 	font-weight: 700;
 	vertical-align: middle;
+	padding: 4px 0;
 }
 
 .sticky div {
@@ -198,7 +199,11 @@ h3 {
 
 /* specific section wrappers */
 #top {
-	padding-top: 15vh;
+	padding: 24px 0;
+	display: flex;
+	min-height: calc(100vh - 48px);
+	justify-content: space-around;
+	flex-direction: column;
 }
 
 #top .fa-arrow-down:before {
@@ -223,6 +228,15 @@ h3 {
 	float:right;
 }
 
+@media only screen and (max-width: 500px) {
+	#top .wrapper p {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+	}
+}
+
 #primer {
 	background-image: url('img/crystal-all-white.jpg');
 	background-attachment: fixed;
@@ -231,6 +245,7 @@ h3 {
 
 #curability {
 	background-image: url('img/drug-crystals.jpg');
+	background-attachment: fixed;
 	background-position: center;
 }
 
