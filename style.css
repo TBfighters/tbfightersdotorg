@@ -18,7 +18,7 @@ html {
 /* body and general */
 body {
 	background-color: #F5F5F5;
-	font-size: 18px;
+	font-size: calc(8px + 0.6em);
 	line-height: 1.1em;
 	color: #121212;
 	font-family: 'Atkinson Hyperlegible';
@@ -259,6 +259,10 @@ h3 {
 
 .footer-link {
 	color: #505050;
+}
+
+.too-small {
+	font-size: 0.6em;
 }
 
 /* mobile styles */
