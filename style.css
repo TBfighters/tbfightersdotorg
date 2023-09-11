@@ -114,6 +114,11 @@ h3 {
 	transition: all 0.2s ease-in-out;
 }
 
+.return-button {
+	margin: 2em;
+	margin-left: 0px;
+}
+
 .sticky-button:hover,
 .sticky-button:active,
 .sticky-button:focus {
