@@ -1,0 +1,366 @@
+/* resets and accessibility */
+* {
+	margin: 0px;
+}
+
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+/* Disables smooth scrolling if the user has enabled reduced motion for accessibility reasons. */
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+*:focus {
+	/* inner indicator */
+	outline: 2px #F9F9F9 solid;
+	outline-offset: 0;
+	/* outer indicator */
+	box-shadow: 0 0 0 4px #193146;
+}
+
+/* body and general */
+body {
+	background-color: #F5F5F5;
+	font-size: calc(8px + 0.6em);
+	line-height: 1.1em;
+	color: #121212;
+	font-family: 'Atkinson Hyperlegible';
+	font-weight: 400;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color: #121212;
+	font-weight: 700;
+	text-decoration: underline;
+}
+
+a:hover,
+a:active,
+a:focus {
+	color: #D7211E;
+}
+
+
+/* font styles */
+.red {
+	color: #D7211E;
+}
+
+h1 {
+	font-size: 5.0em;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 2.5em;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1em;
+	margin-top: 0;
+	margin-bottom: 0.6em;
+}
+
+.wrap-centered {
+	text-align: center;
+}
+.wrapper p, .wrapper li {
+	font-size: 24px;
+	line-height: 1.1em;
+	margin-bottom: .6em;
+	text-shadow: 0 0 8px white, 0 0 4px white;
+}
+.wrapper-full p, .wrapper-full li {
+	font-size: 20px;
+	line-height: 1.1em;
+	margin-bottom: .6em;
+}
+.button {
+	display: inline-block;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	padding: 12px 18px;
+	text-decoration: none;
+}
+.indent {
+	margin-left: 32px;
+}
+
+/* top bar */
+.sticky {
+	width: 100%;
+	background-color: #E5413E;
+	color: #000000;
+	text-align: center;
+	font-size: 1.25em;
+	font-weight: 700;
+	vertical-align: middle;
+	padding: 4px 0;
+}
+
+.sticky div {
+	display: inline-block;
+	padding: .6em;
+}
+
+.sticky-button {
+	background-color: #E5413E;
+	border: 4px solid #000000;
+	color: #000000;
+	transition: all 0.2s ease-in-out;
+}
+
+.return-button {
+	margin: 2em;
+	margin-left: 0px;
+}
+
+.sticky-button:hover,
+.sticky-button:active,
+.sticky-button:focus {
+	color: #FFFFFF;
+	border-color: #FFFFFF;
+}
+
+
+/* section containers */
+.container {
+	display: block;
+	width: 100%;
+	padding: 60px 0px;
+	background-repeat: no-repeat;
+	padding-top: 25vh;
+	padding-bottom: 25vh;
+}
+
+.container-full {
+	display: block;
+	width: 100%;
+	padding: 60px 0px;
+	background-repeat: no-repeat;
+}
+
+
+/* wrappers general */
+.wrapper {
+	margin: 0 auto;
+	display: block;
+	width: 99.9%;
+	max-width: 900px;
+	clear: both;
+	position: relative;
+	z-index: 10;
+}
+
+.wrapper-full {
+	margin: 0 auto;
+	display: block;
+	width: 80%;
+}
+
+.wrapper .button {
+	background-color: #E5413E;
+	border: 4px solid #E5413E;
+	color: #121212;
+	font-size: 1.4em;
+	margin: .5em 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.wrapper .button:hover,
+.wrapper .button:active,
+.wrapper .button:focus {
+	background-color: #F5F5F5;
+	color: #D7211E;
+	border-color: #E5413E;
+}
+
+
+@keyframes bob {
+	0% {
+		transform: translatey(0px);
+	}
+
+	50% {
+		transform: translatey(-10px);
+	}
+
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
+/* specific section wrappers */
+#top {
+	padding: 24px 0;
+	display: flex;
+	min-height: calc(100vh - 48px);
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+#top .scroll-arrow {
+	width: 28px;
+	filter: contrast(0.85);
+	animation: bob 2s ease-in-out infinite;
+	margin-top: 10vh;
+}
+
+#top .fa-arrow-down:before {
+	font-size: 3.0em;
+	color: #121212;
+}
+
+#top .wrapper p {
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	font-size: 32px;
+	line-height: 1.1em;
+	gap: 16px;
+}
+#top img {
+	width: 200px;
+}
+
+@media only screen and (max-width: 650px) {
+	#top .wrapper p {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 24px;
+	}
+}
+
+#primer {
+	background-image: url('img/crystal-all-white.jpg');
+	background-attachment: fixed;
+	background-position: left center;
+}
+
+#curability {
+	background-image: url('img/drug-crystals.jpg');
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#danaher {
+	background-image: url('img/danaher-lungs.jpg');
+	background-attachment: fixed;
+	background-position: right center;
+}
+
+#profits {
+	background-image: url('img/money-all-white.jpg');
+	background-attachment: fixed;
+	background-position: left center;
+}
+
+#join h2 {
+	font-size: 3.5em;
+	text-transform: uppercase;
+}
+
+#join p, #join li {
+	font-size: 28px;
+	line-height: 1.1em;
+	margin-bottom: 1em;
+}
+
+#more {
+	background-image: url('img/helix-fade-light.png');
+		background-attachment: fixed;
+		background-position: left center;
+}
+/* images */
+.wrap-image .image {
+	width: 400px;
+	height: 400px;
+	background-color: #666666;
+}
+
+.image-left {
+	float: left;
+	margin-right: 30px;
+}
+
+.image-right {
+	float: right;
+	margin-left: 30px;
+}
+
+
+/* footer */
+.site-foot {
+	width: calc(100% - 2em);
+	color: #505050;
+	text-align: center;
+	font-size: 1em;
+	padding: 0.5em 1em;
+}
+
+.site-foot p {
+	margin-bottom: 4px;
+}
+
+.site-foot a {
+	color: #505050;
+}
+.site-foot a:hover,
+.site-foot a:active,
+.site-foot a:focus {
+	color: #D7211E;
+}
+.too-small {
+	font-size: 0.8em;
+}
+
+.break-anywhere {
+	overflow-wrap: anywhere;
+}
+
+/* mobile styles */
+@media only screen and (min-width: 993px) {
+	.wrapper {
+		max-width: 900px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.wrapper {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	body {
+		font-size: 14px;
+	}
+
+	.sticky div {
+		padding: .3em;
+	}
+
+	.button {
+		padding: 6px 12px;
+		border-width: 2px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		font-size: 12px;
+	}
+}
