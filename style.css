@@ -327,6 +327,10 @@ h3 {
 	font-size: 0.8em;
 }
 
+.break-anywhere {
+	overflow-wrap: anywhere;
+}
+
 /* mobile styles */
 @media only screen and (min-width: 993px) {
 	.wrapper {
