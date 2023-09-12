@@ -211,17 +211,16 @@ h3 {
 	flex-direction: column;
 }
 
+#top .scroll-arrow {
+	width: 28px;
+	filter: contrast(0.85);
+	animation: bob 2s ease-in-out infinite;
+	margin-top: 10vh;
+}
+
 #top .fa-arrow-down:before {
 	font-size: 3.0em;
 	color: #121212;
-}
-
-#top .fa-arrow-down {
-	animation: bob 2s ease-in-out infinite;
-}
-
-#top .scroll-arrow {
-	margin-top: 10vh;
 }
 
 #top .wrapper p {
@@ -234,7 +233,6 @@ h3 {
 }
 #top img {
 	width: 200px;
-	float:right;
 }
 
 @media only screen and (max-width: 650px) {
@@ -269,8 +267,6 @@ h3 {
 	background-attachment: fixed;
 	background-position: left center;
 }
-
-#join {}
 
 #join h2 {
 	font-size: 3.5em;
@@ -313,6 +309,10 @@ h3 {
 	text-align: center;
 	font-size: 1em;
 	padding: 0.5em 1em;
+}
+
+.site-foot p {
+	margin-bottom: 4px;
 }
 
 .site-foot a {
