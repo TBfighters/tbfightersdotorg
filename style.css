@@ -143,6 +143,7 @@ h3 {
 	min-height: calc(100vh - 120px);
 	justify-content: space-around;
 	flex-direction: column;
+	background-size: cover;
 }
 
 .container-full {
