@@ -9,4 +9,4 @@ By contributing to this project, you license all your code and other text materi
 
 ## License
 All code and text content is under the MIT license.
-All media content is either in the public domain or [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) or another compatible license.
+All media content is either in the public domain or [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) or another compatible license. Please check the individual image sources for more details.
