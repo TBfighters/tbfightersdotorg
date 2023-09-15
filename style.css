@@ -98,6 +98,8 @@ h3 {
 }
 .indent {
 	margin-left: 32px;
+	margin-top: 8px;
+	margin-bottom: 8px;
 }
 
 .wrapper .larger {
@@ -284,8 +286,18 @@ a[target="_blank"]::after {
 }
 
 #join li {
-	list-style-image: url('img/check-solid.svg');
+	list-style: none;
 	padding-left: .25em;
+}
+
+#join li::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	width: 0.8em;
+	height: 0.8em;
+	background: url(img/check-solid.svg) no-repeat;
+	transform: translate(-35px, 5px);
 }
 
 #more {
