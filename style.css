@@ -49,7 +49,11 @@ a:focus {
 	color: #D7211E;
 	text-shadow: none;
 }
-
+.image-right {
+	float: right;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
 
 /* font styles */
 .red {
@@ -76,6 +80,12 @@ h3 {
 	margin-bottom: 0.6em;
 }
 
+hr {
+	border-top: 1px solid #999999;
+	width: 80%;
+	text-align: center;
+	margin: 20px auto;
+}
 .wrap-centered {
 	text-align: center;
 }
@@ -87,10 +97,10 @@ h3 {
 }
 .wrapper-full p, .wrapper-full li {
 	font-size: 20px;
-	line-height: 1.15em;
+	line-height: 1.3em;
 	margin-bottom: .6em;
 }
-.commentary p:last-child, .milestone p:last-child {
+aside.wrapper-full p:last-child, .milestone p:last-child {
 	margin-bottom: 0;
 }
 .button {
@@ -110,7 +120,7 @@ h3 {
 	margin-bottom: 8px;
 }
 
-.wrapper .larger {
+p.larger {
 	font-size: 28px;
 	line-height: 1.1em;
 	margin-bottom: 1em;
@@ -131,6 +141,10 @@ a[target="_blank"]::after {
 	color: #121212;
 	margin: .5em 0;
 	transition: all 0.2s ease-in-out;
+}
+.container .button-subtle, .container-full .button-subtle {
+	background-color: #121212;
+	color: ##E5413E;
 }
 
 /* top bar */
@@ -220,7 +234,7 @@ a[target="_blank"]::after {
 	display: flex;
 	width: 80%;
 }
-.date {
+.mstone-date {
 	width: 10%;
 	padding: 0 20px;
 	text-align: center;
@@ -229,10 +243,14 @@ a[target="_blank"]::after {
 	width: 90%;
 	padding: 0 20px;
 }
-.commentary {
+aside.wrapper-full {
+	margin: 30px auto;
 	padding: 20px;
 	background-color: #DDDDDD;
 	margin-bottom: 20px;
+}
+.update {
+	display: block;
 }
 
 .wrapper .button:hover,
@@ -274,7 +292,7 @@ a[target="_blank"]::after {
 #top {
 	padding: 24px 0;
 	display: flex;
-	min-height: calc(100vh - 48px);
+	min-height: calc(100vh - 130px);
 	justify-content: space-around;
 	flex-direction: column;
 }
@@ -291,7 +309,7 @@ a[target="_blank"]::after {
 	color: #121212;
 }
 
-#top .wrapper p {
+#top .subtext {
 	display: flex;
 	align-items: center;
 	flex-direction: row-reverse;
