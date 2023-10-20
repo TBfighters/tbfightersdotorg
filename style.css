@@ -50,6 +50,9 @@ a:focus {
 	color: #D7211E;
 	text-shadow: none;
 }
+.news-image {
+	max-width: 100%;
+}
 .image-right {
 	float: right;
 	margin-left: 20px;
@@ -415,6 +418,14 @@ aside.wrapper-full {
 	.button {
 		padding: 6px 12px;
 		border-width: 2px;
+	}
+	.image-right, .image-left {
+		float:none;
+		clear: both;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		
 	}
 }
 
