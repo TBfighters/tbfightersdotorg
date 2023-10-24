@@ -129,7 +129,20 @@ p.larger {
 	line-height: 1.1em;
 	margin-bottom: 1em;
 }
+p.smaller {
+	font-size: 1.25em;
+	line-height: 1.1em;
+	margin-bottom: 1em;
+}
 
+p.event-box {
+	display: block;
+	background-color: #DDDDDD;
+	text-align: center;
+	padding: 10px 15px;
+	text-shadow: none;
+}
+	
 a[target="_blank"]::after {
 	position: relative;
 	display: inline-block;
