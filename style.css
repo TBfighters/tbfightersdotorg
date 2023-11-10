@@ -330,7 +330,7 @@ aside.wrapper-full {
 	display: flex;
 	align-items: center;
 	flex-direction: row-reverse;
-	font-size: 2em;
+	font-size: 1.9em;
 	line-height: 1.1em;
 	gap: 16px;
 }
