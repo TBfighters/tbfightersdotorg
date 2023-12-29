@@ -7,11 +7,12 @@
 		<meta name="description" content="" />
 		<meta name="robots" content="noindex">
 		<!--Open Graph Tags-->
-		<meta property="og:title" content="TBFighters" />
+		<meta property="og:title" content="Privacy Policy | TBFighters" />
+		<meta property="og:site_name" content="TBFighters: Danaher, it's Time for $5" />
 		<meta property="og:url" content="https://tbfighters.org" />
-		<meta property="og:image" content="1200x630image.jpg" />
+		<meta property="og:image" content="img/og-image.jpg" />
 		<meta property="og:type" content="website" />
-		<meta property="og:description" content="" />
+		<meta property="og:description" content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
 		<!--Style includes-->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,28 +20,37 @@
 		href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 		rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="style.css?q=2" />
+		<link rel="stylesheet" href="style.css" />
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-		<title>TBFighters: Privacy Policy</title>
+		<script src="jquery-3.7.1.min.js"></script>
+		<script src="menu.js"></script>
+		<title>Privacy Policy | TBFighters</title>
 	</head>
-	<body class="privacypage">
-		<header class="sticky">
-			<div class="hashtag">#PeopleOverProfits</div>
-			<div class="hashtag">#TimeFor5</div>
-			<div class="sticky-cta">
-				<a class="sticky-button button" href="index.html#join">Support TBFighters</a>
+	<body class="privacy">
+	<!--BELOW THIS GETS COPIED TO ALL PAHES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->
+		<header id="site-head">
+			<div class="wrapper-head">
+				<h1 class="page-title">
+					<a href="index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
+				</h1>
+				<nav class="site-menu">
+					<ul class="active">
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="timeline.html">News &amp; Timeline</a></li>
+						<li><a href="resources.html">Resources</a></li>
+						<li><a href="action.html" class="menu-highlight">Take Action</a></li>
+					</ul>
+					<a class="toggle-button" href="#" title="menu"></a>
+				</nav>
 			</div>
 		</header>
+	<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
 		<main>
-			<section id="privacy" class="container-full">
+			<section class="container container-full">
 				<div class="wrapper-full">
 					<h1 class="break-anywhere">TBFighters.<wbr>org Privacy Policy</h1>
 					<p>
-						Your privacy is of high concern to us. tbfighters.org does not use mechanisms or technologies to
-						gather data about its users. No cookies are created, set, or read by the website, and no visitor
-						data is gathered at any point. There are no on-site analytics tools used. Fonts (so called
-						"Webfonts"), image and video data are loaded in from the Google Fonts service. This service,
-						provided by Google LLC, receives the following data from you:
+						Your privacy is of high concern to us. tbfighters.org does not use mechanisms or technologies to gather data about its users. No cookies are created, set, or read by the website, and no visitor data is gathered at any point. There are no on-site analytics tools used. Fonts (so called "Webfonts"), image and video data are loaded provided by Google LLC, receives the following data from you:
 					</p>
 					<ul>
 						<li>
@@ -65,18 +75,16 @@
 					<p>
 						For further inquiries and questions, please contact the data privacy officer at <em>legal at tbfighters dot org</em>.
 					</p>
-					<p><a class="button return-button" href="index.html">Go back</a></p>
 				</div>
 			</section>
 		</main>
 		<footer class="site-foot">
 			<p>
-				&copy; 2023 The TBFighters Project |
-				<a href="privacy.html">Privacy Policy</a> |
-				<a href="https://github.com/TBfighters/tbfightersdotorg" target="_blank">Source code on GitHub</a>
+				&copy; 2023 The TBFighters Project -
+				<a href="privacy.html" class="footer-link">Privacy Policy</a>
 			</p>
 			<p class="too-small">
-				We lead by following and we act with compassion.
+				<em>We lead by following and we act with compassion.</em>
 			</p>
 		</footer>
 </body>
