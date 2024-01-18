@@ -1,5 +1,4 @@
-// https://inspirationalpixels.com/creating-a-responsive-menu-with-html-css-jquery/
-
+//mobile menu style switcher
 jQuery(document).ready(function() {
 	jQuery('.toggle-button').click(function(e) {
 		jQuery(this).toggleClass('active');
