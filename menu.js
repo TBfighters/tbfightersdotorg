@@ -7,3 +7,20 @@ jQuery(document).ready(function() {
 		e.preventDefault();
 	});
 });
+
+//copy to clipboard functions
+function copyPost1() {
+  let textarea = document.getElementById("post-1");
+  textarea.select();
+  document.execCommand("copy");
+}
+function copyPost2() {
+  let textarea = document.getElementById("post-2");
+  textarea.select();
+  document.execCommand("copy");
+}
+function copyPost3() {
+  let textarea = document.getElementById("post-3");
+  textarea.select();
+  document.execCommand("copy");
+}
