@@ -137,6 +137,11 @@ a[target="_blank"]:not(:has(img))::after {
 	width: 12px;
 	margin: 0 3px;
 }
+.smaller a[target="_blank"]:not(:has(img))::after {
+	height: 10px;
+	width: 10px;
+	margin: 0 3px;
+}
 
 /* HEADERS */
 h1 {
