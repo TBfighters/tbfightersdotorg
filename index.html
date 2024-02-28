@@ -235,11 +235,13 @@ Yours sincerely,
 						);
 						iframe.contentWindow.document.getElementsByClassName("date")[0].textContent = date;
 						iframe.contentWindow.document.close();
-						iframe.contentWindow.print()
-						iframe.contentWindow.addEventListener("afterprint", (event) => {
-							iframe.remove();
-							open = false
-						}, {once: true});
+						iframe.onload = function() {
+							iframe.contentWindow.print()
+							iframe.contentWindow.addEventListener("afterprint", (event) => {
+								iframe.remove();
+								open = false
+							}, {once: true});
+						}
 
 						// reset
 						popup.classList.remove("show")
