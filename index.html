@@ -124,9 +124,169 @@
 					</p>
 					<aside class="wrapper-full">
 					<p><b>FEATURED ACTION:</b>
-						Every year, the Stop TB Partnership invites cities across the world to #LightUpforTB. Use the <a href="https://docs.google.com/document/d/e/2PACX-1vSDHBl8p3AN1jZOx4fmvwvtk3XNrbMh0TkHsgm0MxinwigHCGHp79_-sdrdW0v6AA/pub" target="_blank">template letter</a> to urge your local authorities to light up landmark clocks or buildings in RED on 24 March 2024 to show their commitment to ending TB.
+						Every year, the Stop TB Partnership invites cities across the world to #LightUpforTB. Use the template letter below, or the link <a href="https://docs.google.com/document/d/e/2PACX-1vSDHBl8p3AN1jZOx4fmvwvtk3XNrbMh0TkHsgm0MxinwigHCGHp79_-sdrdW0v6AA/pub" target="_blank">here</a>, to urge your local authorities to light up landmark clocks or buildings in RED on 24 March 2024 to show their commitment to ending TB.
 					</p>
+					<div id="name-popup-opts" class="popup" role="dialog">
+						<div class="popup-content">
+							<div class="popup-inner">
+								<h4>Print Info</h4>
+								<br>
+								<form id="name-form" autocomplete="off">
+									<label for="name">Name for signature (optional):</label>
+									<br>
+									<input type="text" id="name" name="name"
+										placeholder="Name (optional)">
+									<br>
+									<br>
+									<label for="rname">Recipient:</label>
+									<br>
+									<input type="text" id="rname" name="rname"
+										placeholder="Recipient">
+									<br>
+									<br>
+									<label for="date">Date:</label>
+									<input type="checkbox" id="date" name="date" checked>
+									<br>
+									<br>
+									<button id="submit">Submit</button>
+								</form>
+								<br>
+							</div>
+						</div>
+						<button id="close"></button>
+					</div>
+					<div class="buttons">
+						<button id="copy">Copy</button>
+						<button id="print">Print</button>
+					</div>
 					</aside>
+					<script>
+						document.getElementById("copy").onclick = function () {
+							navigator.clipboard.writeText(` Dear ________,
+
+The global fight against tuberculosis (TB) faces a critical year ahead. That is why I am pleased to invite you on behalf of the Stop TB Partnership, a United Nations-hosted entity based in Geneva, Switzerland, to mark World Tuberculosis (TB) Day on 24 March 2024.
+
+This year, the Stop TB Partnership raises awareness of the critical funding gap of USD 9 billion still needed to combat TB. TB remains the world’s second-largest infectious disease and kills more than 4,100 people every day, among them 650 children. That means that every minute, three people lose their lives from TB.
+
+Each year, on 24 March, we commemorate the day in 1882 when Dr. Robert Koch announced the discovery of the TB bacteria. World TB Day is an occasion to re-energize our battle and mobilize political and social commitment to further progress towards eliminating TB as a public health burden.
+
+Last year the world turned a new page in the fight against TB, following the September 2023 UN High-Level Meeting (HLM) on TB. We recognize and commend the impressive global response, with 7.5 million people (out of the estimated 10.3 million) newly diagnosed with TB - the highest number of people with TB ever diagnosed and treated in a year. We want 2024 to be even better and on World TB Day we would like everybody to take this message one step further by saying what each of us is doing to help End TB by 2030.
+
+It is an honor to invite ________ to join the global movement and light up a city landmark, building, or clock in RED on 24 March 2024, to bring attention to the devastating impact of TB.
+
+The Stop TB Partnership launched the “Light Up for TB” campaign for the first time in 2017, and we have attracted broad participation from over 60 cities in previous campaigns. Find here an example, a recap of our successful 2021 campaign.
+
+Now more than ever, the world community must come together to end this terrible disease.
+
+We hope that _________ will show your support by joining the initiative for World TB Day 2024 and Light Up for TB. Time is running out – we must invest in ending TB and saving lives.
+
+Yours sincerely,
+[YOUR NAME]`)
+							alert("Copied!")
+						}
+
+					let popup = document.getElementById("name-popup-opts");
+					let form = document.getElementById("name-form");
+					let open = false
+					function printPopupFunc() {
+						document.getElementById("print").onclick = function () {
+							form.focus();
+							popup.classList.add("show")
+							open = true
+						}
+					}
+
+					function submitFunc(event) {
+						event.preventDefault();
+						// options
+						var prtContent = `<p class="date"></p>
+							<p>Dear ${document.getElementById("rname").value},</p>
+							<br>
+							<p>The global fight against tuberculosis (TB) faces a critical year ahead. That is why I am pleased to invite you on behalf of the Stop TB Partnership, a United Nations-hosted entity based in Geneva, Switzerland, to mark World Tuberculosis (TB) Day on 24 March 2024.</p>
+							<br>
+							<p>This year, the Stop TB Partnership raises awareness of the critical funding gap of USD 9 billion still needed to combat TB. TB remains the world’s second-largest infectious disease and kills more than 4,100 people every day, among them 650 children. That means that every minute, three people lose their lives from TB.</p>
+							<br>
+							<p>Each year, on 24 March, we commemorate the day in 1882 when Dr. Robert Koch announced the discovery of the TB bacteria. World TB Day is an occasion to re-energize our battle and mobilize political and social commitment to further progress towards eliminating TB as a public health burden.</p>
+							<br>
+							<p>Last year the world turned a new page in the fight against TB, following the September 2023 UN High-Level Meeting (HLM) on TB. We recognize and commend the impressive global response, with 7.5 million people (out of the estimated 10.3 million) newly diagnosed with TB - the highest number of people with TB ever diagnosed and treated in a year. We want 2024 to be even better and on World TB Day we would like everybody to take this message one step further by saying what each of us is doing to help End TB by 2030.</p>
+							<br>
+							<p>It is an honor to invite ${document.getElementById("rname").value} to join the global movement and light up a city landmark, building, or clock in RED on 24 March 2024, to bring attention to the devastating impact of TB.</p>
+							<br>
+							<p>The Stop TB Partnership launched the “Light Up for TB” campaign for the first time in 2017, and we have attracted broad participation from over 60 cities in previous campaigns. Find here an example, a recap of our successful 2021 campaign.</p>
+							<br>
+							<p>Now more than ever, the world community must come together to end this terrible disease.</p>
+							<br>
+							<p>We hope that ${document.getElementById("rname").value} will show your support by joining the initiative for World TB Day 2024 and Light Up for TB. Time is running out – we must invest in ending TB and saving lives.</p>
+							<br>
+							<p>Yours sincerely,</p>
+							<p>${document.getElementById("name").value}</p>`;
+						if (document.getElementById("date").checked) {
+							date = new Date().toISOString().slice(0, 10)
+						} else {
+							date = ""
+						}
+						// print stuff
+						var iframe = document.createElement('iframe');
+						iframe.style.display = "none";
+						document.body.appendChild(iframe);
+						iframe.contentWindow.document.open();
+						iframe.contentWindow.document.write(
+							"<style>* {font-size: 16px; margin: 0; line-height: 1.1em; font-weight: 400; font-family: 'Atkinson Hyperlegible';}</style>" + prtContent
+						);
+						iframe.contentWindow.document.getElementsByClassName("date")[0].textContent = date;
+						iframe.contentWindow.document.close();
+						iframe.contentWindow.print()
+						iframe.contentWindow.addEventListener("afterprint", (event) => {
+							iframe.remove();
+							open = false
+						}, {once: true});
+
+						// reset
+						popup.classList.remove("show")
+
+						return false;
+					}
+					form.addEventListener("submit", submitFunc)
+
+					popup.addEventListener("click", function (event) {
+						if (event.target == popup) {
+							popup.classList.remove("show")
+							open = false
+						}
+					})
+					document.getElementById("close").addEventListener("click", function (event) {
+						popup.classList.remove("show")
+						open = false
+					})
+
+
+					// focus trap. If this is not here, then the popup will not have sole focus and the user will tab around everywhere
+					// credit: https://hidde.blog/using-javascript-to-trap-focus-in-an-element/
+					var focusableEls = Array.from(popup.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])'));
+					var firstFocusableEl = focusableEls[0];
+					var lastFocusableEl = focusableEls[focusableEls.length - 1];
+					var KEYCODE_TAB = 9;
+
+					// body always has the focus
+					document.body.addEventListener('keydown', function (e) {
+						if (open == false) return;
+						if (e.key === 'Tab' || e.keyCode === KEYCODE_TAB) {
+							console.log("tes 2")
+							if (e.shiftKey) /* shift + tab */ {
+								if (document.activeElement === firstFocusableEl || !focusableEls.find(node => node == document.activeElement)) {
+									lastFocusableEl.focus();
+									e.preventDefault();
+								}
+							} else /* tab */ {
+								if (document.activeElement === lastFocusableEl || !focusableEls.find(node => node == document.activeElement)) {
+									firstFocusableEl.focus();
+									e.preventDefault();
+								}
+							}
+						}
+					});
+					printPopupFunc()
+					</script>
 					<p>
 						Contact Danaher and let them know it's time to put people over profits:
 					</p>
