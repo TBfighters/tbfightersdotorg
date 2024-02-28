@@ -226,8 +226,9 @@ Yours sincerely,
 							date = ""
 						}
 						// print stuff
-						// bad chrome
-						if (navigator.userAgent.toLowerCase().indexOf('crios') !== -1) {
+						// bad ios
+						if (['iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod' ].includes(navigator.platform)
+							|| (navigator.userAgent.includes("Mac") && "ontouchend" in document)) {
 							let win = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
 							win.document.write(
 								"<style>* {font-size: 16px; margin: 0; line-height: 1.1em; font-weight: 400; font-family: 'Atkinson Hyperlegible';}</style>" + prtContent
@@ -237,6 +238,7 @@ Yours sincerely,
 							win.print();
 							win.addEventListener("afterprint", (event) => {
 								win.close()
+								open = false;
 							}, {once: true});
 						} else {
 							var iframe = document.createElement('iframe');
