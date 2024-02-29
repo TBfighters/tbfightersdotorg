@@ -203,7 +203,12 @@ Yours sincerely,
 					function submitFunc(event) {
 						event.preventDefault();
 						// options
-						var prtContent = `<p class="date"></p>
+						if (document.getElementById("date").checked) {
+							date = new Date().toISOString().slice(0, 10)
+						} else {
+							date = ""
+						}
+						var prtContent = `<p>${date}</p>
 							<p>Dear ${document.getElementById("rname").value},</p>
 							<br>
 							<p>The global fight against tuberculosis (TB) faces a critical year ahead. That is why I am pleased to invite you on behalf of the Stop TB Partnership, a United Nations-hosted entity based in Geneva, Switzerland, to mark World Tuberculosis (TB) Day on 24 March 2024.</p>
@@ -224,25 +229,18 @@ Yours sincerely,
 							<br>
 							<p>Yours sincerely,</p>
 							<p>${document.getElementById("name").value}</p>`;
-						if (document.getElementById("date").checked) {
-							date = new Date().toISOString().slice(0, 10)
-						} else {
-							date = ""
-						}
 						// print stuff
-						// bad ios
+						// fix an webkit bug
 						if (['iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod' ].includes(navigator.platform)
 							|| (navigator.userAgent.includes("Mac") && "ontouchend" in document)) {
 							let win = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
 							win.document.write(
 								"<style>* {font-size: 16px; margin: 0; line-height: 1.1em; font-weight: 400; font-family: 'Atkinson Hyperlegible';}</style>" + prtContent
 							);
-							win.document.getElementsByClassName("date")[0].textContent = date;
 							win.focus();
 							win.print();
 							win.addEventListener("afterprint", (event) => {
 								win.close()
-								open = false;
 							}, {once: true});
 						} else {
 							var iframe = document.createElement('iframe');
@@ -252,19 +250,18 @@ Yours sincerely,
 							iframe.contentWindow.document.write(
 								"<style>* {font-size: 16px; margin: 0; line-height: 1.1em; font-weight: 400; font-family: 'Atkinson Hyperlegible';}</style>" + prtContent
 							);
-							iframe.contentWindow.document.getElementsByClassName("date")[0].textContent = date;
 							iframe.contentWindow.document.close();
 							iframe.onload = function() {
 								iframe.contentWindow.print()
 								iframe.contentWindow.addEventListener("afterprint", (event) => {
 									iframe.remove();
-									open = false
 								}, {once: true});
 							}
 						}
 
 						// reset
 						popup.classList.remove("show")
+						open = false;
 
 						return false;
 					}
