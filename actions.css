@@ -1,0 +1,82 @@
+.popup {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.popup-content {
+	background-color: white;
+	padding: 20px;
+	background: #F5F5F5;
+	border: 2px solid #BC1C1A;
+	border-radius: 0.5em;
+	box-shadow: 0.1em 0.1em 1em rgb(0 0 0 / 60%);
+	width: 20em;
+	height: 20em;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.popup-content button {
+	margin-left: 0.0em
+}
+
+#close:after {
+	content: "\00d7";
+}
+
+#close {
+	background: none;
+	border: none;
+	color: #121212;
+	font-size: 1.5em;
+	width: unset;
+	padding: unset;
+	transform-origin: top right;
+	height: min-content;
+	float: right;
+}
+
+#close:hover {
+	color: #BC1C1A;
+}
+
+input[type=text] {
+	border-color: #DDDDDD;
+	box-sizing: border-box;
+	margin-top: 0.5em;
+	box-shadow: none;
+	border-style: solid;
+}
+
+input[type=text]:focus {
+	border-color: #BC1C1A;
+	outline: none;
+	box-shadow: none;
+}
+
+input[type=checkbox] {
+	box-shadow: none;
+	accent-color: #BC1C1A;
+}
+
+input[type=checkbox]:focus {
+	outline-offset: 1px;
+	outline: 2px solid #121212;
+}
+
+.show-popup {
+	display: block;
+}
