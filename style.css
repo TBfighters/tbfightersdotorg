@@ -44,7 +44,7 @@ hr {
 button {
 	font-weight: bold;
 }
-	
+
 /* IMAGES */
 img {
 	align-self: start;
@@ -64,7 +64,7 @@ img {
 }
 
 /* ===============
-   FONT STYLES 
+   FONT STYLES
    =============== */
 .red {
 	color: #D7211E;
@@ -306,6 +306,31 @@ a.toggle-button {
 	display: none;
 }
 
+/* Forms */
+input[type=text], input[type=email] {
+	border-color: #DDDDDD;
+	box-sizing: border-box;
+	margin-top: 0.5em;
+	box-shadow: none;
+	border-style: solid;
+}
+
+input[type=text]:focus, input[type=email]:focus {
+	border-color: #BC1C1A;
+	outline: none;
+	box-shadow: none;
+}
+
+input[type=checkbox] {
+	box-shadow: none;
+	accent-color: #BC1C1A;
+}
+
+input[type=checkbox]:focus {
+	outline-offset: 1px;
+	outline: 2px solid #121212;
+}
+
 
 /* ===============
    PAGE CONTAINERS
@@ -337,7 +362,7 @@ a.toggle-button {
 }
 
 /* ===============
-   CONTENT WRAPPERS 
+   CONTENT WRAPPERS
    =============== */
 .wrapper {
 	margin: 0 auto;
@@ -423,7 +448,7 @@ aside.wrapper-full {
 /* ACTIONS GRID */
 .wrapper-action-grid {
 	text-align: center;
-	
+
 }
 .wrapper-action-grid .action {
 	display: inline-block;
@@ -433,7 +458,7 @@ aside.wrapper-full {
 }
 
 /* ===============
-   HOMEPAGE SECTION WRAPPERS 
+   HOMEPAGE SECTION WRAPPERS
    =============== */
 #top {
 	padding: 3em 0;
@@ -455,11 +480,11 @@ aside.wrapper-full {
 	0% {
 		transform: translatey(0px);
 	}
-	
+
 	50% {
 		transform: translatey(-15px);
 	}
-	
+
 	100% {
 		transform: translatey(0px);
 	}
@@ -522,7 +547,7 @@ h2.action-head {
 }
 
 /* ===============
-   SITE FOOTER 
+   SITE FOOTER
    =============== */
 .site-foot {
 	width: calc(100% - 2em);
@@ -642,7 +667,7 @@ h2.action-head {
 	h3 {
 		font-size: 1.6em;
 	}
-	
+
 }
 
 @media only screen and (max-width: 768px) {
