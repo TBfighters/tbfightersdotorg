@@ -480,22 +480,22 @@ aside.wrapper-full {
 	margin-bottom: 1em;
 }
 #primer {
-	background-image: url('img/crystal-all-white.jpg');
+	background-image: url('img/red-crystal.gif');
 	background-attachment: fixed;
 	background-position: left center;
 }
 #twist {
-	background-image: url('img/drug-crystals.jpg');
+	background-image: url('img/crystals.gif');
 	background-attachment: fixed;
 	background-position: center;
 }
 #danaher {
-	background-image: url('img/danaher-lungs.jpg');
+	background-image: url('img/lungs.gif');
 	background-attachment: fixed;
 	background-position: right center;
 }
 #profits {
-	background-image: url('img/money-all-white.jpg');
+	background-image: url('img/money.gif');
 	background-attachment: fixed;
 	background-position: left center;
 }
@@ -554,8 +554,13 @@ h2.action-head {
 
 @media only screen and (max-width: 1320px) {
 	.post textarea {
+		font-size: 18px;
+		height: 7.5em;
+	}
+}
+@media only screen and (max-width: 1150px) {
+	.post textarea {
 		font-size: 16px;
-		height: 8.5em;
 	}
 }
 @media only screen and (min-width: 993px) {
@@ -609,6 +614,10 @@ h2.action-head {
 	}
 	a.toggle-button span {
 		font-size: 0;
+	}
+    .post textarea {
+        font-size: 14px;
+		height: 8.5em;
 	}
 }
 
@@ -690,7 +699,10 @@ h2.action-head {
 		font-size: 12px;
 	}
 	.post textarea {
-		height: 5.5em;
+		height: 4.5em;
+	}
+    .post textarea#post-2 {
+		height: 3.5em;
 	}
 	h1 {
 		font-size: 2.5em;
@@ -709,5 +721,14 @@ h2.action-head {
 	}
 	ul {
 		padding-left: 2em;
+	}
+}
+
+@media only screen and (max-width: 440px) {
+	.post textarea {
+		height: 6.5em;
+	}
+    .post textarea#post-2 {
+		height: 4.5em;
 	}
 }
