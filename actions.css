@@ -53,29 +53,6 @@
 	color: #BC1C1A;
 }
 
-input[type=text] {
-	border-color: #DDDDDD;
-	box-sizing: border-box;
-	margin-top: 0.5em;
-	box-shadow: none;
-	border-style: solid;
-}
-
-input[type=text]:focus {
-	border-color: #BC1C1A;
-	outline: none;
-	box-shadow: none;
-}
-
-input[type=checkbox] {
-	box-shadow: none;
-	accent-color: #BC1C1A;
-}
-
-input[type=checkbox]:focus {
-	outline-offset: 1px;
-	outline: 2px solid #121212;
-}
 
 .show-popup {
 	display: block;
