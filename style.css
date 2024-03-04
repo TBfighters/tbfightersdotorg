@@ -596,8 +596,7 @@ h2.action-head {
 
 @media only screen and (max-width: 992px) {
 	.wrapper-action-grid .action {
-		display: block;
-		width: auto;
+		width: 100%;
 	}
 	.wrapper {
 		width: 90%;
