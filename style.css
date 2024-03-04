@@ -600,6 +600,7 @@ h2.action-head {
 		padding-left: 0;
 		padding-right: 0;
 	}
+
 	.wrapper {
 		width: 90%;
 	}
@@ -649,6 +650,17 @@ h2.action-head {
         font-size: 14px;
 		height: 8.5em;
 	}
+
+	.buttons {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+	}
+
+	.buttons .button {
+		width: unset;
+	}
 }
 
 @media only screen and (max-width: 900px) {
@@ -672,7 +684,6 @@ h2.action-head {
 	h3 {
 		font-size: 1.6em;
 	}
-
 }
 
 @media only screen and (max-width: 768px) {
