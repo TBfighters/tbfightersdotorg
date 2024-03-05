@@ -189,6 +189,10 @@ button {
 .button-centered {
 	text-align: center;
 }
+.join-right .button-centered {
+	margin-left: 1em;
+	width: calc(100% - 4em - 8px);
+}
 .button-full {
 	width: 100%;
 }
@@ -595,6 +599,12 @@ h2.action-head {
 }
 
 @media only screen and (max-width: 992px) {
+	.wrapper-action-grid .action {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	.wrapper {
 		width: 90%;
 	}
@@ -644,6 +654,17 @@ h2.action-head {
         font-size: 14px;
 		height: 8.5em;
 	}
+
+	.buttons {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+	}
+
+	.buttons .button {
+		width: unset;
+	}
 }
 
 @media only screen and (max-width: 900px) {
@@ -667,7 +688,6 @@ h2.action-head {
 	h3 {
 		font-size: 1.6em;
 	}
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -677,6 +697,10 @@ h2.action-head {
 	.button {
 		padding: .5em .7em;
 		border-width: 2px;
+	}
+	.join-right .button-centered {
+		margin-left: 1em;
+		width: calc(100% - 4em + 1px);
 	}
 	.image-right, .image-left {
 		float:none;
