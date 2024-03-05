@@ -112,6 +112,7 @@ p.centered {
 	overflow: hidden;
 	resize: none;
 	height: 6.5em;
+	box-shadow: 0.1em 0.1em 1em rgb(0 0 0 / 60%);
 }
 .featured-columns p:first-child, #primer p, #danaher p, #twist p, #profits p, #join li {
 	font-size: 1.2em;
@@ -224,12 +225,14 @@ p.featured {
 	text-align: center;
 	padding: 10px 15px;
 	margin: 0 1em .6em;
+	box-shadow: 0.1em 0.1em 1em rgb(0 0 0 / 60%);
 }
 
 .featured-columns {
 	margin-top: 2em;
 	padding: 1em 2em;
 	background-color: #DDDDDD;
+	box-shadow: 0.1em 0.1em 1em rgb(0 0 0 / 60%);
 }
 .featured-columns .button, .featured-columns .button-subtle {
 	margin: .125em .5em;
@@ -403,6 +406,7 @@ aside.wrapper-full {
 	padding: 20px;
 	background-color: #DDDDDD;
 	margin-bottom: 20px;
+	box-shadow: 0.1em 0.1em 1em rgb(0 0 0 / 60%);
 }
 
 /* TIMELINE */
