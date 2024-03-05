@@ -3,6 +3,7 @@
    =============== */
 * {
 	margin: 0;
+	--aside-shadow: 0.1em 0.1em 1em rgb(10 10 10 / 50%);
 }
 html {
 	scroll-behavior: smooth;
@@ -112,7 +113,7 @@ p.centered {
 	overflow: hidden;
 	resize: none;
 	height: 6.5em;
-	box-shadow: 0.1em 0.1em 1em rgb(0 0 0 / 60%);
+	box-shadow: var(--aside-shadow);
 }
 .featured-columns p:first-child, #primer p, #danaher p, #twist p, #profits p, #join li {
 	font-size: 1.2em;
@@ -225,14 +226,14 @@ p.featured {
 	text-align: center;
 	padding: 10px 15px;
 	margin: 0 1em .6em;
-	box-shadow: 0.1em 0.1em 1em rgb(0 0 0 / 60%);
+	box-shadow: var(--aside-shadow);
 }
 
 .featured-columns {
 	margin-top: 2em;
 	padding: 1em 2em;
 	background-color: #DDDDDD;
-	box-shadow: 0.1em 0.1em 1em rgb(0 0 0 / 60%);
+	box-shadow: var(--aside-shadow);
 }
 .featured-columns .button, .featured-columns .button-subtle {
 	margin: .125em .5em;
