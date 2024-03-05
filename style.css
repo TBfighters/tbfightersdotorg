@@ -617,6 +617,9 @@ h2.action-head {
 	.wrapper {
 		width: 90%;
 	}
+	.wrapper.featured-columns {
+   		 width: 90%;
+	}
 	.site-menu {
 		width: 100%;
 		padding: .5em;
