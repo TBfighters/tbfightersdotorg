@@ -699,6 +699,7 @@ h2.action-head {
 	}
 	.post-gallery img {
 		max-width: 100%;
+		padding: 1em;
 	}
 }
 
