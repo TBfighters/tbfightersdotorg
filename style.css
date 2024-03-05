@@ -90,6 +90,9 @@ aside.wrapper-full p:last-child, .milestone p:last-child {
 p.larger, li.larger {
 	font-size: 1.2em;
 }
+.action p.larger {
+	font-size: 1.5em;
+}
 p.smaller, li.smaller {
 	font-size: .8em;
 }
@@ -381,6 +384,7 @@ input[type=checkbox]:focus {
 	margin: 0 auto;
 	display: block;
 	width: 80%;
+	max-width: 1260px;
 }
 .wrapper-columns { /* auto-width column children*/
 	display: flex;
@@ -394,8 +398,7 @@ input[type=checkbox]:focus {
 	vertical-align: top;
 }
 .post-gallery img {
-	max-height: 200px;
-	max-width: 300px;
+	max-height: 250px;
 	vertical-align: top;
 }
 aside.wrapper-full {
@@ -450,15 +453,16 @@ aside.wrapper-full {
 }
 
 /* ACTIONS GRID */
-.wrapper-action-grid {
-	text-align: center;
-
-}
 .wrapper-action-grid .action {
 	display: inline-block;
-	width: calc(50% - 4em);
-	padding: 1em;
+	width: calc(50% - 4.2em);
+	margin: 1em 2em;
 	vertical-align: top;
+}
+.action .action-icon {
+	height: 1.5em;
+	vertical-align: bottom;
+	margin-right: .5em;
 }
 
 /* ===============
