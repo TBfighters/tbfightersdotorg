@@ -402,7 +402,7 @@ input[type=checkbox]:focus {
 	vertical-align: top;
 }
 .post-gallery img {
-	max-height: 250px;
+	max-height: 225px;
 	vertical-align: top;
 }
 aside.wrapper-full {
