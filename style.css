@@ -612,11 +612,18 @@ h2.action-head {
 		width: 100%;
 		padding-left: 0;
 		padding-right: 0;
+		margin-left: 0;
 	}
 
 	.wrapper {
 		width: 90%;
 	}
+	.wrapper.featured-columns {
+   		 width: 90%;
+	}
+	.wrapper-action-grid .action {
+		width: 90%;
+	}	
 	.site-menu {
 		width: 100%;
 		padding: .5em;
