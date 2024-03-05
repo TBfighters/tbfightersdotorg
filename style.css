@@ -189,6 +189,10 @@ button {
 .button-centered {
 	text-align: center;
 }
+.join-right .button-centered {
+	margin-left: 1em;
+	width: calc(100% - 4em - 8px);
+}
 .button-full {
 	width: 100%;
 }
@@ -693,6 +697,10 @@ h2.action-head {
 	.button {
 		padding: .5em .7em;
 		border-width: 2px;
+	}
+	.join-right .button-centered {
+		margin-left: 1em;
+		width: calc(100% - 4em + 1px);
 	}
 	.image-right, .image-left {
 		float:none;
