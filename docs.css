@@ -10,6 +10,7 @@
 	padding: 20px;
 	background-color: #DDDDDD;
 	margin-bottom: 20px;
+	box-shadow: var(--aside-shadow);
 }
 
 
