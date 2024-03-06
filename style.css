@@ -3,7 +3,7 @@
    =============== */
 * {
 	margin: 0;
-	--aside-shadow: 0.1em 0.1em 1em rgb(10 10 10 / 50%);
+	--aside-shadow: 0.1em 0.1em 1em rgb(10 10 10 / 35%);
 }
 html {
 	scroll-behavior: smooth;
@@ -619,11 +619,8 @@ h2.action-head {
 		width: 90%;
 	}
 	.wrapper.featured-columns {
-   		 width: 90%;
+   		 width: auto;
 	}
-	.wrapper-action-grid .action {
-		width: 90%;
-	}	
 	.site-menu {
 		width: 100%;
 		padding: .5em;
