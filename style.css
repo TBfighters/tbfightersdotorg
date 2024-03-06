@@ -309,6 +309,10 @@ h1.page-title {
 	font-size: 1.25em;
 	color:#F5F5F5;
 }
+.site-menu a.menu-highlight {
+	color: #121212;
+	background-color: #F5F5F5;
+}
 .site-menu a:hover, .site-menu a:focus, .site-menu a:active {
 	color: #F5F5F5;
 	background-color: #121212;
@@ -397,9 +401,11 @@ input[type=checkbox]:focus {
 }
 .wrapper-columns .post {
 	width: 33.33%;
+	padding-bottom: 1em;
 }
 .post-gallery {
 	vertical-align: top;
+	margin: .5em auto 1em;
 }
 .post-gallery img {
 	max-height: 225px;
@@ -554,7 +560,7 @@ h2.action-head {
 	margin-bottom: 1em;
 }
 #join {
-	background-image: url('img/helix-fade-light.png');
+	background-image: url('img/helix.png');
 	background-attachment: fixed;
 	background-position: left center;
 }
