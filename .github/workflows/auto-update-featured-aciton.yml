@@ -28,7 +28,7 @@ jobs:
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
 
-    - name: Commit updated CONTRIBUTORS
+    - name: Commit updated featured action
       shell: bash
       run: |
         git add .
