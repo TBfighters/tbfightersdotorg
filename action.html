@@ -165,10 +165,8 @@
 						<img class="slideshow-img" src="img/social-intro.png" alt="two gloved hands holding a test cartridge and $5 written on it. Text: Intro to time for $5. The body text reads: What is GeneXpert? The GeneXpert test can detect TB in an hour and requires minimal training to run. The Xpert MTB/RIF cartridge is crucial for identifying multi-drug resistant TB quickly. The GeneXpert system can also be used for other diseases, such as Covid-19 and HIV" />
 						<img class="slideshow-img" src="img/social-timefor5.png" alt="text: TUBERCULOSIS IS CURABLE yet 1.3 million people die of TB every year while Danaher grossly overcharges diagnostic tests for the patients who can least afford it. Danaher, It’s time for $5. TBFighters dot org" />
 						<img class="slideshow-img" src="img/social-bold.png" alt="black and white text with red number: Danaher, it’s time for 5. Tbfighters dotorg" />
-						<div class="mobile">
-							<button class="slideshow-button" onclick="plusDivs(-1)">&#10094;</button>
-							<button class="slideshow-button" onclick="plusDivs(1)">&#10095;</button>
-						</div>
+						<button class="slideshow-button" onclick="plusDivs(-1)">&#10094;</button>
+						<button class="slideshow-button" onclick="plusDivs(1)">&#10095;</button>
 						<script>
 							var slideIndex = 1;
 							showDivs(slideIndex);
@@ -178,16 +176,14 @@
 							}
 
 							function showDivs(n) {
-								if (document.getElementsByClassName("mobile")[0].style.display != "none") {
-									  var i;
-									  var x = document.getElementsByClassName("slideshow-img");
-									  if (n > x.length) {slideIndex = 1}
-									  if (n < 1) {slideIndex = x.length} ;
-									  for (i = 0; i < x.length; i++) {
-									    x[i].style.display = "none";
-									  }
-									  x[slideIndex-1].style.display = "block";
-								}
+							  var i;
+							  var x = document.getElementsByClassName("slideshow-img");
+							  if (n > x.length) {slideIndex = 1}
+							  if (n < 1) {slideIndex = x.length} ;
+							  for (i = 0; i < x.length; i++) {
+							    x[i].style.display = "none";
+							  }
+							  x[slideIndex-1].style.display = "block";
 							}
 						</script>
 					</div>
