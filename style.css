@@ -416,7 +416,7 @@ aside.wrapper-full {
 	padding: 20px;
 	background-color: #DDDDDD;
 	margin-bottom: 20px;
-	box-shadow: 0.1em 0.1em 1em rgb(0 0 0 / 60%);
+	box-shadow: var(--aside-shadow);
 }
 
 /* TIMELINE */
