@@ -408,7 +408,7 @@ input[type=checkbox]:focus {
 	margin: .5em auto 1em;
 }
 .post-gallery img {
-	max-height: 225px;
+	max-height: 525px;
 	vertical-align: top;
 }
 aside.wrapper-full {
