@@ -133,25 +133,25 @@
 				</div>
 				<div class="wrapper-full wrapper-columns">
 					<div class="post">
-						<textarea readonly id="post-1">Lowering the price of the standard TB test alone is not enough, @DanaherCorp & @CepheidNews! Nerdfighteria is still waiting for you to lower the price of #XDRNext! #PeopleOverProfits</textarea>
-						<p style="margin-left: 5px;">
+						<p id="post-1">Lowering the price of the standard TB test alone is not enough, @DanaherCorp & @CepheidNews! Nerdfighteria is still waiting for you to lower the price of #XDRNext! #PeopleOverProfits</p>
+						<div style="margin-left: 5px;">
 							<button id="copy-1" class="button button-subtle" onclick="copyPost1()">Copy text</button>
 							<a href="https://twitter.com/intent/tweet?text=Lowering%20the%20price%20of%20the%20standard%20TB%20test%20alone%20is%20not%20enough,%20%40DanaherCorp%20%26%20%40CepheidNews!%20Nerdfighteria%20is%20still%20waiting%20for%20you%20to%20lower%20the%20price%20of%20%23XDRNext!%20%23PeopleOverProfits" target="_blank" class="button button-subtle">Click to tweet</a>
-						</p>
+						</div>
 					</div>
 					<div class="post">
-						<textarea readonly id="post-2">Do the right thing, @DanaherCorp! It’s #TimeFor5 on ALL GeneXpert tests. Please put #PeopleOverProfits!</textarea>
-						<p style="margin-left: 5px;">
+						<p id="post-2">Do the right thing, @DanaherCorp! It’s #TimeFor5 on ALL GeneXpert tests. Please put #PeopleOverProfits!</p>
+						<div style="margin-left: 5px;">
 							<button id="copy-2" class="button button-subtle" onclick="copyPost2()">Copy text</button>
 							<a href="https://twitter.com/intent/tweet?text=Do%20the%20right%20thing%2C%20%40DanaherCorp!%20It%E2%80%99s%20%23TimeFor5%20on%20ALL%20GeneXpert%20tests.%20Please%20put%20%23PeopleOverProfits!%0D%0Ahttps%3A%2F%2Fpic.twitter.com%2F1TShUViDtq" target="_blank" class="button button-subtle">Click to tweet</a>
-						</p>
+						</div>
 					</div>
 					<div class="post">
-						<textarea readonly id="post-3">.@CepheidNews & @DanaherCorp – The lower price for your standard TB tests will make a huge difference, thank you. But you can do more! Lower the price of XDR-TB tests! #PeopleOverProfits</textarea>
-						<p style="margin-left: 5px;">
+						<p id="post-3">.@CepheidNews & @DanaherCorp – The lower price for your standard TB tests will make a huge difference, thank you. But you can do more! Lower the price of XDR-TB tests! #PeopleOverProfits</p>
+						<div style="margin-left: 5px;">
 							<button id="copy-3" class="button button-subtle" onclick="copyPost3()">Copy text</button>
 							<a href="https://twitter.com/intent/tweet?text=.%40CepheidNews%20%26%20%40DanaherCorp%20%E2%80%93%20The%20lower%20price%20for%20your%20standard%20TB%20tests%20will%20make%20a%20huge%20difference,%20thank%20you.%20But%20you%20can%20do%20more!%20Lower%20the%20price%20of%20XDR-TB%20tests!%20%23PeopleOverProfits" target="_blank" class="button button-subtle">Click to tweet</a>
-						</p>
+						</div>
 					</div>
 					<script>
 						addCopyButton(document.getElementById("copy-1"), document.getElementById("post-1").textContent)
@@ -174,8 +174,8 @@
 						<noscript>
 							<br>
 						</noscript>
-						<button class="slideshow-button button" onclick="plusDivs(-1)">&#10094;</button>
-						<button class="slideshow-button button" onclick="plusDivs(1)">&#10095;</button>
+						<button class="slideshow-button button" onclick="plusDivs()">&#10094;</button>
+						<button class="slideshow-button button" onclick="minusDiv()">&#10095;</button>
 						<button class="button" onclick="download()">Download</button>
 						<br>
 						<noscript>
@@ -183,30 +183,38 @@
 							<p style="font-style: italic;">Please enable javascript to use the slideshow and download buttons.</p>
 						</noscript>
 						<script>
-							var slideIndex = 1;
-							showDivs(slideIndex);
-
-							function plusDivs(n) {
-								showDivs(slideIndex += n);
+							var slideIndex = 0;
+							var x = document.getElementsByClassName("slideshow-img");
+							for (i = 0; i < x.length; i++) {
+								if (i == slideIndex) {
+									x[slideIndex].style.display = "block";
+								} else {
+									x[i].style.display = "none";
+								}
 							}
 
-							function showDivs(n) {
-							  var i;
-							  var x = document.getElementsByClassName("slideshow-img");
-							  if (n > x.length) {slideIndex = 1}
-							  if (n < 1) {slideIndex = x.length} ;
-							  for (i = 0; i < x.length; i++) {
-							    x[i].style.display = "none";
-							  }
-							  x[slideIndex-1].style.display = "block";
+							function plusDivs() {
+								x[slideIndex].style.display = "none";
+								slideIndex += 1;
+								if (slideIndex > x.length - 1) {slideIndex = 0}
+								console.log(slideIndex)
+								x[slideIndex].style.display = "block";
 							}
+							function minusDiv() {
+								x[slideIndex].style.display = "none";
+								slideIndex -= 1;
+								if (slideIndex < 0) {slideIndex = x.length - 1};
+								console.log(slideIndex)
+								x[slideIndex].style.display = "block";
+							}
+
 							async function download() {
-								  const link = document.createElement('a')
-								  link.href = document.getElementsByClassName("slideshow-img")[slideIndex-1].src
-								  link.download = ""
+								const link = document.createElement('a')
+								link.href = document.getElementsByClassName("slideshow-img")[slideIndex].src
+								link.download = ""
 								document.body.appendChild(link)
 								link.click()
-								  document.body.removeChild(link)
+								document.body.removeChild(link)
 							}
 						</script>
 					</div>
