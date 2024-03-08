@@ -120,7 +120,7 @@ p.centered {
 .container ul {
 	padding-left: 1.5em;
 }
-.post textarea {
+.post p {
 	margin: 0 5px .6em;
 	padding: 10px;
 	background-color: #DDDDDD;
@@ -630,13 +630,13 @@ h2.action-head {
    =============== */
 
 @media only screen and (max-width: 1320px) {
-	.post textarea {
+	.post p {
 		font-size: 18px;
 		height: 7.5em;
 	}
 }
 @media only screen and (max-width: 1150px) {
-	.post textarea {
+	.post p {
 		font-size: 16px;
 	}
 }
@@ -701,7 +701,7 @@ h2.action-head {
 	a.toggle-button span {
 		font-size: 0;
 	}
-    .post textarea {
+    .post p {
         font-size: 14px;
 		height: 8.5em;
 	}
@@ -789,7 +789,7 @@ h2.action-head {
 	.wrapper-columns .post {
 		width: 100%;
 	}
-	.post textarea {
+	.post p {
 		height: 3.5em;
 	}
 	.join-left, .join-right {
@@ -816,10 +816,10 @@ h2.action-head {
 	body {
 		font-size: 12px;
 	}
-	.post textarea {
+	.post p {
 		height: 4.5em;
 	}
-    .post textarea#post-2 {
+    .post p#post-2 {
 		height: 3.5em;
 	}
 	h1 {
@@ -849,10 +849,10 @@ h2.action-head {
 }
 
 @media only screen and (max-width: 440px) {
-	.post textarea {
+	.post p {
 		height: 6.5em;
 	}
-    .post textarea#post-2 {
+    .post p#post-2 {
 		height: 4.5em;
 	}
 }

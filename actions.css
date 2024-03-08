@@ -7,7 +7,7 @@
 	height: 100%;
 	overflow: auto;
 	display: none;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 .popup-content {
@@ -15,8 +15,7 @@
 	padding: 20px;
 	background: #F5F5F5;
 	border: 2px solid #BC1C1A;
-	border-radius: 0.5em;
-	box-shadow: 0.1em 0.1em 1em rgb(0 0 0 / 60%);
+	border-radius: 0.3em;
 	width: 20em;
 	height: 20em;
 	margin: auto;
