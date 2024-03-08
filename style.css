@@ -90,7 +90,7 @@ img {
 	font-size: 1.25em;
 	line-height: 1.3;
 }
-.container 
+.container
 .wrap-centered {
 	text-align: center;
 }
@@ -105,7 +105,7 @@ aside.wrapper-full p:last-child, .milestone p:last-child {
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
-p.larger, li.larger {
+p.larger, li.larger, a.larger {
 	font-size: 1.2em;
 }
 .action p.larger {
@@ -509,6 +509,17 @@ aside.wrapper-full {
 	margin-right: .5em;
 }
 
+.newsletter-action {
+	padding-bottom: 0.5em;
+}
+
+.newsletter-action-column {
+	max-width: 50%;
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
 /* ===============
    HOMEPAGE SECTION WRAPPERS
    =============== */
@@ -652,6 +663,12 @@ h2.action-head {
 		padding-left: 0;
 		padding-right: 0;
 		margin-left: 0;
+	}
+	.newsletter-action-column {
+		max-width: unset;
+	}
+	.newsletter-action {
+		padding-bottom: 0.5em;
 	}
 	.wrapper {
 		width: 90%;
