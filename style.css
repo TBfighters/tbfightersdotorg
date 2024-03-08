@@ -309,10 +309,6 @@ h1.page-title {
 	font-size: 1.25em;
 	color:#F5F5F5;
 }
-.site-menu a.menu-highlight {
-	color: #121212;
-	background-color: #F5F5F5;
-}
 .site-menu a:hover, .site-menu a:focus, .site-menu a:active {
 	color: #F5F5F5;
 	background-color: #121212;
