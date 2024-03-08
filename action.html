@@ -28,10 +28,10 @@
 		<script src="actions.js"></script>
 		<title>Take Action | TBFighters</title>
 	</head>
-
+	
 	<body class="action">
 		<!--BELOW THIS GETS COPIED TO ALL PAHES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->
-		<header id="site-head">
+		<header id="site-head"><a href="#main" class="skip">Skip to main content</a>
 			<div class="wrapper-head">
 				<h1 class="page-title">
 					<a href="index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
@@ -48,7 +48,7 @@
 			</div>
 		</header>
 		<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
-		<main>
+		<main id="main">
 			<section class="container container-compact title">
 				<div class="wrapper-full">
 					<h1 class="break-anywhere">Take <span class="red">Action</span></h1>
@@ -67,7 +67,7 @@
 					</p>
 					<p class="featured">
 						<strong>FEATURED ACTION:</strong> Join our <a href="action.html#list">mailing list</a> to hear about new calls to action and other updates! Emails may come from TBFighters, John Green, or partner organizations like MSF Access.
-
+						
 					</p>
 				</div>
 				<div class="wrapper-full wrapper-action-grid">
@@ -82,7 +82,7 @@
 							Tag <em>@DanaherCorp</em> and <em>@CepheidNews</em> on Twitter, <em>@DanaherCorporation</em> on Instagram and Threads, and comment on their Facebook and LinkedIn posts.
 						</p>
 						<p class="smaller">
-							<a class="button button-subtle" href="#posts">Social media templates</a>
+							<a class="button" href="#posts">Social media templates</a>
 						</p>
 					</div>
 					<div class="action">
@@ -93,7 +93,7 @@
 							<a href="mailto:investor.relations@danaher.com">investor.<wbr>relations<wbr>@danaher.com</a>
 						</p>
 						<p class="smaller">
-							<a class="button button-subtle" href="https://docs.google.com/document/d/e/2PACX-1vTh05tEoyCsh8oEWScWM9n41B1pcUeVNGFcUDqdlcILHvVUB2_LsK4voMTdKPdEQwmjMHRBaoalG259/pub#h.bz7dg2lhjj6o" target="_blank">Latest email templates</a>
+							<a class="button" href="https://docs.google.com/document/d/e/2PACX-1vTh05tEoyCsh8oEWScWM9n41B1pcUeVNGFcUDqdlcILHvVUB2_LsK4voMTdKPdEQwmjMHRBaoalG259/pub#h.bz7dg2lhjj6o" target="_blank">Email templates</a>
 						</p>
 					</div>
 					<div class="action">
@@ -104,7 +104,7 @@
 							US Phone Number: <a href="tel:+12028280850">+1-202-828-0850</a>
 						</p>
 						<p class="smaller">
-							<a class="button button-subtle" href="https://docs.google.com/document/d/e/2PACX-1vTh05tEoyCsh8oEWScWM9n41B1pcUeVNGFcUDqdlcILHvVUB2_LsK4voMTdKPdEQwmjMHRBaoalG259/pub#h.p2qolchk1zy8" target="_blank">Templates and tips</a>
+							<a class="button" href="https://docs.google.com/document/d/e/2PACX-1vTh05tEoyCsh8oEWScWM9n41B1pcUeVNGFcUDqdlcILHvVUB2_LsK4voMTdKPdEQwmjMHRBaoalG259/pub#h.p2qolchk1zy8" target="_blank">Templates and tips</a>
 							<a class="button button-subtle" href="https://docs.google.com/document/d/e/2PACX-1vTh05tEoyCsh8oEWScWM9n41B1pcUeVNGFcUDqdlcILHvVUB2_LsK4voMTdKPdEQwmjMHRBaoalG259/pub#h.vbw6rgxxf6wk" target="_blank">International numbers</a>
 						</p>
 					</div>
@@ -121,35 +121,35 @@
 							</p>
 						</div>
 						<p class="smaller">
-							<a class="button button-subtle" href="./templates/letter-guide.html" target="_blank">Letter guide and templates</a>
-							<a class="button button-subtle" href="https://docs.google.com/forms/d/e/1FAIpQLSedrM33EcSH8FzX9fxpTHfIs7sCnu_dkA5re3OlNI5PPBv2yg/viewform" target="_blank">Letter mailing request</a>
+							<a class="button" href="./templates/letter-guide.html" target="_blank">Guide and templates</a>
+							<a class="button button-subtle" href="https://docs.google.com/forms/d/e/1FAIpQLSedrM33EcSH8FzX9fxpTHfIs7sCnu_dkA5re3OlNI5PPBv2yg/viewform" target="_blank">Mailing request</a>
 						</p>
 					</div>
 				</div>
 				<div class="wrapper-full">
 					<h2 id="posts">Graphics and Templates</h2>
-
+					
 					<p>Some ready-made posts:</p>
 				</div>
 				<div class="wrapper-full wrapper-columns">
 					<div class="post">
 						<textarea readonly id="post-1">Lowering the price of the standard TB test alone is not enough, @DanaherCorp & @CepheidNews! Nerdfighteria is still waiting for you to lower the price of #XDRNext! #PeopleOverProfits</textarea>
 						<p style="margin-left: 5px;">
-							<button id="copy-1" class="button button-subtle" onclick="copyPost1()">Copy text</button>
+							<button id="copy-1" class="button" onclick="copyPost1()">Copy text</button>
 							<a href="https://twitter.com/intent/tweet?text=Lowering%20the%20price%20of%20the%20standard%20TB%20test%20alone%20is%20not%20enough,%20%40DanaherCorp%20%26%20%40CepheidNews!%20Nerdfighteria%20is%20still%20waiting%20for%20you%20to%20lower%20the%20price%20of%20%23XDRNext!%20%23PeopleOverProfits" target="_blank" class="button button-subtle">Click to tweet</a>
 						</p>
 					</div>
 					<div class="post">
 						<textarea readonly id="post-2">Do the right thing, @DanaherCorp! It’s #TimeFor5 on ALL GeneXpert tests. Please put #PeopleOverProfits!</textarea>
 						<p style="margin-left: 5px;">
-							<button id="copy-2" class="button button-subtle" onclick="copyPost2()">Copy text</button>
+							<button id="copy-2" class="button" onclick="copyPost2()">Copy text</button>
 							<a href="https://twitter.com/intent/tweet?text=Do%20the%20right%20thing%2C%20%40DanaherCorp!%20It%E2%80%99s%20%23TimeFor5%20on%20ALL%20GeneXpert%20tests.%20Please%20put%20%23PeopleOverProfits!%0D%0Ahttps%3A%2F%2Fpic.twitter.com%2F1TShUViDtq" target="_blank" class="button button-subtle">Click to tweet</a>
 						</p>
 					</div>
 					<div class="post">
 						<textarea readonly id="post-3">.@CepheidNews & @DanaherCorp – The lower price for your standard TB tests will make a huge difference, thank you. But you can do more! Lower the price of XDR-TB tests! #PeopleOverProfits</textarea>
 						<p style="margin-left: 5px;">
-							<button id="copy-3" class="button button-subtle" onclick="copyPost3()">Copy text</button>
+							<button id="copy-3" class="button" onclick="copyPost3()">Copy text</button>
 							<a href="https://twitter.com/intent/tweet?text=.%40CepheidNews%20%26%20%40DanaherCorp%20%E2%80%93%20The%20lower%20price%20for%20your%20standard%20TB%20tests%20will%20make%20a%20huge%20difference,%20thank%20you.%20But%20you%20can%20do%20more!%20Lower%20the%20price%20of%20XDR-TB%20tests!%20%23PeopleOverProfits" target="_blank" class="button button-subtle">Click to tweet</a>
 						</p>
 					</div>
@@ -185,28 +185,28 @@
 						<script>
 							var slideIndex = 1;
 							showDivs(slideIndex);
-
+							
 							function plusDivs(n) {
 								showDivs(slideIndex += n);
 							}
-
+							
 							function showDivs(n) {
-							  var i;
-							  var x = document.getElementsByClassName("slideshow-img");
-							  if (n > x.length) {slideIndex = 1}
-							  if (n < 1) {slideIndex = x.length} ;
-							  for (i = 0; i < x.length; i++) {
-							    x[i].style.display = "none";
-							  }
-							  x[slideIndex-1].style.display = "block";
+								var i;
+								var x = document.getElementsByClassName("slideshow-img");
+								if (n > x.length) {slideIndex = 1}
+								if (n < 1) {slideIndex = x.length} ;
+								for (i = 0; i < x.length; i++) {
+									x[i].style.display = "none";
+								}
+								x[slideIndex-1].style.display = "block";
 							}
 							async function download() {
-								  const link = document.createElement('a')
-								  link.href = document.getElementsByClassName("slideshow-img")[slideIndex-1].src
-								  link.download = ""
+								const link = document.createElement('a')
+								link.href = document.getElementsByClassName("slideshow-img")[slideIndex-1].src
+								link.download = ""
 								document.body.appendChild(link)
 								link.click()
-								  document.body.removeChild(link)
+								document.body.removeChild(link)
 							}
 						</script>
 					</div>
@@ -225,19 +225,21 @@
 					</ul>
 					<h2 id="list">Join Our <span class="red">Mailing List</span></h2>
 					<p>
-                        Enter your email to be informed of new calls to action, campaign press releases, and other TBFighters campaign updates. Emails may be authored by TBFighters, John Green, and partner organizations, such as MSF Access and PIH.
+                        Be informed of new calls to action, campaign press releases, and other TBFighters campaign updates. Emails may be authored by TBFighters, John Green, and partner organizations, such as MSF Access and PIH.
 					</p>
                     <form method="post" action="https://gaggle.email/join/tbfighters@gaggle.email">
                         <div class="list-form wrapper-columns">
                             <div>
-                                <label for="name">Name: <input name="name" type="text" placeholder="Name"></label>
+								<label for="name"><span>Name: </span><input name="name" type="text" placeholder="Dave Green"></label>
+								
 							</div>
                             <div>
-								<label for="email">Email Address: <input name="email" type="email" placeholder="Email"></label>
+								<label for="email"><span>Email Address: </span><input name="email" type="email" placeholder="dave@tbfighters.org"></label>
 							</div>
-						</div>
-                        <div>
+							
+						<div>
 							<button class="button">Sign up</button>
+						</div>
 						</div>
 					</form>
 				</div>
@@ -248,7 +250,7 @@
 				&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
 			</p>
 			<p class="too-small">
-				Icons by fontawesome. <br />We lead by following and we act with compassion. Get in touch: <a href="mailto:contact@tbfighters.org">contact@tbfighters.org</a>.
+				Icons by fontawesome. <br />We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
 			</p>
 		</footer>
 	</body>
