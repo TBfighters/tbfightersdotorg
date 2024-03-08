@@ -7,8 +7,8 @@
 		<meta name="description" content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
 		<meta name="robots" content="index, follow" />
 		<!--Open Graph Tags-->
-		<meta property="og:title" content="TBFighters: Danaher, it's Time for $5" />
-		<meta property="og:site_name" content="TBFighters: Danaher, it's Time for $5" />
+		<meta property="og:title" content="TBFighters: Putting People Over Profits" />
+		<meta property="og:site_name" content="TBFighters" />
 		<meta property="og:url" content="https://tbfighters.org" />
 		<meta property="og:image" content="img/og-image.jpg" />
 		<meta property="og:type" content="website" />
@@ -21,65 +21,75 @@
 		href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 		rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="style.css?q=2" />
+		<link rel="stylesheet" href="style.css" />
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-		<title>TBFighters: Danaher, it's Time for $5</title>
+		<script src="jquery-3.7.1.min.js"></script>
+		<script src="menu.js"></script>
+		<title>TBFighters | Putting People Over Profits</title>
 	</head>
 	<body class="homepage">
-		<header class="sticky">
-			<div class="hashtag">#PeopleOverProfits</div>
-			<div class="hashtag">#XDRNext</div>
-			<div class="sticky-cta">
-				<a class="button" href="#join">Support TBFighters</a>
+		<!--BELOW THIS GETS COPIED TO ALL PAHES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->
+		<header id="site-head"><a href="#main" class="skip">Skip to main content</a>
+			<div class="wrapper-head">
+				<h1 class="page-title">
+					<a href="index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
+				</h1>
+				<a class="toggle-button" href="#" title="menu"></a>
+				<nav class="site-menu">
+					<ul class="active">
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="timeline.html">News &amp; Timeline</a></li>
+						<li><a href="resources.html">Resources</a></li>
+						<li><a href="action.html">Take Action</a></li>
+					</ul>
+				</nav>
 			</div>
 		</header>
-		<main>
-			<section id="top" class="container container-home">
+		<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
+		<main id="main">
+			<section id="top" class="container">
 				<div class="wrapper wrap-centered">
-					<p>
-						UPDATES:
-						<br />
-						<a href="september-19.html">Danaher Agrees to Provide Standard TB Tests to Global Fund at Cost</a>
-						<br />
-						<a href="october-3.html">J&J commits to patent non-enforcement in low- and middle-income countries</a>
-						<br />
-						But the fight isn't over!
-					</p>
-					<hr style="margin-top: 30px"/>
-				</div>
-				<div class="wrapper wrap-centered" style="margin-top: 80px">
-
 					<h1>
-						<span class="red">Danaher</span>, it's Time to&nbsp;put
-						<span class="red">People</span><wbr /> over <span class="red">Profits</span>
+						<span class="red">Danaher</span>, it's Time to&nbsp;put <span class="red">People</span><wbr /> over <span class="red">Profits</span>
 					</h1>
-					<p class="subtext"><img src="img/hourglass-tb.png" alt="hourglass illustration with red sand and 'TB' in bold red text in the top section" />
-						<span>Tuberculosis is curable, yet
-							<strong>1.6 million people die</strong> of tuberculosis every year while
-							<strong>Danaher grossly overcharges for diagnostic tests</strong>
-						for the people who can least afford it.</span>
+					<div class="wrapper-columns intro">
+						<p>
+							Tuberculosis is curable, yet <strong>1.3 million people die</strong> of tuberculosis every year while <strong>Danaher grossly overcharges for diagnostic tests</strong> for the people who can least afford it.
+						</p>
+						<img src="img/hourglass-tb.png" alt="hourglass illustration with red sand and the letters T B in the top section" />
+					</div>
+				</div>
+				<div class="wrapper wrapper-columns featured-columns">
+					<p>
+						<strong>FEATURED ACTION:</strong> Join our <a href="action.html#list">mailing list</a> to hear about new calls to action and other updates! Emails may come from TBFighters, John Green, or partner organizations like MSF Access.
+
 					</p>
+					<div class="buttons">
+						<a class="button" href="action.html">More actions</a>
+						<a class="button button-subtle" href="action.html#list">Newsletter signup</a>
+					</div>
+				</div>
+				<div class="wrapper wrap-centered">
 					<a href="#primer"><img src="img/arrow-down.svg" class="scroll-arrow" alt="down-arrow"></a>
 				</div>
 			</section>
-			<section id="primer" class="container container-home">
+			<section id="primer" class="container">
 				<div class="wrapper">
 					<h2>
-						Tuberculosis is the world's
-						<span class="red">deadliest</span> infectious disease.
+						Tuberculosis is the World's <span class="red">Deadliest</span> Infectious Disease.
 					</h2>
 					<p>
-						A total of 1.6 million people died from tuberculosis (TB) in 2021, making it the most deadly infectious disease worldwide—ahead of both HIV/AIDS and COVID-19...<wbr><strong>even though it's curable.</strong>
+						A total of 1.3 million people died from tuberculosis (TB) in 2022, making it the second deadliest infectious disease worldwide&mdash;once again becoming the most deadly infectious disease in 2023...<wbr><strong>even though it's curable.</strong>
 					</p>
 					<p>
-						While an estimated 74 million lives were saved through TB diagnosis and treatment between 2000 and 2021, these are prohibitively expensive to the point that <strong>many who need them can’t afford it.</strong>
+						While an estimated 44 million lives were saved through TB diagnosis and treatment between 2010 and 2022, these resources are prohibitively expensive to the point that <strong>many who need them can’t afford it.</strong>
 					</p>
 					<p>
-						Roughly 3 in 5 patients with multidrug-resistant TB do not have access to proper testing to find out if their TB is a multidrug-resistant strain. As a result, over half of them end up receiving long, expensive treatments that won't even help.
+						Roughly 2 in 5 patients with multidrug-resistant TB do not have access to proper testing to find out if their TB is a multidrug-resistant strain. As a result, over half of them end up receiving long, expensive treatments that won't even help.
 					</p>
 				</div>
 			</section>
-			<section id="danaher" class="container container-home">
+			<section id="danaher" class="container">
 				<div class="wrapper">
 					<h2>Enter <span class="red">Danaher</span>.</h2>
 					<p>
@@ -94,289 +104,92 @@
 					</p>
 				</div>
 			</section>
-			<section id="twist" class="container container-home">
+			<section id="twist" class="container">
 				<div class="wrapper">
-					<h2><span class="red">Not</span> quite...</h2>
+					<h2><span class="red">Not</span> Quite...</h2>
 					<p>
-						Danaher uses what many call a “printer-ink” business model when it comes to the GeneXpert system. While a printer is usually sold for a reasonable price, the ink is often extremely expensive with a high profit margin. Danaher prices GeneXpert tests in a similar way.
+						Danaher uses what many call a “printer-ink” business model when it comes to the GeneXpert testing system. While a printer is usually sold for a reasonable price, the ink is often extremely expensive with a high profit margin. Danaher prices GeneXpert tests in a similar way.
 					</p>
 					<p>
-						The reusable machines used to process these tests are moderately priced, but the single-use Xpert cartridges are extremely expensive. After years of public pressure from health organizations, Danaher has agreed to reduce the price of their standard TB cartridges from $10 to $8 for low- and middle-income countries. While this is a step in the right direction, it is just the first step.
+						The reusable machines used to process these tests are moderately priced, but the single-use Xpert test cartridges are extremely expensive. After years of public pressure from health organizations and activists, Danaher has agreed to reduce the price of their standard TB cartridges from $10 to $8 for low- and middle-income countries. While this is a step in the right direction, it is just the first step.
 					</p>
 				</div>
 			</section>
-			<section id="profits" class="container container-home">
+			<section id="profits" class="container">
 				<div class="wrapper wrapper-right">
-					<h2><span class="red">Profits</span> over People.</h2>
+					<h2><span class="red">Profits</span> Over People.</h2>
 					<p>
-						Xpert cartridges for extensively drug-resistant TB are still priced at $15, which is much higher than the production costs calculated as part of MSF-commissioned research. We do not have access to detailed production information from Danaher at this time, and we look forward to the transparency that will come with their pledged third party audit, but the bottom line is that we know it’s simply not affordable for the people who need them most.
+						Xpert cartridges for extensively drug-resistant TB are still priced at $15, which is much higher than the production costs calculated as part of MSF-commissioned research, and 1.5 times the median weekly wage in countries like Sierra Leone. We do not have access to detailed production information from Danaher at this time, and we look forward to the transparency that will come with their pledged third party audit, but the bottom line is that we know it’s simply not affordable for the people who need them most.
 					</p>
 					<p>
 						<strong>We call on Cepheid and Danaher to prioritize people’s lives over maximizing profits by extending their commitment and reducing the price for extensively drug-resistant cartridges in low- and middle-income countries.</strong>
 					</p>
 				</div>
 			</section>
-			<section id="join" class="container container-home">
+			<section id="join" class="container">
 				<div class="wrapper">
-					<h2>Support <span class="red">TB</span>Fighters:</h2>
-					<p class="smaller">
-						<em>Threats and intimidation are never okay. Be polite and respectful in all interactions, regardless of any challenges you encounter. Remember, we are all humans here!</em>
-					</p>
-					<aside class="wrapper-full">
-					<p><b>FEATURED ACTION:</b>
-						Every year, the Stop TB Partnership invites cities across the world to #LightUpforTB. Use the template letter below, or the link <a href="https://docs.google.com/document/d/e/2PACX-1vSDHBl8p3AN1jZOx4fmvwvtk3XNrbMh0TkHsgm0MxinwigHCGHp79_-sdrdW0v6AA/pub" target="_blank">here</a>, to urge your local authorities to light up landmark clocks or buildings in <b><span class="red">RED</span></b> on 24 March 2024 to show their commitment to ending TB.
-					</p>
-					<div id="name-popup-opts" class="popup" role="dialog">
-						<div class="popup-content">
-							<div class="popup-inner">
-								<h4>Print Info</h4>
-								<br>
-								<form id="name-form" autocomplete="off">
-									<label for="name">Name for signature (optional):</label>
-									<br>
-									<input type="text" id="name" name="name"
-										placeholder="Name (optional)">
-									<br>
-									<br>
-									<label for="rname">Recipient:</label>
-									<br>
-									<input type="text" id="rname" name="rname"
-										placeholder="Recipient">
-									<br>
-									<br>
-									<label for="date">Date:</label>
-									<input type="checkbox" id="date" name="date" checked>
-									<br>
-									<br>
-									<button id="submit">Submit</button>
-								</form>
-								<br>
+					<h2 class="action-head">Take <span class="red">Action</span>:</h2>
+					<div class="wrapper">
+						<div class="wrapper-columns">
+							<div class="join-left">
+								<ul>
+									<li >
+										<strong>Post</strong> on social media using <em>#PeopleOverProfits</em> and <em>#XDRNext</em>.
+									</li>
+									<li>
+										<strong>Contact</strong> Danaher at <a href="mailto:investor.relations@danaher.com">investor.relations<wbr>@danaher.com</a> or <a href="tel:+1-202-828-0850">+1-202-828-0850</a>.
+									</li>
+								</ul>
+							</div>
+							<div class="join-right">
+								<p class="featured">
+									<strong>FEATURED ACTION:</strong> Join our <a href="action.html#list">mailing list</a> to hear about new calls to action and other updates! Emails may come from TBFighters, John Green, or partner organizations like MSF Access.
+
+								</p>
+								<a class="button button-centered" href="action.html">More actions and templates</a>
 							</div>
 						</div>
-						<button id="close"></button>
+						<div class="wrapper wrapper-space">
+							<h3 id="list">Join Our <span class="red">Mailing List</span></h2>
+							<p>
+								Be informed of new calls to action, campaign press releases, and other TBFighters campaign updates. Emails may be authored by TBFighters, John Green, and partner organizations, such as MSF Access and PIH.
+							</p>
+							<form method="post" action="https://gaggle.email/join/tbfighters@gaggle.email">
+								<div class="list-form wrapper-columns">
+									<div>
+										<label for="name"><span>Name: </span><input name="name" type="text" placeholder="Dave Green"></label>
+
+									</div>
+									<div>
+										<label for="email"><span>Email Address: </span><input name="email" type="email" placeholder="dave@tbfighters.org"></label>
+									</div>
+
+									<div>
+										<button class="button">Sign up</button>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="wrapper">
+							<h3>More From <span class="red">TBFighters</span> and TB Advocacy</h3>
+							<ul>
+								<li><a href="about.html">About the TBFighters site and movement</a></li>
+								<li><a href="timeline.html">News and milestones in the fight against TB</a></li>
+								<li><a href="resources.html">More resources to learn about TB and global health efforts</a></li>
+							</ul>
+						</div>
 					</div>
-					<div class="buttons">
-						<button id="copy">Copy</button>
-						<button id="print">Print</button>
-					</div>
-					<noscript>
-						<br>
-						<p style="font-style: italic;">Please enable javascript to use the copy and print buttons.</p>
-					</noscript>
-					</aside>
-					<script>
-						document.getElementById("copy").onclick = function () {
-							navigator.clipboard.writeText(`Dear ________,
-
-The global fight against tuberculosis (TB) faces a critical year ahead. That is why I am pleased to invite you on behalf of the Stop TB Partnership, a United Nations-hosted entity based in Geneva, Switzerland, to mark World Tuberculosis (TB) Day on 24 March 2024.
-
-This year, the Stop TB Partnership raises awareness of the critical funding gap of USD 9 billion still needed to combat TB. TB remains the world’s second-largest infectious disease and kills more than 4,100 people every day, among them 650 children. That means that every minute, three people lose their lives from TB.
-
-Each year, on 24 March, we commemorate the day in 1882 when Dr. Robert Koch announced the discovery of the TB bacteria. World TB Day is an occasion to re-energize our battle and mobilize political and social commitment to further progress towards eliminating TB as a public health burden.
-
-Last year the world turned a new page in the fight against TB, following the September 2023 UN High-Level Meeting (HLM) on TB. We recognize and commend the impressive global response, with 7.5 million people (out of the estimated 10.3 million) newly diagnosed with TB - the highest number of people with TB ever diagnosed and treated in a year. We want 2024 to be even better and on World TB Day we would like everybody to take this message one step further by saying what each of us is doing to help End TB by 2030.
-
-It is an honor to invite ________ to join the global movement and light up a city landmark, building, or clock in RED on 24 March 2024, to bring attention to the devastating impact of TB.
-
-The Stop TB Partnership launched the “Light Up for TB” campaign for the first time in 2017, and we have attracted broad participation from over 60 cities in previous campaigns.
-
-Now more than ever, the world community must come together to end this terrible disease.
-
-We hope that _________ will show your support by joining the initiative for World TB Day 2024 and Light Up for TB. Time is running out – we must invest in ending TB and saving lives.
-
-Yours sincerely,
-[YOUR NAME]`)
-							alert("Copied!")
-						}
-
-					let popup = document.getElementById("name-popup-opts");
-					let form = document.getElementById("name-form");
-					let open = false
-					function printPopupFunc() {
-						document.getElementById("print").onclick = function () {
-							form.focus();
-							popup.classList.add("show")
-							open = true
-						}
-					}
-
-					function submitFunc(event) {
-						event.preventDefault();
-						// options
-						if (document.getElementById("date").checked) {
-							date = new Date().toISOString().slice(0, 10)
-						} else {
-							date = ""
-						}
-						var prtContent = `<p>${date}</p>
-							<p>Dear ${document.getElementById("rname").value},</p>
-							<br>
-							<p>The global fight against tuberculosis (TB) faces a critical year ahead. That is why I am pleased to invite you on behalf of the Stop TB Partnership, a United Nations-hosted entity based in Geneva, Switzerland, to mark World Tuberculosis (TB) Day on 24 March 2024.</p>
-							<br>
-							<p>This year, the Stop TB Partnership raises awareness of the critical funding gap of USD 9 billion still needed to combat TB. TB remains the world’s second-largest infectious disease and kills more than 4,100 people every day, among them 650 children. That means that every minute, three people lose their lives from TB.</p>
-							<br>
-							<p>Each year, on 24 March, we commemorate the day in 1882 when Dr. Robert Koch announced the discovery of the TB bacteria. World TB Day is an occasion to re-energize our battle and mobilize political and social commitment to further progress towards eliminating TB as a public health burden.</p>
-							<br>
-							<p>Last year the world turned a new page in the fight against TB, following the September 2023 UN High-Level Meeting (HLM) on TB. We recognize and commend the impressive global response, with 7.5 million people (out of the estimated 10.3 million) newly diagnosed with TB - the highest number of people with TB ever diagnosed and treated in a year. We want 2024 to be even better and on World TB Day we would like everybody to take this message one step further by saying what each of us is doing to help End TB by 2030.</p>
-							<br>
-							<p>It is an honor to invite ${document.getElementById("rname").value} to join the global movement and light up a city landmark, building, or clock in RED on 24 March 2024, to bring attention to the devastating impact of TB.</p>
-							<br>
-							<p>The Stop TB Partnership launched the “Light Up for TB” campaign for the first time in 2017, and we have attracted broad participation from over 60 cities in previous campaigns.</p>
-							<br>
-							<p>Now more than ever, the world community must come together to end this terrible disease.</p>
-							<br>
-							<p>We hope that ${document.getElementById("rname").value} will show your support by joining the initiative for World TB Day 2024 and Light Up for TB. Time is running out – we must invest in ending TB and saving lives.</p>
-							<br>
-							<p>Yours sincerely,</p>
-							<p>${document.getElementById("name").value}</p>`;
-						// print stuff
-						// fix an webkit bug
-						if (['iPad Simulator', 'iPhone Simulator', 'iPod Simulator', 'iPad', 'iPhone', 'iPod' ].includes(navigator.platform)
-							|| (navigator.userAgent.includes("Mac") && "ontouchend" in document)) {
-							let win = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
-							win.document.write(
-								"<style>* {font-size: 16px; margin: 0; line-height: 1.1em; font-weight: 400; font-family: 'Atkinson Hyperlegible';}</style>" + prtContent
-							);
-							win.focus();
-							win.print();
-							win.addEventListener("afterprint", (event) => {
-								win.close()
-							}, {once: true});
-						} else {
-							var iframe = document.createElement('iframe');
-							iframe.style.display = "none";
-							document.body.appendChild(iframe);
-							iframe.contentWindow.document.open();
-							iframe.contentWindow.document.write(
-								"<style>* {font-size: 16px; margin: 0; line-height: 1.1em; font-weight: 400; font-family: 'Atkinson Hyperlegible';}</style>" + prtContent
-							);
-							iframe.contentWindow.document.close();
-							iframe.onload = function() {
-								iframe.contentWindow.print()
-								iframe.contentWindow.addEventListener("afterprint", (event) => {
-									iframe.remove();
-								}, {once: true});
-							}
-						}
-
-						// reset
-						popup.classList.remove("show")
-						open = false;
-
-						return false;
-					}
-					form.addEventListener("submit", submitFunc)
-
-					popup.addEventListener("click", function (event) {
-						if (event.target == popup) {
-							popup.classList.remove("show")
-							open = false
-						}
-					})
-					document.getElementById("close").addEventListener("click", function (event) {
-						popup.classList.remove("show")
-						open = false
-					})
-
-
-					// focus trap. If this is not here, then the popup will not have sole focus and the user will tab around everywhere
-					// credit: https://hidde.blog/using-javascript-to-trap-focus-in-an-element/
-					var focusableEls = Array.from(popup.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])'));
-					var firstFocusableEl = focusableEls[0];
-					var lastFocusableEl = focusableEls[focusableEls.length - 1];
-					var KEYCODE_TAB = 9;
-
-					// body always has the focus
-					document.body.addEventListener('keydown', function (e) {
-						if (open == false) return;
-						if (e.key === 'Tab' || e.keyCode === KEYCODE_TAB) {
-							console.log("tes 2")
-							if (e.shiftKey) /* shift + tab */ {
-								if (document.activeElement === firstFocusableEl || !focusableEls.find(node => node == document.activeElement)) {
-									lastFocusableEl.focus();
-									e.preventDefault();
-								}
-							} else /* tab */ {
-								if (document.activeElement === lastFocusableEl || !focusableEls.find(node => node == document.activeElement)) {
-									firstFocusableEl.focus();
-									e.preventDefault();
-								}
-							}
-						}
-					});
-					printPopupFunc()
-					</script>
-					<p>
-						Contact Danaher and let them know it's time to put people over profits:
-					</p>
-					<ul>
-						<li>
-						<strong>Post</strong> on social media using <em>#PeopleOverProfits</em> and <em>#XDRNext</em>! Tag <em>@DanaherCorp</em> and <em>@CepheidNews</em> on Twitter and comment on Facebook and LinkedIn posts.</li>
-						<li>
-							<strong>Call</strong> Danaher's corporate office at <a href="tel:+1-202-828-0850 ">+1-202-828-0850</a>.
-						</li>
-						<li>
-							<strong>Email</strong> Danaher at <a href="mailto:investor.relations@danaher.com">investor.relations<wbr>@danaher.com</a>.
-						</li>
-						<li>
-							<strong>Write a Letter</strong> to the board of directors of Danaher, and mail it (or <a href="https://docs.google.com/forms/d/e/1FAIpQLSedrM33EcSH8FzX9fxpTHfIs7sCnu_dkA5re3OlNI5PPBv2yg/viewform">request another TBFighter mail it</a>) to:<br />
-							c/o Corporate Secretary<br />
-							Danaher Corporation<br />
-							2200 Pennsylvania Avenue, N.W.<br />
-							Suite 800W<br />
-							Washington, D.C. 20037-1701
-						</li>
-					</ul>
-					<p>
-						Want help with your message? View templates and guides for <a href="https://docs.google.com/document/d/e/2PACX-1vTzljlOinrJ-tOfe4qKO919n7W5gregrwF5UAX_zmsv2GWqyZ4fMX6beY8Oh-FvylIkaNNxRfXicXnj/pub" target="_blank">letters</a>, <a href="https://docs.google.com/document/d/e/2PACX-1vTh05tEoyCsh8oEWScWM9n41B1pcUeVNGFcUDqdlcILHvVUB2_LsK4voMTdKPdEQwmjMHRBaoalG259/pub" target="_blank">emails, posts, and calls</a>, and <a href="https://www.notion.so/TimeFor5-Graphics-Library-95194d0915394d3d981220bd783a5888" target="_blank">social media graphics</a>.
-					</p>
-					<p>More actions:</p>
-					<ul>
-						<li>
-							U.S. residents: <a href="https://act.pih.org/end-tb-now-act-2023" target="_blank">Ask your representative to support The End Tuberculosis Now Act 2023</a>.
-						</li>
-						<li>
-							U.K. residents: Send a letter to your MP to ask they ensure the UK-India Free Trade Agreement still allows for the manufacture of generic drugs in India, including TB drugs. <a href="https://msfaccess.org/civil-society-calls-uk-prime-minister-ensure-uk-india-free-trade-agreement-does-not-threaten-access" target="_blank">Learn more</a> about the FTA and <a href="https://docs.google.com/document/d/18U7N7z0VJqifN_5_KkE3DtA45a9nEIK9FhlgWAafILQ/edit" target="_blank">view a letter template</a>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section id="more" class="container container-home">
-				<div class="wrapper">
-					<h2>More on <span class="red">TB Advocacy</span></h2>
-					<ul>
-						<li>
-							Learn about Médecins Sans Frontières’ (Doctors Without Borders) <a href="https://msfaccess.org/time-for-5" target="_blank">ongoing fight for $5 cartridges</a>
-						</li>
-						<li>
-							Watch <a href="https://www.youtube.com/watch?v=tSC06P9A5W4" target="_blank">John Green’s initial video</a> and <a href="https://www.youtube.com/watch?v=yiflu3nL7Zw" target="_blank">update video</a> about this project
-						</li>
-						<li>
-							Learn about the <a href="https://www.stoptb.org/" target="_blank">StopTB Partnership</a>
-						</li>
-						<li>
-							Learn about <a href="https://www.pih.org/programs/tuberculosis" target="_blank">Partners in Health’s work on tuberculosis</a>
-						</li>
-						<li>
-							Watch a <a href="https://www.youtube.com/watch?v=x4WtABGDlTE" target="_blank">panel discussion with John Green and TB doctors, survivors, and activists</a>.
-						</li>
-						<li>
-							Some more <a href="https://www.who.int/publications/m/item/global-tuberculosis-report-2022-factsheet" target="_blank">quick facts about tuberculosis</a>, and a comprehensive <a href="https://www.cbc.ca/news/health/tb-tests-danaher-price-drop-1.6964582" target="_blank">news article covering the work so far</a>
-						</li>
-					</ul>
-
 				</div>
 			</section>
 		</main>
 		<footer class="site-foot">
 			<p>
-				&copy; 2023 The TBFighters Project -
-				<a href="privacy.html" class="footer-link" target="_blank">Privacy Policy</a>
+				&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
 			</p>
 			<p class="too-small">
 				Images courtesy: laboratorio diagnostica ancona IZSUM via Wikimedia Commons; Adobe stock; Leiem via Wikimedia Commons; Icons by fontawesome.
-				<br />
-				We lead by following and we act with compassion. Get in touch via <a href="mailto:contact@tbfighters.org">contact@tbfighters.org</a>.
+				<br>
+				We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
 			</p>
 		</footer>
 	</body>
