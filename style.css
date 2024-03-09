@@ -120,20 +120,17 @@ p.centered {
 .container ul {
 	padding-left: 1.5em;
 }
-.post p {
+.post .post-inner {
 	margin: 0 5px .6em;
 	padding: 10px;
-	background-color: #DDDDDD;
-	border-width: 0;
+	border: 2px solid #DDDDDD;
 	font-size: 20px;
 	line-height: 1.1;
 	color: #121212;
 	font-family: 'Atkinson Hyperlegible';
-	width: 90%;
 	overflow: hidden;
 	resize: none;
-	height: 6.5em;
-	box-shadow: var(--aside-shadow);
+	height: 10.5em;
 }
 .featured-columns p:first-child, #primer p, #danaher p, #twist p, #profits p, #join li {
 	font-size: 1.2em;
