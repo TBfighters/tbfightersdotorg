@@ -27,6 +27,7 @@
 		<script src="jquery-3.7.1.min.js"></script>
 		<script src="menu.js"></script>
 		<script src="actions.js"></script>
+		<script src="action-page.js" defer></script>
 		<title>Take Action | TBFighters</title>
 	</head>
 
@@ -145,48 +146,6 @@
 					<button class="button button-subtle" onclick="toggleExpand()"><img src="img/chevron.svg" class="expand-actions-arrow" alt="expand-arrow"> <span id="expand-button-txt">More actions</span></button>
 				</div>
 				<noscript><p class="smaller"><em>Please enable Javascript to see more actions!</em></p></noscript>
-				<script>
-					let expanded = false;
-					let grid = document.getElementById("expand-action-grid");
-					function toggleExpand() {
-						if (expanded) {
-							grid.classList.remove("show-actions")
-							grid.classList.add("hide-actions")
-							grid.addEventListener('animationend', () => {grid.style.display = "none"}, {once:true});
-							document.getElementsByClassName("expand-actions-arrow")[0].classList.remove("expand-actions-arrow-up")
-							document.getElementById("expand-button-txt").textContent = "More actions";
-							expanded = false
-						} else {
-							grid.classList.remove("hide-actions")
-							grid.style.display = "";
-							grid.classList.add("show-actions")
-							document.getElementsByClassName("expand-actions-arrow")[0].classList.add("expand-actions-arrow-up")
-							document.getElementById("expand-button-txt").textContent = "Less actions";
-							expanded = true
-						}
-					}
-
-					addCopyButton(document.getElementById("copy-light"), `Dear ________,
-
-The global fight against tuberculosis (TB) faces a critical year ahead. That is why I am pleased to invite you on behalf of the Stop TB Partnership, a United Nations-hosted entity based in Geneva, Switzerland, to mark World Tuberculosis (TB) Day on 24 March 2024.
-
-This year, the Stop TB Partnership raises awareness of the critical funding gap of USD 9 billion still needed to combat TB. TB remains the world’s second-largest infectious disease and kills more than 4,100 people every day, among them 650 children. That means that every minute, three people lose their lives from TB.
-
-Each year, on 24 March, we commemorate the day in 1882 when Dr. Robert Koch announced the discovery of the TB bacteria. World TB Day is an occasion to re-energize our battle and mobilize political and social commitment to further progress towards eliminating TB as a public health burden.
-
-Last year the world turned a new page in the fight against TB, following the September 2023 UN High-Level Meeting (HLM) on TB. We recognize and commend the impressive global response, with 7.5 million people (out of the estimated 10.3 million) newly diagnosed with TB - the highest number of people with TB ever diagnosed and treated in a year. We want 2024 to be even better and on World TB Day we would like everybody to take this message one step further by saying what each of us is doing to help End TB by 2030.
-
-It is an honor to invite ________ to join the global movement and light up a city landmark, building, or clock in RED on 24 March 2024, to bring attention to the devastating impact of TB.
-
-The Stop TB Partnership launched the “Light Up for TB” campaign for the first time in 2017, and we have attracted broad participation from over 60 cities in previous campaigns.
-
-Now more than ever, the world community must come together to end this terrible disease.
-
-We hope that _________ will show your support by joining the initiative for World TB Day 2024 and Light Up for TB. Time is running out – we must invest in ending TB and saving lives.
-
-Yours sincerely,
-[YOUR NAME] `)
-				</script>
 				<div class="wrapper-full" style="transition: ease 0.5s all;">
 					<h2 id="posts">Graphics and Templates</h2>
 
@@ -227,11 +186,6 @@ Yours sincerely,
 							<a href="https://twitter.com/intent/tweet?text=.%40CepheidNews%20%26%20%40DanaherCorp%20%E2%80%93%20The%20lower%20price%20for%20your%20standard%20TB%20tests%20will%20make%20a%20huge%20difference,%20thank%20you.%20But%20you%20can%20do%20more!%20Lower%20the%20price%20of%20XDR-TB%20tests!%20%23PeopleOverProfits" target="_blank" class="button button-subtle">Click to tweet</a>
 						</div>
 					</div>
-					<script>
-						addCopyButton(document.getElementById("copy-1"), document.getElementById("post-1").textContent)
-						addCopyButton(document.getElementById("copy-2"), document.getElementById("post-2").textContent)
-						addCopyButton(document.getElementById("copy-3"), document.getElementById("post-3").textContent)
-					</script>
 				</div>
 				<br>
 				<div class="wrapper-full">
@@ -246,6 +200,12 @@ Yours sincerely,
 						<img class="slideshow-img" src="img/actions-graphics/social-intro.png" alt="two gloved hands holding a test cartridge and $5 written on it. Text: Intro to time for $5. The body text reads: What is GeneXpert? The GeneXpert test can detect TB in an hour and requires minimal training to run. The Xpert MTB/RIF cartridge is crucial for identifying multi-drug resistant TB quickly. The GeneXpert system can also be used for other diseases, such as Covid-19 and HIV" />
 						<img class="slideshow-img" src="img/actions-graphics/social-timefor5.png" alt="text: TUBERCULOSIS IS CURABLE yet 1.3 million people die of TB every year while Danaher grossly overcharges diagnostic tests for the patients who can least afford it. Danaher, It’s time for $5. TBFighters dot org" />
 						<img class="slideshow-img" src="img/actions-graphics/social-bold.png" alt="black and white text with red number: Danaher, it’s time for 5. Tbfighters dotorg" />
+						<img class="slideshow-img" src="img/actions-graphics/timefor5_hsf_insta_square.png" alt="text reading danaher its time for over a set of hands, one holding a GeneXpert Test and the other reading $5. Text reading TBFighters.org is below the hands" />
+						<img class="slideshow-img" src="img/actions-graphics/header_red_white.png" alt="black and red text saying: Danaher, IT'S TIME FOR #PEOPLE OVER PROFITS" />
+						<img class="slideshow-img" src="img/actions-graphics/Why5.png" alt="two gloved hands holding a test cartridge and $5 written on it. Text: Intro to time for $5. The body text reads: Xpert cartridges are estimated to cost as little as $3 to produce. Danaher prices the least expensive tests at nearly $10 - a markup of at least 100%, and sometimes up to 300%. A price of %% would allow lifesaving testing to scale up while still leaving a healthy profit margin for Danaher." />
+						<img class="slideshow-img" src="img/actions-graphics/UndiagnosedGraphicWhite.png" alt="main body reads: there are 10 million cases of tuberculosis every single year. 3 million of them are never diagnosted. Below says Danaher, its time for $5. In smaller text it reads Learn more at tbfighters.org" />
+						<img class="slideshow-img" src="img/actions-graphics/COTY_Greedy_Greedy_Green.png" alt="Background is filled with money, a box in the middle states: color of the year 2024 / Danaher. Below the box reads Greedy Greedy Green / TBFighters.org" />
+						<img class="slideshow-img" src="img/actions-graphics/COTY_Price_Gouging_Purple.png" alt="Background is a picture of purple flowers. The main text reads Color of the Year 2024 / Danaher. Below reads Price-Gouging Purple / TBFighters.org" />
 						<noscript>
 							<br>
 						</noscript>
@@ -258,39 +218,6 @@ Yours sincerely,
 							<br>
 							<p style="font-style: italic;">Please enable javascript to use the slideshow and download buttons.</p>
 						</noscript>
-						<script>
-							var slideIndex = 0;
-							var x = document.getElementsByClassName("slideshow-img");
-							for (i = 0; i < x.length; i++) {
-								if (i == slideIndex) {
-									x[slideIndex].style.display = "block";
-								} else {
-									x[i].style.display = "none";
-								}
-							}
-
-							function plusDivs() {
-								x[slideIndex].style.display = "none";
-								slideIndex += 1;
-								if (slideIndex > x.length - 1) {slideIndex = 0}
-								x[slideIndex].style.display = "block";
-							}
-							function minusDiv() {
-								x[slideIndex].style.display = "none";
-								slideIndex -= 1;
-								if (slideIndex < 0) {slideIndex = x.length - 1};
-								x[slideIndex].style.display = "block";
-							}
-
-							async function download() {
-								const link = document.createElement('a')
-								link.href = document.getElementsByClassName("slideshow-img")[slideIndex].src
-								link.download = ""
-								document.body.appendChild(link)
-								link.click()
-								document.body.removeChild(link)
-							}
-						</script>
 					</div>
 					<h2 id="awareness">Spread the Word About <span class="red">TB</span></h2>
 					<p>

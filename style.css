@@ -465,6 +465,7 @@ input[type=checkbox]:focus {
 
 .post-gallery img {
 	max-height: 525px;
+	max-width: 100%;
 	vertical-align: top;
 	box-shadow: var(--aside-shadow);
 }
@@ -630,6 +631,8 @@ aside.wrapper-full {
 
 .hide-actions {
 	animation: slide-out 0.3s linear 0s;
+	opacity: 0;
+	margin-top: -10px;
 }
 
 #top .fa-arrow-down:before {
