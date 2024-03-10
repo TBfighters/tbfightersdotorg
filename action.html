@@ -22,6 +22,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 		rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="actions.css" />
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 		<script src="jquery-3.7.1.min.js"></script>
 		<script src="menu.js"></script>
@@ -126,7 +127,68 @@
 						</p>
 					</div>
 				</div>
-				<div class="wrapper-full">
+				<div class="wrapper-full wrapper-action-grid" id="expand-action-grid" style="display: none;">
+					<div class="action">
+						<p class="larger">
+							<img src="img/light.svg" alt="light icon" class="action-icon" /><strong><span class="red">Write</span></strong> to your local authorities to urge them to <span class="red">#LightUpForTB</span>
+						</p>
+						<p class="smaller">
+							Every year, the Stop TB Partnership invites cities across the world to #LightUpforTB. Use the template letter below, or the link <a href="https://docs.google.com/document/d/e/2PACX-1vSDHBl8p3AN1jZOx4fmvwvtk3XNrbMh0TkHsgm0MxinwigHCGHp79_-sdrdW0v6AA/pub" target="_blank">here</a>, to urge your local authorities to light up landmark clocks or buildings in <b><span class="red">RED</span></b> on 24 March 2024 to show their commitment to ending TB.
+						</p>
+						<p class="smaller">
+							<button class="button" id="copy-light">Copy</button>
+							<a href="https://docs.google.com/document/d/e/2PACX-1vSDHBl8p3AN1jZOx4fmvwvtk3XNrbMh0TkHsgm0MxinwigHCGHp79_-sdrdW0v6AA/pub" target="_blank" class="button button-subtle">Template document</a>
+						</p>
+					</div>
+				</div>
+				<div class="wrapper wrap-centered">
+					<button class="button button-subtle" onclick="toggleExpand()"><img src="img/chevron.svg" class="expand-actions-arrow" alt="expand-arrow"> <span id="expand-button-txt">More actions</span></button>
+				</div>
+				<script>
+					let expanded = false;
+					let grid = document.getElementById("expand-action-grid");
+					function toggleExpand() {
+						if (expanded) {
+							grid.classList.remove("show-actions")
+							grid.classList.add("hide-actions")
+							setTimeout(() => {
+								grid.style.display = "none";
+							}, 300)
+							document.getElementsByClassName("expand-actions-arrow")[0].classList.remove("expand-actions-arrow-up")
+							document.getElementById("expand-button-txt").textContent = "More actions";
+							expanded = false
+						} else {
+							grid.classList.remove("hide-actions")
+							grid.style.display = "";
+							grid.classList.add("show-actions")
+							document.getElementsByClassName("expand-actions-arrow")[0].classList.add("expand-actions-arrow-up")
+							document.getElementById("expand-button-txt").textContent = "Less actions";
+							expanded = true
+						}
+					}
+
+					addCopyButton(document.getElementById("copy-light"), `Dear ________,
+
+The global fight against tuberculosis (TB) faces a critical year ahead. That is why I am pleased to invite you on behalf of the Stop TB Partnership, a United Nations-hosted entity based in Geneva, Switzerland, to mark World Tuberculosis (TB) Day on 24 March 2024.
+
+This year, the Stop TB Partnership raises awareness of the critical funding gap of USD 9 billion still needed to combat TB. TB remains the world’s second-largest infectious disease and kills more than 4,100 people every day, among them 650 children. That means that every minute, three people lose their lives from TB.
+
+Each year, on 24 March, we commemorate the day in 1882 when Dr. Robert Koch announced the discovery of the TB bacteria. World TB Day is an occasion to re-energize our battle and mobilize political and social commitment to further progress towards eliminating TB as a public health burden.
+
+Last year the world turned a new page in the fight against TB, following the September 2023 UN High-Level Meeting (HLM) on TB. We recognize and commend the impressive global response, with 7.5 million people (out of the estimated 10.3 million) newly diagnosed with TB - the highest number of people with TB ever diagnosed and treated in a year. We want 2024 to be even better and on World TB Day we would like everybody to take this message one step further by saying what each of us is doing to help End TB by 2030.
+
+It is an honor to invite ________ to join the global movement and light up a city landmark, building, or clock in RED on 24 March 2024, to bring attention to the devastating impact of TB.
+
+The Stop TB Partnership launched the “Light Up for TB” campaign for the first time in 2017, and we have attracted broad participation from over 60 cities in previous campaigns.
+
+Now more than ever, the world community must come together to end this terrible disease.
+
+We hope that _________ will show your support by joining the initiative for World TB Day 2024 and Light Up for TB. Time is running out – we must invest in ending TB and saving lives.
+
+Yours sincerely,
+[YOUR NAME] `)
+				</script>
+				<div class="wrapper-full" style="transition: ease 0.5s all;">
 					<h2 id="posts">Graphics and Templates</h2>
 
 					<h4>Some ready-made posts:</h4>

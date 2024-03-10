@@ -210,6 +210,10 @@ h1, h2, h3, h4 {
 button {
 	font-family: 'Atkinson Hyperlegible';
 }
+
+button:hover {
+	cursor: pointer;
+}
 .return-button {
 	margin: 2em 0;
 }
@@ -578,6 +582,54 @@ aside.wrapper-full {
 	filter: contrast(0.85);
 	animation: bob 3s ease-in-out infinite;
 	margin-top: 10vh;
+}
+
+.expand-actions-arrow {
+	height: 0.8em;
+	filter: contrast(0.85);
+	rotate: 180deg;
+	transition: ease-in-out 0.2s all;
+}
+
+.expand-actions-arrow-up {
+	rotate: 0deg;
+}
+
+.expand-actions-arrow:hover {
+	cursor:pointer;
+}
+
+@keyframes slide-in {
+	0% {
+		margin-top: -10px;
+		opacity: 0;
+	}
+
+	100% {
+		margin-top: 0px;
+		opacity: 1;
+	}
+}
+
+@keyframes slide-out {
+	0% {
+		margin-top: 0px;
+		opacity: 1;
+	}
+
+	100% {
+		margin-top: -10px;
+		opacity: 0;
+	}
+}
+
+.show-actions {
+	display: block;
+	animation: slide-in 0.3s linear 0s;
+}
+
+.hide-actions {
+	animation: slide-out 0.3s linear 0s;
 }
 
 #top .fa-arrow-down:before {
