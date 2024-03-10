@@ -114,27 +114,33 @@ p.larger, li.larger, a.larger {
 p.smaller, li.smaller {
 	font-size: .8em;
 }
-p.centered {
+p.centered, div.centered {
 	align-items: center;
 }
 .container ul {
 	padding-left: 1.5em;
 }
-.post p {
+.post .post-inner {
 	margin: 0 5px .6em;
-	padding: 10px;
-	background-color: #DDDDDD;
-	border-width: 0;
+	padding: 20px;
+	border: 2px solid #DDDDDD;
 	font-size: 20px;
 	line-height: 1.1;
 	color: #121212;
 	font-family: 'Atkinson Hyperlegible';
-	width: 90%;
 	overflow: hidden;
 	resize: none;
-	height: 6.5em;
-	box-shadow: var(--aside-shadow);
+	height: 10.5em;
 }
+
+.post-inner p:first-child {
+	margin-bottom: 0;
+}
+
+.post-inner p:nth-child(2) {
+	font-size: 0.7em;
+}
+
 .featured-columns p:first-child, #primer p, #danaher p, #twist p, #profits p, #join li {
 	font-size: 1.2em;
 }
@@ -179,7 +185,10 @@ h2 {
 h3 {
 	font-size: 1.8em;
 }
-h1, h2, h3 {
+h4 {
+	font-size: 1.4em;
+}
+h1, h2, h3, h4 {
 	line-height: 1;
 	margin-top: 0;
 	margin-bottom: 0.6em;
@@ -439,11 +448,23 @@ input[type=checkbox]:focus {
 .post-gallery {
 	vertical-align: top;
 	margin: .5em auto 1em;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	flex-wrap: wrap;
+
+	background-color: #DDDDDD;
+	padding: 10px 15px;
+	margin-bottom: 0.4em;
+	box-shadow: var(--aside-shadow);
 }
+
 .post-gallery img {
 	max-height: 525px;
 	vertical-align: top;
+	box-shadow: var(--aside-shadow);
 }
+
 aside.wrapper-full {
 	margin: 30px auto;
 	padding: 20px;
@@ -643,12 +664,6 @@ h2.action-head {
 @media only screen and (max-width: 1320px) {
 	.post p {
 		font-size: 18px;
-		height: 7.5em;
-	}
-}
-@media only screen and (max-width: 1150px) {
-	.post p {
-		font-size: 16px;
 	}
 }
 @media only screen and (min-width: 993px) {
@@ -717,10 +732,6 @@ h2.action-head {
 	}
 	a.toggle-button span {
 		font-size: 0;
-	}
-    .post p {
-        font-size: 14px;
-		height: 8.5em;
 	}
 
 	.buttons {
@@ -806,9 +817,6 @@ h2.action-head {
 	.wrapper-columns .post {
 		width: 100%;
 	}
-	.post p {
-		height: 3.5em;
-	}
 	.join-left, .join-right {
 		width: 100%;
 	}
@@ -833,18 +841,13 @@ h2.action-head {
 	body {
 		font-size: 12px;
 	}
-	.post p {
-		height: 4.5em;
-	}
-    .post p#post-2 {
-		height: 3.5em;
-	}
 	h1 {
 		font-size: 2.5em;
 	}
 	#top h1 {
 		font-size: 3.0em;
 		margin-bottom: 0.6em;
+	}
 	h2 {
 		font-size: 2em;
 	}
@@ -862,14 +865,5 @@ h2.action-head {
 @media only screen and (max-width: 560px) {
 	.list-form.wrapper-columns {
 		flex-direction: column;
-	}
-}
-
-@media only screen and (max-width: 440px) {
-	.post p {
-		height: 6.5em;
-	}
-    .post p#post-2 {
-		height: 4.5em;
 	}
 }
