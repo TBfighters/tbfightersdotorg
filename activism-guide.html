@@ -24,6 +24,8 @@
 	<link rel="stylesheet" href="style.css?q=2" />
 	<link rel="stylesheet" href="docs.css?q=2" />
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+	<link rel="stylesheet" href="actions.css">
+	<script src="actions.js"></script>
 	<title>Activism Guide | TBFighters</title>
 	<style>
 		#center {
@@ -70,8 +72,10 @@
 			</div>
 			<br>
 			<br>
-			<h3 id="standards-for-community-conduct"><a href="#standards-for-community-conduct">Standards
-					for Community Conduct:</a></h3>
+			<h3 id="standards-for-community-conduct">
+				<div class="header-copy"></div>Standards
+				for Community Conduct:
+			</h3>
 			<p>
 				Threats, intimidation, degradation, and humiliation are never acceptable within
 				Nerdfighteria. We firmly reject harassment, bigotry, ableism, racism, name-calling, hate
@@ -80,9 +84,10 @@
 				welcoming environment for everyone.
 			</p>
 			<br>
-			<h3 id="respectful-outreach-and-engagement"><a
-					href="#respectful-outreach-and-engagement">Respectful Outreach and
-					Engagement:</a></h3>
+			<h3 id="respectful-outreach-and-engagement">
+				<div class="header-copy"></div>Respectful Outreach and
+				Engagement:
+			</h3>
 			<p>
 				When engaging with the public or contacting organizations, keep in mind that the
 				individuals
@@ -91,8 +96,10 @@
 				encounter. Remember, we are all complex humans here.
 			</p>
 			<br>
-			<h3 id="using-privilege-responsibly"><a href="#using-privilege-responsibly">Using Privilege
-					Responsibly:</a></h3>
+			<h3 id="using-privilege-responsibly">
+				<div class="header-copy"></div>Using Privilege
+				Responsibly:
+			</h3>
 			<p>
 				Utilize your power and privilege for positive impact, contributing to the reduction of
 				global suffering. Always keep in mind that our aim is to prioritize and uplift the most
@@ -100,8 +107,10 @@
 				they often require support and visibility rather than a savior.
 			</p>
 			<br>
-			<h3 id="collective-action-and-unity"><a href="#collective-action-and-unity">Collective Action
-					and Unity:</a></h3>
+			<h3 id="collective-action-and-unity">
+				<div class="header-copy"></div>Collective Action
+				and Unity:
+			</h3>
 			<p>
 				To achieve our goals effectively, remember that collective action relies on unity—avoid
 				acting independently. If you're uncertain about the appropriateness of your actions or
@@ -109,32 +118,40 @@
 				and clarity.
 			</p>
 			<br>
-			<h3 id="collabrative-partnerships"><a href="#collabrative-partnerships">Collaborative
-					Partnerships:</a></h3>
+			<h3 id="collabrative-partnerships">
+				<div class="header-copy"></div>Collaborative
+				Partnerships:
+			</h3>
 			<p>
 				Proactively cultivate robust collaborative partnerships. Recognize and appreciate our
 				allies, whether they have long been dedicated to the cause or are newcomers eager to
 				contribute their energy to our shared success.
 			</p>
 			<br>
-			<h3 id="knowledge-empowers-action"><a href="#knowledge-empowers-action">Knowledge Empowers
-					Action:</a></h3>
+			<h3 id="knowledge-empowers-action">
+				<div class="header-copy"></div>Knowledge Empowers
+				Action:
+			</h3>
 			<p>
 				Invest time in gaining a deep understanding of the causes we champion, and actively seek
 				out existing research documents and resources compiled by others. Knowledge empowers
 				effective action.
 			</p>
 			<br>
-			<h3 id="unified-direction-and-leadership"><a href="#unified-direction-and-leadership">Unified
-					Direction and Leadership:</a></h3>
+			<h3 id="unified-direction-and-leadership">
+				<div class="header-copy"></div>Unified
+				Direction and Leadership:
+			</h3>
 			<p>
 				Stay focused and follow the guidance of those already engaged in the work, as well as
 				any direction provided by John and/or Hank as they signal our collective focus and
 				intent.
 			</p>
 			<br>
-			<h3 id="inclusive-and-self-care"><a href="#inclusive-and-self-care">Inclusivity and
-					Self-Care:</a></h3>
+			<h3 id="inclusive-and-self-care">
+				<div class="header-copy"></div>Inclusivity and
+				Self-Care:
+			</h3>
 			<p>
 				Nerdfighteria is an unequivocally inclusive community that wholeheartedly embraces
 				diversity, ensuring every individual is treated with respect and kindness. Please
@@ -159,6 +176,14 @@
 			<br>
 			<br>
 		</div>
+		<script>
+			let elements = document.getElementsByClassName("header-copy");
+			for (let i = 0; i < elements.length; i++) {
+				let element = elements[i];
+				let parentId = element.parentElement.id;
+				addCopyButton(element, window.location.href + "#" + parentId)
+			}
+		</script>
 	</main>
 	<footer class="site-foot">
 		<p>
