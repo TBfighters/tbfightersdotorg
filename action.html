@@ -143,7 +143,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="wrapper-full wrapper-action-grid" id="expand-action-grid" style="display: none;">
+				<div class="wrapper-full wrapper-action-grid" id="expand-action-grid">
 					<div class="action">
 						<p class="larger">
 							<img src="img/light.svg" alt="light icon" class="action-icon" /><strong><span class="red">Write</span></strong> to your local authorities to urge them to <span class="red">#LightUpForTB</span>
@@ -152,6 +152,9 @@
 							Every year, the Stop TB Partnership invites cities across the world to #LightUpforTB. Copy or view the template letter below to urge your local authorities to light up landmark clocks or buildings in <b><span class="red">RED</span></b> on 24 March 2024 to show their commitment to ending TB.
 						</p>
 						<p class="smaller">
+							<noscript>
+								<p class="smaller" style="margin-bottom: 0;"><em>Please enable javascript to use the copy buttons.</em></p>
+							</noscript>
 							<button class="button" id="copy-light">Copy template</button>
 							<a href="https://docs.google.com/document/d/e/2PACX-1vSDHBl8p3AN1jZOx4fmvwvtk3XNrbMh0TkHsgm0MxinwigHCGHp79_-sdrdW0v6AA/pub" target="_blank" class="button button-subtle">View template</a>
 						</p>
@@ -180,14 +183,16 @@
 
 					</div>
 				</div>
-				<div class="wrapper wrap-centered">
+				<div class="wrapper wrap-centered" style="display: none;" id="expand-button-container">
 					<button class="button button-subtle" onclick="toggleExpand()"><img src="img/chevron.svg" class="expand-actions-arrow" alt="expand-arrow"> <span id="expand-button-txt">More actions</span></button>
 				</div>
-				<noscript><p class="smaller"><em>Please enable Javascript to see more actions!</em></p></noscript>
 				<div class="wrapper-full" style="transition: ease 0.5s all;">
 					<h2 id="posts">Graphics and Templates</h2>
 
 					<h4>Some ready-made posts:</h4>
+					<noscript>
+						<p style="font-style: italic;">Please enable javascript to use the copy buttons.</p>
+					</noscript>
 				</div>
 				<div class="wrapper-full wrapper-columns">
 					<div class="post">
@@ -227,11 +232,6 @@
 				</div>
 				<br>
 				<div class="wrapper-full">
-					<noscript>
-						<br>
-						<p style="font-style: italic;">Please enable javascript to use the copy buttons.</p>
-						<br>
-					</noscript>
 					<h4 id="graphics">And some of our most popular <a href="https://peaceful-place-e13.notion.site/TBfighters-Graphics-Library-95194d0915394d3d981220bd783a5888" target="_blank">social media graphics</a>:</h4>
 					<div class="post-gallery">
 						<img class="slideshow-img" src="img/actions-graphics/social-hourglass.png" alt="Black hourglass with a red 5 sitting in the top. Text: Danaher, it’s time for $5. Tuberculosis is curable, yet 1.3 million people die of TB every year while Danaher grossly overcharges for diagnostic tests for the people who can least afford it. Tbfighters dot org" />

@@ -2,6 +2,8 @@
 
 let expanded = false;
 let grid = document.getElementById("expand-action-grid");
+grid.style.display = "none";
+document.getElementById("expand-button-container").style.display = "block";
 function toggleExpand() {
     if (expanded) {
         grid.classList.remove("show-actions")
