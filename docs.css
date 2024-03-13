@@ -92,4 +92,12 @@ h3:hover>.header-copy {
 .header-copy:hover::after {
 	content: url("./img/link-hover.svg");
 	opacity: 1;
+	cursor: pointer;
+}
+
+.header-copy noscript a {
+	width: 100%;
+	height: 100%;
+	display:block;
+	position: absolute;
 }
