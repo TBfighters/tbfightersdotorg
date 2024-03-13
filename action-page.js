@@ -22,7 +22,7 @@ function toggleExpand() {
     }
 }
 
-addCopyButton(document.getElementById("copy-light"), `Dear ________,
+const lightEmail = `Dear ________,
 
 The global fight against tuberculosis (TB) faces a critical year ahead. That is why I am pleased to invite you on behalf of the Stop TB Partnership, a United Nations-hosted entity based in Geneva, Switzerland, to mark World Tuberculosis (TB) Day on 24 March 2024.
 
@@ -41,7 +41,9 @@ Now more than ever, the world community must come together to end this terrible 
 We hope that _________ will show your support by joining the initiative for World TB Day 2024 and Light Up for TB. Time is running out – we must invest in ending TB and saving lives.
 
 Yours sincerely,
-[YOUR NAME] `)
+[YOUR NAME]`
+
+addCopyButton(document.getElementById("copy-light"), lightEmail)
 
 
 // copy buttons
