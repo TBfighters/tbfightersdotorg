@@ -71,3 +71,33 @@ img.letter {
 		margin: 0.125em 0.125em;
 	}
 }
+
+/* header links */
+.header-copy {
+	height: 0.8em;
+	width: 1em;
+	position: absolute;
+	transform: translate(-1.5em, 0);
+	opacity: 0;
+}
+
+.header-copy::after {
+	content: url("./img/link.svg");
+}
+
+h3:hover>.header-copy {
+	opacity: 1;
+}
+
+.header-copy:hover::after {
+	content: url("./img/link-hover.svg");
+	opacity: 1;
+	cursor: pointer;
+}
+
+.header-copy noscript a {
+	width: 100%;
+	height: 100%;
+	display:block;
+	position: absolute;
+}

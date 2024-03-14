@@ -26,6 +26,7 @@
 		<script src="jquery-3.7.1.min.js"></script>
 		<script src="menu.js"></script>
 		<script src="actions.js"></script>
+		<script src="action-page.js" defer></script>
 		<title>Take Action | TBFighters</title>
 	</head>
 
@@ -56,8 +57,23 @@
 						Join the fight for accessible and affordable TB testing! We'll keep this page updated with current actions, theme days and other campaigns, contact information, templates, graphics, and more!
 					</p>
 					<p>
-						You can also stay up-to-date by <a href="#list">signing up for our mailing list</a>.
+						You can also stay up-to-date by signing up for our <span class="red"><strong>mailing list</strong></span> below. Emails may be authored by TBFighters, John Green, and partner organizations, such as MSF Access and PIH.
 					</p>
+					<form method="post" action="https://gaggle.email/join/tbfighters@gaggle.email">
+						<div class="list-form wrapper-columns">
+							<div>
+								<label for="name"><span>Name: </span><input name="name" type="text" placeholder="Dave Green"></label>
+
+							</div>
+							<div>
+								<label for="email"><span>Email Address: </span><input name="email" type="email" placeholder="dave@tbfighters.org"></label>
+							</div>
+
+							<div>
+								<button class="button">Sign up</button>
+							</div>
+						</div>
+					</form>
 					<p class="smaller">
 						<em>Threats and intimidation are <strong>never okay</strong>. Be polite and respectful in all interactions&mdash;we're all human here! Please read the <a href="activism-guide.html">activism guide</a> as well!</em>
 					</p>
@@ -126,10 +142,56 @@
 						</p>
 					</div>
 				</div>
-				<div class="wrapper-full">
+				<div class="wrapper-full wrapper-action-grid" id="expand-action-grid">
+					<div class="action">
+						<p class="larger">
+							<img src="img/light.svg" alt="light icon" class="action-icon" /><strong><span class="red">Write</span></strong> to your local authorities to urge them to <span class="red">#LightUpForTB</span>
+						</p>
+						<p class="smaller">
+							Every year, the Stop TB Partnership invites cities across the world to #LightUpforTB. Copy or view the template letter below to urge your local authorities to light up landmark clocks or buildings in <b><span class="red">RED</span></b> on 24 March 2024 to show their commitment to ending TB.
+						</p>
+						<p class="smaller">
+							<noscript>
+								<p class="smaller" style="margin-bottom: 0;"><em>Please enable javascript to use the copy buttons.</em></p>
+							</noscript>
+							<button class="button" id="copy-light">Copy template</button>
+							<a href="https://docs.google.com/document/d/e/2PACX-1vSDHBl8p3AN1jZOx4fmvwvtk3XNrbMh0TkHsgm0MxinwigHCGHp79_-sdrdW0v6AA/pub" target="_blank" class="button button-subtle">View template</a>
+						</p>
+					</div>
+					<div class="action">
+						<p class="larger">
+							<img src="img/megaphone.svg" alt="megaphone icon" class="action-icon" /><strong><span class="red">Spread</span></strong> the Word About <span class="red">TB</span>
+						</p>
+						<p class="smaller">
+							Educate and inform others on the worldwide impact of tuberculosis - the world's deadliest infectious disease, but one many people assume is a thing of the past. Learn more on our resource page below.
+						</p>
+						<p class="smaller">
+						<a href="resources.html" class="button" target="_blank">Resource page</a>
+						</p>
+					</div>
+					<div class="action">
+						<p class="larger">
+							<img src="img/gavel.svg" alt="gavel icon" class="action-icon" /><strong><span class="red">Support</span></strong> Legislative and Government Action
+						</p>
+						<p class="smaller">
+								<strong><span class="red">U.S. residents</span></strong>: <a href="https://act.pih.org/end-tb-now-act-2023" target="_blank">Ask your representative to support The End Tuberculosis Now Act 2023</a>.
+								<br>
+								<br>
+								<strong><span class="red">U.K. residents</span></strong>: Send a letter to your MP to ask they ensure the UK-India Free Trade Agreement still allows for the manufacture of generic drugs in India, including TB drugs. <a href="https://msfaccess.org/civil-society-calls-uk-prime-minister-ensure-uk-india-free-trade-agreement-does-not-threaten-access" target="_blank">Learn more</a> about the FTA and <a href="https://docs.google.com/document/d/18U7N7z0VJqifN_5_KkE3DtA45a9nEIK9FhlgWAafILQ/edit" target="_blank">view a letter template</a>
+						</p>
+
+					</div>
+				</div>
+				<div class="wrapper wrap-centered" style="display: none;" id="expand-button-container">
+					<button class="button button-subtle" onclick="toggleExpand()"><img src="img/chevron.svg" class="expand-actions-arrow" alt="expand-arrow"> <span id="expand-button-txt">More actions</span></button>
+				</div>
+				<div class="wrapper-full" style="transition: ease 0.5s all;">
 					<h2 id="posts">Graphics and Templates</h2>
 
 					<h4>Some ready-made posts:</h4>
+					<noscript>
+						<p style="font-style: italic;">Please enable javascript to use the copy buttons.</p>
+					</noscript>
 				</div>
 				<div class="wrapper-full wrapper-columns">
 					<div class="post">
@@ -166,25 +228,21 @@
 							<a href="https://twitter.com/intent/tweet?text=.%40CepheidNews%20%26%20%40DanaherCorp%20%E2%80%93%20The%20lower%20price%20for%20your%20standard%20TB%20tests%20will%20make%20a%20huge%20difference,%20thank%20you.%20But%20you%20can%20do%20more!%20Lower%20the%20price%20of%20XDR-TB%20tests!%20%23PeopleOverProfits" target="_blank" class="button button-subtle">Click to tweet</a>
 						</div>
 					</div>
-					<script>
-						addCopyButton(document.getElementById("copy-1"), document.getElementById("post-1").textContent)
-						addCopyButton(document.getElementById("copy-2"), document.getElementById("post-2").textContent)
-						addCopyButton(document.getElementById("copy-3"), document.getElementById("post-3").textContent)
-					</script>
 				</div>
 				<br>
 				<div class="wrapper-full">
-					<noscript>
-						<br>
-						<p style="font-style: italic;">Please enable javascript to use the copy buttons.</p>
-						<br>
-					</noscript>
 					<h4 id="graphics">And some of our most popular <a href="https://peaceful-place-e13.notion.site/TBfighters-Graphics-Library-95194d0915394d3d981220bd783a5888" target="_blank">social media graphics</a>:</h4>
 					<div class="post-gallery">
-						<img class="slideshow-img" src="img/social-hourglass.png" alt="Black hourglass with a red 5 sitting in the top. Text: Danaher, it’s time for $5. Tuberculosis is curable, yet 1.3 million people die of TB every year while Danaher grossly overcharges for diagnostic tests for the people who can least afford it. Tbfighters dot org" />
-						<img class="slideshow-img" src="img/social-intro.png" alt="two gloved hands holding a test cartridge and $5 written on it. Text: Intro to time for $5. The body text reads: What is GeneXpert? The GeneXpert test can detect TB in an hour and requires minimal training to run. The Xpert MTB/RIF cartridge is crucial for identifying multi-drug resistant TB quickly. The GeneXpert system can also be used for other diseases, such as Covid-19 and HIV" />
-						<img class="slideshow-img" src="img/social-timefor5.png" alt="text: TUBERCULOSIS IS CURABLE yet 1.3 million people die of TB every year while Danaher grossly overcharges diagnostic tests for the patients who can least afford it. Danaher, It’s time for $5. TBFighters dot org" />
-						<img class="slideshow-img" src="img/social-bold.png" alt="black and white text with red number: Danaher, it’s time for 5. Tbfighters dotorg" />
+						<img class="slideshow-img" src="img/actions-graphics/social-hourglass.png" alt="Black hourglass with a red 5 sitting in the top. Text: Danaher, it’s time for $5. Tuberculosis is curable, yet 1.3 million people die of TB every year while Danaher grossly overcharges for diagnostic tests for the people who can least afford it. Tbfighters dot org" />
+						<img class="slideshow-img" src="img/actions-graphics/social-intro.png" alt="two gloved hands holding a test cartridge and $5 written on it. Text: Intro to time for $5. The body text reads: What is GeneXpert? The GeneXpert test can detect TB in an hour and requires minimal training to run. The Xpert MTB/RIF cartridge is crucial for identifying multi-drug resistant TB quickly. The GeneXpert system can also be used for other diseases, such as Covid-19 and HIV" />
+						<img class="slideshow-img" src="img/actions-graphics/social-timefor5.png" alt="text: TUBERCULOSIS IS CURABLE yet 1.3 million people die of TB every year while Danaher grossly overcharges diagnostic tests for the patients who can least afford it. Danaher, It’s time for $5. TBFighters dot org" />
+						<img class="slideshow-img" src="img/actions-graphics/social-bold.png" alt="black and white text with red number: Danaher, it’s time for 5. Tbfighters dotorg" />
+						<img class="slideshow-img" src="img/actions-graphics/timefor5_hsf_insta_square.png" alt='A graphic with a yellow background depicting two gloved hands. The left hand holds up a test cartridge and the right hand has $5 written in red text. The graphic reads: danaher, it’s time for $5. Tbfighters.org' />
+						<img class="slideshow-img" src="img/actions-graphics/header_red_white.png" alt="A graphic with red and black text on a white background that reads: Danaher, it’s time for PeopleOverProfits" />
+						<img class="slideshow-img" src="img/actions-graphics/Why5.png" alt='A graphic with a dark blue background depicting two gloved hands. The left hand holds up a test cartridge and the right hand has the symbol $5 written in red text. The graphic’s title reads: Intro to time for $5. The body text reads: Why $5? Xpert cartridges are estimated to cost as little as $3 to produce. Danaher prices the least expensive tests at nearly $10, a markup of at least 100 percent, and sometimes up to 300 percent. A price of $5 would allow lifesaving testing to scale up while still leaving a healthy profit margin for Danaher.' />
+						<img class="slideshow-img" src="img/actions-graphics/UndiagnosedGraphicWhite.png" alt="A graphic with a white background showing ten human silhouettes on their side. The top 7 of the silhouettes are black while the last 3 are red. In black and red text, the graphic reads: There are 10 million cases of Tuberculosis every single year. 3 million of them are never diagnosed. Danaher, it’s time for $5. Learn more at Tbfighters.org" />
+						<img class="slideshow-img" src="img/actions-graphics/COTY_Greedy_Greedy_Green.png" alt="A parody of Pantone’s “Color of the Year” graphic with a background of American hundred dollar bills. The graphic reads: Color of the Year 2024, Danaher, Greedy Greedy Green, TBFighters.org" />
+						<img class="slideshow-img" src="img/actions-graphics/COTY_Price_Gouging_Purple.png" alt="A parody of Pantone’s “Color of the Year” graphic with a background of a purple field of flowers. The graphic reads: Color of the Year 2024, Danaher, Profiteering Purple, TBFighters.org" />
 						<noscript>
 							<br>
 						</noscript>
@@ -197,53 +255,8 @@
 							<br>
 							<p style="font-style: italic;">Please enable javascript to use the slideshow and download buttons.</p>
 						</noscript>
-						<script>
-							var slideIndex = 0;
-							var x = document.getElementsByClassName("slideshow-img");
-							for (i = 0; i < x.length; i++) {
-								if (i == slideIndex) {
-									x[slideIndex].style.display = "block";
-								} else {
-									x[i].style.display = "none";
-								}
-							}
-
-							function plusDivs() {
-								x[slideIndex].style.display = "none";
-								slideIndex += 1;
-								if (slideIndex > x.length - 1) {slideIndex = 0}
-								x[slideIndex].style.display = "block";
-							}
-							function minusDiv() {
-								x[slideIndex].style.display = "none";
-								slideIndex -= 1;
-								if (slideIndex < 0) {slideIndex = x.length - 1};
-								x[slideIndex].style.display = "block";
-							}
-
-							async function download() {
-								const link = document.createElement('a')
-								link.href = document.getElementsByClassName("slideshow-img")[slideIndex].src
-								link.download = ""
-								document.body.appendChild(link)
-								link.click()
-								document.body.removeChild(link)
-							}
-						</script>
 					</div>
-					<h2 id="awareness">Spread the Word About <span class="red">TB</span></h2>
-					<p>
-						Educate and inform others on the worldwide impact of tuberculosis - the world's deadliest infectious disease, but one many people assume is a thing of the past. Learn more on our <a href="resources.html"> resources page.</a>
 					</p>
-					<h2 id="legistation">Support <span class="red">Legislative and Government</span> Action</h2>
-					<ul>
-						<li>
-							U.S. residents: <a href="https://act.pih.org/end-tb-now-act-2023" target="_blank">Ask your representative to support The End Tuberculosis Now Act 2023</a>.
-						</li>
-						<li>
-							U.K. residents: Send a letter to your MP to ask they ensure the UK-India Free Trade Agreement still allows for the manufacture of generic drugs in India, including TB drugs. <a href="https://msfaccess.org/civil-society-calls-uk-prime-minister-ensure-uk-india-free-trade-agreement-does-not-threaten-access" target="_blank">Learn more</a> about the FTA and <a href="https://docs.google.com/document/d/18U7N7z0VJqifN_5_KkE3DtA45a9nEIK9FhlgWAafILQ/edit" target="_blank">view a letter template</a>
-						</li>
-					</ul>
 					<h2 id="list">Join Our <span class="red">Mailing List</span></h2>
 					<p>
                         Be informed of new calls to action, campaign press releases, and other TBFighters campaign updates. Emails may be authored by TBFighters, John Green, and partner organizations, such as MSF Access and PIH.
