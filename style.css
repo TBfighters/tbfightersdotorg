@@ -157,6 +157,11 @@ a:hover, a:active, a:focus {
 	text-shadow: none;
 }
 
+a.red:hover, a.red:active, a.red:focus {
+	color: #121212;
+	text-shadow: none;
+}
+
 a[target="_blank"]:not(:has(img))::after {
 	position: relative;
 	display: inline-block;
@@ -546,6 +551,25 @@ aside.wrapper-full {
 	flex-wrap: wrap;
 }
 
+/* Glossary */
+.glossary-list {
+	border: none;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.glossary-list tr td {
+	padding-bottom: 1em;
+	padding: 0.5em 0.5em;
+}
+
+.glossary-list tr {
+	vertical-align: top;
+}
+
+.glossary-list tr:nth-child(odd) {
+	background: #DDDDDD;
+}
+
 /* ===============
    HOMEPAGE SECTION WRAPPERS
    =============== */
@@ -843,6 +867,10 @@ h2.action-head {
 
 	.list-form div, .list-form input, .list-form label {
 		width: 100%;
+	}
+
+	.glossary-list tr td {
+		display: block;
 	}
 }
 
