@@ -12,8 +12,7 @@ function replaceContent(files, leadingPath, prefixLength) {
     files.forEach((file, index) => {
         if (file.isDirectory() && !skipDirectories.includes(file.name)) {
             let files = fs.readdirSync(leadingPath + file.name, { withFileTypes: true });
-            prefixLength ++;
-            replaceContent(files, leadingPath + file.name + "/", prefixLength);
+            replaceContent(files, leadingPath + file.name + "/", prefixLength + 1);
         }
 
         if (file.name.endsWith(".html")) {
@@ -27,6 +26,8 @@ function replaceContent(files, leadingPath, prefixLength) {
             let end = content.indexOf('<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->') + "<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->".length;
 
             let prefix = "../".repeat(prefixLength);
+            console.log(file)
+            console.log(prefixLength)
             let replaceContentHeaderPrefixed = replaceContentHeader.replaceAll("{prefix}", prefix);
 
             if (start != -1 && end != -1) {
