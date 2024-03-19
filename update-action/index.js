@@ -6,8 +6,13 @@ let skipDirectories = ["update-action", "img", ".github", ".git"]
 let featuredAction = fs.readFileSync('./featured-action.html', 'utf8').trim();
 let headerContent = fs.readFileSync("./header.html", 'utf8').trim();
 
-let contantFooter = fs.readFileSync("./footer.html", 'utf8').trim();
-let indexFooter = " Images courtesy: laboratorio diagnostica ancona IZSUM via Wikimedia Commons; Adobe stock; Leiem via Wikimedia Commons; Icons by fontawesome. <br>"
+let contentFooter = fs.readFileSync("./footer.html", 'utf8').trim();
+let indexFooter = "Images courtesy: laboratorio diagnostica ancona IZSUM via Wikimedia Commons; Adobe stock; Leiem via Wikimedia Commons; Icons by fontawesome. <br>"
+let credit = {
+    "index.html": "Images courtesy: laboratorio diagnostica ancona IZSUM via Wikimedia Commons; Adobe stock; Leiem via Wikimedia Commons; Icons by fontawesome. <br>",
+    "action.html": "Icons by fontawesome.<br>",
+    "newsletter.html": "Icons by fontawesome. <br>",
+}
 
 function replaceContent(files, leadingPath, prefixLength) {
     files.forEach((file, index) => {
@@ -40,14 +45,9 @@ function replaceContent(files, leadingPath, prefixLength) {
             let startFooter = content.indexOf('<footer class="site-foot">');
             let endFooter = content.indexOf('</footer>') + "</footer>".length;
 
-            let footerContentReplaced = content.replaceAll("{prefix}", prefix);
-            if (file.name == "index.html") {
-                footerContentReplaced = footerContentReplaced.replaceAll("{index}", indexFooter);
-            } else {
-                footerContentReplaced = footerContentReplaced.replaceAll("{index}", "");
-            }
+            let footerContentReplaced = contentFooter.replaceAll("{prefix}", prefix);
+            footerContentReplaced = footerContentReplaced.replaceAll("{credits}", (credit[file.name] == undefined) ? "" : credit[file.name]);
 
-            console.log(startFooter + "" + startHeader)
             if (startFooter != -1 && endFooter != -1) {
                 content = content.substring(0, startFooter) + footerContentReplaced + content.substring(endFooter);
             }
