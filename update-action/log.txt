@@ -1,3 +1,11 @@
+Dirent { name: 'index.html', [Symbol(type)]: 1 }
+../index.html
+-1
+2247
+Dirent { name: 'letter-guide.html', [Symbol(type)]: 1 }
+../templates/letter-guide.html
+1566
+2336
 <!DOCTYPE html>
 <html lang="en">
 
@@ -35,20 +43,21 @@
 	<header id="site-head"><a href="#main" class="skip">Skip to main content</a>
 		<div class="wrapper-head">
 			<h1 class="page-title">
-				<a href="../index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
+				<a href="index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
 			</h1>
 			<a class="toggle-button" href="#" title="menu"></a>
 			<nav class="site-menu">
 				<ul class="active">
-					<li><a href="../about.html">About Us</a></li>
-					<li><a href="../timeline.html">News &amp; Timeline</a></li>
-					<li><a href="../resources.html">Resources</a></li>
-					<li><a href="../action.html">Take Action</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="timeline.html">News &amp; Timeline</a></li>
+					<li><a href="resources.html">Resources</a></li>
+					<li><a href="action.html">Take Action</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->	<main id="main">
+	<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
+	<main id="main">
 		<div class="main">
 			<br>
 			<div class="toc">
@@ -399,3 +408,4 @@
 </body>
 
 </html>
+
