@@ -60,7 +60,7 @@ function replaceContent(files, leadingPath, prefixLength) {
             }
 
             // metadata
-            if (file.name == "index.html") {
+            if (["index.html", "letter-guide.html", "newsletter.html"].includes(file.name)) {
                 let metadataContentReplaced = metadataContent.replaceAll("{prefix}", prefix);
                 content = content.substring(0, content.indexOf("<!--Meta tags-->")) + metadataContentReplaced + content.substring(content.indexOf("<!-- Variable Tags -->") + "<!-- Variable Tags -->".length)
             }
