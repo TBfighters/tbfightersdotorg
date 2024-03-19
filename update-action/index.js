@@ -16,7 +16,7 @@ function replaceContent(files, leadingPath, prefixLength) {
             replaceContent(files, leadingPath + file.name + "/", prefixLength);
         }
 
-        if (file.name.endsWith(".html") && file.name == "index.html" || file.name == "letter-guide.html") {
+        if (file.name.endsWith(".html")) {
             let content = fs.readFileSync(leadingPath + file.name, { encoding: 'utf8' });
 
             // stupid regex
@@ -27,14 +27,10 @@ function replaceContent(files, leadingPath, prefixLength) {
             let end = content.indexOf('<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->') + "<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->".length;
 
             let prefix = "../".repeat(prefixLength);
-            console.log(prefix)
-            console.log(prefixLength)
-            console.log(file)
             let replaceContentHeaderPrefixed = replaceContentHeader.replaceAll("{prefix}", prefix);
-            console.log(replaceContentHeaderPrefixed)
 
             if (start != -1 && end != -1) {
-                content = content.substring(0, start) + replaceContentHeaderPrefixed + content.substring(end+1);
+                content = content.substring(0, start) + replaceContentHeaderPrefixed + content.substring(end);
             }
 
             if (featuredActionFiles.includes(file.name)) {
