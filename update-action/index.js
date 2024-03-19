@@ -60,10 +60,8 @@ function replaceContent(files, leadingPath, prefixLength) {
             }
 
             // metadata
-            if (["index.html", "letter-guide.html", "newsletter.html"].includes(file.name)) {
-                let metadataContentReplaced = metadataContent.replaceAll("{prefix}", prefix);
-                content = content.substring(0, content.indexOf("<!--Meta tags-->")) + metadataContentReplaced + content.substring(content.indexOf("<!-- Variable Tags -->") + "<!-- Variable Tags -->".length)
-            }
+            let metadataContentReplaced = metadataContent.replaceAll("{prefix}", prefix);
+            content = content.substring(0, content.indexOf("<!--Meta tags-->")) + metadataContentReplaced + content.substring(content.indexOf("<!-- Variable Tags -->") + "<!-- Variable Tags -->".length)
 
             if (featuredActionFiles.includes(file.name)) {
                 content = content.replaceAll(/<strong>FEATURED ACTION:<\/strong>.*$/gm, "<strong>FEATURED ACTION:</strong> " + featuredAction)
