@@ -7,12 +7,18 @@ let featuredAction = fs.readFileSync('./featured-action.html', 'utf8').trim();
 let headerContent = fs.readFileSync("./header.html", 'utf8').trim();
 
 let contentFooter = fs.readFileSync("./footer.html", 'utf8').trim();
-let indexFooter = "Images courtesy: laboratorio diagnostica ancona IZSUM via Wikimedia Commons; Adobe stock; Leiem via Wikimedia Commons; Icons by fontawesome. <br>"
 let credit = {
     "index.html": "Images courtesy: laboratorio diagnostica ancona IZSUM via Wikimedia Commons; Adobe stock; Leiem via Wikimedia Commons; Icons by fontawesome. <br>",
     "action.html": "Icons by fontawesome.<br>",
     "newsletter.html": "Icons by fontawesome. <br>",
 }
+
+let metadataContent = fs.readFileSync("./metadata.html", 'utf8').trim();
+
+featuredAction = featuredAction.replaceAll("\r", "");
+headerContent = headerContent.replaceAll("\r", "");
+contentFooter = contentFooter.replaceAll("\r", "");
+metadataContent = metadataContent.replaceAll("\r", "");
 
 function replaceContent(files, leadingPath, prefixLength) {
     files.forEach((file, index) => {
@@ -23,6 +29,8 @@ function replaceContent(files, leadingPath, prefixLength) {
 
         if (file.name.endsWith(".html")) {
             let content = fs.readFileSync(leadingPath + file.name, { encoding: 'utf8' });
+
+            // header
 
             // stupid regex
             let startHeader = content.indexOf('<!--BELOW THIS GETS COPIED TO ALL PAHES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->');
@@ -39,7 +47,6 @@ function replaceContent(files, leadingPath, prefixLength) {
             }
 
             // footer
-            console.log(file)
 
             // stupid regex
             let startFooter = content.indexOf('<footer class="site-foot">');
@@ -50,6 +57,12 @@ function replaceContent(files, leadingPath, prefixLength) {
 
             if (startFooter != -1 && endFooter != -1) {
                 content = content.substring(0, startFooter) + footerContentReplaced + content.substring(endFooter);
+            }
+
+            // metadata
+            if (file.name == "index.html") {
+                let metadataContentReplaced = metadataContent.replaceAll("{prefix}", prefix);
+                content = content.substring(0, content.indexOf("<!--Meta tags-->")) + metadataContentReplaced + content.substring(content.indexOf("<!-- Variable Tags -->") + "<!-- Variable Tags -->".length)
             }
 
             if (featuredActionFiles.includes(file.name)) {
