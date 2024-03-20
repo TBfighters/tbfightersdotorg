@@ -457,15 +457,18 @@ input[type=checkbox]:focus {
 .post-gallery {
 	vertical-align: top;
 	margin: .5em auto 1em;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	flex-wrap: wrap;
 
 	background-color: #DDDDDD;
 	padding: 10px 15px;
 	margin-bottom: 0.4em;
 	box-shadow: var(--aside-shadow);
+}
+
+.post-gallery div:first-child {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	flex-wrap: wrap;
 }
 
 .post-gallery img {
