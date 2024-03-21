@@ -552,12 +552,19 @@ aside.wrapper-full {
 }
 
 /* Glossary */
+table caption {
+	text-align: inherit;
+}
+table th {
+	color: #F5F5F5;
+	background-color: #121212;
+}
 .glossary-list {
 	border: none;
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.glossary-list tr td {
+.glossary-list tr td, .glossary-list tr th {
 	padding-bottom: 1em;
 	padding: 0.5em 0.5em;
 }
@@ -868,9 +875,11 @@ h2.action-head {
 	.list-form div, .list-form input, .list-form label {
 		width: 100%;
 	}
-
 	.glossary-list tr td {
 		display: block;
+	}
+	.glossary-list thead {
+		display: none;
 	}
 }
 
@@ -906,6 +915,9 @@ h2.action-head {
 	}
 	.join-left, .join-right {
 		width: 100%;
+	}
+	.wrapper-full {
+		width: 90%;
 	}
 	#top img {
 		align-self: center;
@@ -946,6 +958,10 @@ h2.action-head {
 	}
 	ul {
 		padding-left: 2em;
+	}
+	.wrapper-full {
+		margin: 0 1em;
+		width: auto;
 	}
 }
 
