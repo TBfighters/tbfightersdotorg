@@ -120,25 +120,32 @@ p.centered, div.centered {
 .container ul {
 	padding-left: 1.5em;
 }
-.post .post-inner {
+
+.post {
+	display: flex;
+	flex-direction: column;
+
 	margin: 0 5px .6em;
 	padding: 20px;
+	padding-bottom: 5px;
 	border: 2px solid #DDDDDD;
 	font-size: 20px;
 	line-height: 1.1;
 	color: #121212;
 	font-family: 'Atkinson Hyperlegible';
-	overflow: hidden;
 	resize: none;
-	height: 10.5em;
 }
 
-.post-inner p:first-child {
+.post p:first-child {
 	margin-bottom: 0;
 }
 
-.post-inner p:nth-child(2) {
+.post p:nth-child(2) {
 	font-size: 0.7em;
+}
+
+.post div {
+	margin-top: auto;
 }
 
 .featured-columns p:first-child, #primer p, #danaher p, #twist p, #profits p, #join li {
@@ -452,7 +459,7 @@ input[type=checkbox]:focus {
 }
 .wrapper-columns .post {
 	width: 33.33%;
-	padding-bottom: 1em;
+	/* padding-bottom: 1em; */
 }
 .post-gallery {
 	vertical-align: top;
@@ -911,7 +918,7 @@ h2.action-head {
 	}
 
 	.wrapper-columns .post {
-		width: 100%;
+		width: inherit;
 	}
 	.join-left, .join-right {
 		width: 100%;
