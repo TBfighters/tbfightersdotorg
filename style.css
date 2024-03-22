@@ -445,6 +445,10 @@ input[type=checkbox]:focus {
 	width: 80%;
 	max-width: 1260px;
 }
+.wrapper-page {
+	display: block;
+	width: 100%;
+}
 .wrapper-columns { /* auto-width column children*/
 	display: flex;
 	flex-direction: row;
@@ -457,10 +461,6 @@ input[type=checkbox]:focus {
 .post-gallery {
 	vertical-align: top;
 	margin: .5em auto 1em;
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	flex-wrap: wrap;
 
 	background-color: #DDDDDD;
 	padding: 10px 15px;
@@ -468,8 +468,22 @@ input[type=checkbox]:focus {
 	box-shadow: var(--aside-shadow);
 }
 
+.post-gallery div:first-child {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	flex-wrap: wrap;
+	height: 21em;
+	justify-content: center;
+}
+
+.post-gallery div:nth-child(2) {
+	width: 80%;
+	max-width: 600px;
+}
+
 .post-gallery img {
-	max-height: 525px;
+	max-height: 20em;
 	max-width: 100%;
 	vertical-align: top;
 	box-shadow: var(--aside-shadow);
@@ -856,6 +870,9 @@ h2.action-head {
 	.post-gallery img {
 		max-width: 100%;
 		padding: 0.33em;
+	}
+	.post-gallery div:nth-child(2) {
+		width: 100%;
 	}
 	.list-form.wrapper-columns {
 		flex-direction: row;
