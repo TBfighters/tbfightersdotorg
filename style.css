@@ -479,7 +479,7 @@ input[type=checkbox]:focus {
 
 .post-gallery div:nth-child(2) {
 	width: 80%;
-	max-width: 1260px;
+	max-width: 600px;
 }
 
 .post-gallery img {
