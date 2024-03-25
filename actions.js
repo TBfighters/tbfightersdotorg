@@ -6,6 +6,13 @@ function addCopyButton(button, text) {
     }
 }
 
+function addCopyButtonCallback(button, text) {
+    button.onclick = function() {
+        navigator.clipboard.writeText(text().trim())
+        alert("Copied!")
+    }
+}
+
 function formatElement(element) {
     let text = "";
     let children = element.children;
