@@ -30,6 +30,7 @@ addCopyButton(document.getElementById("copy-3"), document.getElementById("post-3
 
 
 // slide show
+document.getElementById("slideshow-buttons").style.display = "block"
 var slideIndex = 0;
 var x = document.getElementsByClassName("slideshow-img");
 for (i = 0; i < x.length; i++) {
@@ -62,3 +63,7 @@ async function download() {
     document.body.removeChild(link)
 }
 
+
+addCopyButtonCallback(document.getElementById("copy-alt-text"), () => {
+    return x[slideIndex].alt
+})
