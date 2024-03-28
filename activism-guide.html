@@ -195,7 +195,7 @@
 			for (let i = 0; i < elements.length; i++) {
 				let element = elements[i];
 				let parentId = element.parentElement.id;
-				addCopyButton(element, window.location.href + "#" + parentId)
+				addCopyButton(element, location.protocol + '//' + location.host + location.pathname + "#" + parentId)
 			}
 		</script>
 	</main>

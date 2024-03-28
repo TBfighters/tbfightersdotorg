@@ -64,7 +64,9 @@
 					<p class="smaller">
 						<em>Threats and intimidation are <strong>never okay</strong>. Be polite and respectful in all interactions&mdash;we're all human here! Please read the <a href="activism-guide.html">activism guide</a> as well!</em>
 					</p>
-					<h2 id="contact">Contact <span class="red">Danaher and Cepheid</span></h2>
+					<h2 id="contact">Contact <span class="red">Danaher and Cepheid</span>
+						<div class="header-copy"><noscript><a href="#contact"></a></noscript></div>
+					</h2>
 					<p>
 						Come up with your own messages, or use our templates, guides, and graphics to tell Danaher and Cepheid it's #TimeFor5!
 					</p>
@@ -158,7 +160,9 @@
 					<button class="button button-subtle" onclick="toggleExpand()"><img src="img/chevron.svg" class="expand-actions-arrow" alt="expand-arrow"> <span id="expand-button-txt">More actions</span></button>
 				</div>
 				<div class="wrapper-full" style="transition: ease 0.5s all;">
-					<h2 id="posts">Graphics and Templates</h2>
+					<h2 id="posts">Graphics and Templates
+						<div class="header-copy"><noscript><a href="#posts"></a></noscript></div>
+					</h2>
 
 					<h4>Some ready-made posts:</h4>
 					<noscript>
@@ -202,7 +206,9 @@
 				</div>
 				<br>
 				<div class="wrapper-full">
-					<h4 id="graphics">And some of our most popular <a href="https://tbfighters.notion.site/7fb225aa690e4c5b8384c085ada11960?v=203b5b2bbe6f4ba9a9fc3385a6944f9e&pvs=4" target="_blank">social media graphics</a>:</h4>
+					<h4 id="graphics">And some of our most popular <a href="https://tbfighters.notion.site/7fb225aa690e4c5b8384c085ada11960?v=203b5b2bbe6f4ba9a9fc3385a6944f9e&pvs=4" target="_blank">social media graphics</a>:
+						<div class="header-copy"><noscript><a href="#graphics"></a></noscript></div>
+					</h4>
 
 				</div>
 				<div class="wrapper-page">
@@ -234,7 +240,9 @@
 					</div>
 				</div>
 				<div class="wrapper-full">
-					<h2 id="list">Join Our <span class="red">Mailing List</span></h2>
+					<h2 id="list">Join Our <span class="red">Mailing List</span>
+						<div class="header-copy"><noscript><a href="#list"></a></noscript></div>
+					</h2>
 					<p>
                         Be informed of new calls to action, campaign press releases, and other TBFighters campaign updates. Emails may be authored by TBFighters, John Green, and partner organizations, such as MSF Access and PIH.
 					</p>
@@ -254,6 +262,14 @@
 				</div>
 			</section>
 		</main>
+		<script>
+			let elements = document.getElementsByClassName("header-copy");
+			for (let i = 0; i < elements.length; i++) {
+				let element = elements[i];
+				let parentId = element.parentElement.id;
+				addCopyButton(element, location.protocol + '//' + location.host + location.pathname + "#" + parentId)
+			}
+		</script>
 		<footer class="site-foot">
 		<p>
 			&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>

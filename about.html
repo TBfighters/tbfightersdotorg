@@ -26,6 +26,7 @@
 		<!-- Variable Tags -->
 		<meta property="og:title" content="About Us | TBFighters" />
 		<meta property="og:description" content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
+		<script src="./actions.js"></script>
 		<title>About Us | TBFighters</title>
 	</head>
 	<body class="about">
@@ -63,7 +64,9 @@
 					<p>
 						<a href="https//www.youtube.com/playlist?list=PLHaAg4A3ezRPslu3SYmwnmfq2DLcpDbXa" target="_blank">More vlogbrothers TB videos</a>
 					</p>
-					<h2 id="getinvolved">Get Involved</h2>
+					<h2 id="getinvolved">Get Involved
+						<div class="header-copy"><noscript><a href="#getinvolved"></a></noscript></div>
+					</h2>
 					<p>
 						You can become a TBFighter by <a href="action.html">taking action</a> to tell the world it's time to end tuberculosis, participating in campaigns from <a href="resources.html#campaigns">trusted public health organizations</a> fighting TB, or <a href="action.html#list">signing up for our newsletter</a> to receive emails from TBFighters and partners about ways to assist in our campaigns, new calls to action, and other campaign updates.
 					</p>
@@ -75,6 +78,14 @@
 						<a class="button button-subtle" href="action.html#list">Join newsletter</a>
 					</p>
 				</div>
+				<script>
+					let elements = document.getElementsByClassName("header-copy");
+					for (let i = 0; i < elements.length; i++) {
+						let element = elements[i];
+						let parentId = element.parentElement.id;
+						addCopyButton(element, location.protocol + '//' + location.host + location.pathname + "#" + parentId)
+					}
+				</script>
 			</section>
 		</main>
 		<footer class="site-foot">

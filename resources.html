@@ -27,6 +27,7 @@
 		<meta name="robots" content="noindex">
 		<meta property="og:title" content="Resources | TBFighters" />
 		<meta property="og:description" content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
+		<script src="actions.js"></script>
 		<title>Resources | TBFighters</title>
 	</head>
 	<body class="resources">
@@ -55,7 +56,9 @@
 					<p>
 						Ending TB requires awareness of its impacts on communities, nations, and the global health system as a whole. We hope the videos, articles, organizations, and other resources on this site can help you learn more and teach others about global health challenges and what we can do about them. If you have other resources you think should be included, you can email us at <em>contact at tbfighters dot org</em>.
 					</p>
-					<h2 id="tb">TB 101</h2>
+					<h2 id="tb">TB 101
+						<div class="header-copy"><noscript><a href="#tb"></a></noscript></div>
+					</h2>
 					<p>
 						<iframe class="image-right" height="350" src="https://www.youtube.com/embed/YIO0shDPsdA" title="What the Heck is Tuberculosis? from SciShow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 						To learn more about TB, check out the community-developed <a href="https://tuberculosis.miraheze.org/wiki/Main_Page" target="_blank">Tuberculosis Wiki</a> (you can start with the page on <a href="https://tuberculosis.miraheze.org/wiki/Tuberculosis" target="_blank">tuberculosis</a> itself), some <a href="https://www.youtube.com/playlist?list=PLHaAg4A3ezRPYbBD1VpJMGSj65CW4BzOs" target="_blank">YouTube videos</a>, and MSF’s <a href="https://www.doctorswithoutborders.org/what-we-do/medical-issues/tuberculosis#" target="_blank">primer on the subject</a>.
@@ -66,7 +69,9 @@
 						<li>Why $5? Check out MSF’s <a href="https://msfaccess.org/time-for-5-brief" target="_blank">technical brief</a> on the Time For $5 campaign, to see why we think Danaher can still make a reasonable profit at that price point.</li>
 						<li>The <a href="https://www.who.int/publications/i/item/9789240083851" target="_blank">WHO Global Tuberculosis Report 2023</a> provides up-to-date information and statistics on tuberculosis treatment and prevention.</li>
 					</ul>
-					<h2 id="campaigns">Public Health Organizations and Campaigns</h2>
+					<h2 id="campaigns">Public Health Organizations and Campaigns
+						<div class="header-copy"><noscript><a href="#campaigns"></a></noscript></div>
+					</h2>
 					<p>
 						We are a recent addition to the numerous organizations and campaigns around the world fighting for equity in access to tuberculosis prevention, testing, and treatment, and directly providing care. We draw inspiration from those who have been on the ground and embedded in communities for decades, doing the work no matter how hard or how many resources were available. Please visit their websites for more information, related projects, and ways to support them.
 					</p>
@@ -117,7 +122,9 @@
 						<br>
 						<table class="glossary-list" summary="glossary and terms and definitions">
 							<caption>
-								<h2 id="glossary">Glossary of Terms We Use</h2>
+								<h2 id="glossary">Glossary of Terms We Use
+									<div class="header-copy"><noscript><a href="#glossary"></a></noscript></div>
+								</h2>
 								<p>
 									Definitions of words and terms we use on this site or that you might come across while taking part in activism related to TB and global health. You can learn more about these and others on the community-developed <a href="https://tuberculosis.miraheze.org/wiki/Main_Page" target="_blank">Tuberculosis Wiki</a>.
 								</p>
@@ -186,12 +193,20 @@
 				</div>
 			</section>
 		</main>
+		<script>
+			let elements = document.getElementsByClassName("header-copy");
+			for (let i = 0; i < elements.length; i++) {
+				let element = elements[i];
+				let parentId = element.parentElement.id;
+				addCopyButton(element, location.protocol + '//' + location.host + location.pathname + "#" + parentId)
+			}
+		</script>
 		<footer class="site-foot">
 		<p>
 			&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
 		</p>
 		<p class="too-small">
-			
+
 			We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
 		</p>
 	</footer>
