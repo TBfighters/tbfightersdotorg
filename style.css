@@ -742,7 +742,6 @@ h2.action-head {
 	height: 0.7em;
 	width: 1em;
 	position: absolute;
-	/* transform: translate(-1.5em, 0); */
 	opacity: 0;
 	display: inline;
 	margin-left: 10px;
@@ -750,10 +749,6 @@ h2.action-head {
 
 .header-copy::after {
 	content: url("./img/link.svg");
-}
-
-.header-copy svg {
-	stroke: #000 !important;
 }
 
 :is(h1,h2,h3,h4,h5,h6):hover>.header-copy {
