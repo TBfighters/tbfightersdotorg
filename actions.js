@@ -1,15 +1,49 @@
+let toastsSetup = false;
+function setupToast(cb, params) {
+    toastsSetup = true
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css';
+    link.media = 'all';
+    head.appendChild(link);
+    var head  = document.getElementsByTagName('head')[0];
+    var script  = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/toastify-js';
+    head.appendChild(script);
+    script.addEventListener("load", () => {
+        cb(params)
+    });
+}
+
+
+function addToast(data) {
+    if (!toastsSetup) {
+        return setupToast(addToast, data);
+    }
+    if (data.time == null) {
+        data.time == 3000
+    }
+    Toastify({
+        text: data.message,
+        duration: data.time,
+        close: true,
+    }).showToast();
+}
+
 // REMEMBER to add a noscript
 function addCopyButton(button, text) {
     button.onclick = function() {
         navigator.clipboard.writeText(text.trim())
-        alert("Copied!")
+        addToast({message: "Copied!", time: 1200})
     }
 }
 
 function addCopyButtonCallback(button, text) {
     button.onclick = function() {
         navigator.clipboard.writeText(text().trim())
-        alert("Copied!")
+        addToast({message: "Copied!", time: 1200})
     }
 }
 
