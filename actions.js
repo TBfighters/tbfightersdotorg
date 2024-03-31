@@ -25,15 +25,19 @@ function addToast(data) {
     if (data.time == null) {
         data.time == 3000
     }
-    Toastify({
+    var toast = Toastify({
         text: data.message,
         duration: data.time,
         position: "center",
         style: {
             background: "#BC1C1A",
             color: "#F5F5F5",
-        }
-    }).showToast();
+        },
+        onClick: function () {
+          toast.hideToast();
+        },
+    });
+    toast.showToast();
 }
 
 // REMEMBER to add a noscript
