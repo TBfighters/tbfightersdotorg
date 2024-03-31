@@ -28,7 +28,11 @@ function addToast(data) {
     Toastify({
         text: data.message,
         duration: data.time,
-        close: true,
+        position: "center",
+        style: {
+            background: "#BC1C1A",
+            color: "#F5F5F5",
+        }
     }).showToast();
 }
 
