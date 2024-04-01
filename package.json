@@ -1,0 +1,17 @@
+{
+  "name": "tbfighters.org",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
