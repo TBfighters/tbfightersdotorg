@@ -42,6 +42,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addGlobalData('permalink', '/{{ page.filePathStem }}.html');
     // Use the layout.njk by default.
     eleventyConfig.addGlobalData('layout', 'layout.njk');
+    // Use nunjucks as template engine.
+    eleventyConfig.addGlobalData('templateEngineOverride', 'njk');
 
     return {
         dir: {
