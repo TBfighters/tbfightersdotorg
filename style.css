@@ -751,7 +751,7 @@ h2.action-head {
 	content: url("./img/link.svg");
 }
 
-:is(h1,h2,h3,h4,h5,h6):hover>.header-copy {
+:is(h1,h2,h3,h4,h5,h6):hover>.header-copy,:is(h1,h2,h3,h4,h5,h6):focus>.header-copy {
 	opacity: 1;
 }
 
