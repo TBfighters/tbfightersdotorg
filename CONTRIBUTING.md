@@ -46,3 +46,9 @@ To update the footers, change the [./update-action/footer.html](./update-action/
 ### Metadata
 
 To update common metadata, change the [./update-action/metadata.html](./update-action/metadata.html) file and push to a branch. A github action will run and update the headers across all files.
+
+### Linting
+Step 1: Setup [NVM](https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script)
+Step 2: Run `nvm use` (if you don't have the latest version, it will prompt you to run `nvm install`)
+Step 3: Run `npm i`
+Step 4: Run `npm lint`
