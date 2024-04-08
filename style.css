@@ -311,7 +311,7 @@ p.featured {
 	margin: 0 auto;
 	display: block;
 }
-h1.page-title {
+.page-title {
 	margin-bottom: 0;
 	text-transform: uppercase;
 	font-size: 3.0em;
