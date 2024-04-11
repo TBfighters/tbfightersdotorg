@@ -687,6 +687,13 @@ table th {
 	margin-top: -10px;
 }
 
+#petition-header {
+	background-image: url("/img/Twitter petition header.png");
+	background-position: center;
+	background-size: cover;
+	height: 10em;
+}
+
 #top .fa-arrow-down:before {
 	font-size: 3.0em;
 	color: #121212;
