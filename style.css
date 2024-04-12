@@ -274,8 +274,9 @@ p.featured {
 	display: block;
 	background-color: #DDDDDD;
 	text-align: center;
-	padding: 10px 15px;
+	padding: 20px 25px;
 	margin: 0 1em .6em;
+	font-size: 1.2em;
 	box-shadow: var(--aside-shadow);
 }
 
