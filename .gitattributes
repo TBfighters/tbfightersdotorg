@@ -1,2 +1,2 @@
 # Declare files that will always have LF line endings on checkout.
-* text eol=lf
+*.{html,md,css,js,json} text eol=lf
