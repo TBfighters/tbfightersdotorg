@@ -292,6 +292,12 @@ p.featured {
 	padding: .5em .8em;
 }
 
+.highlight {
+	background-image: url("/img/highlight.svg");
+	padding: 0 0.15em;
+	margin: 0 -0.15em;
+}
+
 /* ===============
    PAGE HEADER
    =============== */
