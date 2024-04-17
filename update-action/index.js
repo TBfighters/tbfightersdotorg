@@ -16,6 +16,20 @@ headerContent = headerContent.replaceAll("\r", "");
 contentFooter = contentFooter.replaceAll("\r", "");
 metadataContent = metadataContent.replaceAll("\r", "");
 
+function addIndent(query, content, replaceContent) {
+    let indentation = 0;
+    let startLine = content.match(new RegExp("([\t ]+)" + query));
+    indentation = startLine[1].length;
+
+    var separateLines = replaceContent.split(/\r?\n|\r|\n/g);
+    for (line in separateLines) {
+        if (line == 0) continue;
+        separateLines[line] = "\t".repeat(indentation) + separateLines[line];
+    }
+
+    return separateLines.join("\n")
+}
+
 function replaceContent(files, leadingPath, prefixLength) {
     files.forEach((file, _) => {
         if (file.isDirectory() && !skipDirectories.includes(file.name)) {
@@ -33,6 +47,8 @@ function replaceContent(files, leadingPath, prefixLength) {
             let prefix = "../".repeat(prefixLength);
             let headerPrefixed = headerContent.replaceAll("{prefix}", prefix);
 
+            headerPrefixed = addIndent("<!--BELOW THIS GETS COPIED TO ALL PAGES WHEN MENU CHANGES \\(CHANGE BODY CLASS TO PAGE NAME\\)-->", content, headerPrefixed)
+
             if (startHeader != -1 && endHeader != -1) {
                 content = content.substring(0, startHeader) + headerPrefixed + content.substring(endHeader + "<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->".length);
             }
@@ -44,6 +60,8 @@ function replaceContent(files, leadingPath, prefixLength) {
             let footerContentReplaced = contentFooter.replaceAll("{prefix}", prefix);
             footerContentReplaced = footerContentReplaced.replaceAll("{credits}", (credit[file.name] == undefined) ? "" : credit[file.name]);
 
+            footerContentReplaced = addIndent("<footer class=\"site-foot\">", content, footerContentReplaced)
+
             if (startFooter != -1 && endFooter != -1) {
                 content = content.substring(0, startFooter) + footerContentReplaced + content.substring(endFooter + "</footer>".length);
             }
@@ -52,6 +70,8 @@ function replaceContent(files, leadingPath, prefixLength) {
             let metadataContentReplaced = metadataContent.replaceAll("{prefix}", prefix);
             let startMetadata = content.indexOf("<!--Meta tags-->");
             let endMetadata = content.indexOf("<!-- Variable Tags -->");
+
+            metadataContentReplaced = addIndent("<!--Meta tags-->", content, metadataContentReplaced)
 
             if (startMetadata != -1 && endMetadata != -1) {
                 content = content.substring(0, startMetadata) + metadataContentReplaced + content.substring(endMetadata + "<!-- Variable Tags -->".length)
