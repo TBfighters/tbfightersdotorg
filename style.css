@@ -277,7 +277,7 @@ p.featured {
 	text-align: center;
 	padding: 20px 25px;
 	margin: 0 1em .6em;
-	/* font-size: 1.2em; */
+	font-size: 1.2em;
 	box-shadow: var(--aside-shadow);
 }
 
@@ -695,13 +695,6 @@ table th {
 	animation: slide-out 0.3s linear 0s;
 	opacity: 0;
 	margin-top: -10px;
-}
-
-#petition-header {
-	background-image: url("/img/Twitter petition header.png");
-	background-position: center;
-	background-size: cover;
-	height: 10em;
 }
 
 #top .fa-arrow-down:before {
