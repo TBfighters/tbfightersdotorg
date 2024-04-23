@@ -4,7 +4,8 @@
 		<!--Meta tags-->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
+		<meta name="description"
+			content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
 		<meta name="robots" content="index, follow" />
 		<!--Open Graph Tags-->
 		<meta property="og:site_name" content="TBFighters" />
@@ -15,10 +16,8 @@
 		<!-- Style Tags -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-		href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-		rel="stylesheet"
-		/>
+		<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 		<script src="jquery-3.7.1.min.js"></script>
@@ -30,28 +29,29 @@
 		<script src="actions.js"></script>
 		<script src="action-page.js" defer></script>
 		<script src="header-link.js" defer></script>
+		<link rel="stylesheet" href="action-page.css">
 		<title>Take Action | TBFighters</title>
 	</head>
 
 	<body class="action">
 		<!--BELOW THIS GETS COPIED TO ALL PAGES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->
-	<header id="site-head"><a href="#main" class="skip">Skip to main content</a>
-		<div class="wrapper-head">
-			<h1 class="page-title">
-				<a href="index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
-			</h1>
-			<a class="toggle-button" href="#" title="menu"></a>
-			<nav class="site-menu">
-				<ul class="active">
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="timeline.html">News &amp; Timeline</a></li>
-					<li><a href="resources.html">Resources</a></li>
-					<li><a href="action.html">Take Action</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
+		<header id="site-head"><a href="#main" class="skip">Skip to main content</a>
+			<div class="wrapper-head">
+				<h1 class="page-title">
+					<a href="index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
+				</h1>
+				<a class="toggle-button" href="#" title="menu"></a>
+				<nav class="site-menu">
+					<ul class="active">
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="timeline.html">News &amp; Timeline</a></li>
+						<li><a href="resources.html">Resources</a></li>
+						<li><a href="action.html">Take Action</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
 		<main id="main">
 			<section class="container container-compact title">
 				<div class="wrapper-full">
@@ -59,22 +59,29 @@
 					<p>
 						Join the fight for accessible and affordable testing! We'll keep this page updated with current actions, theme days and other campaigns, contact information, templates, graphics, and more!
 					</p>
-					<p>
-						You can also stay up-to-date by <a href="#list">signing up for our mailing list</a>. Emails may be authored by TBFighters, John Green, and partner organizations, such as MSF Access and PIH.
+					<p class="featured" style="margin-top: 1.4em;">
+						<strong>FEATURED ACTION:</strong> It's time to ask Danaher a <em>Question</em>... <em>Long Story Short</em> we need them to <em>Change</em> the price of their GeneXpert tests, so we wrote them an album to tell them how we feel. We want an end to the <em>Great War</em> so we can all have some <em>Closure</em>. Find memes and graphics in the <a href="https://tbfighter.link/theme" target="_blank">TBFighters Graphics Library</a> and check out the community-made <a href="https://tbfighter.link/songs">Taylor Swift parodies here</a>!<br><span class="buttons" style="width: 100%;"><a class="button" href="https://tbfighter.link/songs" style="margin: 0.5em 0;">Songs</a> <a href="https://tbfighter.link/theme" class="button button-subtle" style="margin: 0.5em 0;">Graphics Library</a></span>
 					</p>
-					<p class="smaller">
-						<em>Threats and intimidation are <strong>never okay</strong>. Be polite and respectful in all interactions&mdash;we're all human here! Please read the <a href="activism-guide.html">activism guide</a> as well!</em>
-					</p>
-					<h2 id="contact">Contact <span class="red">Danaher and Cepheid</span>
-						<div class="header-copy"><noscript><a href="#contact"></a></noscript></div>
-					</h2>
-					<p>
-						Come up with your own messages, or use our templates, guides, and graphics to tell Danaher and Cepheid it's #TimeFor5!
-					</p>
-					<p class="featured">
-						<strong>FEATURED ACTION:</strong> <a href="https://tbfighter.link/petition" target="_blank">Sign the petition</a> asking Danaher to lower the cost of ALL their crucial tests to $5!
-
-					</p>
+				</div>
+				<div id="petition-wrapper" style="margin: 2em 0;">
+					<div class="wrapper-full">
+						<div style="height: 5px;"></div>
+						<hr>
+						<div class="action">
+							<h3 class="wrap-centered" id="petition">
+								Sign the <strong class="highlight">Petition</strong>
+								<div class="header-copy"><noscript><a href="#posts"></a></noscript></div>
+							</h3>
+							<p>
+								We call on <span class="highlight">Danaher</span> to drop the price of their GeneXpert medical tests supplied to low- and middle-income countries to <span class="highlight">US$5</span> each for all diseases so that millions more people around the world can be properly diagnosed and receive the treatment they need to stay alive and healthy.
+							</p>
+							<p class="smaller">
+								<a class="button" href="https://timefor5.msfaccess.org" target="_blank" style="box-shadow: var(--aside-shadow);">Sign the petition</a>
+							</p>
+						</div>
+						<hr>
+						<div style="height: 5px;"></div>
+					</div>
 				</div>
 				<div class="wrapper-full wrapper-action-grid">
 					<div class="action">
@@ -264,13 +271,13 @@
 			</section>
 		</main>
 		<footer class="site-foot">
-		<p>
-			&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
-		</p>
-		<p class="too-small">
-			Icons by fontawesome.<br>
-			We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
-		</p>
-	</footer>
+			<p>
+				&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
+			</p>
+			<p class="too-small">
+				Icons by fontawesome.<br>
+				We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
+			</p>
+		</footer>
 	</body>
 </html>
