@@ -821,6 +821,9 @@ h2.action-head {
 }
 
 @media only screen and (max-width: 992px) {
+	.header-copy {
+		display: none;
+	}
 	.wrapper-action-grid .action {
 		width: 100%;
 		padding-left: 0;
