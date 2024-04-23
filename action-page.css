@@ -6,7 +6,7 @@
 	text-shadow: #121212 1px 1px 10px;
 }
 
-#petition-wrapper div div {
+#petition-wrapper .action{
 	margin-left: 40%;
 	max-width: 40%;
 }

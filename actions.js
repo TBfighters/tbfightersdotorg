@@ -5,12 +5,12 @@ function setupToast(cb, params) {
     var link  = document.createElement('link');
     link.rel  = 'stylesheet';
     link.type = 'text/css';
-    link.href = 'https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css';
+    link.href = window.location.protocol + "//" + window.location.host + "/libs/toastify/toastify.css";
     link.media = 'all';
     head.appendChild(link);
     var head  = document.getElementsByTagName('head')[0];
     var script  = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/toastify-js';
+    script.src = window.location.protocol + "//" + window.location.host + "/libs/toastify/toastify.js";
     head.appendChild(script);
     script.addEventListener("load", () => {
         cb(params)
