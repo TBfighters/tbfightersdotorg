@@ -1,27 +1,4 @@
-let toastsSetup = false;
-function setupToast(cb, params) {
-    toastsSetup = true
-    var head  = document.getElementsByTagName('head')[0];
-    var link  = document.createElement('link');
-    link.rel  = 'stylesheet';
-    link.type = 'text/css';
-    link.href = window.location.protocol + "//" + window.location.host + "/libs/toastify/toastify.css";
-    link.media = 'all';
-    head.appendChild(link);
-    var head  = document.getElementsByTagName('head')[0];
-    var script  = document.createElement('script');
-    script.src = window.location.protocol + "//" + window.location.host + "/libs/toastify/toastify.js";
-    head.appendChild(script);
-    script.addEventListener("load", () => {
-        cb(params)
-    });
-}
-
-
 function addToast(data) {
-    if (!toastsSetup) {
-        return setupToast(addToast, data);
-    }
     if (data.time == null) {
         data.time == 3000
     }
