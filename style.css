@@ -271,10 +271,10 @@ button, .button{
 
 /* FEATURED */
 
-p.featured {
+div.featured {
 	display: block;
 	background-color: #DDDDDD;
-	text-align: center;
+	/* text-align: center; */
 	padding: 20px 25px;
 	margin: 0 1em .6em;
 	font-size: 1.2em;

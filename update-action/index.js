@@ -79,7 +79,6 @@ function replaceContent(files, leadingPath, prefixLength) {
 
             // featured action
             if (featuredActionFiles.includes(file.name)) {
-                console.log(file.name)
                 const startText = "<!-- featured Action Start -->";
                 const endText = "<!-- featured Action End -->";
                 let startFeaturedAction = content.indexOf(startText, 0);
