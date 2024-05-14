@@ -79,7 +79,16 @@ function replaceContent(files, leadingPath, prefixLength) {
 
             // featured action
             if (featuredActionFiles.includes(file.name)) {
-                content = content.replaceAll(/<strong>FEATURED ACTION:<\/strong>.*$/gm, "<strong>FEATURED ACTION:</strong> " + featuredAction)
+                let startFeaturedAction = content.indexOf("<!-- featured Action Start -->");
+                let endFeaturedAction = content.indexOf("<!-- featured Action End -->");
+                while (startFeaturedAction != -1 && endFeaturedAction != -1) {
+                    featuredActionContentReplace = addIndent("<!-- featured Action Start -->", content, featuredAction)
+
+                    content = content.substring(0, startFeaturedAction) + featuredActionContentReplace + content.substring(endFeaturedAction + "<!-- featured Action End -->".length)
+                    startFeaturedAction = content.indexOf("<!-- featured Action Start -->", startFeaturedAction);
+                    endFeaturedAction = content.indexOf("<!-- featured Action End -->", endFeaturedAction);
+                }
+
             }
             fs.writeFile(leadingPath + file.name, content, () => { })
         }
