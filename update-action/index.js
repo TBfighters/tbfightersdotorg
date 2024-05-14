@@ -79,14 +79,17 @@ function replaceContent(files, leadingPath, prefixLength) {
 
             // featured action
             if (featuredActionFiles.includes(file.name)) {
-                let startFeaturedAction = content.indexOf("<!-- featured Action Start -->");
-                let endFeaturedAction = content.indexOf("<!-- featured Action End -->");
+                console.log(file.name)
+                const startText = "<!-- featured Action Start -->";
+                const endText = "<!-- featured Action End -->";
+                let startFeaturedAction = content.indexOf(startText, 0);
+                let endFeaturedAction = content.indexOf(endText, 0);
                 while (startFeaturedAction != -1 && endFeaturedAction != -1) {
-                    featuredActionContentReplace = addIndent("<!-- featured Action Start -->", content, featuredAction)
+                    featuredActionContentReplace = addIndent(startText, content, featuredAction)
 
-                    content = content.substring(0, startFeaturedAction) + featuredActionContentReplace + content.substring(endFeaturedAction + "<!-- featured Action End -->".length)
-                    startFeaturedAction = content.indexOf("<!-- featured Action Start -->", startFeaturedAction);
-                    endFeaturedAction = content.indexOf("<!-- featured Action End -->", endFeaturedAction);
+                    content = content.substring(0, startFeaturedAction) + featuredActionContentReplace + content.substring(endFeaturedAction + endText.length)
+                    startFeaturedAction = content.indexOf(startText, startFeaturedAction + featuredActionContentReplace.length);
+                    endFeaturedAction = content.indexOf(endText, endFeaturedAction + featuredActionContentReplace.length);
                 }
 
             }
