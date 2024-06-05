@@ -63,15 +63,18 @@
 					</div>
 				</div>
 				<div class="wrapper wrapper-columns featured-columns">
-					<p>
-						<strong>FEATURED ACTION:</strong> It's time to ask Danaher a <em>Question</em>... <em>Long Story Short</em> we need them to <em>Change</em> the price of their GeneXpert tests, so we wrote them an album to tell them how we feel. We want an end to the <em>Great War</em> so we can all have some <em>Closure</em>. Find memes and graphics in the <a href="https://tbfighter.link/theme" target="_blank">TBFighters Graphics Library</a> and check out the community-made <a href="https://tbfighter.link/songs">Taylor Swift parodies here</a>!<br><span class="buttons" style="width: 100%;"><a class="button" href="https://tbfighter.link/songs" style="margin: 0.5em 0;">Songs</a> <a href="https://tbfighter.link/theme" class="button button-subtle" style="margin: 0.5em 0;">Graphics Library</a></span>
-
-					</p>
-					<!-- TODO: uncomment this when you change the featured action  -->
-					<!-- <div class="buttons"> -->
-					<!-- 	<a class="button" href="action.html">More actions</a> -->
-					<!-- 	<a class="button button-subtle" href="action.html#list">Newsletter signup</a> -->
-					<!-- </div> -->
+					<div>
+						<!-- featured Action Start -->
+						<img src="img/fax.svg" alt="Fax Icon" class="action-icon" style="margin-bottom: 0"><strong class="larger">FAX DAY</strong>
+						<br>
+						<div style="height: 0.5em;"></div>
+						Tell Danaher and Cepheid to put #PeopleOverProfits, and fax some facts! Fax important TB facts to their office at +1 408-541-4192. Check out the <a href="https://docs.google.com/document/d/e/2PACX-1vQiLFKZf5wygXGUG2uaCeRbGLLgo6UP2wi8k2HhZYGxMoJ3d_PwV4apJ9S2bLB_lbVtb-wzxkVDKVU5/pub" target="_blank">Fax Day Guide</a> for resources to help with sending and writing your fax!
+						<!-- featured Action End -->
+					</div>
+					<div class="buttons">
+						<a class="button" href="action.html">More actions</a>
+						<a class="button button-subtle" href="action.html#list">Newsletter sign up</a>
+					</div>
 				</div>
 				<div class="wrapper wrap-centered">
 					<a href="#primer"><img src="img/arrow-down.svg" class="scroll-arrow" alt="down-arrow"></a>
@@ -151,9 +154,14 @@
 								</ul>
 							</div>
 							<div class="join-right">
-								<p class="featured">
-									<strong>FEATURED ACTION:</strong> It's time to ask Danaher a <em>Question</em>... <em>Long Story Short</em> we need them to <em>Change</em> the price of their GeneXpert tests, so we wrote them an album to tell them how we feel. We want an end to the <em>Great War</em> so we can all have some <em>Closure</em>. Find memes and graphics in the <a href="https://tbfighter.link/theme" target="_blank">TBFighters Graphics Library</a> and check out the community-made <a href="https://tbfighter.link/songs">Taylor Swift parodies here</a>!<br><span class="buttons" style="width: 100%;"><a class="button" href="https://tbfighter.link/songs" style="margin: 0.5em 0;">Songs</a> <a href="https://tbfighter.link/theme" class="button button-subtle" style="margin: 0.5em 0;">Graphics Library</a></span>
-								</p>
+								<div class="featured">
+									<!-- featured Action Start -->
+						<img src="img/fax.svg" alt="Fax Icon" class="action-icon" style="margin-bottom: 0"><strong class="larger">FAX DAY</strong>
+						<br>
+						<div style="height: 0.5em;"></div>
+						Tell Danaher and Cepheid to put #PeopleOverProfits, and fax some facts! Fax important TB facts to their office at +1 408-541-4192. Check out the <a href="https://docs.google.com/document/d/e/2PACX-1vQiLFKZf5wygXGUG2uaCeRbGLLgo6UP2wi8k2HhZYGxMoJ3d_PwV4apJ9S2bLB_lbVtb-wzxkVDKVU5/pub" target="_blank">Fax Day Guide</a> for resources to help with sending and writing your fax!
+						<!-- featured Action End -->
+								</div>
 								<a class="button button-centered" href="action.html">More actions and templates</a>
 							</div>
 						</div>
@@ -162,21 +170,37 @@
 							<p>
 								Be informed of new calls to action, campaign press releases, and other TBFighters campaign updates. Emails may be authored by TBFighters, John Green, and partner organizations, such as MSF Access and PIH.
 							</p>
-							<form method="post" action="https://gaggle.email/join/tbfighters@gaggle.email">
-								<div class="list-form wrapper-columns">
+							<div id="newsletter-wrapper">
+								<noscript>Please enable javascript to sign up for the newsletter!</noscript>
+							</div>
+							<script>
+								document.getElementById("newsletter-wrapper").innerHTML = `<form method='post' action='https://gaggle.email/join/tbfighters@gaggle.email' id='newsletter-form'>
+								<div class='list-form wrapper-columns'>
 									<div>
-										<label for="name"><span>Name: </span><input name="name" type="text" placeholder="Dave Green"></label>
-
+										<label for='name'><span>Name: </span><input name='name' type='text' placeholder='Dave Green'></label>
+										<label id='error-label' style='color: #D7211E; font-weight: bolder; display: none'></label>
 									</div>
 									<div>
-										<label for="email"><span>Email Address: </span><input name="email" type="email" placeholder="dave@tbfighters.org"></label>
+										<label for='email'><span>Email Address: </span><input name='email' type='email' placeholder='dave@tbfighters.org'></label>
 									</div>
-
 									<div>
-										<button class="button">Sign up</button>
+										<button class='button'>Sign up</button>
 									</div>
 								</div>
-							</form>
+							</form>`;
+								let form = document.getElementById("newsletter-form")
+								let error = document.getElementById("error-label")
+								form.onsubmit=function(e){
+									var arr=this.elements,i=0,l=arr.length;
+									if (arr.email.value == arr.name.value) {
+										error.innerHTML = "Your name cannot be the same as your email"
+										error.style.display = "block"
+										return false
+									} else {
+										error.style.display = "none"
+									}
+								}
+							</script>
 						</div>
 						<div class="wrapper">
 							<h3>More From <span class="red">TBFighters</span> and TB Advocacy</h3>

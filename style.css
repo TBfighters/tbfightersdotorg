@@ -105,7 +105,7 @@ aside.wrapper-full p:last-child, .milestone p:last-child {
 	margin-top: 8px;
 	margin-bottom: 8px;
 }
-p.larger, li.larger, a.larger {
+p.larger, li.larger, a.larger, strong.larger {
 	font-size: 1.2em;
 }
 .action p.larger {
@@ -271,10 +271,10 @@ button, .button{
 
 /* FEATURED */
 
-p.featured {
+div.featured {
 	display: block;
 	background-color: #DDDDDD;
-	text-align: center;
+	/* text-align: center; */
 	padding: 20px 25px;
 	margin: 0 1em .6em;
 	font-size: 1.2em;
@@ -565,7 +565,7 @@ aside.wrapper-full {
 	margin: 1em 2em;
 	vertical-align: top;
 }
-.action .action-icon {
+.action-icon {
 	height: 1.5em;
 	vertical-align: bottom;
 	margin-right: .5em;
@@ -1023,7 +1023,7 @@ h2.action-head {
 	#join li {
 		font-size: 1.5em;
 	}
-	#join p.larger, #join li.larger {
+	#join p.larger, #join li.larger, #join strong.larger {
 		font-size: 1.75em;
 	}
 	ul {
