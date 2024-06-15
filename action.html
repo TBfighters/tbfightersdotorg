@@ -22,7 +22,7 @@
 		<link rel="stylesheet" href="libs/toastify/toastify.css">
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 		<script src="jquery-3.7.1.min.js"></script>
-		<script src="menu.js"></script>
+		<script src="menu.js" defer></script>
 		<script src="libs/toastify/toastify.js"></script>
 		<!-- Variable Tags -->
 		<meta property="og:title" content="Take Action | TBFighters" />
@@ -42,7 +42,7 @@
 				<h1 class="page-title">
 					<a href="index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
 				</h1>
-				<a class="toggle-button" href="#" title="menu"></a>
+				<a id="toggle-button" href="#" title="menu"></a>
 				<nav class="site-menu">
 					<ul class="active">
 						<li><a href="about.html">About Us</a></li>
@@ -246,8 +246,8 @@
 							</noscript>
 						</div>
 						<div style="margin: auto auto; margin-top: 0.4em; gap: 0.2em; display: none;" id="slideshow-buttons">
-							<button class="slideshow-button button" onclick="plusDivs()">&#10094;</button>
-							<button class="slideshow-button button" onclick="minusDiv()">&#10095;</button>
+							<button class="slideshow-button button" onclick="incrementSlideshow(-1)">&#10094;</button>
+							<button class="slideshow-button button" onclick="incrementSlideshow(1)">&#10095;</button>
 							<button class="button" id="copy-alt-text" style="float:right; margin-left: 0.4em;">Copy Alt Text</button>
 							<button class="button" onclick="download()" style="float:right">Download</button>
 						</div>

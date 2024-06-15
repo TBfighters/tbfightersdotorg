@@ -370,7 +370,7 @@ h1.page-title {
 	color: #F5F5F5;
 	background-color: #121212;
 }
-a.toggle-button {
+a#toggle-button {
 	display: none;
 }
 
@@ -867,7 +867,7 @@ h2.action-head {
 		display: block;
 		font-size: 1.5em;
 	}
-	a.toggle-button {
+	a#toggle-button {
 		padding: 10px;
 		float: right;
 		font-size: 1.5em;
@@ -876,13 +876,13 @@ h2.action-head {
 		display: inline-block;
 		color: #F5F5F5;
 	}
-	a.toggle-button::after {
+	a#toggle-button::after {
 		content: '\2630';
 	}
-	a.toggle-button.active::after {
+	a#toggle-button.active::after {
 		content: '\2716';
 	}
-	a.toggle-button span {
+	a#toggle-button span {
 		font-size: 0;
 	}
 

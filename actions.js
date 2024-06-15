@@ -32,6 +32,7 @@ function addCopyButtonCallback(button, text) {
     }
 }
 
+// For copy button
 function formatElement(element) {
     let text = "";
     let children = element.children;
@@ -43,6 +44,13 @@ function formatElement(element) {
         text += "\n"
     }
     return text;
+}
+
+function downloadImage(img) {
+    const link = document.createElement('a')
+    link.href = img
+    link.download = ""
+    link.click()
 }
 
 // call this to register a print with a form (this only currently works with one register!)
