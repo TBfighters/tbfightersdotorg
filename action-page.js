@@ -24,9 +24,14 @@ function toggleExpand() {
 
 // copy buttons
 
-addCopyButton(document.getElementById("copy-1"), document.getElementById("post-1").textContent)
-addCopyButton(document.getElementById("copy-2"), document.getElementById("post-2").textContent)
-addCopyButton(document.getElementById("copy-3"), document.getElementById("post-3").textContent)
+const copyElements = document.getElementsByClassName("copy");
+for (let i = 0; i < copyElements.length; i++) {
+    let elm = copyElements[i]
+    addCopyButton(elm, document.getElementById(elm.getAttribute("copy-elm")).textContent)
+}
+// addCopyButton(document.getElementById("copy-1"), document.getElementById("post-1").textContent)
+// addCopyButton(document.getElementById("copy-2"), document.getElementById("post-2").textContent)
+// addCopyButton(document.getElementById("copy-3"), document.getElementById("post-3").textContent)
 
 
 // slide show
