@@ -19,12 +19,15 @@
 		<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 			rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="libs/toastify/toastify.css">
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 		<script src="jquery-3.7.1.min.js"></script>
 		<script src="menu.js"></script>
+		<script src="libs/toastify/toastify.js"></script>
 		<!-- Variable Tags -->
 		<meta property="og:title" content="TBFighters: Putting People Over Profits" />
 		<meta property="og:description" content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
+		<script src="./actions.js"></script>
 		<title>TBFighters | Putting People Over Profits</title>
 	</head>
 	<body class="homepage">
@@ -132,7 +135,12 @@
 			</section>
 			<section id="join" class="container">
 				<div class="wrapper">
-					<h2 class="action-head">Take <span class="red">Action</span>:</h2>
+					<h2 class="action-head" id="take-action">Take <span class="red">Action</span>:
+						<div class="header-copy" id="take-action-header-copy"><noscript><a href="#join"></a></noscript></div>
+					</h2>
+					<script>
+						addCopyButton(document.getElementById("take-action-header-copy"), location.protocol + '//' + location.host + location.pathname + "#join")
+					</script>
 					<div class="wrapper">
 						<div class="wrapper-columns">
 							<div class="join-left">

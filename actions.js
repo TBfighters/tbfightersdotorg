@@ -1,15 +1,34 @@
+function addToast(data) {
+    if (data.time == null) {
+        data.time == 3000
+    }
+    var toast = Toastify({
+        text: data.message,
+        duration: data.time,
+        position: "center",
+        style: {
+            background: "#BC1C1A",
+            color: "#F5F5F5",
+        },
+        onClick: function () {
+          toast.hideToast();
+        },
+    });
+    toast.showToast();
+}
+
 // REMEMBER to add a noscript
 function addCopyButton(button, text) {
     button.onclick = function() {
         navigator.clipboard.writeText(text.trim())
-        alert("Copied!")
+        addToast({message: "Copied!", time: 1200})
     }
 }
 
 function addCopyButtonCallback(button, text) {
     button.onclick = function() {
         navigator.clipboard.writeText(text().trim())
-        alert("Copied!")
+        addToast({message: "Copied!", time: 1200})
     }
 }
 
