@@ -6,7 +6,7 @@
 	text-shadow: #121212 1px 1px 10px;
 }
 
-#petition-wrapper div div {
+#petition-wrapper .action {
 	margin-left: 40%;
 	max-width: 40%;
 }
@@ -17,7 +17,7 @@
 		background: #3c3f60;
 	}
 
-	#petition-wrapper div div {
+	#petition-wrapper .action {
 		margin: 0 1em;
 		width: auto;
 		max-width: none;

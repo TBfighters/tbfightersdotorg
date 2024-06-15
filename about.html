@@ -19,12 +19,16 @@
 		<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 			rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="libs/toastify/toastify.css">
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 		<script src="jquery-3.7.1.min.js"></script>
 		<script src="menu.js"></script>
+		<script src="libs/toastify/toastify.js"></script>
 		<!-- Variable Tags -->
 		<meta property="og:title" content="About Us | TBFighters" />
 		<meta property="og:description" content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
+		<script src="./actions.js"></script>
+		<script src="./header-link.js" defer></script>
 		<title>About Us | TBFighters</title>
 	</head>
 	<body class="about">
@@ -62,7 +66,9 @@
 					<p>
 						<a href="https://www.youtube.com/playlist?list=PLHaAg4A3ezRPslu3SYmwnmfq2DLcpDbXa" target="_blank">More vlogbrothers TB videos</a>
 					</p>
-					<h2 id="getinvolved">Get Involved</h2>
+					<h2 id="getinvolved">Get Involved
+						<div class="header-copy"><noscript><a href="#getinvolved"></a></noscript></div>
+					</h2>
 					<p>
 						You can become a TBFighter by <a href="action.html">taking action</a> to tell the world it's time to end tuberculosis, participating in campaigns from <a href="resources.html#campaigns">trusted public health organizations</a> fighting TB, or <a href="action.html#list">signing up for our newsletter</a> to receive emails from TBFighters and partners about ways to assist in our campaigns, new calls to action, and other campaign updates.
 					</p>
@@ -81,7 +87,7 @@
 				&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
 			</p>
 			<p class="too-small">
-				
+
 				We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
 			</p>
 		</footer>

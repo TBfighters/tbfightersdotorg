@@ -20,9 +20,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
 		rel="stylesheet" />
 	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="libs/toastify/toastify.css">
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
 	<script src="jquery-3.7.1.min.js"></script>
 	<script src="menu.js"></script>
+	<script src="libs/toastify/toastify.js"></script>
 	<!-- Variable Tags -->
 	<!--Open Graph Tags-->
 	<meta property="og:title" content="Activism Guide | TBFighters" />
@@ -31,6 +33,7 @@
 	<link rel="stylesheet" href="actions.css">
 	<link rel="stylesheet" href="docs.css">
 	<script src="actions.js"></script>
+	<script src="./header-link.js" defer></script>
 	<title>Activism Guide | TBFighters</title>
 	<style>
 		#center {
@@ -77,9 +80,9 @@
 			<br>
 			<br>
 			<h3 id="standards-for-community-conduct">
+				Standards for Community Conduct:
 				<div class="header-copy"><noscript><a
 							href="#standards-for-community-conduct"></a></noscript></div>
-				Standards for Community Conduct:
 			</h3>
 			<p>
 				Threats, intimidation, degradation, and humiliation are never acceptable within
@@ -90,9 +93,9 @@
 			</p>
 			<br>
 			<h3 id="respectful-outreach-and-engagement">
+				Standards Respectful Outreach and Engagement:
 				<div class="header-copy"><noscript><a
 							href="#respectful-outreach-and-engagement"></a></noscript></div>
-				Standards Respectful Outreach and Engagement:
 			</h3>
 			<p>
 				When engaging with the public or contacting organizations, keep in mind that the
@@ -103,9 +106,9 @@
 			</p>
 			<br>
 			<h3 id="using-privilege-responsibly">
+				Using Privilege Responsibly:
 				<div class="header-copy"><noscript><a
 							href="#using-privilege-responsibly"></a></noscript></div>
-				Using Privilege Responsibly:
 			</h3>
 			<p>
 				Utilize your power and privilege for positive impact, contributing to the reduction of
@@ -115,9 +118,9 @@
 			</p>
 			<br>
 			<h3 id="collective-action-and-unity">
+				Collective Action and Unity:
 				<div class="header-copy"><noscript><a
 							href="#collective-action-and-unity"></a></noscript></div>
-				Collective Action and Unity:
 			</h3>
 			<p>
 				To achieve our goals effectively, remember that collective action relies on unity—avoid
@@ -127,9 +130,9 @@
 			</p>
 			<br>
 			<h3 id="collabrative-partnerships">
+				Collaborative Partnerships:
 				<div class="header-copy"><noscript><a href="#collabrative-partnerships"></a></noscript>
 				</div>
-				Collaborative Partnerships:
 			</h3>
 			<p>
 				Proactively cultivate robust collaborative partnerships. Recognize and appreciate our
@@ -138,10 +141,10 @@
 			</p>
 			<br>
 			<h3 id="knowledge-empowers-action">
-				<div class="header-copy"><noscript><a href="#knowledge-empowers-action"></a></noscript>
-				</div>
 				Knowledge Empowers
 				Action:
+				<div class="header-copy"><noscript><a href="#knowledge-empowers-action"></a></noscript>
+				</div>
 			</h3>
 			<p>
 				Invest time in gaining a deep understanding of the causes we champion, and actively seek
@@ -150,9 +153,9 @@
 			</p>
 			<br>
 			<h3 id="unified-direction-and-leadership">
+				Unified Direction and Leadership:
 				<div class="header-copy"><noscript><a
 							href="#unified-direction-and-leadership"></a></noscript></div>
-				Unified Direction and Leadership:
 			</h3>
 			<p>
 				Stay focused and follow the guidance of those already engaged in the work, as well as
@@ -161,9 +164,9 @@
 			</p>
 			<br>
 			<h3 id="inclusive-and-self-care">
+				Inclusivity and Self-Care:
 				<div class="header-copy"><noscript><a href="#inclusive-and-self-care"></a></noscript>
 				</div>
-				Inclusivity and Self-Care:
 			</h3>
 			<p>
 				Nerdfighteria is an unequivocally inclusive community that wholeheartedly embraces
@@ -189,14 +192,6 @@
 			<br>
 			<br>
 		</div>
-		<script>
-			let elements = document.getElementsByClassName("header-copy");
-			for (let i = 0; i < elements.length; i++) {
-				let element = elements[i];
-				let parentId = element.parentElement.id;
-				addCopyButton(element, window.location.href + "#" + parentId)
-			}
-		</script>
 	</main>
 	<footer class="site-foot">
 		<p>
