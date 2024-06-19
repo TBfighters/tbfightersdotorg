@@ -571,6 +571,11 @@ aside.wrapper-full {
 	margin-right: .5em;
 }
 
+.social-icon {
+	height: 1.5em;
+	vertical-align: bottom;
+}
+
 .newsletter-action {
 	padding-bottom: 0.5em;
 }
