@@ -370,7 +370,7 @@ h1.page-title {
 	color: #F5F5F5;
 	background-color: #121212;
 }
-a#toggle-button {
+a#hamburger-button {
 	display: none;
 }
 
@@ -867,22 +867,21 @@ h2.action-head {
 		display: block;
 		font-size: 1.5em;
 	}
-	a#toggle-button {
+	a#hamburger-button {
 		padding: 10px;
-		float: right;
 		font-size: 1.5em;
 		line-height: 1;
 		text-decoration: none;
 		display: inline-block;
 		color: #F5F5F5;
 	}
-	a#toggle-button::after {
+	a#hamburger-button::after {
 		content: '\2630';
 	}
-	a#toggle-button.active::after {
+	a#hamburger-button.active::after {
 		content: '\2716';
 	}
-	a#toggle-button span {
+	a#hamburger-button span {
 		font-size: 0;
 	}
 
