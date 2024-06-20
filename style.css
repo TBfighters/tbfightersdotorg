@@ -576,6 +576,21 @@ aside.wrapper-full {
 	vertical-align: bottom;
 }
 
+.social-icon-hover {
+	opacity: 0;
+	display: block;
+	height: 1.5em;
+
+	position: absolute;
+	transform: translateY(-100%);
+
+	transition: all ease-in-out 0.1s;
+}
+
+:is(.social-icon:hover + .social-icon-hover, .social-icon-hover:hover) {
+	opacity: 1;
+}
+
 .newsletter-action {
 	padding-bottom: 0.5em;
 }
