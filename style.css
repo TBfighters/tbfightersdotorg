@@ -775,6 +775,8 @@ h2.action-head {
 	opacity: 0;
 	display: inline;
 	margin-left: 10px;
+
+	transition: ease-in-out all 0.1s;
 }
 
 .header-copy::after {
