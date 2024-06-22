@@ -571,6 +571,40 @@ aside.wrapper-full {
 	margin-right: .5em;
 }
 
+.socials-wrapper {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 0.6em;
+}
+.socials-wrapper-centered {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+}
+
+.social-icon {
+	height: 1.5em;
+	vertical-align: bottom;
+}
+
+.social-icon-hover {
+	opacity: 0;
+	display: block;
+	height: 1.5em;
+
+	position: absolute;
+	transform: translateY(-100%);
+
+	transition: all ease-in-out 0.1s;
+}
+
+:is(.social-icon:hover + .social-icon-hover, .social-icon-hover:hover) {
+	opacity: 1;
+}
+
 .newsletter-action {
 	padding-bottom: 0.5em;
 }
@@ -755,6 +789,8 @@ h2.action-head {
 	opacity: 0;
 	display: inline;
 	margin-left: 10px;
+
+	transition: ease-in-out all 0.1s;
 }
 
 .header-copy::after {
