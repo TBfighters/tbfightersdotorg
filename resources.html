@@ -62,7 +62,34 @@
 						<div class="header-copy"><noscript><a href="#tb"></a></noscript></div>
 					</h2>
 					<p>
-						<iframe class="image-right" height="350" src="https://www.youtube.com/embed/YIO0shDPsdA" title="What the Heck is Tuberculosis? from SciShow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+						<div class="image-right">
+							<div id="youtube-video-shadow" style="height: calc(350px - 44px); width: calc(300px - 44px);">
+								<noscript>This video will only load if you have javascript enabled. To watch the video, please go to <a href="https://www.youtube.com/watch?v=YIO0shDPsdA" target="_blank">youtube</a> instead.</noscript>
+							</div>
+							<script>
+								let shadow = document.getElementById("youtube-video-shadow");
+								shadow.innerHTML = `<button class="button" onclick="loadEmbed()" id="load-youtube-video">Load Youtube Video</button>
+								<p id="legal-disclamer-youtube-video">Please read youtube's <a href="https://policies.google.com/privacy?hl=en" target="_blank">privacy policy</a> before preceding.</p>`
+								function loadEmbed() {
+									document.getElementById("load-youtube-video").remove()
+									document.getElementById("legal-disclamer-youtube-video").remove()
+									shadow.getElementById("youtube-video-shadow").remove()
+
+									iframe = document.createElement("iframe");
+									iframe.setAttribute("id", "video")
+									iframe.setAttribute("height", "350")
+									iframe.setAttribute("src", "https://www.youtube.com/embed/YIO0shDPsdA")
+									iframe.setAttribute("title", "What the Heck is Tuberculosis? from SciShow")
+									iframe.setAttribute("frameborder", "0")
+									iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share")
+									iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin")
+									iframe.setAttribute("allowfullscreen", null)
+
+									document.getElementsByClassName("image-right")[0].appendChild(iframe);
+								}
+							</script>
+						</div>
+
 						To learn more about TB, check out the community-developed <a href="https://tuberculosis.miraheze.org/wiki/Main_Page" target="_blank">Tuberculosis Wiki</a> (you can start with the page on <a href="https://tuberculosis.miraheze.org/wiki/Tuberculosis" target="_blank">tuberculosis</a> itself), some <a href="https://www.youtube.com/playlist?list=PLHaAg4A3ezRPYbBD1VpJMGSj65CW4BzOs" target="_blank">YouTube videos</a>, and MSF’s <a href="https://www.doctorswithoutborders.org/what-we-do/medical-issues/tuberculosis#" target="_blank">primer on the subject</a>.
 					</p>
 					<p>For Nerdfighteria’s involvement in TB activism, you can watch our playlists of vlogbrothers videos about the <a href="https://www.youtube.com/playlist?list=PLHaAg4A3ezROJWH7n-U5cAg0wJF38UgB8" target="_blank">Johnson &amp; Johnson Bedaquiline campaign</a> and about the <a href="https://www.youtube.com/playlist?list=PLHaAg4A3ezRPslu3SYmwnmfq2DLcpDbXa" target="_blank">Danaher GeneXpert campaign</a>.</p>
@@ -167,19 +194,19 @@
 								<td><p>Extensively drug-resistant tuberculosis, or TB that has developed resistance to both core drugs found in TB treatment and preventive regimens, as well as at least two additional important drugs in TB treatments.</p></td>
 							</tr>
 							<tr>
-								<td><strong><a href="https://tuberculosis.miraheze.org/wiki/GeneXpert#Tests" class="red">Xpert HBV Viral Load cartridges</a></strong></td>
+								<td><strong><a href="https://tuberculosis.miraheze.org/wiki/GeneXpert#Tests" class="red" target="_blank">Xpert HBV Viral Load cartridges</a></strong></td>
 								<td><p>Single-use tests that are run on a GeneXpert testing device for hepatitis B virus (HBV). HBV viral load tests are used to initiate treatment and monitor treatment response. Xpert HBV cartridges are currently sold for $15.</p></td>
 							</tr>
 							<tr>
-								<td><strong><a href="https://tuberculosis.miraheze.org/wiki/GeneXpert#Tests" class="red">Xpert HCV Viral Load cartridges</a></strong></td>
+								<td><strong><a href="https://tuberculosis.miraheze.org/wiki/GeneXpert#Tests" class="red" target="_blank">Xpert HCV Viral Load cartridges</a></strong></td>
 								<td><p>Single-use tests that are run on a GeneXpert testing device for hepatitis C virus (HCV). Viral load tests are a necessary step in testing for chronic HCV and also used in treatment monitoring. Xpert HCV cartridges are the only near point-of-care tests with WHO prequalification and give results in two hours. These cartridges are currently sold for $15.</p></td>
 							</tr>
 							<tr>
-								<td><strong><a href="https://tuberculosis.miraheze.org/wiki/GeneXpert#Tests" class="red">Xpert HIV-1 Qual cartridges</a></strong></td>
+								<td><strong><a href="https://tuberculosis.miraheze.org/wiki/GeneXpert#Tests" class="red" target="_blank">Xpert HIV-1 Qual cartridges</a></strong></td>
 								<td><p>Single-use tests that are run on a GeneXpert testing device for diagnosis of HIV. Xpert HIV Qual cartridges are used mostly for early infant diagnosis, where rapid turnaround is crucial. These cartridges can diagnose HIV in 1.5 hours, but are currently sold for $15.</p></td>
 							</tr>
 							<tr>
-								<td><strong><a href="https://tuberculosis.miraheze.org/wiki/GeneXpert#Tests" class="red">Xpert HIV-1 Viral Load cartridges</a></strong></td>
+								<td><strong><a href="https://tuberculosis.miraheze.org/wiki/GeneXpert#Tests" class="red" target="_blank">Xpert HIV-1 Viral Load cartridges</a></strong></td>
 								<td><p>Single-use tests that are run on a GeneXpert testing device for HIV treatment monitoring.These tests are often used in situations where fast turnaround is required, and have a 90 minute run time. Xpert HIV Viral Load cartridges are currently sold for $15.</p></td>
 							</tr>
 							<tr>
@@ -215,7 +242,7 @@
 				&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
 			</p>
 			<p class="too-small">
-				
+
 				We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
 			</p>
 		</footer>

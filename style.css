@@ -80,6 +80,11 @@ img {
 	margin: 1em 0;
 }
 
+.video-embed-shadow {
+	width: calc(560px - 44px);
+	height: calc(310px - 44px);
+}
+
 /* ===============
    FONT STYLES
    =============== */
@@ -1036,6 +1041,10 @@ h2.action-head {
 		width: 336px;
 		height: 186px;
 	}
+	.video-embed-shadow {
+		width: calc(336px - 44px);
+		height: calc(186px - 44px);
+	}
 	a[target="_blank"]:not(:has(img))::after {
 		height: 8px;
 		width: 8px;
@@ -1075,4 +1084,14 @@ h2.action-head {
 	.list-form.wrapper-columns {
 		flex-direction: column;
 	}
+}
+
+/* Legal Issues */
+#youtube-video-shadow {
+	border: 2px solid #DDDDDD;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
