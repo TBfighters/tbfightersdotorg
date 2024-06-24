@@ -68,7 +68,7 @@
 						<script>
 							let shadow = document.getElementById("youtube-video-shadow");
 							shadow.innerHTML = `<button class="button" onclick="loadEmbed()" id="load-youtube-video">Load Youtube Video</button>
-							<p id="legal-disclamer-youtube-video">Please read youtube's <a href="https://policies.google.com/privacy?hl=en" target="_blank">privacy policy</a> before preceding.</p>`
+								<em id="legal-disclamer-youtube-video" class="smaller">By loading the video, you agree to YouTube's privacy policy. <a href="https://policies.google.com/privacy?hl=en" target="_blank">Learn more</a></em>`
 							function loadEmbed() {
 								document.getElementById("load-youtube-video").remove()
 								document.getElementById("legal-disclamer-youtube-video").remove()
@@ -78,7 +78,7 @@
 								iframe.classList.add("video-embed")
 								iframe.setAttribute("id", "video")
 								iframe.setAttribute("style", "display:block")
-								iframe.setAttribute("src", "https://www.youtube.com/embed/uizFXzSTeVs?si=CrgRLdXVf5PgzMj8")
+								iframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/uizFXzSTeVs?si=CrgRLdXVf5PgzMj8")
 								iframe.setAttribute("title", "I Own Danaher")
 								iframe.setAttribute("frameborder", "0")
 								iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share")
