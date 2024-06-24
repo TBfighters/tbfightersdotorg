@@ -61,13 +61,15 @@
 						We lead by following and we act with compassion. That means we follow the guidance of public health experts, including <a href="https://www.pih.org/" target="_blank">Partners in Health</a> and <a href="https://www.msfaccess.org/" target="_blank">Médecins Sans Frontières (Doctors Without Borders)</a>, and the TB-affected communities who have needlessly suffered from this curable disease.
 					</p>
 					<div id="video" class="join-left">
-						<button class="button" onclick="loadEmbed()" id="load-youtube-video">Load Youtube Video</button>
-						<p id="legal-disclamer-youtube-video">Please read youtube's <a href="https://policies.google.com/privacy?hl=en" target="_blank">privacy policy</a> before preceding.</p>
-						<!-- <iframe class="video-embed" id="video" style="display:block;" src="https://www.youtube.com/embed/uizFXzSTeVs?si=CrgRLdXVf5PgzMj8" title="I Own Danaher" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+						<div class="video-embed-shadow" id="youtube-video-shadow" style="margin: 1em 0;">
+							<button class="button" onclick="loadEmbed()" id="load-youtube-video">Load Youtube Video</button>
+							<p id="legal-disclamer-youtube-video">Please read youtube's <a href="https://policies.google.com/privacy?hl=en" target="_blank">privacy policy</a> before preceding.</p>
+						</div>
 						<script>
 							function loadEmbed() {
 								document.getElementById("load-youtube-video").remove()
 								document.getElementById("legal-disclamer-youtube-video").remove()
+								document.getElementById("youtube-video-shadow").remove()
 								iframe = document.createElement("iframe");
 								iframe.classList.add("video-embed")
 								iframe.setAttribute("id", "video")
