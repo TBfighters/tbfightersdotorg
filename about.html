@@ -62,10 +62,12 @@
 					</p>
 					<div id="video" class="join-left">
 						<div class="video-embed-shadow" id="youtube-video-shadow" style="margin: 1em 0;">
-							<button class="button" onclick="loadEmbed()" id="load-youtube-video">Load Youtube Video</button>
-							<p id="legal-disclamer-youtube-video">Please read youtube's <a href="https://policies.google.com/privacy?hl=en" target="_blank">privacy policy</a> before preceding.</p>
+
+							<noscript>This video will only load if you have javascript enabled. To watch the video, please go to <a href="https://www.youtube.com/watch?v=uizFXzSTeVs" target="_blank">youtube</a> instead.</noscript>
 						</div>
 						<script>
+							document.getElementById("youtube-video-shadow").innerHTML = `<button class="button" onclick="loadEmbed()" id="load-youtube-video">Load Youtube Video</button>
+							<p id="legal-disclamer-youtube-video">Please read youtube's <a href="https://policies.google.com/privacy?hl=en" target="_blank">privacy policy</a> before preceding.</p>`
 							function loadEmbed() {
 								document.getElementById("load-youtube-video").remove()
 								document.getElementById("legal-disclamer-youtube-video").remove()

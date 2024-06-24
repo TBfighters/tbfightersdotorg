@@ -64,10 +64,11 @@
 					<p>
 						<div class="image-right">
 							<div id="youtube-video-shadow" style="height: calc(350px - 44px); width: calc(300px - 44px);">
-								<button class="button" onclick="loadEmbed()" id="load-youtube-video">Load Youtube Video</button>
-								<p id="legal-disclamer-youtube-video">Please read youtube's <a href="https://policies.google.com/privacy?hl=en" target="_blank">privacy policy</a> before preceding.</p>
+								<noscript>This video will only load if you have javascript enabled. To watch the video, please go to <a href="https://www.youtube.com/watch?v=YIO0shDPsdA" target="_blank">youtube</a> instead.</noscript>
 							</div>
 							<script>
+								document.getElementById("youtube-video-shadow").innerHTML = `<button class="button" onclick="loadEmbed()" id="load-youtube-video">Load Youtube Video</button>
+								<p id="legal-disclamer-youtube-video">Please read youtube's <a href="https://policies.google.com/privacy?hl=en" target="_blank">privacy policy</a> before preceding.</p>`
 								function loadEmbed() {
 									document.getElementById("load-youtube-video").remove()
 									document.getElementById("legal-disclamer-youtube-video").remove()
