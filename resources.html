@@ -69,7 +69,7 @@
 							<script>
 								let shadow = document.getElementById("youtube-video-shadow");
 								shadow.innerHTML = `<button class="button" onclick="loadEmbed()" id="load-youtube-video">Load Youtube Video</button>
-								<p id="legal-disclamer-youtube-video">Please read youtube's <a href="https://policies.google.com/privacy?hl=en" target="_blank">privacy policy</a> before preceding.</p>`
+								<em id="legal-disclamer-youtube-video" class="smaller">By loading the video, you agree to YouTube's privacy policy. <a href="https://policies.google.com/privacy?hl=en" target="_blank">Learn more</a></em>`
 								function loadEmbed() {
 									document.getElementById("load-youtube-video").remove()
 									document.getElementById("legal-disclamer-youtube-video").remove()
