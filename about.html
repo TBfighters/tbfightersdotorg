@@ -60,7 +60,33 @@
 						We lead by following and we act with compassion. That means we follow the guidance of public health experts, including <a href="https://www.pih.org/" target="_blank">Partners in Health</a> and <a href="https://www.msfaccess.org/" target="_blank">Médecins Sans Frontières (Doctors Without Borders)</a>, and the TB-affected communities who have needlessly suffered from this curable disease.
 					</p>
 					<div id="video" class="join-left">
-						<iframe class="video-embed" id="video" style="display:block;" src="https://www.youtube.com/embed/uizFXzSTeVs?si=CrgRLdXVf5PgzMj8" title="I Own Danaher" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<div class="video-embed-shadow" id="youtube-video-shadow" style="margin: 1em 0;">
+
+							<noscript>This video will only load if you have javascript enabled. To watch the video, please go to <a href="https://www.youtube.com/watch?v=uizFXzSTeVs" target="_blank">youtube</a> instead.</noscript>
+						</div>
+						<script>
+							let shadow = document.getElementById("youtube-video-shadow");
+							shadow.innerHTML = `<button class="button" onclick="loadEmbed()" id="load-youtube-video">Load Youtube Video</button>
+								<em id="legal-disclamer-youtube-video" class="smaller">By loading the video, you agree to YouTube's privacy policy. <a href="https://policies.google.com/privacy?hl=en" target="_blank">Learn more</a></em>`
+							function loadEmbed() {
+								document.getElementById("load-youtube-video").remove()
+								document.getElementById("legal-disclamer-youtube-video").remove()
+								shadow.remove()
+
+								iframe = document.createElement("iframe");
+								iframe.classList.add("video-embed")
+								iframe.setAttribute("id", "video")
+								iframe.setAttribute("style", "display:block")
+								iframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/uizFXzSTeVs?si=CrgRLdXVf5PgzMj8")
+								iframe.setAttribute("title", "I Own Danaher")
+								iframe.setAttribute("frameborder", "0")
+								iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share")
+								iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin")
+								iframe.setAttribute("allowfullscreen", null)
+
+								document.getElementById("video").appendChild(iframe);
+							}
+						</script>
 					</div>
 					<p>
 						<a href="https://www.youtube.com/playlist?list=PLHaAg4A3ezRPslu3SYmwnmfq2DLcpDbXa" target="_blank">More vlogbrothers TB videos</a>
@@ -82,6 +108,21 @@
 			</section>
 		</main>
 		<footer class="site-foot">
+			<p class="socials-wrapper-centered">
+				<a href="https://x.com/tbfighters" target="_blank"><img src="img/socials/twitter.svg"
+						alt="Twitter" class="social-icon"><img src="img/socials/twitter-hover.svg"
+						alt="" class="social-icon-hover"></a>
+				<a href="https://www.instagram.com/tbfighters" target="_blank"><img src="img/socials/insta.svg"
+						alt="Instagram" class="social-icon"><img src="img/socials/insta-hover.svg"
+						alt="" class="social-icon-hover"></a>
+				<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
+						src="img/socials/youtube.svg" alt="Youtube" class="social-icon"><img
+						src="img/socials/youtube-hover.svg" alt="" class="social-icon-hover"></a>
+				<a href="https://www.facebook.com/profile.php?id=61555332203505" target="_blank"><img
+						src="img/socials/facebook.svg" alt="Facebook" class="social-icon"><img
+						src="img/socials/facebook-hover.svg" alt="" class="social-icon-hover"></a>
+			</p>
+			<hr style="width: 10%; margin: 0 auto; margin-bottom: 4px;">
 			<p>
 				&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
 			</p>
