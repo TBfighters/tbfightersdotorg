@@ -23,14 +23,6 @@ function toggleExpand() {
     }
 }
 
-// copy buttons
-const copyElements = document.getElementsByClassName("copy");
-for (let i = 0; i < copyElements.length; i++) {
-    let elm = copyElements[i]
-    addCopyButton(elm, document.getElementById(elm.getAttribute("copy-elm")).textContent)
-}
-
-
 // slide show
 // This enables the buttons w/ js enabled
 document.getElementById("slideshow-buttons").style.display = "block"
@@ -60,7 +52,6 @@ async function download() {
     downloadImage(document.getElementsByClassName("slideshow-img")[slideIndex].src)
 }
 
-
-addCopyButtonCallback(document.getElementById("copy-alt-text"), () => {
-    return x[slideIndex].alt
-})
+function copyAltText() {
+    onclickButton(x[slideIndex].alt)
+}

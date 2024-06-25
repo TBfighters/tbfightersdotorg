@@ -10,26 +10,22 @@ function addToast(data) {
             background: "#BC1C1A",
             color: "#F5F5F5",
         },
-        onClick: function () {
-          toast.hideToast();
+        onClick: function() {
+            toast.hideToast();
         },
     });
     toast.showToast();
 }
 
 // REMEMBER to add a noscript
-function addCopyButton(button, text) {
-    button.onclick = function() {
-        navigator.clipboard.writeText(text.trim())
-        addToast({message: "Copied!", time: 1200})
-    }
+function onclickButton(text) {
+    navigator.clipboard.writeText(text.trim());
+    addToast({ message: "Copied!", time: 1200 })
 }
 
-function addCopyButtonCallback(button, text) {
-    button.onclick = function() {
-        navigator.clipboard.writeText(text().trim())
-        addToast({message: "Copied!", time: 1200})
-    }
+function onclickButtonCallback(text) {
+    navigator.clipboard.writeText(text().trim());
+    addToast({ message: "Copied!", time: 1200 })
 }
 
 // For copy button
@@ -56,8 +52,8 @@ function downloadImage(img) {
 // call this to register a print with a form (this only currently works with one register!)
 // to add a print button, call the function that it returns like this:
 // x(document.getElementById("button"), element.innerHTML, (form, doc) => {
-    // doc.getElementById("x").textContent = "y"
-    // })
+// doc.getElementById("x").textContent = "y"
+// })
 // REMEMBER to add a noscript
 function registerPrintForm(formElement, popupElement) {
     let currentText = null
