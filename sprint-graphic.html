@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--Meta tags-->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description"
+			content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
+		<meta name="robots" content="index, follow" />
+		<!--Open Graph Tags-->
+		<meta property="og:site_name" content="TBFighters" />
+		<meta property="og:url" content="https://tbfighters.org" />
+		<meta property="og:image" content="img/og-image.jpg" />
+		<meta property="og:type" content="website" />
+		<meta property="theme-color" content="#D7211E" />
+		<!-- Style Tags -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="libs/toastify/toastify.css">
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+		<script src="jquery-3.7.1.min.js"></script>
+		<script src="menu.js"></script>
+		<script src="libs/toastify/toastify.js"></script>
+		<!-- Variable Tags -->
+		<meta property="og:title" content="Sprint Graphic | TBFighters" />
+		<meta property="og:description" content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
+		<meta property="og:image" content="img/TBFightersSprintGraphic2.png" />
+		<script src="./actions.js"></script>
+		<script src="./header-link.js" defer></script>
+		<title>Sprint Graphic | TBFighters</title>
+	</head>
+	<body class="about">
+	<!--BELOW THIS GETS COPIED TO ALL PAGES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->
+	<header id="site-head"><a href="#main" class="skip">Skip to main content</a>
+		<div class="wrapper-head">
+			<h1 class="page-title">
+				<a href="index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
+			</h1>
+			<a class="toggle-button" href="#" title="menu"></a>
+			<nav class="site-menu">
+				<ul class="active">
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="timeline.html">News &amp; Timeline</a></li>
+					<li><a href="resources.html">Resources</a></li>
+					<li><a href="action.html">Take Action</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
+		<main id="main">
+			<section class="container container-compact title">
+				<div class="wrapper-full" style="display: flex; flex-direction: row; justify-content: center; overflow: hidden;">
+					<img src="./img/TBFightersSprintGraphic2.png" alt="" style="flex-shrink: 0; max-width: 100%; max-height: 100%;">
+				</div>
+				<div class="wrapper-full" style="display: flex; flex-direction: column">
+					<button class="button" id="alt-text">Copy Alt Text</button>
+					<button class="button" id="download">Download</button>
+				</div>
+				<script>
+					addCopyButton(document.getElementById("alt-text"), `"TBFighters Sprint Theme 2. Steven and Mitchell Rales are co-founders and board members of Danaher. Since everything is connected to tuberculosis, we're looking for TB/GeneXpert connections in some of the Rales brothers' personal projects." Calendar dates from Friday June 28 through Sunday June 30 with a line of text across them reading "Owned by the Rales bros". Daily challenge options: "Make or share a meme from a Wes Anderson movie; Connect a piece of art at the National Gallery of Art, Glenstone Museum, or Peeler Art Center to GeneXpert; Connect a movie from Criterion Collection or Janus Films to GeneXpert; Make or share an Indiana Pacers meme; Make or share a Washington Commanders meme; Propose a TB themed mascot for the Washington Commanders football team. TBFighters.org | @TBFighters"`)
+					document.getElementById("download").addEventListener("click", (e) => {
+						const link = document.createElement('a')
+						link.href = "img/TBFightersSprintGraphic2.png"
+						link.download = ""
+						link.click()
+						addToast({message: "Downloaded!", time: 1200})
+					})
+
+
+				</script>
+			</section>
+		</main>
+		<footer class="site-foot">
+			<p class="socials-wrapper-centered">
+				<a href="https://x.com/tbfighters" target="_blank"><img src="img/socials/twitter.svg"
+						alt="Twitter" class="social-icon"><img src="img/socials/twitter-hover.svg"
+						alt="" class="social-icon-hover"></a>
+				<a href="https://www.instagram.com/tbfighters" target="_blank"><img src="img/socials/insta.svg"
+						alt="Instagram" class="social-icon"><img src="img/socials/insta-hover.svg"
+						alt="" class="social-icon-hover"></a>
+				<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
+						src="img/socials/youtube.svg" alt="Youtube" class="social-icon"><img
+						src="img/socials/youtube-hover.svg" alt="" class="social-icon-hover"></a>
+				<a href="https://www.facebook.com/profile.php?id=61555332203505" target="_blank"><img
+						src="img/socials/facebook.svg" alt="Facebook" class="social-icon"><img
+						src="img/socials/facebook-hover.svg" alt="" class="social-icon-hover"></a>
+			</p>
+			<hr style="width: 10%; margin: 0 auto; margin-bottom: 4px;">
+			<p>
+				&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
+			</p>
+			<p class="too-small">
+
+				We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
+			</p>
+		</footer>
+		</body>
+	</html>
