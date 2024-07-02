@@ -47,6 +47,7 @@ function downloadImage(img) {
     link.href = img
     link.download = ""
     link.click()
+    addToast({message: "Downloaded!", time: 1200})
 }
 
 // call this to register a print with a form (this only currently works with one register!)
