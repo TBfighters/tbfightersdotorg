@@ -21,8 +21,7 @@
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="libs/toastify/toastify.css">
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-		<script src="jquery-3.7.1.min.js"></script>
-		<script src="menu.js"></script>
+		<script src="menu.js" defer></script>
 		<script src="libs/toastify/toastify.js"></script>
 		<!-- Variable Tags -->
 		<meta property="og:title" content="Sprint Graphic | TBFighters" />
@@ -38,7 +37,7 @@
 			<h1 class="page-title">
 				<a href="index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
 			</h1>
-			<a class="toggle-button" href="#" title="menu"></a>
+			<a id="hamburger-button" href="#" title="menu"></a>
 			<nav class="site-menu">
 				<ul class="active">
 					<li><a href="about.html">About Us</a></li>
@@ -53,28 +52,16 @@
 		<main id="main">
 			<section class="container container-compact title">
 				<div class="wrapper-full" style="display: flex; flex-direction: row; justify-content: center; overflow: hidden;">
-					<img src="./img/TBFightersSprintGraphic3.png" alt='TBFighters Sprint Theme 3. To finish off our sprint, we&#39re taking a page out of the Anthropocene Reviewed and rating Danaher and its subsidiaries on a five star scale!" Calendar icon with dates from Monday June 1 to Wednesday July 3 and text running across: "Danaher-cene Reviewed" Daily challenge options: "Facebook post/comment; Facebook review; Twitter post; Instagram post/comment/story; Yelp review; Google review (Danaher HQ); Email: investor.relations@danaher.com; Fax: +1 408-541-4192; Mail: Danaher Corporation 2200 Pennsylvania Avenue, N.W., Suite 800W Washington, D.C. 20037-1701. TBFighters.org | @TBFighters' style="flex-shrink: 0; max-width: 100%; max-height: 100%;">
+					<img src="./img/TBFightersSprintGraphic3.png" alt='TBFighters Sprint Theme 3. To finish off our sprint, we&#39;re taking a page out of the Anthropocene Reviewed and rating Danaher and its subsidiaries on a five star scale!" Calendar icon with dates from Monday June 1 to Wednesday July 3 and text running across: "Danaher-cene Reviewed" Daily challenge options: "Facebook post/comment; Facebook review; Twitter post; Instagram post/comment/story; Yelp review; Google review (Danaher HQ); Email: investor.relations@danaher.com; Fax: +1 408-541-4192; Mail: Danaher Corporation 2200 Pennsylvania Avenue, N.W., Suite 800W Washington, D.C. 20037-1701. TBFighters.org | @TBFighters' style="flex-shrink: 0; max-width: 100%; max-height: 100%;">
 				</div>
 				<div class="wrapper-full" style="display: flex; flex-direction: column">
-					<button class="button" id="alt-text">Copy Alt Text</button>
-					<button class="button" id="download">Download</button>
+					<button class="button" id="alt-text" onclick="onclickButton(`TBFighters Sprint Theme 3. To finish off our sprint, we&#39;re taking a page out of the Anthropocene Reviewed and rating Danaher and its subsidiaries on a five star scale!&quot; Calendar icon with dates from Monday June 1 to Wednesday July 3 and text running across: &quot;Danaher-cene Reviewed&quot; Daily challenge options: &quot;Facebook post/comment; Facebook review; Twitter post; Instagram post/comment/story; Yelp review; Google review (Danaher HQ); Email: investor.relations@danaher.com; Fax: +1 408-541-4192; Mail: Danaher Corporation 2200 Pennsylvania Avenue, N.W., Suite 800W Washington, D.C. 20037-1701. TBFighters.org | @TBFighters`)">Copy Alt Text</button>
+					<button class="button" id="download" onclick="downloadImage('img/TBFightersSprintGraphic3.png')">Download</button>
 					<noscript>
 						<br>
 						<p style="font-style: italic;">Please enable javascript to use the copy and download buttons.</p>
 					</noscript>
 				</div>
-				<script>
-					addCopyButton(document.getElementById("alt-text"), `TBFighters Sprint Theme 3. To finish off our sprint, we're taking a page out of the Anthropocene Reviewed and rating Danaher and its subsidiaries on a five star scale!" Calendar icon with dates from Monday June 1 to Wednesday July 3 and text running across: "Danaher-cene Reviewed" Daily challenge options: "Facebook post/comment; Facebook review; Twitter post; Instagram post/comment/story; Yelp review; Google review (Danaher HQ); Email: investor.relations@danaher.com; Fax: +1 408-541-4192; Mail: Danaher Corporation 2200 Pennsylvania Avenue, N.W., Suite 800W Washington, D.C. 20037-1701. TBFighters.org | @TBFighters`)
-					document.getElementById("download").addEventListener("click", (e) => {
-						const link = document.createElement('a')
-						link.href = "img/TBFightersSprintGraphic3.png"
-						link.download = ""
-						link.click()
-						addToast({message: "Downloaded!", time: 1200})
-					})
-
-
-				</script>
 			</section>
 		</main>
 		<footer class="site-foot">

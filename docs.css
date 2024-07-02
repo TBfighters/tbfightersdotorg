@@ -8,7 +8,7 @@
 	width: 80%;
 	margin: 0 auto;
 	padding: 20px;
-	background-color: #DDDDDD;
+	background-color: var(--bg2);
 	margin-bottom: 20px;
 	box-shadow: var(--aside-shadow);
 }
@@ -22,9 +22,9 @@ button {
 	padding: 0.6em 1em;
 	text-decoration: none;
 
-	background-color: #BC1C1A;
-	border: 4px solid #BC1C1A;
-	color: #F5F5F5;
+	background-color: var(--accent-bg);
+	border: 4px solid var(--accent-bg);
+	color: var(--bg);
 	margin: 0.5em 0;
 	transition: all 0.2s ease-in-out;
 
@@ -35,8 +35,8 @@ button {
 }
 
 button:hover {
-	background-color: #121212;
-	border-color: #121212;
+	background-color: var(--fg);
+	border-color: var(--fg);
 }
 
 .block .buttons {
@@ -51,7 +51,7 @@ button:hover {
 }
 
 img.letter {
-	border: 2px solid #BC1C1A;
+	border: 2px solid var(--accent-bg);
 	margin: 20px;
 	box-shadow: 0.1em 0.1em 1em rgb(0 0 0 / 60%);
 }
