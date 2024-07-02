@@ -1,5 +1,9 @@
+/*
+ * CSS FOR ALL PAGES/SHARED CSS
+ * */
+
 /* ===============
-   RESETS AND ACCESSIBILITY
+   RESETS, ACCESSIBILITY AND CSS VARIABLES
    =============== */
 * {
     margin: 0;
@@ -31,6 +35,10 @@ html {
     box-shadow: 0 0 0 4px var(--fg);
 }
 
+/* ===============
+ * SITE HEADER
+   =============== */
+
 .skip {
     position: absolute;
     left: -10000px;
@@ -48,6 +56,146 @@ html {
     background: var(--bg);
     padding: 0.3em;
 }
+
+#site-head {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    background-color: var(--accent-bg);
+    color: var(--fg);
+    font-size: 1em;
+    font-weight: 700;
+    vertical-align: middle;
+    padding: 40px 0;
+}
+
+.wrapper-head {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+}
+
+h1.page-title {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-size: 3em;
+    display: inline-block;
+}
+
+.page-title .black-highlight {
+    background-color: var(--fg);
+    padding: 0 4px;
+}
+
+.page-title a {
+    text-decoration: none;
+    color: var(--bg);
+}
+
+.page-title a:hover,
+.page-title a:focus,
+.page-title a:active {
+    color: var(--bg);
+    background-color: var(--fg);
+}
+
+/* LINKS */
+.site-menu {
+    vertical-align: middle;
+    float: right;
+}
+
+.site-menu ul {
+    display: inline-block;
+    list-style: none;
+    padding-left: 0.25em;
+    background-color: var(--accent-bg);
+}
+
+.site-menu ul li {
+    float: left;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.site-menu a {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    padding: 0.75em;
+    transition: all 0.2s ease-in-out;
+    font-size: 1.25em;
+    color: var(--bg);
+}
+
+.site-menu a:hover,
+.site-menu a:focus,
+.site-menu a:active {
+    color: var(--bg);
+    background-color: var(--fg);
+}
+
+/* HAMBURGER MENU */
+
+a#hamburger-button {
+    display: none;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .site-menu {
+        width: 100%;
+        padding: 0.5em;
+        position: relative;
+    }
+
+    .site-menu ul.active {
+        display: none;
+    }
+
+    .site-menu ul {
+        width: 100%;
+        position: absolute;
+        top: 140%;
+        left: 0;
+        padding: 0.5em;
+    }
+
+    .site-menu ul li {
+        margin: 5px 0;
+        float: none;
+        display: block;
+    }
+
+    .site-menu li a {
+        display: block;
+        font-size: 1.5em;
+    }
+
+    a#hamburger-button {
+        padding: 10px;
+        font-size: 1.5em;
+        line-height: 1;
+        text-decoration: none;
+        display: inline-block;
+        color: var(--bg);
+    }
+
+    a#hamburger-button::after {
+        content: "\2630";
+    }
+
+    a#hamburger-button.active::after {
+        content: "\2716";
+    }
+
+    a#hamburger-button span {
+        font-size: 0;
+    }
+}
+
+/* ==== END OF HEADER ==== */
 
 /* ===============
    BODY AND GENERAL
@@ -100,6 +248,20 @@ img {
     width: calc(560px - 44px);
     height: calc(310px - 44px);
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+/* ==== END OF BODY AND GENERAL ==== */
 
 /* ===============
    FONT STYLES
@@ -159,33 +321,6 @@ div.centered {
 
 .container ul {
     padding-left: 1.5em;
-}
-
-.post {
-    display: flex;
-    flex-direction: column;
-
-    margin: 0 5px 0.6em;
-    padding: 20px;
-    padding-bottom: 5px;
-    border: 2px solid var(--bg2);
-    font-size: 20px;
-    line-height: 1.1;
-    color: var(--fg);
-    font-family: "Atkinson Hyperlegible";
-    resize: none;
-}
-
-.post p:first-child {
-    margin-bottom: 0;
-}
-
-.post p:nth-child(2) {
-    font-size: 0.7em;
-}
-
-.post div {
-    margin-top: auto;
 }
 
 .featured-columns p:first-child,
@@ -335,19 +470,16 @@ button:hover {
     border-color: var(--fg);
 }
 
-.post button,
-.post .button,
-.post-gallery button,
-.post-gallery .button {
-    font-size: 0.7em;
-}
-
 button,
 .button {
     line-height: 1.1;
 }
 
-/* FEATURED */
+/* ==== END OF FONT STYLES ==== */
+
+/* ===============
+   FEATURED ACTION
+   =============== */
 
 div.featured {
     display: block;
@@ -381,93 +513,11 @@ div.featured {
     color: var(--bg);
 }
 
+/* ==== END OF FEATURED ACTION ==== */
+
 /* ===============
-   PAGE HEADER
+   NEWSLETTER FORM
    =============== */
-#site-head {
-    position: relative;
-    z-index: 10;
-    width: 100%;
-    background-color: var(--accent-bg);
-    color: var(--fg);
-    font-size: 1em;
-    font-weight: 700;
-    vertical-align: middle;
-    padding: 40px 0;
-}
-
-.wrapper-head {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: block;
-}
-
-h1.page-title {
-    margin-bottom: 0;
-    text-transform: uppercase;
-    font-size: 3em;
-    display: inline-block;
-}
-
-.page-title .black-highlight {
-    background-color: var(--fg);
-    padding: 0 4px;
-}
-
-.page-title a {
-    text-decoration: none;
-    color: var(--bg);
-}
-
-.page-title a:hover,
-.page-title a:focus,
-.page-title a:active {
-    color: var(--bg);
-    background-color: var(--fg);
-}
-
-/* LINKS */
-.site-menu {
-    vertical-align: middle;
-    float: right;
-}
-
-.site-menu ul {
-    display: inline-block;
-    list-style: none;
-    padding-left: 0.25em;
-    background-color: var(--accent-bg);
-}
-
-.site-menu ul li {
-    float: left;
-    margin-bottom: 0;
-    list-style: none;
-}
-
-.site-menu a {
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    padding: 0.75em;
-    transition: all 0.2s ease-in-out;
-    font-size: 1.25em;
-    color: var(--bg);
-}
-
-.site-menu a:hover,
-.site-menu a:focus,
-.site-menu a:active {
-    color: var(--bg);
-    background-color: var(--fg);
-}
-
-a#hamburger-button {
-    display: none;
-}
-
-/* FORMS */
 input[type="text"],
 input[type="email"] {
     border-color: var(--bg2);
@@ -507,6 +557,8 @@ input[type="checkbox"]:focus {
     display: inline-block;
     margin-top: 0.4em;
 }
+
+/* ==== END OF NEWSLETTER FORMS ==== */
 
 /* ===============
    PAGE CONTAINERS
@@ -575,42 +627,6 @@ input[type="checkbox"]:focus {
     display: flex;
     flex-direction: row;
     gap: 1em;
-}
-
-.wrapper-columns .post {
-    width: 33.33%;
-    /* padding-bottom: 1em; */
-}
-
-.post-gallery {
-    vertical-align: top;
-    margin: 0.5em auto 1em;
-
-    background-color: var(--bg2);
-    padding: 10px 15px;
-    margin-bottom: 0.4em;
-    box-shadow: var(--aside-shadow);
-}
-
-.post-gallery div:first-child {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    height: 21em;
-    justify-content: center;
-}
-
-.post-gallery div:nth-child(2) {
-    width: 80%;
-    max-width: 600px;
-}
-
-.post-gallery img {
-    max-height: 20em;
-    max-width: 100%;
-    vertical-align: top;
-    box-shadow: var(--aside-shadow);
 }
 
 aside.wrapper-full {
@@ -987,12 +1003,6 @@ h2.action-head {
    MOBILE STYLES AND BREAKPOINTS
    =============== */
 
-@media only screen and (max-width: 1320px) {
-    .post p {
-        font-size: 18px;
-    }
-}
-
 @media only screen and (min-width: 993px) {
     .wrapper {
         max-width: 900px;
@@ -1028,55 +1038,6 @@ h2.action-head {
         width: auto;
     }
 
-    .site-menu {
-        width: 100%;
-        padding: 0.5em;
-        position: relative;
-    }
-
-    .site-menu ul.active {
-        display: none;
-    }
-
-    .site-menu ul {
-        width: 100%;
-        position: absolute;
-        top: 140%;
-        left: 0;
-        padding: 0.5em;
-    }
-
-    .site-menu ul li {
-        margin: 5px 0;
-        float: none;
-        display: block;
-    }
-
-    .site-menu li a {
-        display: block;
-        font-size: 1.5em;
-    }
-
-    a#hamburger-button {
-        padding: 10px;
-        font-size: 1.5em;
-        line-height: 1;
-        text-decoration: none;
-        display: inline-block;
-        color: var(--bg);
-    }
-
-    a#hamburger-button::after {
-        content: "\2630";
-    }
-
-    a#hamburger-button.active::after {
-        content: "\2716";
-    }
-
-    a#hamburger-button span {
-        font-size: 0;
-    }
 
     .buttons {
         display: flex;
@@ -1120,15 +1081,6 @@ h2.action-head {
         font-size: 1.6em;
     }
 
-    .post-gallery img {
-        max-width: 100%;
-        padding: 0.33em;
-    }
-
-    .post-gallery div:nth-child(2) {
-        width: 100%;
-    }
-
     .list-form.wrapper-columns {
         flex-direction: row;
         gap: 0.6em;
@@ -1163,10 +1115,6 @@ h2.action-head {
 }
 
 @media only screen and (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
     .button {
         padding: 0.5em 0.7em;
         border-width: 2px;
@@ -1193,10 +1141,6 @@ h2.action-head {
     .wrapper-columns {
         flex-direction: column;
         gap: 0;
-    }
-
-    .wrapper-columns .post {
-        width: inherit;
     }
 
     .join-left,
@@ -1234,10 +1178,6 @@ h2.action-head {
 }
 
 @media only screen and (max-width: 650px) {
-    body {
-        font-size: 12px;
-    }
-
     h1 {
         font-size: 2.5em;
     }

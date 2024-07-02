@@ -1,3 +1,7 @@
+
+/* ===============
+   PETITION
+   =============== */
 #petition-wrapper {
 	background-image: url('./img/petition header 1.png');
 	background-position: center;
@@ -23,3 +27,107 @@
 		max-width: none;
 	}
 }
+
+/* ==== END OF PETITION ==== */
+
+/* ===============
+   SOCIAL MEDIA POSTS
+   =============== */
+
+.post {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 5px 0.6em;
+    padding: 20px;
+    padding-bottom: 5px;
+    border: 2px solid var(--bg2);
+    font-size: 20px;
+    line-height: 1.1;
+    color: var(--fg);
+    font-family: "Atkinson Hyperlegible";
+    resize: none;
+}
+
+.post p:first-child {
+    margin-bottom: 0;
+}
+
+.post p:nth-child(2) {
+    font-size: 0.7em;
+}
+
+.post div {
+    margin-top: auto;
+}
+
+.post button,
+.post .button,
+.post-gallery button,
+.post-gallery .button {
+    font-size: 0.7em;
+}
+
+/* POST GALLERY */
+.wrapper-columns .post {
+    width: 33.33%;
+    /* padding-bottom: 1em; */
+}
+
+.post-gallery {
+    vertical-align: top;
+    margin: 0.5em auto 1em;
+
+    background-color: var(--bg2);
+    padding: 10px 15px;
+    margin-bottom: 0.4em;
+    box-shadow: var(--aside-shadow);
+}
+
+.post-gallery div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    height: 21em;
+    justify-content: center;
+}
+
+.post-gallery div:nth-child(2) {
+    width: 80%;
+    max-width: 600px;
+}
+
+.post-gallery img {
+    max-height: 20em;
+    max-width: 100%;
+    vertical-align: top;
+    box-shadow: var(--aside-shadow);
+}
+
+/* SCREEN SIZES */
+
+@media only screen and (max-width: 1320px) {
+    .post p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .post-gallery img {
+        max-width: 100%;
+        padding: 0.33em;
+    }
+
+    .post-gallery div:nth-child(2) {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper-columns .post {
+        width: inherit;
+    }
+}
+
+/* ==== SOCIAL MEDIA POSTS ==== */
