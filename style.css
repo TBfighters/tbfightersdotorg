@@ -300,10 +300,6 @@ strong.larger {
     font-size: 1.2em;
 }
 
-.action p.larger {
-    font-size: 1.5em;
-}
-
 p.smaller,
 li.smaller,
 em.smaller {
@@ -512,6 +508,60 @@ div.featured {
 /* ==== END OF FEATURED ACTION ==== */
 
 /* ===============
+   ACTIONS
+   =============== */
+
+.action-icon {
+    height: 1.5em;
+    vertical-align: bottom;
+    margin-right: 0.5em;
+}
+
+.newsletter-action {
+    padding-bottom: 0.5em;
+}
+
+.action p.larger {
+    font-size: 1.5em;
+}
+
+/* ACTIONS GRID */
+.wrapper-action-grid .action {
+    display: inline-block;
+    width: calc(50% - 4.2em);
+    margin: 1em 2em;
+    vertical-align: top;
+}
+
+.newsletter-action-column {
+    max-width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 992px) {
+    .wrapper-action-grid .action {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .newsletter-action-column {
+        max-width: unset;
+    }
+
+    .newsletter-action {
+        padding-bottom: 0.5em;
+    }
+
+}
+
+/* ==== END OF ACTIONS ==== */
+
+/* ===============
    NEWSLETTER FORM
    =============== */
 input[type="text"],
@@ -672,19 +722,6 @@ aside.wrapper-full {
     font-size: 1em;
 }
 
-/* ACTIONS GRID */
-.wrapper-action-grid .action {
-    display: inline-block;
-    width: calc(50% - 4.2em);
-    margin: 1em 2em;
-    vertical-align: top;
-}
-
-.action-icon {
-    height: 1.5em;
-    vertical-align: bottom;
-    margin-right: 0.5em;
-}
 
 .socials-wrapper {
     display: flex;
@@ -721,16 +758,6 @@ aside.wrapper-full {
     opacity: 1;
 }
 
-.newsletter-action {
-    padding-bottom: 0.5em;
-}
-
-.newsletter-action-column {
-    max-width: 50%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
 /* Glossary */
 table caption {
@@ -805,56 +832,6 @@ table th {
     margin-top: 10vh;
 }
 
-.expand-actions-arrow {
-    height: 0.8em;
-    filter: contrast(0.85);
-    rotate: 180deg;
-    transition: ease-in-out 0.2s all;
-}
-
-.expand-actions-arrow-up {
-    rotate: 0deg;
-}
-
-.expand-actions-arrow:hover {
-    cursor: pointer;
-}
-
-@keyframes slide-in {
-    0% {
-        margin-top: -10px;
-        opacity: 0;
-    }
-
-    100% {
-        margin-top: 0px;
-        opacity: 1;
-    }
-}
-
-@keyframes slide-out {
-    0% {
-        margin-top: 0px;
-        opacity: 1;
-    }
-
-    100% {
-        margin-top: -10px;
-        opacity: 0;
-    }
-}
-
-.show-actions {
-    display: block;
-    animation: slide-in 0.3s linear 0s;
-}
-
-.hide-actions {
-    animation: slide-out 0.3s linear 0s;
-    opacity: 0;
-    margin-top: -10px;
-}
-
 #top .fa-arrow-down:before {
     font-size: 3em;
     color: var(--fg);
@@ -887,11 +864,6 @@ table th {
     background-image: url("img/money.gif");
     background-attachment: fixed;
     background-position: left center;
-}
-
-h2.action-head {
-    font-size: 3.5em;
-    text-transform: uppercase;
 }
 
 #join li {
@@ -995,22 +967,6 @@ h2.action-head {
 @media only screen and (max-width: 992px) {
     .header-copy {
         display: none;
-    }
-
-    .wrapper-action-grid .action {
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 0;
-        margin-right: auto;
-    }
-
-    .newsletter-action-column {
-        max-width: unset;
-    }
-
-    .newsletter-action {
-        padding-bottom: 0.5em;
     }
 
     .wrapper {
