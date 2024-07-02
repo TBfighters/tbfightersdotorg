@@ -234,17 +234,6 @@ img {
     margin-bottom: 10px;
 }
 
-.video-embed {
-    width: 560px;
-    height: 310px;
-    margin: 1em 0;
-}
-
-.video-embed-shadow {
-    width: calc(560px - 44px);
-    height: calc(310px - 44px);
-}
-
 @media only screen and (max-width: 768px) {
     body {
         font-size: 14px;
@@ -468,6 +457,45 @@ button,
 }
 
 /* ==== END OF FONT STYLES ==== */
+
+/* ===============
+   VIDEOS
+   =============== */
+
+.video-embed {
+    width: 560px;
+    height: 310px;
+    margin: 1em 0;
+}
+
+/* Legal Issues */
+.video-embed-shadow {
+    width: calc(560px - 44px);
+    height: calc(310px - 44px);
+}
+
+#youtube-video-shadow {
+    border: 2px solid var(--bg2);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .video-embed {
+        width: 336px;
+        height: 186px;
+    }
+
+    .video-embed-shadow {
+        width: calc(336px - 44px);
+        height: calc(186px - 44px);
+    }
+}
+
+/* ==== END OF VIDEOS ==== */
 
 /* ===============
    FEATURED ACTION
@@ -1100,16 +1128,6 @@ table th {
         margin-bottom: 1.5em;
     }
 
-    .video-embed {
-        width: 336px;
-        height: 186px;
-    }
-
-    .video-embed-shadow {
-        width: calc(336px - 44px);
-        height: calc(186px - 44px);
-    }
-
     a[target="_blank"]:not(:has(img))::after {
         height: 8px;
         width: 8px;
@@ -1154,14 +1172,4 @@ table th {
     .list-form.wrapper-columns {
         flex-direction: column;
     }
-}
-
-/* Legal Issues */
-#youtube-video-shadow {
-    border: 2px solid var(--bg2);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
