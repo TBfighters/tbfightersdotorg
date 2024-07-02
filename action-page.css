@@ -1,3 +1,6 @@
+/*
+ * CSS ONLY FOR THE ACTION PAGE
+ * */
 
 /* ===============
    PETITION
@@ -130,4 +133,60 @@
     }
 }
 
-/* ==== SOCIAL MEDIA POSTS ==== */
+/* ==== END OF SOCIAL MEDIA POSTS ==== */
+
+
+/* ===============
+   ACTION GRID
+   =============== */
+.expand-actions-arrow {
+    height: 0.8em;
+    filter: contrast(0.85);
+    rotate: 180deg;
+    transition: ease-in-out 0.2s all;
+}
+
+.expand-actions-arrow-up {
+    rotate: 0deg;
+}
+
+.expand-actions-arrow:hover {
+    cursor: pointer;
+}
+
+@keyframes slide-in {
+    0% {
+        margin-top: -10px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes slide-out {
+    0% {
+        margin-top: 0px;
+        opacity: 1;
+    }
+
+    100% {
+        margin-top: -10px;
+        opacity: 0;
+    }
+}
+
+.show-actions {
+    display: block;
+    animation: slide-in 0.3s linear 0s;
+}
+
+.hide-actions {
+    animation: slide-out 0.3s linear 0s;
+    opacity: 0;
+    margin-top: -10px;
+}
+
+/* ==== END OF ACTION GRID ==== */

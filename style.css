@@ -228,10 +228,6 @@ img {
     align-self: start;
 }
 
-.news-image {
-    max-width: 100%;
-}
-
 .image-right {
     float: right;
     margin-left: 20px;
@@ -569,15 +565,6 @@ input[type="checkbox"]:focus {
     background-repeat: no-repeat;
 }
 
-.homepage .container {
-    display: flex;
-    padding: 60px 0;
-    min-height: calc(100vh - 120px);
-    justify-content: space-around;
-    flex-direction: column;
-    background-size: cover;
-}
-
 .container-full {
     padding: 60px 0px;
 }
@@ -604,10 +591,6 @@ input[type="checkbox"]:focus {
     clear: both;
     position: relative;
     z-index: 4;
-}
-
-.wrapper-space {
-    margin-bottom: 1.5em;
 }
 
 .wrapper-full {

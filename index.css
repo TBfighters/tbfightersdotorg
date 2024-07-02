@@ -1,3 +1,31 @@
 /*
  * CSS ONLY FOR THE INDEX PAGE
  * */
+
+/* ===============
+ * GENERAL
+ * =============== */
+
+.homepage .container {
+    display: flex;
+    padding: 60px 0;
+    min-height: calc(100vh - 120px);
+    justify-content: space-around;
+    flex-direction: column;
+    background-size: cover;
+}
+
+/* ==== END OF GENERAL ==== */
+
+/* ===============
+   FEATURED ACTION
+   =============== */
+
+/* Buttons */
+
+.join-right .button-centered {
+    margin-left: 1em;
+    width: calc(100% - 4em - 8px);
+}
+
+/* ==== END OF FEATURED ACTION ==== */
