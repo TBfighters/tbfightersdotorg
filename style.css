@@ -346,6 +346,13 @@ a:has(img) {
     display: inline-block;
 }
 
+@media only screen and (max-width: 768px) {
+    a[target="_blank"]:not(:has(img))::after {
+        height: 8px;
+        width: 8px;
+    }
+}
+
 /* HEADERS */
 h1 {
     font-size: 3.5em;
@@ -374,6 +381,26 @@ h4 {
 
 .container-compact h2 {
     margin-top: 0.7em;
+}
+
+@media only screen and (max-width: 900px) {
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.6em;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
 }
 
 /* BUTTONS */
@@ -437,6 +464,39 @@ button:hover {
 button,
 .button {
     line-height: 1.1;
+}
+
+@media only screen and (max-width: 992px) {
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 0.5em;
+    }
+
+    .buttons .button {
+        width: unset;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .button {
+        padding: 0.5em 0.7em;
+        border-width: 2px;
+    }
+
+    .join-right .button-centered {
+        margin-left: 1em;
+        width: calc(100% - 4em + 1px);
+    }
+}
+
+/* Lists */
+@media only screen and (max-width: 650px) {
+    ul {
+        padding-left: 2em;
+    }
 }
 
 /* ==== END OF FONT STYLES ==== */
@@ -512,6 +572,12 @@ div.featured {
 @media only screen and (max-width: 992px) {
     .wrapper.featured-columns {
         width: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .featured-columns {
+        margin-bottom: 1.5em;
     }
 }
 
@@ -620,6 +686,24 @@ input[type="checkbox"]:focus {
         gap: 0.6em;
         flex-wrap: wrap;
     }
+
+    .list-form div {
+        width: 40%;
+    }
+
+    .list-form label {
+        margin-top: 0;
+    }
+
+    .list-form label span {
+        display: block;
+    }
+
+    .list-form div,
+    .list-form input,
+    .list-form label {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 560px) {
@@ -653,6 +737,8 @@ input[type="checkbox"]:focus {
     padding: 60px 0px 20px;
     background-repeat: no-repeat;
 }
+
+/* ==== END OF PAGE CONTAINERS ==== */
 
 /* ===============
    CONTENT WRAPPERS
@@ -731,6 +817,8 @@ input[type="checkbox"]:focus {
         width: auto;
     }
 }
+
+/* ==== END OF CONTENT WRAPPERS ==== */
 
 /* TIMELINE */
 .container-timeline .wrapper-full {
@@ -948,7 +1036,10 @@ table th {
     background-position: left center;
 }
 
-/* Header link */
+
+/* ===============
+   HEADER LINK
+   =============== */
 .header-copy {
     height: 0.7em;
     width: 1em;
@@ -981,6 +1072,14 @@ table th {
     display: block;
     position: absolute;
 }
+
+@media only screen and (max-width: 992px) {
+    .header-copy {
+        display: none;
+    }
+}
+
+/* ==== END OF HEADER LINK ==== */
 
 /* ===============
    SITE FOOTER
@@ -1016,27 +1115,11 @@ table th {
     overflow-wrap: anywhere;
 }
 
+/* ==== END OF SITE FOOTER ==== */
+
 /* ===============
    MOBILE STYLES AND BREAKPOINTS
    =============== */
-
-@media only screen and (max-width: 992px) {
-    .header-copy {
-        display: none;
-    }
-
-    .buttons {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-        gap: 0.5em;
-    }
-
-    .buttons .button {
-        width: unset;
-    }
-}
 
 @media only screen and (max-width: 900px) {
 
@@ -1059,32 +1142,6 @@ table th {
         max-width: 150px;
     }
 
-    h2 {
-        font-size: 2em;
-    }
-
-    h3 {
-        font-size: 1.6em;
-    }
-
-    .list-form div {
-        width: 40%;
-    }
-
-    .list-form label {
-        margin-top: 0;
-    }
-
-    .list-form label span {
-        display: block;
-    }
-
-    .list-form div,
-    .list-form input,
-    .list-form label {
-        width: 100%;
-    }
-
     .glossary-list tr td {
         display: block;
     }
@@ -1095,16 +1152,6 @@ table th {
 }
 
 @media only screen and (max-width: 768px) {
-    .button {
-        padding: 0.5em 0.7em;
-        border-width: 2px;
-    }
-
-    .join-right .button-centered {
-        margin-left: 1em;
-        width: calc(100% - 4em + 1px);
-    }
-
     .image-right,
     .image-left {
         float: none;
@@ -1127,29 +1174,12 @@ table th {
         align-self: center;
         max-width: 100px;
     }
-
-    .featured-columns {
-        margin-bottom: 1.5em;
-    }
-
-    a[target="_blank"]:not(:has(img))::after {
-        height: 8px;
-        width: 8px;
-    }
 }
 
 @media only screen and (max-width: 650px) {
-    h1 {
-        font-size: 2.5em;
-    }
-
     #top h1 {
         font-size: 3em;
         margin-bottom: 0.6em;
-    }
-
-    h2 {
-        font-size: 2em;
     }
 
     #join li {
@@ -1160,9 +1190,5 @@ table th {
     #join li.larger,
     #join strong.larger {
         font-size: 1.75em;
-    }
-
-    ul {
-        padding-left: 2em;
     }
 }
