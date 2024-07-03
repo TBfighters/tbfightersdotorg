@@ -255,6 +255,13 @@ img {
     color: var(--accent-fg);
 }
 
+.highlight {
+    background-image: url("img/highlight.svg");
+    padding: 0 0.15em;
+    margin: 0 -0.15em;
+    color: var(--bg);
+}
+
 .container {
     font-size: 1.25em;
     line-height: 1.3;
@@ -264,16 +271,8 @@ img {
     text-align: center;
 }
 
-.wrapper p,
-.wrapper li,
-.wrapper-full p,
-.wrapper-full li {
+:is(.wrapper, .block, .wrapper-full) :is(p, li) {
     margin-bottom: 0.6em;
-}
-
-aside.wrapper-full p:last-child,
-.milestone p:last-child {
-    margin-bottom: 0;
 }
 
 .indent {
@@ -304,15 +303,6 @@ div.centered {
     padding-left: 1.5em;
 }
 
-.featured-columns p:first-child,
-#primer p,
-#danaher p,
-#twist p,
-#profits p,
-#join li {
-    font-size: 1.2em;
-}
-
 /* LINKS */
 a {
     color: var(--fg);
@@ -334,6 +324,8 @@ a.red:focus {
     color: var(--fg);
     text-shadow: none;
 }
+
+/* Outgoing links */
 
 a[target="_blank"]:not(:has(img))::after {
     position: relative;
@@ -403,10 +395,6 @@ button:hover {
     cursor: pointer;
 }
 
-.return-button {
-    margin: 2em 0;
-}
-
 .container .button,
 .container button {
     background-color: var(--accent-bg);
@@ -419,11 +407,6 @@ button:hover {
 
 .button-centered {
     text-align: center;
-}
-
-.join-right .button-centered {
-    margin-left: 1em;
-    width: calc(100% - 4em - 8px);
 }
 
 .button-full {
@@ -526,11 +509,10 @@ div.featured {
     padding: 0.5em 0.8em;
 }
 
-.highlight {
-    background-image: url("img/highlight.svg");
-    padding: 0 0.15em;
-    margin: 0 -0.15em;
-    color: var(--bg);
+@media only screen and (max-width: 992px) {
+    .wrapper.featured-columns {
+        width: auto;
+    }
 }
 
 /* ==== END OF FEATURED ACTION ==== */
@@ -632,6 +614,20 @@ input[type="checkbox"]:focus {
     margin-top: 0.4em;
 }
 
+@media only screen and (max-width: 900px) {
+    .list-form.wrapper-columns {
+        flex-direction: row;
+        gap: 0.6em;
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .list-form.wrapper-columns {
+        flex-direction: column;
+    }
+}
+
 /* ==== END OF NEWSLETTER FORMS ==== */
 
 /* ===============
@@ -690,12 +686,50 @@ input[type="checkbox"]:focus {
     gap: 1em;
 }
 
-aside.wrapper-full {
-    margin: 30px auto;
+.block {
+    display: block;
+    width: 80%;
+    max-width: 1260px;
+    margin: 0 auto;
     padding: 20px;
     background-color: var(--bg2);
     margin-bottom: 20px;
     box-shadow: var(--aside-shadow);
+}
+
+.block.wrapper-full {
+    width: 100%;
+}
+
+@media only screen and (min-width: 993px) {
+    .wrapper {
+        max-width: 900px;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper-full {
+        width: 90%;
+    }
+
+    .wrapper-columns {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .wrapper-full {
+        margin: 0 1em;
+        width: auto;
+    }
 }
 
 /* TIMELINE */
@@ -986,25 +1020,10 @@ table th {
    MOBILE STYLES AND BREAKPOINTS
    =============== */
 
-@media only screen and (min-width: 993px) {
-    .wrapper {
-        max-width: 900px;
-    }
-}
-
 @media only screen and (max-width: 992px) {
     .header-copy {
         display: none;
     }
-
-    .wrapper {
-        width: 90%;
-    }
-
-    .wrapper.featured-columns {
-        width: auto;
-    }
-
 
     .buttons {
         display: flex;
@@ -1046,12 +1065,6 @@ table th {
 
     h3 {
         font-size: 1.6em;
-    }
-
-    .list-form.wrapper-columns {
-        flex-direction: row;
-        gap: 0.6em;
-        flex-wrap: wrap;
     }
 
     .list-form div {
@@ -1105,18 +1118,9 @@ table th {
         display: none;
     }
 
-    .wrapper-columns {
-        flex-direction: column;
-        gap: 0;
-    }
-
     .join-left,
     .join-right {
         width: 100%;
-    }
-
-    .wrapper-full {
-        width: 90%;
     }
 
     #top img {
@@ -1160,16 +1164,5 @@ table th {
 
     ul {
         padding-left: 2em;
-    }
-
-    .wrapper-full {
-        margin: 0 1em;
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 560px) {
-    .list-form.wrapper-columns {
-        flex-direction: column;
     }
 }

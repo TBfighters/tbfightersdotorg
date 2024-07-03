@@ -3,17 +3,6 @@
 	margin: 0 auto;
 }
 
-.block {
-	display: block;
-	width: 80%;
-	margin: 0 auto;
-	padding: 20px;
-	background-color: var(--bg2);
-	margin-bottom: 20px;
-	box-shadow: var(--aside-shadow);
-}
-
-
 button {
 	display: inline-block;
 	-webkit-border-radius: 0.5em;
