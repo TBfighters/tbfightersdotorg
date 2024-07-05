@@ -1,8 +1,9 @@
 // expand button
-
 let expanded = false;
 let grid = document.getElementById("expand-action-grid");
 grid.style.display = "none";
+
+// This enables the buttons w/ js enabled
 document.getElementById("expand-button-container").style.display = "block";
 function toggleExpand() {
     if (expanded) {
@@ -22,17 +23,13 @@ function toggleExpand() {
     }
 }
 
-// copy buttons
-
-addCopyButton(document.getElementById("copy-1"), document.getElementById("post-1").textContent)
-addCopyButton(document.getElementById("copy-2"), document.getElementById("post-2").textContent)
-addCopyButton(document.getElementById("copy-3"), document.getElementById("post-3").textContent)
-
-
 // slide show
+// This enables the buttons w/ js enabled
 document.getElementById("slideshow-buttons").style.display = "block"
+
 var slideIndex = 0;
 var x = document.getElementsByClassName("slideshow-img");
+// Initial setup
 for (i = 0; i < x.length; i++) {
     if (i == slideIndex) {
         x[slideIndex].style.display = "block";
@@ -41,29 +38,20 @@ for (i = 0; i < x.length; i++) {
     }
 }
 
-function plusDivs() {
+function incrementSlideshow(num) {
     x[slideIndex].style.display = "none";
-    slideIndex += 1;
+
+    slideIndex += num;
     if (slideIndex > x.length - 1) { slideIndex = 0 }
-    x[slideIndex].style.display = "block";
-}
-function minusDiv() {
-    x[slideIndex].style.display = "none";
-    slideIndex -= 1;
     if (slideIndex < 0) { slideIndex = x.length - 1 };
+
     x[slideIndex].style.display = "block";
 }
 
 async function download() {
-    const link = document.createElement('a')
-    link.href = document.getElementsByClassName("slideshow-img")[slideIndex].src
-    link.download = ""
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
+    downloadImage(document.getElementsByClassName("slideshow-img")[slideIndex].src)
 }
 
-
-addCopyButtonCallback(document.getElementById("copy-alt-text"), () => {
-    return x[slideIndex].alt
-})
+function copyAltText() {
+    onclickButton(x[slideIndex].alt)
+}

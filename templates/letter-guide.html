@@ -23,8 +23,7 @@
 	<link rel="stylesheet" href="../style.css" />
 	<link rel="stylesheet" href="../libs/toastify/toastify.css">
 	<link rel="icon" type="image/x-icon" href="../img/favicon.ico">
-	<script src="../jquery-3.7.1.min.js"></script>
-	<script src="../menu.js"></script>
+	<script src="../menu.js" defer></script>
 	<script src="../libs/toastify/toastify.js"></script>
 	<!-- Variable Tags -->
 	<meta property="og:title" content="Letter Guide | TBFighters" />
@@ -43,7 +42,7 @@
 			<h1 class="page-title">
 				<a href="../index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
 			</h1>
-			<a class="toggle-button" href="#" title="menu"></a>
+			<a id="hamburger-button" href="#" title="menu"></a>
 			<nav class="site-menu">
 				<ul class="active">
 					<li><a href="../about.html">About Us</a></li>
@@ -347,7 +346,7 @@
 					</div>
 					<br>
 					<div class="buttons">
-						<button id="copy-opt-1">Copy</button>
+						<button id="copy-opt-1" onclick="onclickButton(formatElement(document.getElementById('option-1')))">Copy</button>
 						<button id="print-opt-1">Print</button>
 					</div>
 					<noscript>
@@ -358,8 +357,6 @@
 					</noscript>
 					<script src="../actions.js"></script>
 					<script>
-						addCopyButton(document.getElementById("copy-opt-1"), formatElement(document.getElementById("option-1")));
-
 						let popup = document.getElementById("name-popup-opts");
 						let form = document.getElementById("name-form");
 						let addPrintButton = registerPrintForm(form, popup);
@@ -485,7 +482,7 @@
 					</div>
 					<br>
 					<div class="buttons">
-						<button id="copy-opt-2">Copy</button>
+						<button id="copy-opt-2" onclick="onclickButton(formatElement(document.getElementById('option-2')))">Copy</button>
 						<button id="print-opt-2">Print</button>
 					</div>
 					<noscript>
@@ -495,7 +492,6 @@
 							print buttons.</p>
 					</noscript>
 					<script>
-						addCopyButton(document.getElementById("copy-opt-2"), formatElement(document.getElementById("option-2")));
 						addPrintButton(document.getElementById("print-opt-2"), document.getElementById("option-2").innerHTML, replacePrint)
 					</script>
 				</div>
