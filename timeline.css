@@ -3,49 +3,51 @@
  * */
 
 .container-timeline .wrapper-full {
-    display: flex;
-    width: 80%;
-    max-width: 1200px;
-    gap: 2em;
-    flex-direction: row;
+	display: flex;
+	width: 80%;
+	max-width: 1200px;
+	gap: 2em;
+	flex-direction: row;
 }
 
 .container-timeline .date {
-    width: 20%;
-    font-size: 0.75em;
-    text-align: right;
+	width: 20%;
+	font-size: 0.75em;
+	text-align: right;
 }
 
 .container-timeline .item {
-    width: 80%;
+	width: 80%;
 }
 
 .container-timeline:nth-child(even) {
-    background-color: var(--bg2);
+	background-color: var(--bg2);
 }
 
 .container-timeline:nth-child(odd) .wrapper-full {
-    flex-direction: row-reverse;
+	flex-direction: row-reverse;
 }
 
 .container-timeline:nth-child(odd) .date {
-    text-align: left;
+	text-align: left;
 }
+
+/* MOBILE STYLES */
 
 @media only screen and (max-width: 900px) {
 
-    .container-timeline .wrapper-full,
-    .container-timeline:nth-child(odd) .wrapper-full {
-        flex-direction: column;
-        gap: 0em;
-    }
+	.container-timeline .wrapper-full,
+	.container-timeline:nth-child(odd) .wrapper-full {
+		flex-direction: column;
+		gap: 0em;
+	}
 
-    .container-timeline .date {
-        width: 100%;
-        text-align: left;
-    }
+	.container-timeline .date {
+		width: 100%;
+		text-align: left;
+	}
 
-    .container-timeline .item {
-        width: 100%;
-    }
+	.container-timeline .item {
+		width: 100%;
+	}
 }

@@ -45,6 +45,8 @@ img.letter {
 	box-shadow: 0.1em 0.1em 1em rgb(0 0 0 / 60%);
 }
 
+/* MOBILE STYLES */
+
 @media only screen and (max-width: 768px) {
 	.main {
 		padding-left: 10px;
