@@ -10,28 +10,25 @@ function addToast(data) {
             background: "#BC1C1A",
             color: "#F5F5F5",
         },
-        onClick: function () {
-          toast.hideToast();
+        onClick: function() {
+            toast.hideToast();
         },
     });
     toast.showToast();
 }
 
 // REMEMBER to add a noscript
-function addCopyButton(button, text) {
-    button.onclick = function() {
-        navigator.clipboard.writeText(text.trim())
-        addToast({message: "Copied!", time: 1200})
-    }
+function onclickButton(text) {
+    navigator.clipboard.writeText(text.trim());
+    addToast({ message: "Copied!", time: 1200 })
 }
 
-function addCopyButtonCallback(button, text) {
-    button.onclick = function() {
-        navigator.clipboard.writeText(text().trim())
-        addToast({message: "Copied!", time: 1200})
-    }
+function onclickButtonCallback(text) {
+    navigator.clipboard.writeText(text().trim());
+    addToast({ message: "Copied!", time: 1200 })
 }
 
+// For copy button
 function formatElement(element) {
     let text = "";
     let children = element.children;
@@ -45,19 +42,27 @@ function formatElement(element) {
     return text;
 }
 
+function downloadImage(img) {
+    const link = document.createElement('a')
+    link.href = img
+    link.download = ""
+    link.click()
+    addToast({message: "Downloaded!", time: 1200})
+}
+
 // call this to register a print with a form (this only currently works with one register!)
 // to add a print button, call the function that it returns like this:
 // x(document.getElementById("button"), element.innerHTML, (form, doc) => {
-    // doc.getElementById("x").textContent = "y"
-    // })
+// doc.getElementById("x").textContent = "y"
+// })
 // REMEMBER to add a noscript
 function registerPrintForm(formElement, popupElement) {
     let currentText = null
     let currentReplaceFunction = null
     function printPopupFunc(button, textHtml, replaceFunction) {
         button.onclick = function() {
-            form.focus();
-            popup.classList.add("show-popup")
+            formElement.focus();
+            popupElement.classList.add("show-popup")
             currentText = textHtml
             currentReplaceFunction = replaceFunction
         }
@@ -73,7 +78,7 @@ function registerPrintForm(formElement, popupElement) {
             win.document.write(
                 "<style>* {font-size: 16px; margin: 0; line-height: 1.1em; font-weight: 400; font-family: 'Atkinson Hyperlegible';}</style>" + currentText
             );
-            currentReplaceFunction(form, win.document);
+            currentReplaceFunction(formElement, win.document);
             win.focus();
             win.print();
             win.addEventListener("afterprint", (event) => {
@@ -89,7 +94,7 @@ function registerPrintForm(formElement, popupElement) {
             iframe.contentWindow.document.write(
                 "<style>* {font-size: 16px; margin: 0; line-height: 1.1em; font-weight: 400; font-family: 'Atkinson Hyperlegible';}</style>" + currentText
             );
-            currentReplaceFunction(form, iframe.contentWindow.document);
+            currentReplaceFunction(formElement, iframe.contentWindow.document);
             iframe.contentWindow.document.close();
             iframe.contentWindow.print()
             iframe.contentWindow.addEventListener("afterprint", (event) => {
@@ -100,27 +105,27 @@ function registerPrintForm(formElement, popupElement) {
         }
 
         // reset
-        popup.classList.remove("show-popup")
+        popupElement.classList.remove("show-popup")
 
         return false;
     }
-    form.addEventListener("submit", submitFunc)
+    formElement.addEventListener("submit", submitFunc)
 
-    popup.addEventListener("click", function(event) {
-        if (event.target == popup) {
-            popup.classList.remove("show-popup")
+    popupElement.addEventListener("click", function(event) {
+        if (event.target == popupElement) {
+            popupElement.classList.remove("show-popup")
             currentText = null
             currentReplaceFunction = null
         }
     })
     document.getElementById("close").addEventListener("click", function(event) {
-        popup.classList.remove("show-popup")
+        popupElement.classList.remove("show-popup")
         currentText = null
         currentReplaceFunction = null
     })
 
 
-    var focusableEls = Array.from(popup.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])'));
+    var focusableEls = Array.from(popupElement.querySelectorAll('a[href]:not([disabled]), button:not([disabled]), textarea:not([disabled]), input[type="text"]:not([disabled]), input[type="radio"]:not([disabled]), input[type="checkbox"]:not([disabled]), select:not([disabled])'));
     var firstFocusableEl = focusableEls[0];
     var lastFocusableEl = focusableEls[focusableEls.length - 1];
     var KEYCODE_TAB = 9;

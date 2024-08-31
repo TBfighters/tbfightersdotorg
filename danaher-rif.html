@@ -21,13 +21,13 @@
 		<link rel="stylesheet" href="style.css" />
 		<link rel="stylesheet" href="libs/toastify/toastify.css">
 		<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-		<script src="jquery-3.7.1.min.js"></script>
-		<script src="menu.js"></script>
+		<script src="menu.js" defer></script>
 		<script src="libs/toastify/toastify.js"></script>
 		<!-- Variable Tags -->
 		<meta property="og:title" content="Danaher/Cepheid Agree to Provide Standard Tuberculosis Tests at Cost | TBFighters" />
 		<meta property="og:site_name" content="TBFighters: Danaher, it's Time for $5" />
 		<meta property="og:description" content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
+		<link rel="stylesheet" href="news.css" />
 		<meta name="robots" content="noindex" />
 		<title>Danaher/Cepheid Agree to Provide Standard Tuberculosis Tests at Cost | TBFighters</title>
 	</head>
@@ -38,7 +38,7 @@
 				<h1 class="page-title">
 					<a href="index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
 				</h1>
-				<a class="toggle-button" href="#" title="menu"></a>
+				<a id="hamburger-button" href="#" title="menu"></a>
 				<nav class="site-menu">
 					<ul class="active">
 						<li><a href="about.html">About Us</a></li>
@@ -71,7 +71,7 @@
 						We are proud of what we have accomplished together so far, and we're excited for the work to continue in partnership with the organizations listed above. We also encourage YOU to join us and get involved in the fight to end TB - <a href="index.html#join">learn more here!</a>
 					</p>
 				</div>
-				<aside class="wrapper-full">
+				<div class="block" style="margin: 30px auto; margin-bottom: 0;">
 					<p>
 						More announcement coverage:
 					</p>
@@ -95,7 +95,7 @@
 						</li>
 
 					</ul>
-				</aside>
+				</div>
 			</section>
 		</main>
 		<footer class="site-foot">
@@ -118,7 +118,7 @@
 				&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
 			</p>
 			<p class="too-small">
-				
+
 				We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
 			</p>
 		</footer>

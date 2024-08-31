@@ -1,9 +1,7 @@
 //mobile menu style switcher
-jQuery(document).ready(function() {
-	jQuery('.toggle-button').click(function(e) {
-		jQuery(this).toggleClass('active');
-		jQuery('.site-menu ul').toggleClass('active');
-
-		e.preventDefault();
-	});
-});
+let toggleButton = document.getElementById("hamburger-button");
+toggleButton.addEventListener("click", (e) => {
+	toggleButton.classList.toggle('active');
+	document.querySelector(".site-menu ul").classList.toggle("active")
+	e.preventDefault()
+})
