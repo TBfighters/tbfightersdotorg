@@ -162,53 +162,68 @@
 								<!-- </div> -->
 								<a class="button button-centered" href="action.html">More actions and templates</a>
 						</div>
-						<div class="wrapper">
-							<h3 id="list">Join Our <span class="red">Mailing List</span></h2>
-							<p>
-								Be informed of new calls to action, campaign press releases, and other TBFighters campaign updates. Emails may be authored by TBFighters, John Green, and partner organizations, such as MSF Access and PIH.
-							</p>
-							<div id="newsletter-wrapper">
-								<noscript>Please enable javascript to sign up for the newsletter!</noscript>
-							</div>
-							<script>
-								document.getElementById("newsletter-wrapper").innerHTML = `<form method='post' action='https://gaggle.email/join/tbfighters@gaggle.email' id='newsletter-form'>
-								<div class='list-form wrapper-columns'>
-									<div>
-										<label for='name'><span>Name: </span><input name='name' type='text' placeholder='Dave Green'></label>
-										<label id='error-label' style='color: #D7211E; font-weight: bolder; display: none'></label>
-									</div>
-									<div>
-										<label for='email'><span>Email Address: </span><input name='email' type='email' placeholder='dave@tbfighters.org'></label>
-									</div>
-									<div>
-										<button class='button'>Sign up</button>
-									</div>
-								</div>
-								<em class="smaller">By signing up, you agree to Gaggle Mail's Terms of Service and Privacy Policy. <a href="https://gaggle.email/terms" target="_blank">Learn More</a></em>
-							</form>`;
-								let form = document.getElementById("newsletter-form")
-								let error = document.getElementById("error-label")
-								form.onsubmit=function(e){
-									var arr=this.elements,i=0,l=arr.length;
-									if (arr.email.value == arr.name.value) {
-										error.innerHTML = "Your name cannot be the same as your email"
-										error.style.display = "block"
-										return false
-									} else {
-										error.style.display = "none"
-									}
-								}
-							</script>
-							<br>
-						</div>
-						<div class="wrapper">
-							<h3>More From <span class="red">TBFighters</span> and TB Advocacy</h3>
+					</div>
+					<div class="wrapper">
+						<div class="hill-day-content">
+							<h3 id="hill-day">TBFighter <span class="red">Hill Day</span>
+								<div class="header-copy" id="take-action-header-copy" onclick="onclickButton(location.protocol + '//' + location.host + location.pathname + '#hill-day')"><noscript><a href="#hill-day"></a></noscript></div>
+							</h3>
 							<ul>
-								<li><a href="about.html">About the TBFighters site and movement</a></li>
-								<li><a href="timeline.html">News and milestones in the fight against TB</a></li>
-								<li><a href="resources.html">More resources to learn about TB and global health efforts</a></li>
+								<li>Do you love to <strong><span class="red">#EndTB</span></strong>?</li>
+								<li>Are you interested in meeting up with other TBFighters to advocate in person?</li>
+								<li>Are you based in the US?</li>
 							</ul>
+							<p>If you answered yes to all three, we have an exciting IRL opportunity to advocate for TB funding in DC. Sign up <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUp_26tbw2ms35bXi65SXudVGK9voayy3D2e-DFfhHFACfbQ/viewform" target="_blank">here</a>!</p>
 						</div>
+					</div>
+					<div class="wrapper">
+						<h3 id="list">Join Our <span class="red">Mailing List</span>
+							<div class="header-copy" id="take-action-header-copy" onclick="onclickButton(location.protocol + '//' + location.host + location.pathname + '#list')"><noscript><a href="#list"></a></noscript></div>
+						</h3>
+						<p>
+							Be informed of new calls to action, campaign press releases, and other TBFighters campaign updates. Emails may be authored by TBFighters, John Green, and partner organizations, such as MSF Access and PIH.
+						</p>
+						<div id="newsletter-wrapper">
+							<noscript>Please enable javascript to sign up for the newsletter!</noscript>
+						</div>
+						<script>
+							document.getElementById("newsletter-wrapper").innerHTML = `<form method='post' action='https://gaggle.email/join/tbfighters@gaggle.email' id='newsletter-form'>
+							<div class='list-form wrapper-columns'>
+								<div>
+									<label for='name'><span>Name: </span><input name='name' type='text' placeholder='Dave Green'></label>
+									<label id='error-label' style='color: #D7211E; font-weight: bolder; display: none'></label>
+								</div>
+								<div>
+									<label for='email'><span>Email Address: </span><input name='email' type='email' placeholder='dave@tbfighters.org'></label>
+								</div>
+								<div>
+									<button class='button'>Sign up</button>
+								</div>
+							</div>
+							<em class="smaller">By signing up, you agree to Gaggle Mail's Terms of Service and Privacy Policy. <a href="https://gaggle.email/terms" target="_blank">Learn More</a></em>
+						</form>`;
+							let form = document.getElementById("newsletter-form")
+							let error = document.getElementById("error-label")
+							form.onsubmit=function(e){
+								var arr=this.elements,i=0,l=arr.length;
+								if (arr.email.value == arr.name.value) {
+									error.innerHTML = "Your name cannot be the same as your email"
+									error.style.display = "block"
+									return false
+								} else {
+									error.style.display = "none"
+								}
+							}
+						</script>
+						<br>
+					</div>
+					<div class="wrapper">
+						<h3>More From <span class="red">TBFighters</span> and TB Advocacy</h3>
+						<ul>
+							<li><a href="about.html">About the TBFighters site and movement</a></li>
+							<li><a href="timeline.html">News and milestones in the fight against TB</a></li>
+							<li><a href="resources.html">More resources to learn about TB and global health efforts</a></li>
+						</ul>
 					</div>
 				</div>
 			</section>
