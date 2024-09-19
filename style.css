@@ -176,6 +176,7 @@ a#hamburger-button {
 
     a#hamburger-button {
         padding: 10px;
+        float: right;
         font-size: 1.5em;
         line-height: 1;
         text-decoration: none;
@@ -483,7 +484,10 @@ button,
 
 /* MOBILE STYLES */
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 768px) {
     .buttons {
         display: flex;
         flex-direction: row;
@@ -495,9 +499,6 @@ button,
     .buttons .button {
         width: unset;
     }
-}
-
-@media only screen and (max-width: 768px) {
     .button {
         padding: 0.5em 0.7em;
         border-width: 2px;
@@ -592,7 +593,8 @@ div.featured {
 
 @media only screen and (max-width: 992px) {
     .wrapper.featured-columns {
-        width: auto;
+        width: calc(100% - 1em);
+        padding: 1em 0.5em;
     }
 }
 
