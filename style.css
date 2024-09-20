@@ -272,6 +272,8 @@ img {
     padding: 0 0.15em;
     margin: 0 -0.15em;
     color: var(--bg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .container {
