@@ -296,11 +296,11 @@
 						document.getElementById("newsletter-wrapper").innerHTML = `<form method='post' action='https://gaggle.email/join/tbfighters@gaggle.email' id='newsletter-form'>
 						<div class='list-form wrapper-columns'>
 							<div>
-								<label for='name'><span>Name: </span><input name='name' type='text' placeholder='Dave Green'></label>
-								<label id='error-label' style='color: #D7211E; font-weight: bolder; display: none'></label>
+								<label for='name'><span>Name: </span><input name='name' type='text' id="name-field"></label>
+								<label id='error-label' style='color: #D7211E; font-weight: bolder; display: none' role="alert"></label>
 							</div>
 							<div>
-								<label for='email'><span>Email Address: </span><input name='email' type='email' placeholder='dave@tbfighters.org'></label>
+								<label for='email'><span>Email Address: </span><input name='email' type='email'></label>
 							</div>
 							<div>
 								<button class='button'>Sign up</button>
@@ -308,16 +308,23 @@
 						</div>
 						<em class="smaller">By signing up, you agree to Gaggle Mail's Terms of Service and Privacy Policy. <a href="https://gaggle.email/terms" target="_blank">Learn More</a></em>
 					</form>`;
-						let form = document.getElementById("newsletter-form")
-						let error = document.getElementById("error-label")
+						let form = document.getElementById("newsletter-form");
+						let error = document.getElementById("error-label");
+						let name_field = document.getElementById("name-field");
 						form.onsubmit=function(e){
 							var arr=this.elements,i=0,l=arr.length;
 							if (arr.email.value == arr.name.value) {
 								error.innerHTML = "Your name cannot be the same as your email"
 								error.style.display = "block"
+								name_field.setAttribute("aria-invalid", true);
+								name_field.setAttribute("aria-describedby", "error-label");
+								error.setAttribute("aria-live", true);
 								return false
 							} else {
 								error.style.display = "none"
+								error.setAttribute("aria-live", false);
+								name_field.setAttribute("aria-invalid", false);
+								name_field.setAttribute("aria-describedby", null);
 							}
 						}
 					</script>
