@@ -338,7 +338,7 @@ a.red:focus {
 
 /* Outgoing links */
 
-a[target="_blank"]:not(:has(img))::after {
+a[target="_blank"]:not(:has(img), .internal-link)::after {
     position: relative;
     display: inline-block;
     content: url("img/arrow-up-right-from-square-solid.svg");
