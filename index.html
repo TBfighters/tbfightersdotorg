@@ -65,13 +65,11 @@
 				<div class="wrapper wrapper-columns featured-columns">
 					<div>
 						<!-- featured Action Start -->
-						<img src="img/gift.svg" alt="Share Icon" class="action-icon" style="margin-bottom: 0"><strong class="larger">ONE YEAR ANNIVERSARY GIVEAWAY</strong>
+						<img src="img/gavel.svg" alt="Gavel Icon" class="action-icon" style="margin-bottom: 0"><strong class="larger">END TB NOW ACT</strong>
 						<br>
 						<div style="height: 0.5em;"></div>
 						<p>
-						To celebrate our one-year anniversary of joining the Time for $5 campaign, we’re launching a petition signature drive, accompanied by a giveaway of select items from <a href="Good.Store" target="_blank">Good.Store</a>. To enter, share the <a href="https://timefor5.msfaccess.org/" target="_blank">Time for $5 petition</a> with at least three people. Then fill out our google form <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_RFrEzYHHoMH1OiFmBuZaKFBfszMcXVbzISxFgYxVkLF1cw/viewform?usp=sf_link" target="_blank">here</a>.
-						<br>
-						<em class="smaller"><a href="sweepstakes-terms.html" target="_blank" class="internal-link" style="font-weight: 400;">Terms and Conditions</a></em>
+						Calling all US residents: the <a href="https://www.congress.gov/bill/118th-congress/house-bill/1776" target="_blank">End Tuberculosis Now Act of 2023</a>, which increases funding and sets goals to help end tuberculosis, just passed the Senate, and now we need to get it through the House of Representatives! Call your local Representative and tell them to vote <b class="red">YES</b> on H.R. 1776! Go to <a href="./templates/end-tb-now-act.html">this page</a> for templates and resources to contact your Representative.
 						</p>
 						<!-- featured Action End -->
 				 	</div>
@@ -81,7 +79,7 @@
 					</div>
 				</div>
 				<div class="wrapper wrap-centered">
-					<a href="#primer"><img src="img/arrow-down.svg" class="scroll-arrow" alt="down-arrow"></a>
+					<a href="#primer"><img src="img/arrow-down.svg" class="scroll-arrow" alt=""></a>
 				</div>
 			</section>
 			<section id="primer" class="container">
@@ -157,13 +155,11 @@
 							<div class="join-right">
 								 <div class="featured">
 									<!-- featured Action Start -->
-						<img src="img/gift.svg" alt="Share Icon" class="action-icon" style="margin-bottom: 0"><strong class="larger">ONE YEAR ANNIVERSARY GIVEAWAY</strong>
+						<img src="img/gavel.svg" alt="Gavel Icon" class="action-icon" style="margin-bottom: 0"><strong class="larger">END TB NOW ACT</strong>
 						<br>
 						<div style="height: 0.5em;"></div>
 						<p>
-						To celebrate our one-year anniversary of joining the Time for $5 campaign, we’re launching a petition signature drive, accompanied by a giveaway of select items from <a href="Good.Store" target="_blank">Good.Store</a>. To enter, share the <a href="https://timefor5.msfaccess.org/" target="_blank">Time for $5 petition</a> with at least three people. Then fill out our google form <a href="https://docs.google.com/forms/d/e/1FAIpQLSd_RFrEzYHHoMH1OiFmBuZaKFBfszMcXVbzISxFgYxVkLF1cw/viewform?usp=sf_link" target="_blank">here</a>.
-						<br>
-						<em class="smaller"><a href="sweepstakes-terms.html" target="_blank" class="internal-link" style="font-weight: 400;">Terms and Conditions</a></em>
+						Calling all US residents: the <a href="https://www.congress.gov/bill/118th-congress/house-bill/1776" target="_blank">End Tuberculosis Now Act of 2023</a>, which increases funding and sets goals to help end tuberculosis, just passed the Senate, and now we need to get it through the House of Representatives! Call your local Representative and tell them to vote <b class="red">YES</b> on H.R. 1776! Go to <a href="./templates/end-tb-now-act.html">this page</a> for templates and resources to contact your Representative.
 						</p>
 						<!-- featured Action End -->
 								</div>
@@ -185,9 +181,7 @@
 						</div>
 					</div>
 					<div class="wrapper">
-						<h3 id="list">Join Our <span class="red">Mailing List</span>
-							<div class="header-copy" id="take-action-header-copy" onclick="onclickButton(location.protocol + '//' + location.host + location.pathname + '#list')"><noscript><a href="#list"></a></noscript></div>
-						</h3>
+						<h3 id="list">Join Our <span class="red">Mailing List</span></h2>
 						<p>
 							Be informed of new calls to action, campaign press releases, and other TBFighters campaign updates. Emails may be authored by TBFighters, John Green, and partner organizations, such as MSF Access and PIH.
 						</p>
@@ -198,11 +192,11 @@
 							document.getElementById("newsletter-wrapper").innerHTML = `<form method='post' action='https://gaggle.email/join/tbfighters@gaggle.email' id='newsletter-form'>
 							<div class='list-form wrapper-columns'>
 								<div>
-									<label for='name'><span>Name: </span><input name='name' type='text' placeholder='Dave Green'></label>
-									<label id='error-label' style='color: #D7211E; font-weight: bolder; display: none'></label>
+									<label for='name'><span>Name: </span><input name='name' type='text' id="name-field"></label>
+									<label id='error-label' style='color: #D7211E; font-weight: bolder; display: none' role="alert"></label>
 								</div>
 								<div>
-									<label for='email'><span>Email Address: </span><input name='email' type='email' placeholder='dave@tbfighters.org'></label>
+									<label for='email'><span>Email Address: </span><input name='email' type='email'></label>
 								</div>
 								<div>
 									<button class='button'>Sign up</button>
@@ -210,16 +204,23 @@
 							</div>
 							<em class="smaller">By signing up, you agree to Gaggle Mail's Terms of Service and Privacy Policy. <a href="https://gaggle.email/terms" target="_blank">Learn More</a></em>
 						</form>`;
-							let form = document.getElementById("newsletter-form")
-							let error = document.getElementById("error-label")
+							let form = document.getElementById("newsletter-form");
+							let error = document.getElementById("error-label");
+							let name_field = document.getElementById("name-field");
 							form.onsubmit=function(e){
 								var arr=this.elements,i=0,l=arr.length;
 								if (arr.email.value == arr.name.value) {
 									error.innerHTML = "Your name cannot be the same as your email"
 									error.style.display = "block"
+									name_field.setAttribute("aria-invalid", true);
+									name_field.setAttribute("aria-describedby", "error-label");
+									error.setAttribute("aria-live", true);
 									return false
 								} else {
 									error.style.display = "none"
+									error.setAttribute("aria-live", false);
+									name_field.setAttribute("aria-invalid", false);
+									name_field.setAttribute("aria-describedby", null);
 								}
 							}
 						</script>
@@ -238,18 +239,18 @@
 		</main>
 		<footer class="site-foot">
 			<p class="socials-wrapper-centered">
-				<a href="https://x.com/tbfighters" target="_blank"><img src="img/socials/twitter.svg"
-						alt="Twitter" class="social-icon"><img src="img/socials/twitter-hover.svg"
-						alt="" class="social-icon-hover"></a>
-				<a href="https://www.instagram.com/tbfighters" target="_blank"><img src="img/socials/insta.svg"
-						alt="Instagram" class="social-icon"><img src="img/socials/insta-hover.svg"
-						alt="" class="social-icon-hover"></a>
+				<a href="https://x.com/tbfighters" target="_blank">
+					<img src="img/socials/twitter.svg" alt="Twitter" class="social-icon">
+					<img src="img/socials/twitter-hover.svg" alt="Twitter" class="social-icon-hover"></a>
+				<a href="https://www.instagram.com/tbfighters" target="_blank">
+					<img src="img/socials/insta.svg" alt="Instagram" class="social-icon">
+					<img src="img/socials/insta-hover.svg" alt="Instagram" class="social-icon-hover"></a>
 				<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
 						src="img/socials/youtube.svg" alt="Youtube" class="social-icon"><img
-						src="img/socials/youtube-hover.svg" alt="" class="social-icon-hover"></a>
+						src="img/socials/youtube-hover.svg" alt="Youtube" class="social-icon-hover"></a>
 				<a href="https://www.facebook.com/profile.php?id=61555332203505" target="_blank"><img
 						src="img/socials/facebook.svg" alt="Facebook" class="social-icon"><img
-						src="img/socials/facebook-hover.svg" alt="" class="social-icon-hover"></a>
+						src="img/socials/facebook-hover.svg" alt="Facebook" class="social-icon-hover"></a>
 			</p>
 			<hr style="width: 10%; margin: 0 auto; margin-bottom: 4px;">
 			<p>
