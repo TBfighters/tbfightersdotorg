@@ -12,6 +12,7 @@
     --bg: #f5f5f5;
     --bg2: #dddddd;
     --accent-bg: #bc1c1a;
+    --accent-bg-low-opacity: rgba(188, 28, 26, 0.2);
     --accent-fg: #d7211e;
     --msf-blue: #3c3f60;
 }
