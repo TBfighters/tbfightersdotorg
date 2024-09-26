@@ -26,8 +26,7 @@
 }
 
 .infotainer-section {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    padding: 10em 0;
 }
 
 .infotainer-wrapper {
@@ -60,9 +59,13 @@ h3 {
     height: 7em;
 }
 
+#faq {
+    background-color: var(--bg2);
+}
+
 #faq .wrapper {
     max-width: 70%;
-    padding: 2em 1em;
+    padding: 10em 1em;
 }
 
 #faq article {
