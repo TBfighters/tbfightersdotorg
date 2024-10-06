@@ -6,6 +6,7 @@
 
 #top h2 {
     font-size: 4em;
+    line-height: 1.1;
 }
 
 #dome-outer {
@@ -43,6 +44,7 @@ h3 {
 
 .infotainer-wrapper .content {
     width: 60%;
+    font-size: 1.2em;
 }
 
 .infotainer-wrapper .picture {
