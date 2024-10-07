@@ -460,7 +460,7 @@ button {
 
 .button-big-centered {
    text-align: center; 
-   width: 80%;
+   width: 100%;
 }
 
 .button:hover,
