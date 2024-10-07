@@ -458,6 +458,11 @@ button {
     width: 100%;
 }
 
+.button-full-centered {
+   text-align: center; 
+   width: 100%;
+}
+
 .button:hover,
 .button:active,
 .button:focus {
