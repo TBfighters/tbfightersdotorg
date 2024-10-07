@@ -458,9 +458,9 @@ button {
     width: 100%;
 }
 
-.button-full-centered {
+.button-big-centered {
    text-align: center; 
-   width: 100%;
+   width: 80%;
 }
 
 .button:hover,
