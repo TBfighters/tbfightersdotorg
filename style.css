@@ -14,6 +14,7 @@
     --accent-bg: #bc1c1a;
     --accent-fg: #d7211e;
     --msf-blue: #3c3f60;
+    box-sizing: border-box;
 }
 
 html {
@@ -458,11 +459,6 @@ button {
     width: 100%;
 }
 
-.button-big-centered {
-   text-align: center; 
-   width: 100%;
-}
-
 .button:hover,
 .button:active,
 .button:focus {
@@ -490,9 +486,12 @@ button,
     line-height: 1.1;
 }
 
-/* MOBILE STYLES */
+.button-fill {
+    width: 100%;
+    text-align: center;
+}
 
-@media only screen and (max-width: 768px) {}
+/* MOBILE STYLES */
 
 @media only screen and (max-width: 768px) {
     .buttons {
