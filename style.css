@@ -15,6 +15,7 @@
     --accent-bg-low-opacity: rgba(188, 28, 26, 0.2);
     --accent-fg: #d7211e;
     --msf-blue: #3c3f60;
+    box-sizing: border-box;
 }
 
 html {
@@ -451,8 +452,8 @@ button:hover {
     cursor: pointer;
 }
 
-.container .button,
-.container button {
+.button,
+button {
     background-color: var(--accent-bg);
     border: 4px solid var(--accent-bg);
     color: var(--bg);
@@ -469,22 +470,23 @@ button:hover {
     width: 100%;
 }
 
-.container .button:hover,
-.container .button:active,
-.container .button:focus {
+.button:hover,
+.button:active,
+.button:focus {
     background-color: var(--fg);
     border-color: var(--fg);
+    color: var(--bg);
 }
 
-.container .button-subtle,
-.container-full .button-subtle {
+.button-subtle,
+.button-subtle {
     background-color: transparent;
     color: var(--accent-bg);
 }
 
-.container .button-subtle:hover,
-.container .button-subtle:active,
-.container .button-subtle:focus {
+.button-subtle:hover,
+.button-subtle:active,
+.button-subtle:focus {
     background-color: var(--bg);
     color: var(--fg);
     border-color: var(--fg);
@@ -495,10 +497,12 @@ button,
     line-height: 1.1;
 }
 
-/* MOBILE STYLES */
-
-@media only screen and (max-width: 768px) {
+.button-fill {
+    width: 100%;
+    text-align: center;
 }
+
+/* MOBILE STYLES */
 
 @media only screen and (max-width: 768px) {
     .buttons {
@@ -512,6 +516,7 @@ button,
     .buttons .button {
         width: unset;
     }
+
     .button {
         padding: 0.5em 0.7em;
         border-width: 2px;

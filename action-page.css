@@ -3,38 +3,6 @@
  * */
 
 /* ===============
-   PETITION
-   =============== */
-#petition-wrapper {
-	background-image: url('./img/petition header 1.png');
-	background-position: center;
-	background-size: cover;
-	color: var(--bg);
-	text-shadow: var(--fg) 1px 1px 10px;
-}
-
-#petition-wrapper .action {
-	margin-left: 40%;
-	max-width: 40%;
-}
-
-/* MOBILE STYLES */
-
-@media only screen and (max-width: 992px) {
-	#petition-wrapper {
-		background: var(--msf-blue);
-	}
-
-	#petition-wrapper .action {
-		margin: 0 1em;
-		width: auto;
-		max-width: none;
-	}
-}
-
-/* ==== END OF PETITION ==== */
-
-/* ===============
    SOCIAL MEDIA POSTS
    =============== */
 
