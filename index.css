@@ -160,26 +160,3 @@ h2.action-head {
 }
 
 /* ==== END OF FEATURED ACTION ==== */
-
-
-/* ===============
- * HILL DAY
- * =============== */
-
-.hill-day-content {
-    margin: 0.5em 0;
-}
-
-.hill-day-content ul li:nth-child(1)::marker {
-    content: "❤️";
-}
-
-.hill-day-content ul li:nth-child(2)::marker {
-    content: "🤝";
-}
-
-.hill-day-content ul li:nth-child(3)::marker {
-    content: "🦅";
-}
-
-/* ==== END OF HILL DAY ==== */
