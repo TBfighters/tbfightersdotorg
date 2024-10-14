@@ -1,100 +1,137 @@
+/* ===============
+   TOP PART
+   =============== */
+
 #top {
-    background: var(--accent-bg);
-    color: var(--bg);
-    text-align: center;
+	background: var(--accent-bg);
+	color: var(--bg);
+	text-align: center;
 }
 
 #top h2 {
-    font-size: 4em;
-    line-height: 1.1;
+	font-size: 4em;
+	line-height: 1.1;
+	margin-bottom: 0.3em;
 }
 
+#top h2 .yellow-highlight {
+	margin-right: 0px;
+}
+
+/* Take Action Link */
+
+#top a {
+	color: var(--bg);
+	text-decoration: none;
+	transition: all 0.3s ease-out;
+	font-size: 2em;
+	margin-bottom: 0.6em;
+}
+
+#top a:hover {
+	scale: 120%;
+}
+
+#top a img {
+	height: 1em;
+	transform: translate(0, 0.15em);
+}
+
+/* Dome */
+
 #dome-outer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #dome-inner {
-    background: var(--bg);
-    padding: 1em 2em;
-    width: 20em;
-    border-radius: 12em 12em 0 0;
+	background: var(--bg);
+	padding: 1em 2em;
+	padding-bottom: 0;
+	width: 20em;
+	border-radius: 12em 12em 0 0;
 }
+
+/* Container */
 
 .container-compact.title {
-    padding: 60px 0px 0px;
+	padding: 60px 0px 0px;
 }
 
+/* ==== END OF HEADER ==== */
+
+/* ===============
+   General Styles
+   =============== */
+
+h3 {
+	font-size: 2.5em;
+}
+
+/* ==== END OF GENERAL STYLES ==== */
+
+/* ===============
+   Infotainer Section(s)
+   =============== */
+
+/* General Containers */
+
 .infotainer-section {
-    padding: 20em 0;
+	padding: 20em 0;
 }
 
 .infotainer-wrapper {
-    padding: 2em 1em;
-    /* background: var(--bg2); */
-    max-width: 70%;
-    /* border-radius: 10px; */
-    display: flex;
+	padding: 2em 1em;
+	/* background: var(--bg2); */
+	max-width: 70%;
+	/* border-radius: 10px; */
+	display: flex;
 }
 
-h3 {
-    font-size: 2.5em;
-}
+/* Specific Containers */
 
 .infotainer-wrapper .content {
-    width: 60%;
-    font-size: 1.2em;
+	width: 60%;
+	font-size: 1.2em;
 }
 
-.infotainer-wrapper .picture {
-    width: 40%;
+.infotainer-wrapper .secondary {
+	width: 40%;
 }
 
-.picture {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.secondary {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.picture img {
-    height: 7em;
+.secondary img {
+	height: 7em;
 }
+
+/* ==== END OF INFOTAINER SECTION(S) ==== */
+
+/* ===============
+   FAQ Section
+   =============== */
 
 #faq {
-    background-color: var(--bg2);
+	background-color: var(--bg2);
 }
 
 #faq .wrapper {
-    max-width: 70%;
-    padding: 10em 1em;
-}
-
-#faq article {
-    /* background: var(--bg2); */
-    /* border: 1px solid var(--fg); */
+	max-width: 70%;
+	padding: 10em 1em;
 }
 
 #faq article .question {
-    padding: 1em 1em 0.5em 1em;
-    /* background: #c7c7c7; */
-    border-bottom: 1px solid var(--accent-fg);
+	padding: 1em 1em 0.5em 1em;
+	border-bottom: 1px solid var(--accent-fg);
 }
 
 #faq article .answer {
-    padding: 1em 1em 0.5em 1em;
+	padding: 1em 1em 0.5em 1em;
 }
 
-#animation {
-    animation: circle 12s forwards infinite linear;
-}
-
-@keyframes circle {
-    0% {
-	rotate: 0deg;
-    }
-
-    100% {
-	rotate: 360deg;
-    }
-}
+/* ==== END OF FAQ SECTION ==== */
