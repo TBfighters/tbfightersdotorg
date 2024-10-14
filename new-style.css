@@ -17,9 +17,9 @@
 
 #dome-inner {
     background: var(--bg);
-    padding: 1em 1em;
+    padding: 1em 2em;
     width: 20em;
-    border-radius: 10em 10em 0 0;
+    border-radius: 12em 12em 0 0;
 }
 
 .container-compact.title {
@@ -27,7 +27,7 @@
 }
 
 .infotainer-section {
-    padding: 10em 0;
+    padding: 20em 0;
 }
 
 .infotainer-wrapper {
@@ -83,4 +83,18 @@ h3 {
 
 #faq article .answer {
     padding: 1em 1em 0.5em 1em;
+}
+
+#animation {
+    animation: circle 12s forwards infinite linear;
+}
+
+@keyframes circle {
+    0% {
+	rotate: 0deg;
+    }
+
+    100% {
+	rotate: 360deg;
+    }
 }
