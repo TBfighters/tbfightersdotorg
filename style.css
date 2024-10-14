@@ -611,7 +611,7 @@ div.featured {
 
 @media only screen and (max-width: 992px) {
     .wrapper.featured-columns {
-        width: calc(100% - 1em);
+        width: 100%;
         padding: 1em 0.5em;
     }
 }
@@ -976,7 +976,7 @@ input[type="checkbox"]:focus {
    SITE FOOTER
    =============== */
 .site-foot {
-    width: calc(100% - 2em);
+    width: 100%;
     color: #505050;
     background-color: var(--bg2);
     text-align: center;
