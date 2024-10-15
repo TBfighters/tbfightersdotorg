@@ -1,0 +1,173 @@
+/* ===============
+   TOP PART
+   =============== */
+
+#top {
+	background: var(--accent-bg);
+	color: var(--bg);
+	text-align: center;
+}
+
+#top h2 {
+	font-size: 4em;
+	line-height: 1.1;
+	margin-bottom: 0.3em;
+}
+
+#top h2 .yellow-highlight {
+	margin-right: 0px;
+}
+
+/* Take Action Link */
+
+#top a {
+	color: var(--bg);
+	text-decoration: none;
+	transition: all 0.3s ease-out;
+	font-size: 2em;
+}
+
+#top a:hover,
+#top a:focus {
+	scale: 120%;
+}
+
+#top a img {
+	height: 1em;
+	transform: translate(0, 0.15em);
+}
+
+/* Dome */
+
+#dome-outer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#dome-inner {
+	background: var(--bg);
+	padding: 1em 2em;
+	padding-bottom: 0;
+	width: 20em;
+	border-radius: 12em 12em 0 0;
+}
+
+#dome-inner img {
+	width: 95%;
+	transform: translate(20px, 0);
+	padding-top: 1em;
+}
+
+/* Container */
+
+.container-compact.title {
+	padding: 60px 0px 0px;
+}
+
+/* ==== END OF HEADER ==== */
+
+/* ===============
+   General Styles
+   =============== */
+
+h3 {
+	font-size: 2.5em;
+}
+
+/* ==== END OF GENERAL STYLES ==== */
+
+/* ===============
+   Infotainer Section(s)
+   =============== */
+
+/* General Containers */
+
+.infotainer-section {
+	padding: 15em 0;
+}
+
+.infotainer-wrapper {
+	padding: 2em 1em;
+	gap: 2em;
+	display: flex;
+}
+
+/* Specific Containers */
+
+.infotainer-wrapper .content {
+	width: 60%;
+	font-size: 1.2em;
+}
+
+.infotainer-wrapper .secondary {
+	width: 40%;
+}
+
+.secondary {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.secondary img:not(.action-icon) {
+	height: 7em;
+	scale: 250%;
+	margin: auto;
+}
+
+#the-broken-promise {
+	background: var(--accent-bg);
+	color: var(--bg);
+}
+
+#the-broken-promise a {
+	color: var(--bg);
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 992px) {
+	.infotainer-wrapper {
+		flex-direction: column;
+		gap: 6em;
+	}
+
+	#lowering-the-cost .infotainer-wrapper {
+		flex-direction: column-reverse;
+	}
+
+	.infotainer-wrapper .content {
+		width: 100%;
+	}
+
+	.infotainer-wrapper .secondary {
+		width: 100%;
+	}
+}
+
+/* ==== END OF INFOTAINER SECTION(S) ==== */
+
+/* ===============
+   FAQ Section
+   =============== */
+
+#faq {
+	background-color: var(--bg2);
+}
+
+#faq .wrapper {
+	max-width: 70%;
+	padding: 10em 1em;
+}
+
+#faq article .question {
+	padding: 1em 1em 0.5em 1em;
+	border-bottom: 1px solid var(--accent-fg);
+}
+
+#faq article .answer {
+	padding: 1em 1em 0.5em 1em;
+}
+
+/* ==== END OF FAQ SECTION ==== */

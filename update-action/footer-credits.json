@@ -1,5 +1,6 @@
 {
-    "index.html": "Images courtesy: laboratorio diagnostica ancona IZSUM via Wikimedia Commons; Adobe stock; Leiem via Wikimedia Commons; Icons by fontawesome. <br>",
-    "action.html": "Icons by fontawesome.<br>",
-    "newsletter.html": "Icons by fontawesome. <br>"
+    "index.html": "Images courtesy: laboratorio diagnostica ancona IZSUM via Wikimedia Commons; Adobe stock; Leiem via Wikimedia Commons; Icons by fontawesome - <a href='https://fontawesome.com/license/free' target='_blank'>License</a>.<br>",
+    "action.html": "Icons by fontawesome - <a href='https://fontawesome.com/license/free' target='_blank'>License</a>.<br>",
+    "audit.html": "Icons by fontawesome - <a href='https://fontawesome.com/license/free' target='_blank'>License</a>.<br>",
+    "newsletter.html": "Icons by fontawesome - <a href='https://fontawesome.com/license/free' target='_blank'>License</a>.<br>"
 }

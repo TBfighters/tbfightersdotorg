@@ -34,6 +34,7 @@
     margin: 0 1em;
 }
 
+
 @keyframes bob {
     0% {
         transform: translatey(0px);
@@ -53,6 +54,15 @@
     filter: contrast(0.85);
     animation: bob 3s ease-in-out infinite;
     margin-top: 10vh;
+}
+
+/* Remove bobbing annimation for reduced motion */
+@media (prefers-reduced-motion) {
+    #top .scroll-arrow {
+        width: 28px;
+        filter: contrast(0.85);
+        margin-top: 10vh;
+    }
 }
 
 #top .fa-arrow-down:before {
