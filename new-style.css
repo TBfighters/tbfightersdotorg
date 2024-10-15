@@ -90,7 +90,6 @@ h3 {
 .infotainer-wrapper {
 	padding: 2em 1em;
 	gap: 2em;
-	max-width: 70%;
 	display: flex;
 }
 
@@ -131,7 +130,7 @@ h3 {
 @media only screen and (max-width: 992px) {
 	.infotainer-wrapper {
 		flex-direction: column;
-		gap: 5em;
+		gap: 6em;
 	}
 
 	#lowering-the-cost .infotainer-wrapper {
