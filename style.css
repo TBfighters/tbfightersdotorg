@@ -687,7 +687,7 @@ input[type="text"],
 input[type="email"] {
     border-color: var(--bg2);
     box-sizing: border-box;
-    margin-top: 0.5em;
+    margin-top: 0.9em;
     box-shadow: none;
     border-style: solid;
     padding: 0.3em 0.3em;
@@ -720,7 +720,7 @@ input[type="checkbox"]:focus {
 
 .list-form label {
     display: inline-block;
-    margin-top: 0.4em;
+    margin-top: 0.9em;
 }
 
 /* MOBILE STYLES */
