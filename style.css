@@ -502,6 +502,17 @@ button,
     text-align: center;
 }
 
+/* Requires .button */
+.button-on-red-bg {
+    background: var(--bg);
+    color: var(--accent-bg);
+}
+
+.button-on-red-bg:hover, .button-on-red-bg:focus, .button-on-red-bg:active {
+    color: var(--fg);
+    background: var(--bg);
+}
+
 /* MOBILE STYLES */
 
 @media only screen and (max-width: 768px) {
