@@ -33,6 +33,7 @@
     color: var(--accent-fg);
     width: calc(15em * (2/3));
     height: 15em;
+    border-radius: 20px;
 }
 
 .circles {
