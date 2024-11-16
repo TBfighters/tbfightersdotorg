@@ -6,7 +6,7 @@
 #counter {
     display: flex;
     /* flex-direction: column */
-    gap: 0.5em;
+    gap: 0.2em;
     justify-content: center;
     width: fit-content;
 
@@ -25,14 +25,14 @@
 .number-outer {
     width: min-content;
     height: min-content;
-    box-shadow: var(--aside-shadow);
 }
 
 .number-inner {
-    background: var(--bg2);
+    background: var(--bg);
     color: var(--accent-fg);
     width: calc(15em * (2/3));
     height: 15em;
+    box-shadow: var(--aside-shadow);
     border-radius: 20px;
 }
 
@@ -56,6 +56,7 @@
     height: 100%;
     width: 100%;
     justify-content: center;
+    overflow: hidden;
 }
 
 #action-heading {
