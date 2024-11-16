@@ -1,0 +1,79 @@
+@font-face {
+    font-family: DSEG14ClassicMini-Regular;
+    src: url(/fonts/DSEG14ClassicMini-Regular.ttf);
+}
+
+#counter {
+    display: flex;
+    /* flex-direction: column */
+    gap: 0.5em;
+    justify-content: center;
+    width: fit-content;
+
+    /* background: var(--fg); */
+    padding: 0.5em 1.5em;
+    margin-bottom: 1.5em;
+}
+
+#top .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.number-outer {
+    width: min-content;
+    height: min-content;
+    box-shadow: var(--aside-shadow);
+}
+
+.number-inner {
+    background: var(--bg2);
+    color: var(--accent-fg);
+    width: calc(15em * (2/3));
+    height: 15em;
+}
+
+.circles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circles .circle {
+    background: var(--fg);
+    border-radius: 100%;
+    height: 0.75em;
+    width: 0.75em;
+    margin: 0.5em 0.5em;
+}
+
+.number-inner .text {
+    font-size: 10em;
+    font-family: DSEG14ClassicMini-Regular;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+#action-heading {
+    padding-bottom: 0.5em
+}
+
+
+@media only screen and (max-width: 768px) {
+    #counter {
+        gap: 0.5em;
+    }
+
+    .number-inner {
+        width: calc(10em * (2 / 3));
+        height: 10em;
+    }
+
+    .number-inner .text {
+        font-size: calc(10em * (2/3));
+    }
+
+}
