@@ -10,9 +10,10 @@
     justify-content: center;
     width: fit-content;
 
-    /* background: var(--fg); */
-    padding: 0.5em 1.5em;
+    background: var(--fg);
+    padding: 1em 2em;
     margin-bottom: 1.5em;
+    border-radius: 20px;
 }
 
 #top .wrapper {
