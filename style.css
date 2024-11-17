@@ -18,6 +18,34 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "Atkinson Hyperlegible";
+    font-style: normal;
+    font-weight: 400;
+    src: url(/fonts/AtkinsonHyperlegible-Regular.ttf)
+}
+
+@font-face {
+    font-family: "Atkinson Hyperlegible";
+    font-style: normal;
+    font-weight: 700;
+    src: url(/fonts/AtkinsonHyperlegible-Bold.ttf)
+}
+
+@font-face {
+    font-family: "Atkinson Hyperlegible";
+    font-style: italic;
+    font-weight: 400;
+    src: url(/fonts/AtkinsonHyperlegible-Italic.ttf)
+}
+
+@font-face {
+    font-family: "Atkinson Hyperlegible";
+    font-style: italic;
+    font-weight: 700;
+    src: url(/fonts/AtkinsonHyperlegible-BoldItalic.ttf)
+}
+
 html {
     scroll-behavior: smooth;
 }
