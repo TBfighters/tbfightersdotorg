@@ -27,7 +27,9 @@
 		<meta name="description" content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
 
 		<script src="./actions.js"></script>
+		<script src="audit-counter.js" defer></script>
 		<link rel="stylesheet" href="index.css" />
+		<link rel="stylesheet" href="audit.css" />
 		<title>TBFighters | Putting People Over Profits</title>
 	</head>
 	<body class="homepage">
@@ -62,22 +64,56 @@
 						<img src="img/hourglass-tb.png" alt="hourglass illustration with red sand and the letters T B in the top section" />
 					</div>
 				</div>
-				<div class="wrapper wrapper-columns featured-columns">
-					<div>
-						<!-- featured Action Start -->
-						<img src="img/magnifying-glass.svg" alt="Magnifying Glass Icon" class="action-icon" style="margin-bottom: 0"><strong class="larger">DANAHER OWES US AN AUDIT</strong>
-						<br>
-						<div style="height: 0.5em;"></div>
-						<p>
-						Danaher promised to release a yearly audit to prove how much it costs to make their TB tests. One year later, we're still waiting. <a href="audit.html">Take action and learn more!</a>
-						</p>
-						<!-- featured Action End -->
-				 	</div>
-				 	<div class="buttons">
-						<a class="button" href="audit.html#action">Take action</a>
-						<a class="button button-subtle" href="action.html#list">Newsletter sign up</a>
+				<div class="wrapper wrapper-counter">
+					<h3>Days Since Danaher <span class="yellow-highlight">Promised an Audit</span>:</h3>
+					<div id="counter">
+						<div class="number-outer">
+							<div class="number-inner">
+								<div class="circles">
+									<div class="circle"></div>
+									<div class="circle"></div>
+								</div>
+								<div class="text">
+									<span id="hundreds">0</span>
+								</div>
+							</div>
+						</div>
+						<div class="number-outer">
+							<div class="number-inner">
+								<div class="circles">
+									<div class="circle"></div>
+									<div class="circle"></div>
+								</div>
+								<div class="text"><span id="tens">0</span></div>
+							</div>
+						</div>
+						<div class="number-outer">
+							<div class="number-inner">
+								<div class="circles">
+									<div class="circle"></div>
+									<div class="circle"></div>
+								</div>
+								<div class="text"><span id="ones">0</span></div>
+							</div>
+						</div>
 					</div>
 				</div>
+				<!-- <div class="wrapper wrapper-columns featured-columns"> -->
+				<!-- 	<div> -->
+						<!-- featured Action Start -->
+						<!-- <img src="img/magnifying-glass.svg" alt="Magnifying Glass Icon" class="action-icon" style="margin-bottom: 0"><strong class="larger">DANAHER OWES US AN AUDIT</strong> -->
+						<!-- <br> -->
+						<!-- <div style="height: 0.5em;"></div> -->
+						<!-- <p> -->
+						<!-- Danaher promised to release a yearly audit to prove how much it costs to make their TB tests. One year later, we're still waiting. <a href="audit.html">Take action and learn more!</a> -->
+						<!-- </p> -->
+						<!-- featured Action End -->
+				<!--  	</div> -->
+				<!--  	<div class="buttons"> -->
+				<!-- 		<a class="button" href="audit.html#action">Take action</a> -->
+				<!-- 		<a class="button button-subtle" href="action.html#list">Newsletter sign up</a> -->
+				<!-- 	</div> -->
+				<!-- </div> -->
 				<div class="wrapper wrap-centered">
 					<a href="#primer"><img src="img/arrow-down.svg" class="scroll-arrow" alt=""></a>
 				</div>
