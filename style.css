@@ -310,6 +310,7 @@ img {
 p.larger,
 li.larger,
 a.larger,
+span.larger,
 strong.larger {
     font-size: 1.2em;
 }
