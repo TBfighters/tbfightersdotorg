@@ -16,177 +16,28 @@
 	<meta property="theme-color" content="#D7211E" />
 	<!-- Style Tags -->
 	<link rel="stylesheet" href="style.css" />
-	<link rel="stylesheet" href="libs/toastify/toastify.css">
 	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
-	<script src="menu.js" defer></script>
-	<script src="libs/toastify/toastify.js"></script>
 	<!-- Variable Tags -->
 	<meta property="og:title" content="Newsletter | TBFighters" />
 	<meta property="og:description"
 		content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
-	<script src="actions.js"></script>
-	<link rel="stylesheet" href="newsletter.html" />
 	<title>Newsletter | TBFighters</title>
 </head>
 
 <body class="newsletter">
-	<!--BELOW THIS GETS COPIED TO ALL PAGES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->
-	<header id="site-head"><a href="#main" class="skip">Skip to main content</a>
-		<div class="wrapper-head">
-			<h1 class="page-title">
-				<a href="index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
-			</h1>
-			<a id="hamburger-button" href="#" title="menu"></a>
-			<nav class="site-menu">
-				<ul class="active">
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="timeline.html">News &amp; Timeline</a></li>
-					<li><a href="resources.html">Resources</a></li>
-					<li><a href="action.html">Take Action</a></li>
-				</ul>
-			</nav>
-		</div>
-	</header>
-	<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
-	<main id="main">
-		<section class="container container-compact title">
-			<div class="wrapper-full">
-				<h1>Join Our <span class="red">Mailing List</span></h1>
-				<p>
-					Be informed of new calls to action, campaign press releases, and other
-					TBFighters campaign updates. Emails may be authored by TBFighters, John Green,
-					and partner organizations, such as MSF Access and PIH.
-				</p>
-				<p>
-					<b>Please add <span class="red">updates@mail.tbfighters.org</span> to your email
-						contacts to ensure you recieve the newsletter!</b>
-				</p>
-				<div id="newsletter-wrapper">
-					<noscript>Please enable javascript to sign up for the newsletter!</noscript>
-				</div>
-				<script>
-					document.getElementById("newsletter-wrapper").innerHTML = `<form method='post' action='https://gaggle.email/join/tbfighters@gaggle.email' id='newsletter-form'>
-					<div class='list-form wrapper-columns'>
-						<div>
-							<label for='name'style="padding-right: 1ch;"><span>Name: </span></label><input name='name' type='text' id="name-field">
-							<label id='error-label' style='color: #D7211E; font-weight: bolder; display: none' role="alert"></label>
-						</div>
-						<div>
-							<label for='email' style="padding-right: 1ch;"><span>Email Address: </span></label><input name='email' type='email'>
-						</div>
-						<div>
-							<button class='button'>Sign up</button>
-						</div>
-					</div>
-					<em class="smaller">By signing up, you agree to Gaggle Mail's Terms of Service and Privacy Policy. <a href="https://gaggle.email/terms" target="_blank">Learn More</a></em>
-				</form>`;
-					let form = document.getElementById("newsletter-form");
-					let error = document.getElementById("error-label");
-					let name_field = document.getElementById("name-field");
-					form.onsubmit=function(e){
-						var arr=this.elements,i=0,l=arr.length;
-						if (arr.email.value == arr.name.value) {
-							error.innerHTML = "Your name cannot be the same as your email"
-							error.style.display = "block"
-							name_field.setAttribute("aria-invalid", true);
-							name_field.setAttribute("aria-describedby", "error-label");
-							error.setAttribute("aria-live", true);
-							return false
-						} else {
-							error.style.display = "none"
-							error.setAttribute("aria-live", false);
-							name_field.setAttribute("aria-invalid", false);
-							name_field.setAttribute("aria-describedby", null);
-						}
-					}
-				</script>
-			</div>
+	<main>
+		<div class="wrapper" style="padding-top: 60px;">
+			<p>You are being redirected... If you are not redirected automatically, make sure you have
+				JavaScript enabled.</p><br>
 			<br>
-			<hr>
-			<div class="wrapper-full">
-				<h2>More <span class="red">TBFighters</span></h2>
-				<div class="wrapper-columns" style="gap: 1.5em;">
-					<div class="newsletter-action-column">
-						<div>
-							<img src="img/hourglass-tb.png"
-								alt="hourglass illustration with red sand and the letters T B in the top section"
-								class="image-right about-hourglass"
-								style="max-width:110px; margin-left: 10px; margin-right: 15px" />
-							<p class="larger">
-								Tuberculosis is curable, yet <strong>1.3 million people
-									die</strong> of tuberculosis every year while
-								<strong>Danaher grossly overcharges for diagnostic
-									tests</strong> for the people who can least
-								afford it.
-							</p>
-						</div>
-						<a href="index.html" class="larger" style="align-self: flex-end;">Visit
-							our <span class="red">homepage</span></a>
-					</div>
-					<div class="newsletter-action-column">
-						<div>
-							<div class="newsletter-action action">
-								<img src="img/hashtag.svg" alt="hashtag icon"
-									class="action-icon" /><strong><span
-										class="red">Post</span></strong> on
-								social media
-								using #PeopleOverProfits and #XDRNext
-							</div>
-							<div class="newsletter-action action">
-								<img src="img/envelope.svg" alt="email icon"
-									class="action-icon" /><strong><span
-										class="red">Email</span></strong>
-								Danaher at <a
-									href="mailto:investor.relations@danaher.com">investor.<wbr>relations<wbr>@danaher.com</a>
-							</div>
-							<div class="newsletter-action action">
-								<img src="img/phone.svg" alt="phone icon"
-									class="action-icon" /><strong><span
-										class="red">Call</span></strong> Danaher
-								at <a href="tel:+12028280850">+1-202-828-0850</a> (<a
-									href="https://docs.google.com/document/d/e/2PACX-1vTh05tEoyCsh8oEWScWM9n41B1pcUeVNGFcUDqdlcILHvVUB2_LsK4voMTdKPdEQwmjMHRBaoalG259/pub#h.vbw6rgxxf6wk" target="_blank">international</a>)
-							</div>
-							<div class="newsletter-action action">
-								<img src="img/envelopes-bulk.svg"
-									alt="several envelopes icon"
-									class="action-icon" /><strong><span
-										class="red">Write</span></strong> a
-								letter to
-								Danaher’s Board
-							</div>
-						</div>
-						<a href="action.html" class="larger" style="align-self: flex-end;">More
-							ways to <span class="red">take
-								action!</span></a>
-					</div>
-				</div>
-			</div>
-		</section>
+			<p>We lead by following and act with compassion.</p>
+			<script>
+				window.onload = function () {
+					window.location.replace("https://newsletter.tbfighters.org/subscribe");
+				}
+			</script>
+		</div>
 	</main>
-	<footer class="site-foot">
-		<p class="socials-wrapper-centered">
-			<a href="https://x.com/tbfighters" target="_blank">
-				<img src="img/socials/twitter.svg" alt="Twitter" class="social-icon">
-				<img src="img/socials/twitter-hover.svg" alt="Twitter" class="social-icon-hover"></a>
-			<a href="https://www.instagram.com/tbfighters" target="_blank">
-				<img src="img/socials/insta.svg" alt="Instagram" class="social-icon">
-				<img src="img/socials/insta-hover.svg" alt="Instagram" class="social-icon-hover"></a>
-			<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
-					src="img/socials/youtube.svg" alt="Youtube" class="social-icon"><img
-					src="img/socials/youtube-hover.svg" alt="Youtube" class="social-icon-hover"></a>
-			<a href="https://www.facebook.com/profile.php?id=61555332203505" target="_blank"><img
-					src="img/socials/facebook.svg" alt="Facebook" class="social-icon"><img
-					src="img/socials/facebook-hover.svg" alt="Facebook" class="social-icon-hover"></a>
-		</p>
-		<hr style="width: 10%; margin: 0 auto; margin-bottom: 4px;">
-		<p>
-			&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
-		</p>
-		<p class="too-small">
-			Icons by fontawesome - <a href='https://fontawesome.com/license/free' target='_blank'>License</a>.<br>
-			We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
-		</p>
-	</footer>
 </body>
 
 </html>

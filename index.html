@@ -169,47 +169,11 @@
 					<div class="wrapper">
 						<h3 id="list">Join Our <span class="red">Mailing List</span></h2>
 						<p>
-							Be informed of new calls to action, campaign press releases, and other TBFighters campaign updates. Emails may be authored by TBFighters, John Green, and partner organizations, such as MSF Access and PIH.
+							Be informed of new calls to action, campaign press releases, and other TBFighters campaign updates. Emails may be authored by TBFighters and John Green.
 						</p>
 						<div id="newsletter-wrapper">
-							<noscript>Please enable javascript to sign up for the newsletter!</noscript>
+							<a class="button" href="https://newsletter.tbfighters.org/subscribe" target="_blank">Subscribe</a>
 						</div>
-						<script>
-							document.getElementById("newsletter-wrapper").innerHTML = `<form method='post' action='https://gaggle.email/join/tbfighters@gaggle.email' id='newsletter-form'>
-							<div class='list-form wrapper-columns'>
-								<div>
-									<label for='name'style="padding-right: 1ch;"><span>Name: </span></label><input name='name' type='text' id="name-field">
-									<label id='error-label' style='color: #D7211E; font-weight: bolder; display: none' role="alert"></label>
-								</div>
-								<div>
-									<label for='email' style="padding-right: 1ch;"><span>Email Address: </span></label><input name='email' type='email'>
-								</div>
-								<div>
-									<button class='button'>Sign up</button>
-								</div>
-							</div>
-							<em class="smaller">By signing up, you agree to Gaggle Mail's Terms of Service and Privacy Policy. <a href="https://gaggle.email/terms" target="_blank">Learn More</a></em>
-						</form>`;
-							let form = document.getElementById("newsletter-form");
-							let error = document.getElementById("error-label");
-							let name_field = document.getElementById("name-field");
-							form.onsubmit=function(e){
-								var arr=this.elements,i=0,l=arr.length;
-								if (arr.email.value == arr.name.value) {
-									error.innerHTML = "Your name cannot be the same as your email"
-									error.style.display = "block"
-									name_field.setAttribute("aria-invalid", true);
-									name_field.setAttribute("aria-describedby", "error-label");
-									error.setAttribute("aria-live", true);
-									return false
-								} else {
-									error.style.display = "none"
-									error.setAttribute("aria-live", false);
-									name_field.setAttribute("aria-invalid", false);
-									name_field.setAttribute("aria-describedby", null);
-								}
-							}
-						</script>
 						<br>
 					</div>
 					<div class="wrapper">
