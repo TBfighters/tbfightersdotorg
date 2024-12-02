@@ -662,10 +662,6 @@ div.featured {
     margin-right: 0.5em;
 }
 
-.newsletter-action {
-    padding-bottom: 0.5em;
-}
-
 .action p.larger {
     font-size: 1.5em;
 }
@@ -678,13 +674,6 @@ div.featured {
     vertical-align: top;
 }
 
-.newsletter-action-column {
-    max-width: 50%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
 /* MOBILE STYLES */
 
 @media only screen and (max-width: 992px) {
@@ -695,97 +684,9 @@ div.featured {
         margin-left: 0;
         margin-right: auto;
     }
-
-    .newsletter-action-column {
-        max-width: unset;
-    }
-
-    .newsletter-action {
-        padding-bottom: 0.5em;
-    }
-
 }
 
 /* ==== END OF ACTIONS ==== */
-
-/* ===============
-   NEWSLETTER FORM
-   =============== */
-input[type="text"],
-input[type="email"] {
-    border-color: var(--bg2);
-    box-sizing: border-box;
-    margin-top: 0.9em;
-    box-shadow: none;
-    border-style: solid;
-    padding: 0.3em 0.3em;
-    font-size: inherit;
-    line-height: 1.1;
-    color: var(--fg);
-    font-family: "Atkinson Hyperlegible";
-}
-
-input[type="text"]:focus,
-input[type="email"]:focus {
-    border-color: var(--accent-bg);
-    outline: none;
-    box-shadow: none;
-}
-
-input[type="checkbox"] {
-    box-shadow: none;
-    accent-color: var(--accent-bg);
-}
-
-input[type="checkbox"]:focus {
-    outline-offset: 1px;
-    outline: 2px solid var(--fg);
-}
-
-.list-form {
-    font-size: 0.9em;
-}
-
-.list-form label {
-    display: inline-block;
-    margin-top: 0.9em;
-}
-
-/* MOBILE STYLES */
-
-@media only screen and (max-width: 900px) {
-    .list-form.wrapper-columns {
-        flex-direction: row;
-        gap: 0.6em;
-        flex-wrap: wrap;
-    }
-
-    .list-form div {
-        width: 40%;
-    }
-
-    .list-form label {
-        margin-top: 0;
-    }
-
-    .list-form label span {
-        display: block;
-    }
-
-    .list-form div,
-    .list-form input,
-    .list-form label {
-        width: 100%;
-    }
-}
-
-@media only screen and (max-width: 560px) {
-    .list-form.wrapper-columns {
-        flex-direction: column;
-    }
-}
-
-/* ==== END OF NEWSLETTER FORMS ==== */
 
 /* ===============
    PAGE CONTAINERS
