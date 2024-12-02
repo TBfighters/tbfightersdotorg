@@ -122,7 +122,7 @@ h3 {
 	color: var(--bg);
 }
 
-.infotainer-section:nth-of-type(odd) a {
+.infotainer-section:nth-of-type(odd) a:not(.button-on-red-bg) {
 	color: var(--bg);
 }
 
@@ -165,10 +165,17 @@ h3 {
 #faq article .question {
 	padding: 1em 1em 0.5em 1em;
 	border-bottom: 1px solid var(--accent-fg);
+	font-weight: 800;
 }
 
 #faq article .answer {
 	padding: 1em 1em 0.5em 1em;
+}
+
+@media only screen and (max-width: 992px) {
+	#faq .wrapper {
+		max-width: 100%;
+	}
 }
 
 /* ==== END OF FAQ SECTION ==== */
