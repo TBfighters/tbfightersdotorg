@@ -496,6 +496,7 @@ button {
 
 .button-full {
     width: 100%;
+    text-align: center;
 }
 
 .button:hover,
@@ -528,6 +529,17 @@ button,
 .button-fill {
     width: 100%;
     text-align: center;
+}
+
+/* Requires .button */
+.button-on-red-bg, a.button-on-red-bg {
+    background: var(--bg);
+    color: var(--accent-bg);
+}
+
+.button-on-red-bg:hover, .button-on-red-bg:focus, .button-on-red-bg:active {
+    color: var(--fg);
+    background: var(--bg);
 }
 
 /* MOBILE STYLES */

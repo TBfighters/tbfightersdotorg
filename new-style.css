@@ -73,6 +73,7 @@
 
 h3 {
 	font-size: 2.5em;
+	line-height: 1.2;
 }
 
 /* ==== END OF GENERAL STYLES ==== */
@@ -89,7 +90,7 @@ h3 {
 
 .infotainer-wrapper {
 	padding: 2em 1em;
-	gap: 2em;
+	gap: 2.5em;
 	display: flex;
 }
 
@@ -116,12 +117,12 @@ h3 {
 	margin: auto;
 }
 
-#the-broken-promise {
+.infotainer-section:nth-of-type(odd) {
 	background: var(--accent-bg);
 	color: var(--bg);
 }
 
-#the-broken-promise a {
+.infotainer-section:nth-of-type(odd) a:not(.button-on-red-bg) {
 	color: var(--bg);
 }
 
@@ -133,7 +134,7 @@ h3 {
 		gap: 6em;
 	}
 
-	#lowering-the-cost .infotainer-wrapper {
+	.infotainer-section:nth-of-type(even) .infotainer-wrapper {
 		flex-direction: column-reverse;
 	}
 
@@ -164,10 +165,17 @@ h3 {
 #faq article .question {
 	padding: 1em 1em 0.5em 1em;
 	border-bottom: 1px solid var(--accent-fg);
+	font-weight: 800;
 }
 
 #faq article .answer {
 	padding: 1em 1em 0.5em 1em;
+}
+
+@media only screen and (max-width: 992px) {
+	#faq .wrapper {
+		max-width: 100%;
+	}
 }
 
 /* ==== END OF FAQ SECTION ==== */
