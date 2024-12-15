@@ -32,7 +32,9 @@
 	<meta name="twitter:card" content="summary_large_image">
 	<link rel="stylesheet" href="actions.css">
 	<link rel="stylesheet" href="new-style.css">
+	<link rel="stylesheet" href="audit.css">
 	<script src="actions.js"></script>
+	<script src="audit-counter.js" defer></script>
 	<script src="./header-link.js" defer></script>
 	<title>Where's the audit, Danaher? | TBFighters</title>
 </head>
@@ -57,18 +59,46 @@
 	</header>
 	<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
 	<main id="main">
-		<section id="top" class="container container-compact title">
+		<section id="top" class="container container-compact title audit-top">
 			<div class="wrapper">
-				<h2>Where's the audit, <span class="yellow-highlight">Danaher</span>?</h2>
-				<a href="#action">
-					<p><b>Take Action</b> <img src="./img/arrow-right.svg" alt=""></p>
-				</a>
-				<div id="dome-outer">
-					<div id="dome-inner">
-						<img src="./img/audit-main-graphic.svg"
-							alt="a document with a GeneXpert Cartridge and dollar sign on it, all under a magnifying glass">
+				<h2>Days Since Danaher <span class="yellow-highlight">Promised an Audit</span>:</h2>
+				<noscript>
+					<span><i>Please enable javascript to get a accurate count.</i></span>
+				</noscript>
+				<div id="counter">
+					<div class="number-outer">
+						<div class="number-inner">
+							<div class="circles">
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+							<div class="text">
+								<span id="hundreds">0</span>
+							</div>
+						</div>
+					</div>
+					<div class="number-outer">
+						<div class="number-inner">
+							<div class="circles">
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+							<div class="text"><span id="tens">0</span></div>
+						</div>
+					</div>
+					<div class="number-outer">
+						<div class="number-inner">
+							<div class="circles">
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+							<div class="text"><span id="ones">0</span></div>
+						</div>
 					</div>
 				</div>
+				<a href="#action" id="action-heading">
+					<p><b>Take Action</b> <img src="./img/arrow-right.svg" alt=""></p>
+				</a>
 			</div>
 		</section>
 		<section id="lowering-the-cost" class="container infotainer-section">
@@ -247,7 +277,8 @@
 			&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
 		</p>
 		<p class="too-small">
-			Icons by fontawesome - <a href='https://fontawesome.com/license/free' target='_blank'>License</a>.<br>
+			Icons by fontawesome - <a href='https://fontawesome.com/license/free'
+				target='_blank'>License</a>.<br>
 			We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
 		</p>
 	</footer>
