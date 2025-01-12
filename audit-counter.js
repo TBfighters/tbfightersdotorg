@@ -1,5 +1,7 @@
 const start = new Date("2023-09-19");
+start.setHours(0, 0, 0, 0);
 const end = Date.now();
+start.setHours(0, 0, 0, 0);
 
 let diff = end - start;
 
