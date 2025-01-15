@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 let featuredActionFiles = ["index.html", "action.html"]
-let skipDirectories = ["update-action", "img", ".github", ".git", ".default"]
+let skipFiles = ["update-action", "img", ".github", ".git", ".default", "newsletter.html"]
 
 let featuredAction = fs.readFileSync('./featured-action.html', 'utf8').trim();
 let headerContent = fs.readFileSync("./header.html", 'utf8').trim();
@@ -32,7 +32,10 @@ function addIndent(query, content, replaceContent) {
 
 function replaceContent(files, leadingPath, prefixLength) {
     files.forEach((file, _) => {
-        if (file.isDirectory() && !skipDirectories.includes(file.name)) {
+        if (skipFiles.includes(file.name)) {
+            return
+        }
+        if (file.isDirectory()) {
             let files = fs.readdirSync(leadingPath + file.name, { withFileTypes: true });
             replaceContent(files, leadingPath + file.name + "/", prefixLength + 1);
         }
