@@ -255,10 +255,6 @@ button {
     font-weight: bold;
 }
 
-button.button :disabled {
-
-}
-
 /* IMAGES */
 img {
     align-self: start;
