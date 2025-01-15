@@ -255,6 +255,10 @@ button {
     font-weight: bold;
 }
 
+button.button :disabled {
+
+}
+
 /* IMAGES */
 img {
     align-self: start;
@@ -472,6 +476,17 @@ h4 {
     text-decoration: none;
 }
 
+.button[type="disabled"] {
+    background: #505050;
+    border-color: #505050;
+}
+
+.button[type="disabled"]:hover, .button[type="disabled"]:focus, .button[type="disabled"]:active {
+    background: #505050;
+    border-color: #505050;
+    cursor: not-allowed;
+}
+
 button {
     font-family: "Atkinson Hyperlegible";
 }
@@ -519,6 +534,20 @@ button {
     background-color: var(--bg);
     color: var(--fg);
     border-color: var(--fg);
+}
+
+
+.button-subtle[type="disabled"] {
+    border-color: #505050;
+    color: #505050;
+    background: none !important;
+}
+
+.button-subtle[type="disabled"]:hover, .button-subtle[type="disabled"]:focus, .button-subtle[type="disabled"]:active {
+    background: none !important;
+    border-color: #505050;
+    color: #505050;
+    cursor: not-allowed;
 }
 
 button,
