@@ -30,7 +30,13 @@
 	<meta name="description"
 		content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
 
+	<script src="../actions.js"></script>
 	<script src="../header-link.js" defer></script>
+	<script>
+		function comingSoonToast() {
+			addToast({message: "Coming soon...", time: 1200})
+		}
+	</script>
 	<link rel="stylesheet" href="./book-club.css" />
 	<title>Book Club | TBFighters</title>
 </head>
@@ -68,7 +74,9 @@
 		</section>
 		<section class="container container-compact">
 			<div class="wrapper-full">
-				<h3 style="margin-bottom: 0.1em">Join the club!</h3>
+				<h3 style="margin-bottom: 0.1em" id="join">Join the club!
+						<div class="header-copy"><noscript><a href="#join"></a></noscript></div>
+				</h3>
 				<span class="large">We welcome participation across a variety of formats and
 					platforms:</span>
 				<br>
@@ -111,7 +119,9 @@
 		</section>
 		<section class="container container-compact">
 			<div class="wrapper-full">
-				<h3 style="margin-bottom: 0.1em;">Read the books</h3>
+				<h3 style="margin-bottom: 0.1em;" id="books">Read the books
+						<div class="header-copy"><noscript><a href="#books"></a></noscript></div>
+				</h3>
 				<p>One book every 2 months. <b>Feel free to join anytime!</b></p>
 				<hr>
 				<div class="books">
@@ -123,9 +133,11 @@
 						<h4>Everything is Tuberculosis</h4>
 						<span class="date">March 18th - May 17th</span>
 						<br>
-						<span class="link"><a href="https://everythingistb.com/" target="_blank">Website</a></span>
+						<span class="link"><a href="https://everythingistb.com/"
+								target="_blank">Buy</a></span>
 						<br>
-						<a href="">Guide and Warnings</a>
+						<a onclick="comingSoonToast()" title="Coming soon...">Guide and
+							Warnings</a>
 					</article>
 					<article class="book">
 						<div class="image">
@@ -135,9 +147,12 @@
 						<h4>Phantom Plague</h4>
 						<span class="date">May 18th - July 17th</span>
 						<br>
-						<span class="link"><a href="https://www.penguin.co.in/book/phantom-plague/" target="_blank">Website</a></span>
+						<span class="link"><a
+								href="https://www.penguin.co.in/book/phantom-plague/"
+								target="_blank">Buy</a></span>
 						<br>
-						<a href="">Guide and Warnings</a>
+						<a onclick="comingSoonToast()" title="Coming soon...">Guide and
+							Warnings</a>
 					</article>
 					<article class="book">
 						<div class="image">
@@ -147,9 +162,12 @@
 						<h4>Mountains Beyond Mountains</h4>
 						<span class="date">July 18th - September 17th</span>
 						<br>
-						<span class="link"><a href="https://www.penguinrandomhouse.com/books/92351/mountains-beyond-mountains-by-tracy-kidder/" target="_blank">Website</a></span>
+						<span class="link"><a
+								href="https://www.penguinrandomhouse.com/books/92351/mountains-beyond-mountains-by-tracy-kidder/"
+								target="_blank">Buy</a></span>
 						<br>
-						<a href="">Guide and Warnings</a>
+						<a onclick="comingSoonToast()" title="Coming soon...">Guide and
+							Warnings</a>
 					</article>
 					<article class="book">
 						<div class="image">
