@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--Meta tags-->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--Open Graph Tags-->
+	<meta property="og:site_name" content="TBFighters" />
+	<meta property="og:url" content="https://tbfighters.org" />
+	<meta property="og:type" content="website" />
+	<meta property="theme-color" content="#D7211E" />
+	<!-- Style Tags -->
+	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="../libs/toastify/toastify.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="../img/favicon/site.webmanifest">
+	<link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico">
+	<script src="../menu.js" defer></script>
+	<script src="../libs/toastify/toastify.js"></script>
+	<!-- Variable Tags -->
+	<meta name="robots" content="index, follow" />
+	<meta property="og:title" content="TBReaders Book Club | TBFighters" />
+	<meta property="og:image" content="img/og-image.jpg" />
+	<meta property="og:image:type" content="image/png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="og:description" content="" />
+	<meta name="description"
+		content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
+
+	<script src="../actions.js"></script>
+	<script src="../header-link.js" defer></script>
+	<script>
+		function comingSoonToast() {
+			addToast({message: "Coming soon...", time: 1200})
+		}
+	</script>
+	<link rel="stylesheet" href="./book-club.css" />
+	<title>TBReaders Book Club | TBFighters</title>
+</head>
+
+<body class="about">
+	<!--BELOW THIS GETS COPIED TO ALL PAGES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->
+	<header id="site-head"><a href="#main" class="skip">Skip to main content</a>
+		<div class="wrapper-head">
+			<h1 class="page-title">
+				<a href="../index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
+			</h1>
+			<a id="hamburger-button" href="#" title="menu"></a>
+			<nav class="site-menu">
+				<ul class="active">
+					<li><a href="../about.html">About Us</a></li>
+					<li><a href="../timeline.html">News &amp; Timeline</a></li>
+					<li><a href="../resources.html">Resources</a></li>
+					<li><a href="../action.html">Take Action</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
+	<main id="main">
+		<section class="container container-compact title">
+			<div class="wrapper-full">
+				<h2 style="margin-bottom: 0.1em;">TBReaders Book Club</h2>
+				<span class="large">
+					Welcome to the TBReaders Book Club! Read and discuss books about TB and global
+					health together, with a new book every two months! Below you can find resources
+					to help thoughtfully read books both past and present, and join in TBReaders
+					discussions and events.
+				</span>
+			</div>
+		</section>
+		<section class="container container-compact">
+			<div class="wrapper-full">
+				<h3 style="margin-bottom: 0.1em" id="join">Join the club!
+						<div class="header-copy"><noscript><a href="#join"></a></noscript></div>
+				</h3>
+				<span class="large">We welcome participation across a variety of formats and
+					platforms:</span>
+				<br>
+				<br>
+				<div class="spaces">
+					<article class="space" id="discord">
+						<h4>TBReaders Discord Server</h4>
+						<br>
+						<p>Join the TBReaders Discord Server to participate in text-based
+							discussions of our current and past reads, as well as organized
+							voice chat discussions!</p>
+						<br>
+						<a href="https://discord.gg/qfKWcsBFpB" class="button button-full"
+							target="_blank">Discord invite</a>
+					</article>
+					<article class="space" id="social">
+						<h4>Social Media</h4>
+						<br>
+						<p>Pin the TBReaders feed to your home screen on Bluesky and include
+							<span class="red">#TBReaders</span> in your book club–related
+							posts to participate in discussions on that platform, or use
+							<span class="red">#TBReaders</span> accross social media
+							websites to find the TBReaders Book Club community wherever you
+							are!
+						</p>
+						<br>
+						<a href="https://bsky.app/profile/did:plc:tf2tdcsyng73kvdld2barqqv/feed/aaagebsfj55uk" class="button button-full" target="_blank">Bluesky feed</a>
+					</article>
+					<article class="space" id="general">
+						<h4>Stay informed!</h4>
+						<br>
+						<p>Follow us on social media, join the TBReaders discord, or subscribe
+							to our newsletter to be informed of special events like author
+							or expert Q&A sessions!</p>
+						<br>
+						<a href="/newsletter.html" class="button button-full">Newsletter</a>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section class="container container-compact">
+			<div class="wrapper-full">
+				<h3 style="margin-bottom: 0.1em;" id="books">Read the books
+						<div class="header-copy"><noscript><a href="#books"></a></noscript></div>
+				</h3>
+				<p>One book every 2 months. <b>Join anytime!</b></p>
+				<hr>
+				<div class="books">
+					<article class="book" id="current">
+						<div class="image">
+							<img src="../img/book-club/everything-is-tb.jpg"
+								alt="Book cover of Everything is Tuberculosis by John Green">
+						</div>
+						<h4>Everything is Tuberculosis</h4>
+						<span class="date">March 18th - May 17th</span>
+						<br>
+						<span class="link"><a href="https://everythingistb.com/"
+								target="_blank">Info and purchase</a></span>
+						<br>
+						<a onclick="comingSoonToast()" title="Coming soon...">Guide and
+							Warnings</a>
+					</article>
+					<article class="book">
+						<div class="image">
+							<img src="../img/book-club/phantom-plague.jpg"
+								alt="Book cover of Phantom Plague by Vidya Krishnan">
+						</div>
+						<h4>Phantom Plague</h4>
+						<span class="date">May 18th - July 17th</span>
+						<br>
+						<span class="link"><a
+								href="https://www.penguin.co.in/book/phantom-plague/"
+								target="_blank">Info and purchase</a></span>
+						<br>
+						<a onclick="comingSoonToast()" title="Coming soon...">Guide and
+							Warnings</a>
+					</article>
+					<article class="book">
+						<div class="image">
+							<img src="../img/book-club/mountains-beyond-mountains.jpg"
+								alt="Book cover of Mountains Beyond Mountains by Tracy Kidder">
+						</div>
+						<h4>Mountains Beyond Mountains</h4>
+						<span class="date">July 18th - September 17th</span>
+						<br>
+						<span class="link"><a
+								href="https://www.penguinrandomhouse.com/books/92351/mountains-beyond-mountains-by-tracy-kidder/"
+								target="_blank">Info and purchase</a></span>
+						<br>
+						<a onclick="comingSoonToast()" title="Coming soon...">Guide and
+							Warnings</a>
+					</article>
+					<article class="book">
+						<div class="image">
+							<img src="../img/book-club/unknown-book.png"
+								alt="To be announced">
+						</div>
+						<h4>TBD</h4>
+						<span class="date">September 18th - November 17th</span>
+						<br>
+						<!-- <span class="buy"> and purchase</span> -->
+						<br>
+						<!-- <a href="">Guide and Warnings</a> -->
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="site-foot">
+		<p class="socials-wrapper-centered">
+			<a href="https://bsky.app/profile/tbfighters.org" target="_blank"><img
+					src="../img/socials/bsky.svg" aria-label="Blue Sky" class="social-icon"><img
+					src="../img/socials/bsky-hover.svg" class="social-icon-hover"></a>
+			<a href="https://x.com/tbfighters" target="_blank">
+				<img src="../img/socials/twitter.svg" aria-label="Twitter" class="social-icon">
+				<img src="../img/socials/twitter-hover.svg" class="social-icon-hover"></a>
+			<a href="https://www.instagram.com/tbfighters" target="_blank">
+				<img src="../img/socials/insta.svg" aria-label="Instagram" class="social-icon">
+				<img src="../img/socials/insta-hover.svg" class="social-icon-hover"></a>
+			<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
+					src="../img/socials/youtube.svg" aria-label="Youtube" class="social-icon"><img
+					src="../img/socials/youtube-hover.svg" class="social-icon-hover"></a>
+			<a href="https://www.facebook.com/profile.php?id=61555332203505" target="_blank"><img
+					src="../img/socials/facebook.svg" aria-label="Facebook" class="social-icon"><img
+					src="../img/socials/facebook-hover.svg" class="social-icon-hover"></a>
+		</p>
+		<hr style="width: 10%; margin: 0 auto; margin-bottom: 4px;">
+		<p>
+			&copy; The TBFighters Project | <a href="../privacy.html" class="footer-link">Privacy Policy</a>
+		</p>
+		<p class="too-small">
+			Images courtesy: laboratorio diagnostica ancona IZSUM via Wikimedia Commons; Adobe stock; Leiem via Wikimedia Commons; Icons by fontawesome - <a href='https://fontawesome.com/license/free' target='_blank'>License</a>.<br>
+			We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
+		</p>
+	</footer>
+</body>
+
+</html>
