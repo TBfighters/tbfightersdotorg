@@ -1,0 +1,466 @@
+body {
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+#top {
+    --window-size: calc(100vh - (80px + 2em));
+    height: calc((100vh - (80px + 2em)) + (100vh * 2));
+    width: 100vw;
+}
+
+.wrapper-top {
+    height: 100%;
+    width: 100%;
+    background-color: var(--accent-bg);
+    background-image: url(../img/funding-freeze/tb-graph-top.png);
+    background-attachment: fixed;
+    background-size: 150%;
+    background-position: top right;
+    z-index: 1;
+}
+
+.header {
+    height: 5em;
+    width: 70%;
+    color: var(--bg);
+    margin: auto auto;
+}
+
+.header h2 {
+    font-size: 2.5em;
+    background-color: var(--fg);
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    padding: 1em 2em;
+    z-index: 3;
+    position: relative;
+}
+
+.header-photos.one {
+    position: absolute;
+    height: var(--window-size);
+    width: 100%;
+    z-index: 2;
+}
+
+.header-photos.one .bacetria {
+    background-image: url(../img/funding-freeze/red-bacteria.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100%;
+}
+
+.header-photos.one .signing {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/funding-freeze/jfk-signing.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 65%;
+    width: 100%;
+}
+
+
+.image-reveal.boxes {
+    position: absolute;
+    top: 100vh;
+    right: 0;
+    height: calc(300%);
+    width: 100%;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.boxes img {
+    position: fixed;
+    top: -50vh;
+    right: 0;
+    transform: translateY(50vh);
+    height: 100%;
+
+}
+
+.image-reveal.under-threat {
+    position: absolute;
+    top: 225vh;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    clip-path: polygon(100% 0%, 100% 50%, 0% 50%, 0% 0%);
+}
+
+.under-threat img {
+    position: fixed;
+    top: -20vh;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, 50vh);
+    height: 50%;
+
+}
+
+/* -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0); */
+
+.header.one {
+    padding-top: calc(50vh - (80px + 5em));
+}
+
+.header.two {
+    padding-top: calc(100vh);
+}
+
+.header.three {
+    padding-top: calc(100vh);
+}
+
+
+/* Tablet */
+
+@media only screen and (max-width: 992px) {
+
+    .wrapper-top {
+        background: none;
+    }
+
+    .wrapper-top::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--accent-bg);
+
+        background-image: url(../img/funding-freeze/tb-graph-top.png);
+        background-position: top right;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        z-index: 1;
+    }
+
+    .header-photos.one .signing {
+        height: 75%;
+        background-size: 75%;
+    }
+
+    .header {
+        width: 90%;
+    }
+
+    .header h2 {
+        padding: 1em 1em;
+        font-size: 2em;
+    }
+
+    .boxes {
+        z-index: 2;
+    }
+
+    .boxes img {
+        width: 75%;
+    }
+
+    .under-threat {
+        z-index: 3;
+    }
+}
+
+/* Phones */
+
+@media only screen and (max-width: 768px) {
+    .header {
+        width: 100%;
+    }
+
+    .header-photos.one .signing {
+        height: 55%;
+        background-size: 100%;
+    }
+
+    .header-photos.one .bacetria {
+        background-size: 170%;
+        height: 90%;
+    }
+}
+
+
+/* End of Header */
+
+/* Under Threat & Some The Super Bug */
+
+#under-threat {
+    position: relative;
+    background-color: var(--fg);
+    z-index: 3;
+    color: var(--bg);
+}
+
+#under-threat .wrapper,
+#take-action .wrapper {
+    padding: 5em 0;
+    width: 70%;
+    max-width: unset;
+}
+
+#the-super-bug .wrapper {
+    padding: 5em 0;
+    padding-bottom: 1px;
+    width: 70%;
+    max-width: unset;
+}
+
+#the-super-bug .wrapper {
+    z-index: unset;
+}
+
+#under-threat p,
+#the-super-bug p {
+    font-size: 1.5em;
+}
+
+#under-threat::before {
+    content: "";
+    background-image: url(../img/funding-freeze/black-bacteria-in-dish.png);
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 40%;
+    filter: blur(4px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+#under-threat::after,
+#the-super-bug::after {
+    content: "";
+    background-image: url(../img/funding-freeze/paper.png);
+    background-size: cover;
+    background-position: center center;
+    opacity: 40%;
+    mix-blend-mode: hard-light;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+
+/* Tablet */
+@media only screen and (max-width: 992px) {
+    #under-threat .wrapper {
+        width: 90%;
+    }
+
+    #under-threat::before {
+        background-size: 80%;
+    }
+
+}
+
+/* Phone */
+
+@media only screen and (max-width: 768px) {
+    #under-threat::before {
+        background-repeat: space;
+    }
+
+}
+
+/* The Super Bug */
+
+#the-super-bug {
+    position: relative;
+    background-color: var(--accent-bg);
+    color: var(--bg);
+}
+
+.content {
+    background-color: var(--fg);
+    padding: 1em 1em;
+}
+
+#the-super-bug h2,
+.content {
+    position: relative;
+    z-index: 5;
+    font-weight: 700;
+}
+
+.combo {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5em;
+    padding-top: 5em;
+}
+
+.largest {
+    position: absolute;
+    font-size: 30em;
+    color: var(--fg);
+    font-weight: 700;
+    top: -0.2em;
+    right: -0.1em;
+    z-index: 1;
+}
+
+
+
+#drug-resistance {
+    min-height: 100%;
+}
+
+#drug-resistance img {
+    position: relative;
+    height: 150%;
+    vertical-align: middle;
+    top: 50%;
+    transform: translate(-25%, -50%);
+}
+
+#drug-resistance img.mobile {
+    display: none;
+}
+
+
+.blocks .image {
+    width: 25%;
+}
+
+.blocks .content {
+    width: 75%;
+}
+
+#first {
+    padding-top: 0;
+}
+
+#last {
+    padding-bottom: 10em;
+    position: relative;
+}
+
+#graph {
+    position: absolute;
+    background-image: url(../img/funding-freeze/tb-graph-btm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    top: 0;
+    left: calc((100vw - (100vw * 0.7))/2 * -1);
+    width: 100vw;
+    height: 100%;
+    z-index: 1;
+}
+
+#graph::after {
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(180deg, var(--accent-bg) 0%, rgba(0, 0, 0, 0) 100%);
+    ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/* Tablet */
+@media only screen and (max-width: 992px) {
+    #the-super-bug {
+        z-index: 2;
+    }
+
+    #the-super-bug .wrapper {
+        width: 90%;
+    }
+
+    .largest {
+        right: -0.3em;
+    }
+
+    .blocks .content {
+        width: 100%
+    }
+
+    .blocks .image {
+        width: unset;
+    }
+
+    #second {
+        padding-top: 15em;
+    }
+
+
+    #drug-resistance img {
+        vertical-align: top;
+        height: 100%;
+        transform: translate(0%, -100%);
+    }
+
+    #drug-resistance img.mobile {
+        display: block;
+    }
+
+    #drug-resistance img.desktop {
+        display: none;
+    }
+
+    #graph {
+        left: calc((100vw - (100vw * 0.9))/2 * -1);
+    }
+
+}
+
+/* Phone */
+
+@media only screen and (max-width: 768px) {
+    .largest {
+        display: none;
+    }
+
+    #drug-resistance {
+        width: 100%;
+        position: absolute;
+    }
+
+    #drug-resistance img {
+        width: 100%;
+        left: 0;
+        top: 0;
+        -webkit-transform: translate(0%, -50%);
+        transform: translate(0%, -50%);
+    }
+
+    #graph {
+        background-position: center right;
+    }
+}
+
+/* Take Action */
+
+
+@media only screen and (max-width: 992px) {
+    #take-action {
+        position: relative;
+        z-index: 10;
+        background: var(--bg);
+    }
+
+    .site-foot {
+        position: relative;
+        z-index: 10;
+    }
+}
