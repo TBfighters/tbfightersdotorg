@@ -266,8 +266,8 @@ h2 {
 
     #under-threat::before {
         background-size: 80%;
+        filter: blur(2px);
     }
-
 }
 
 /* Phone */
@@ -420,6 +420,10 @@ h2 {
 
     #graph {
         left: calc((100vw - (100vw * 0.9))/2 * -1);
+
+        background-position-x: right;
+        background-position-y: center;
+        background-image: url(../img/funding-freeze/tb-graph-mobile.png);
     }
 
 }
@@ -428,7 +432,11 @@ h2 {
 
 @media only screen and (max-width: 768px) {
     .largest {
-        display: none;
+        font-size: 20em;
+        top: 17%;
+        right: 0%;
+        rotate: 180deg;
+        /* display: none; */
     }
 
     #drug-resistance {
@@ -445,7 +453,10 @@ h2 {
     }
 
     #graph {
-        background-position: center right;
+        /* background-position: 1% -100%; */
+        background-position-x: right;
+        background-position-y: 3em;
+        background-image: url(../img/funding-freeze/tb-graph-mobile.png);
     }
 }
 
