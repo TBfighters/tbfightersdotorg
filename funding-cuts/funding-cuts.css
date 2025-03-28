@@ -68,7 +68,6 @@ h2 {
     width: 100%;
 }
 
-
 .image-reveal.boxes {
     position: absolute;
     top: 100vh;
@@ -135,7 +134,7 @@ h2 {
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100vw;
         height: 100%;
         background-color: var(--accent-bg);
 
@@ -290,6 +289,7 @@ h2 {
     position: relative;
     background-color: var(--accent-bg);
     color: var(--bg);
+    overflow-x: clip;
 }
 
 .content {
@@ -465,6 +465,7 @@ h2 {
 
     #graph::after {
         background-image: linear-gradient(180deg, var(--accent-bg) 10%, rgba(0, 0, 0, 0) 50%);
+    }
 }
 
 /* Take Action */
