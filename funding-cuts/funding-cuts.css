@@ -49,7 +49,7 @@ h2 {
 }
 
 .header-photos.one .bacetria {
-    background-image: url(../img/funding-cuts/red-bacteria.png);
+    background-image: url(../img/funding-cuts/red-bacteria.webp), url(../img/funding-cuts/red-bacteria.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
@@ -60,7 +60,7 @@ h2 {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url(../img/funding-cuts/jfk-signing.png);
+    background-image: url(../img/funding-cuts/jfk-signing.webp), url(../img/funding-cuts/jfk-signing.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
