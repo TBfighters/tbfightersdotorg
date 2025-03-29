@@ -249,7 +249,7 @@ h2 {
 #under-threat::after,
 #the-super-bug::after {
     content: "";
-    background-image: url(../img/funding-cuts/paper.png);
+    background-image: url(../img/funding-cuts/paper.jpg);
     background-size: cover;
     background-position: center center;
     opacity: 40%;
@@ -359,7 +359,7 @@ h2 {
 
 #graph {
     position: absolute;
-    background-image: url(../img/funding-cuts/tb-graph-btm.png);
+    background-image: url(../img/funding-cuts/tb-graph-btm.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -435,7 +435,7 @@ h2 {
 
         background-position-x: right;
         background-position-y: center;
-        background-image: url(../img/funding-cuts/tb-graph-mobile.png);
+        background-image: url(../img/funding-cuts/tb-graph-mobile.jpg);
     }
 
 }
@@ -460,7 +460,7 @@ h2 {
     #graph {
         background-position-x: right;
         background-position-y: 3em;
-        background-image: url(../img/funding-cuts/tb-graph-mobile.png);
+        background-image: url(../img/funding-cuts/tb-graph-mobile.jpg);
     }
 
     #graph::after {
