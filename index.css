@@ -9,168 +9,113 @@
 .homepage .container {
     display: flex;
     padding: 60px 0;
-    min-height: calc(30vh - 120px);
     justify-content: space-around;
     flex-direction: column;
     background-size: cover;
 }
 
-#top {
+/* End of General */
+
+/* ===============
+ * HEADER
+ * =============== */
+
+#header .wrapper {
+    max-width: 90%;
+}
+
+#header h2 {
+    text-transform: uppercase;
+    font-size: 4.7em;
+}
+
+#header {
+    position: relative;
     padding: 3em 0;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    background-color: var(--accent-bg);
+    color: var(--bg);
+    z-index: 3;
 }
 
-#top::after {
-    content: "";
-    position: absolute;
-    z-index: 1;
-    background: var(--bg);
-    width: 100%;
+/* Image */
+
+#header .image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+#header .image img {
     height: 100%;
 }
 
-#top h1 {
-    text-transform: uppercase;
-    font-size: 2.7em;
-    margin-bottom: 1em;
-}
+/* Featured Action */
 
-#top .intro p {
-    font-size: 1.5em;
-    line-height: 1.3;
-    margin: 0 1em;
-}
-
-
-@keyframes bob {
-    0% {
-        transform: translatey(0px);
-    }
-
-    50% {
-        transform: translatey(-15px);
-    }
-
-    100% {
-        transform: translatey(0px);
-    }
-}
-
-#top .scroll-arrow {
-    width: 28px;
-    filter: contrast(0.85);
-    animation: bob 3s ease-in-out infinite;
-    margin-top: 10vh;
-}
-
-/* Remove bobbing annimation for reduced motion */
-@media (prefers-reduced-motion) {
-    #top .scroll-arrow {
-        width: 28px;
-        filter: contrast(0.85);
-        margin-top: 10vh;
-    }
-}
-
-#top .fa-arrow-down:before {
-    font-size: 3em;
+.featured-action {
+    width: 100%;
+    padding: 2em 4em;
+    background-color: var(--bg2);
     color: var(--fg);
+    border-radius: 10px;
+    margin: 5em 1em;
+    margin-bottom: 0;
 }
 
-#top img {
-    max-height: 200px;
-    margin-bottom: 1em;
+.featured-action h3 {
+    text-align: center;
 }
 
-
-/* MOBILE STYLES */
-
-@media only screen and (max-width: 900px) {
-    #top img {
-        max-width: 150px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #top img {
-        align-self: center;
-        max-width: 100px;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    #top h1 {
-        font-size: 3em;
-        margin-bottom: 0.6em;
-    }
-
-    #join li {
-        font-size: 1.5em;
-    }
-
-    #join p.larger,
-    #join li.larger,
-    #join strong.larger {
-        font-size: 1.75em;
-    }
-}
-
-/* ==== END OF GENERAL ==== */
+/* End of Header */
 
 /* ===============
-   FEATURED ACTION
-   =============== */
+ * INFO SECTION
+ * =============== */
 
-h2.action-head {
-    font-size: 3.5em;
-    text-transform: uppercase;
+.info-sections {
+    height: 100%;
+    position: relative;
+    z-index: 1;
 }
 
-/* Buttons */
-
-.join-right .button-centered {
-    margin-left: 1em;
-    width: calc(100% - 4em - 8px);
-}
-
-/* ==== END OF FEATURED ACTION ==== */
-
-.main-sections .wrapper {
-    max-width: 75%;
+.info-sections .wrapper {
+    max-width: 85%;
     height: auto;
-    padding: 1em 1em;
     background: var(--bg);
     margin: auto;
+    font-size: 1.2em;
+    padding: 3em 3em;
 
 }
 
-.main-sections::after {
+/* Background */
+
+.info-sections::before {
     content: "";
     position: absolute;
     z-index: 1;
     background: url(./img/paper-texture.jpg);
-    background-position: left center;
+    background-position: left top;
     background-size: cover;
-    mix-blend-mode: multiply;
+    mix-blend-mode: overlay;
     filter: grayscale(100%);
-    /* background-blend-mode: darken; */
     opacity: 80%;
     width: 100%;
     height: 100%;
-    transform: translateY(-100%);
+    left: 0;
 }
 
-#a {
+#deadliest-infectous-disease {
     padding-top: 180px;
 }
 
-#c {
+#we-are-tbfighters {
     padding-bottom: 180px;
 }
 
-#a::before {
+#deadliest-infectous-disease::before {
     content: "";
     position: absolute;
     z-index: -1;
@@ -180,7 +125,7 @@ h2.action-head {
     transform: translateY(-50%);
 }
 
-#b::before {
+#why-does-it-kill::before {
     content: "";
     position: absolute;
     z-index: -2;
@@ -190,7 +135,7 @@ h2.action-head {
     transform: translateY(-50%);
 }
 
-#c::before {
+#we-are-tbfighters::before {
     content: "";
     position: absolute;
     z-index: -3;
@@ -200,15 +145,82 @@ h2.action-head {
     transform: translateY(-50%);
 }
 
-#c::after {
+#we-are-tbfighters::after {
     content: "";
     position: absolute;
     z-index: -4;
     background: #4691ce;
     width: 100%;
-    height: 100%;
+    height: 50%;
     transform: translateY(50%);
 }
+
+#we-are-tbfighters .wrapper {
+    background-image: url(/img/homepage/we-are-tbfighters.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 5;
+}
+
+#we-are-tbfighters .wrapper::before {
+    z-index: 6;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background: var(--bg);
+    opacity: 25%;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Content */
+
+.content {
+    width: 60%;
+}
+
+#we-are-tbfighters .content {
+    text-align: center;
+    width: auto;
+    margin: 1.5em 1.5em;
+    padding: 1.5em 1.5em;
+    background: var(--bg);
+    position: relative;
+    z-index: 7;
+}
+
+
+/* End of Info Section */
+
+/* ===============
+ * STATEMENT
+ * =============== */
+
+#statement {
+    background-color: var(--accent-bg);
+    color: var(--bg);
+    position: relative;
+    z-index: 1;
+}
+
+#statement .wrapper {
+    padding: 5em 3em;
+    max-width: 85%;
+    text-align: center;
+}
+
+#statement h3 {
+    font-size: 5em;
+    margin-bottom: 0;
+}
+
+/* End of STATEMENT */
+
+/* ===============
+ * TAKE ACTION
+ * =============== */
 
 #join::after {
 
@@ -220,3 +232,5 @@ h2.action-head {
     height: 100%;
 
 }
+
+/* End of Take Action */

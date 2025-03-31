@@ -24,29 +24,13 @@
 @font-face {
     font-family: "Atkinson Hyperlegible";
     font-style: normal;
-    font-weight: 400;
-    src: url(/fonts/AtkinsonHyperlegible-Regular.ttf)
-}
-
-@font-face {
-    font-family: "Atkinson Hyperlegible";
-    font-style: normal;
-    font-weight: 700;
-    src: url(/fonts/AtkinsonHyperlegible-Bold.ttf)
+    src: url(/fonts/AtkinsonHyperlegibleNext-VariableFont_wght.ttf)
 }
 
 @font-face {
     font-family: "Atkinson Hyperlegible";
     font-style: italic;
-    font-weight: 400;
-    src: url(/fonts/AtkinsonHyperlegible-Italic.ttf)
-}
-
-@font-face {
-    font-family: "Atkinson Hyperlegible";
-    font-style: italic;
-    font-weight: 700;
-    src: url(/fonts/AtkinsonHyperlegible-BoldItalic.ttf)
+    src: url(/fonts/AtkinsonHyperlegibleNext-Italic-VariableFont_wght.ttf)
 }
 
 html {
@@ -109,21 +93,28 @@ html {
     display: block;
 }
 
+h1.page-title a img {
+    height: calc(1em);
+}
+
 h1.page-title {
     margin-bottom: 0;
     text-transform: uppercase;
     font-size: 3em;
     display: inline-block;
+    padding: 0 4px;
 }
 
 .page-title .black-highlight {
     background-color: var(--fg);
-    padding: 0 4px;
 }
 
 .page-title a {
     text-decoration: none;
     color: var(--bg);
+
+    display: flex;
+    align-items: center;
 }
 
 .page-title a:hover,
@@ -486,7 +477,9 @@ h5 {
     border-color: #505050;
 }
 
-.button[type="disabled"]:hover, .button[type="disabled"]:focus, .button[type="disabled"]:active {
+.button[type="disabled"]:hover,
+.button[type="disabled"]:focus,
+.button[type="disabled"]:active {
     background: #505050;
     border-color: #505050;
     cursor: not-allowed;
@@ -548,7 +541,9 @@ button {
     background: none !important;
 }
 
-.button-subtle[type="disabled"]:hover, .button-subtle[type="disabled"]:focus, .button-subtle[type="disabled"]:active {
+.button-subtle[type="disabled"]:hover,
+.button-subtle[type="disabled"]:focus,
+.button-subtle[type="disabled"]:active {
     background: none !important;
     border-color: #505050;
     color: #505050;
@@ -566,12 +561,15 @@ button,
 }
 
 /* Requires .button */
-.button-on-red-bg, a.button-on-red-bg {
+.button-on-red-bg,
+a.button-on-red-bg {
     background: var(--bg);
     color: var(--accent-bg);
 }
 
-.button-on-red-bg:hover, .button-on-red-bg:focus, .button-on-red-bg:active {
+.button-on-red-bg:hover,
+.button-on-red-bg:focus,
+.button-on-red-bg:active {
     color: var(--fg);
     background: var(--bg);
 }
