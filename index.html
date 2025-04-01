@@ -57,18 +57,15 @@
 	</header>
 	<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
 	<main id="homepage">
-		<section id="header" class="container" style="justify-content:flex-start;">
-			<div class="wrapper wrapper-columns" style="margin-top: 5em;">
-				<div class="join-left" style="z-index: 0;">
-					<div class="bacteria-photos"
-						style="transform: translate(-15%, -25%); scale: 65%;">
-						<img src="/img/homepage/tb-bacetria-red.png" alt=""
-							style="border-radius: 40px; aspect-ratio: 1 / 1; position: absolute; box-shadow: -10px 10px 15px -3px rgba(0,0,0,0.75);">
-						<img src="/img/homepage/tb-bacetria-yellow.png" alt=""
-							style="border-radius: 40px; aspect-ratio: 1 / 1; transform: translate(-20%, 20%); position: relative; z-index: -1;">
+		<section id="header" class="container">
+			<div class="wrapper wrapper-columns">
+				<div class="join-left">
+					<div class="bacteria-photos">
+						<img class="fg" src="/img/homepage/tb-bacetria-red.png" alt="">
+						<img class="bg" src="/img/homepage/tb-bacetria-yellow.png" alt="">
 					</div>
 				</div>
-				<div class="join-right" style="z-index: 1;">
+				<div class="join-right">
 					<h2>
 						Tuberculosis is Curable
 						<br>
@@ -91,9 +88,10 @@
 		<div class="info-sections">
 			<section id="deadliest-infectous-disease" class="container">
 				<div class="wrapper">
-					<h3>TUBERCULOSIS IS THE WORLDS DEADLIEST INFECTIOUS DISEASE.</h3>
 					<div class="wrapper-columns">
-						<div class="content">
+						<div class="content right">
+							<h3>TUBERCULOSIS IS THE WORLDS DEADLIEST INFECTIOUS DISEASE.
+							</h3>
 							<p>While often considered a disease of the past by the
 								rich
 								world,
@@ -182,6 +180,7 @@
 							and
 							fund diagnostics and treatments around the world.
 						</p>
+						<a href="" class="button button-subtle">More about us</a>
 					</div>
 				</div>
 			</section>
@@ -194,77 +193,79 @@
 		</section>
 		<section id="join" class="container" style="position: relative; z-index: 2;">
 			<div class="wrapper">
-				<h2 class="action-head" id="take-action">Take <span class="red">Action</span>:
-					<div class="header-copy" id="take-action-header-copy"
-						onclick="onclickButton(location.protocol + '//' + location.host + location.pathname + '#join')">
-						<noscript><a href="#join"></a></noscript>
-					</div>
-				</h2>
-				<div class="wrapper">
-					<div class="wrapper-columns">
-						<div class="join-left">
-							<ul>
-								<li>
-									<strong>Post</strong> on social media using
-									<em>#PeopleOverProfits</em> and
-									<em>#TimeFor5</em>.
-								</li>
-								<li>
-									<strong>Contact</strong> Danaher at <a
-										href="mailto:investor.relations@danaher.com">investor.relations<wbr>@danaher.com</a>
-									or <a
-										href="tel:+1-202-828-0850">+1-202-828-0850</a>.
-								</li>
-							</ul>
-						</div>
-						<div class="join-right">
-							<div class="featured">
-								<!-- featured Action Start -->
-								<img src="img/gavel.svg" alt="Gavel icon"
-									class="action-icon"
-									style="margin-bottom: 0"><strong
-									class="larger">FEATURED ACTION:</strong>
-								<br>
-								<div style="height: 0.5em;"></div>
-								<p>
-									US foreign aid is frozen and USAID is being
-									gutted. Take action by <a
-										href="https://tbfighter.link/contact-congress"
-										target="_blank">contacting your
-										congressperson</a> and <a
-										href="usaid-freeze.html">learn more
-										about the freeze.</a>
-								</p>
-								<!-- featured Action End -->
-							</div>
-							<a class="button button-centered" href="action.html">More
-								actions and templates</a>
-						</div>
-					</div>
+				<div class="center">
+					<h3>CAMPAIGNS</h3>
 				</div>
-				<div class="wrapper">
-					<h3 id="list">Join Our <span class="red">Mailing List</span></h2>
-						<p>
-							Be informed of new calls to action, campaign press releases, and
-							other TBFighters campaign updates. Emails may be authored by
-							TBFighters and John Green.
-						</p>
-						<div id="newsletter-wrapper">
-							<a class="button button-fill"
-								href="https://newsletter.tbfighters.org/subscribe"
-								target="_blank">Subscribe</a>
-						</div>
+				<div class="campaigns">
+					<div class="campaign">
+						<h4><img src="/img/homepage/cartridge.svg" alt="Cartridge">Time for $5
+						</h4>
 						<br>
+						<p>
+							Danaher makes some of the best tuberculosis tests ever
+							developed. They promised to sell them at-cost to the people who
+							need them the most, but over a year later, they still haven’t
+							released the audit.</p>
+						<div class="buttons">
+							<a href="" class="button button-full">Take action</a>
+							<a href="" class="button button-subtle button-full">Learn
+								more</a>
+						</div>
+					</div>
+					<div class="campaign">
+						<h4><img src="/img/homepage/money.svg" alt="">Hill Day</h4>
+						<br>
+						<p>
+
+							TBFighters are heading to Washington, D.C. to speak to our
+							elected representatives about tuberculosis!
+						</p>
+						<div class="buttons">
+							<a href="" class="button button-full">Take action</a>
+							<a href="" class="button button-subtle button-full">Learn
+								more</a>
+						</div>
+
+					</div>
+					<div class="campaign campaign-full">
+						<h4><img src="/img/homepage/parachute.svg" alt="">Funding Cuts</h4>
+						<br>
+						<p>
+							The current American administration is gutting USAID, putting
+							thousands of global health programs and millions of lives in
+							jeaopordy.</p>
+						<div class="buttons">
+							<a href="" class="button button-full">Take action</a>
+							<a href="" class="button button-subtle button-full">Learn
+								more</a>
+						</div>
+					</div>
 				</div>
-				<div class="wrapper">
-					<h3>More From <span class="red">TBFighters</span> and TB Advocacy</h3>
-					<ul>
-						<li><a href="about.html">About the TBFighters site and movement</a></li>
-						<li><a href="timeline.html">News and milestones in the fight against
-								TB</a></li>
-						<li><a href="resources.html">More resources to learn about TB and global
-								health efforts</a></li>
-					</ul>
+				<br>
+				<br>
+				<div class="join-community">
+					<div class="center">
+						<h3>Join our community</h3>
+					</div>
+					<h4>TBFighter Newsletter</h4>
+					<p>
+						Be informed of new calls to action, campaign press releases, and other
+						TBFighters campaign updates. Emails may be authored by TBFighters, John
+						Green,
+						and partner organizations, such as MSF Access and PIH.
+					</p>
+					<a href="" class="button">Subscribe</a>
+					<br>
+					<br>
+					<h4>TBReaders Bookclub</h4>
+					<p>
+						Read and discuss books about tuberculosis and global health together,
+						with a new
+						book every 2 months! Find resources to help thoughtfully read books past
+						and
+						present, and join in on TBReaders discussions and events.
+					</p>
+					<a href="" class="button">Join now</a>
 				</div>
 			</div>
 		</section>

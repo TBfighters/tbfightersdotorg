@@ -22,6 +22,7 @@
 
 #header .wrapper {
     max-width: 90%;
+    margin-top: 5em;
 }
 
 #header h2 {
@@ -33,23 +34,46 @@
     position: relative;
     padding: 3em 0;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
     background-color: var(--accent-bg);
     color: var(--bg);
     z-index: 3;
+    justify-content: flex-start;
+}
+
+#header .join-left {
+    z-index: 0;
+}
+
+#header .join-right {
+    z-index: 1;
 }
 
 /* Image */
 
 #header .image {
     width: 40%;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
 }
 
-#header .image img {
-    height: 100%;
+.bacteria-photos {
+    width: 90%;
+}
+
+.bacteria-photos .fg {
+    border-radius: 40px;
+    position: relative;
+    box-shadow: -10px 10px 15px -3px rgba(0, 0, 0, 0.75);
+    width: 100%;
+}
+
+.bacteria-photos .bg {
+    border-radius: 40px;
+    transform: translate(-20%, -70%);
+    position: relative;
+    z-index: -1;
+    width: 100%;
 }
 
 /* Featured Action */
@@ -68,6 +92,38 @@
     text-align: center;
 }
 
+
+@media only screen and (max-width: 768px) {
+    #header {
+        overflow-x: clip;
+    }
+
+    #header .wrapper {
+        flex-direction: column-reverse;
+    }
+
+    #header h2 {
+        font-size: 3em;
+    }
+
+    .bacteria-photos {
+        width: 100%;
+        height: 30em;
+    }
+
+    .featured-action {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 1em 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
 /* End of Header */
 
 /* ===============
@@ -81,19 +137,23 @@
 }
 
 .info-sections .wrapper {
-    max-width: 85%;
+    max-width: 95%;
     height: auto;
     background: var(--bg);
     margin: auto;
-    font-size: 1.2em;
+    font-size: 1.3em;
     padding: 3em 3em;
 
+}
+
+.info-sections .container {
+    padding: 30px 0;
 }
 
 /* Background */
 
 .info-sections::before {
-    content: "";
+    /* content: ""; */
     position: absolute;
     z-index: 1;
     background: url(./img/paper-texture.jpg);
@@ -101,25 +161,25 @@
     background-size: cover;
     mix-blend-mode: overlay;
     filter: grayscale(100%);
-    opacity: 80%;
+    opacity: 60%;
     width: 100%;
     height: 100%;
     left: 0;
 }
 
 #deadliest-infectous-disease {
-    padding-top: 180px;
+    padding-top: 60px;
 }
 
 #we-are-tbfighters {
-    padding-bottom: 180px;
+    padding-bottom: 0;
 }
 
 #deadliest-infectous-disease::before {
     content: "";
     position: absolute;
     z-index: -1;
-    background: #f5c14a;
+    background: #003049;
     width: 100%;
     height: 100%;
     transform: translateY(-50%);
@@ -129,7 +189,7 @@
     content: "";
     position: absolute;
     z-index: -2;
-    background: #003049;
+    background: #42aa8b;
     width: 100%;
     height: 100%;
     transform: translateY(-50%);
@@ -139,7 +199,8 @@
     content: "";
     position: absolute;
     z-index: -3;
-    background: #42aa8b;
+    background: #4691ce;
+    /* background: var(--fg); */
     width: 100%;
     height: 100%;
     transform: translateY(-50%);
@@ -149,10 +210,10 @@
     content: "";
     position: absolute;
     z-index: -4;
-    background: #4691ce;
+    background: var(--accent-bg);
     width: 100%;
     height: 50%;
-    transform: translateY(50%);
+    /* transform: translateY(50%); */
 }
 
 #we-are-tbfighters .wrapper {
@@ -162,23 +223,16 @@
     z-index: 5;
 }
 
-#we-are-tbfighters .wrapper::before {
-    z-index: 6;
-    content: "";
-    position: absolute;
-    z-index: 1;
-    background: var(--bg);
-    opacity: 25%;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
 /* Content */
 
-.content {
-    width: 60%;
+.content.right {
+    width: 70%;
+}
+
+.image img {
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle
 }
 
 #we-are-tbfighters .content {
@@ -191,6 +245,39 @@
     z-index: 7;
 }
 
+@media only screen and (max-width: 768px) {
+    .info-sections .wrapper-columns {
+        flex-direction: column-reverse;
+    }
+
+    #why-does-it-kill .wrapper-columns {
+        flex-direction: column;
+    }
+
+    #why-does-it-kill img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 3em;
+    }
+
+    .info-sections .wrapper {
+        font-size: 1em;
+        width: 99%;
+    }
+
+    .content.right {
+        width: 100%;
+    }
+
+    #we-are-tbfighters .content {
+        margin: 0em 0em;
+    }
+
+    #we-are-tbfighters .wrapper {
+        padding: 1em 1em;
+        background-attachment: unset;
+    }
+}
 
 /* End of Info Section */
 
@@ -216,6 +303,14 @@
     margin-bottom: 0;
 }
 
+
+@media only screen and (max-width: 768px) {
+    #statement h3 {
+        font-size: 3.5em;
+        max-width: 99%;
+    }
+}
+
 /* End of STATEMENT */
 
 /* ===============
@@ -231,6 +326,59 @@
     width: 100%;
     height: 100%;
 
+}
+
+#join {
+    position: relative;
+    z-index: 2;
+}
+
+#join h3 {
+    font-size: 2.5em;
+}
+
+#join .wrapper {
+    max-width: 90%;
+}
+
+.center {
+    text-align: center;
+}
+
+.campaign {
+    display: inline-block;
+    width: calc(50% - 4.2em);
+    margin: 1em 2em;
+    vertical-align: top;
+    font-size: 1.1em;
+}
+
+.campaign h4 {
+    margin: 0 0;
+}
+
+.campaign-full {
+    width: calc(100% - 4em);
+}
+
+.campaign img {
+    height: 1.5em;
+    vertical-align: bottom;
+    margin-right: 0.5em;
+}
+
+.join-community {
+    margin: 1em 2em;
+    font-size: 1.1em;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .campaign,
+    .campaign-full {
+        width: calc(100% - 4em);
+    }
 }
 
 /* End of Take Action */
