@@ -73,6 +73,7 @@
     transform: translate(-20%, -70%);
     position: relative;
     z-index: -1;
+    box-shadow: -10px 10px 15px -3px rgba(0, 0, 0, 0.75);
     width: 100%;
 }
 
@@ -230,7 +231,7 @@
 }
 
 .image img {
-    height: 100%;
+    height: 30%;
     display: inline-block;
     vertical-align: middle
 }
