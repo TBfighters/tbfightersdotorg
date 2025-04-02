@@ -107,6 +107,7 @@
     .bacteria-photos {
         width: 100%;
         padding-bottom: 2em;
+        transform: translate(50%, 0%);
         /* height: 30em; */
     }
 
