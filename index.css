@@ -64,23 +64,14 @@
 
 .bacteria-photos img {
     align-self: center;
-}
-
-.bacteria-photos .fg {
     border-radius: 40px;
-    /* position: relative; */
-    /* transform: translate(0%, 0%); */
     box-shadow: -10px 10px 15px -3px rgba(0, 0, 0, 0.75);
     width: 100%;
 }
 
 .bacteria-photos .bg {
-    border-radius: 40px;
     transform: translate(-120%, 20%);
-    /* position: relative; */
     z-index: -1;
-    box-shadow: -10px 10px 15px -3px rgba(0, 0, 0, 0.75);
-    width: 100%;
 }
 
 /* Featured Action */
@@ -114,9 +105,15 @@
     }
 
     .bacteria-photos {
+        width: 150%;
         padding-bottom: 2em;
         /* height: 30em; */
     }
+
+    .bacteria-photos img {
+        border-radius: 20px;
+    }
+
 
     .featured-action {
         margin-right: auto;
