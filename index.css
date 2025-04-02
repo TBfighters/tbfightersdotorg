@@ -421,3 +421,8 @@
 }
 
 /* End of Take Action */
+
+.site-foot {
+    position: relative;
+    z-index: 2;
+}
