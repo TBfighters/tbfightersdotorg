@@ -226,12 +226,17 @@
 
 /* Content */
 
-.content.right {
+.content {
     width: 70%;
 }
 
-.image img {
+.image {
     width: 30%;
+}
+
+.image img {
+    height: 100%;
+    max-width: 100%;
     display: inline-block;
     vertical-align: middle
 }
@@ -255,6 +260,10 @@
         flex-direction: column;
     }
 
+    .image {
+        width: auto;
+    }
+
     #why-does-it-kill img {
         width: 100%;
         height: auto;
@@ -266,9 +275,10 @@
         width: 99%;
     }
 
-    .content.right {
+    .content {
         width: 100%;
     }
+
 
     #we-are-tbfighters .content {
         margin: 0em 0em;
