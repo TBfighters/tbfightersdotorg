@@ -5,7 +5,7 @@ section {
 	margin: 0 auto;
 }
 
-button {
+button:not(.title) {
 	display: inline-block;
 	-webkit-border-radius: 0.5em;
 	-moz-border-radius: .5em;
@@ -25,7 +25,7 @@ button {
 	font-weight: 700;
 }
 
-button:hover {
+button:hover:not(.title) {
 	background-color: var(--fg);
 	border-color: var(--fg);
 }
