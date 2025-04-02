@@ -99,7 +99,7 @@ function replaceContent(files, leadingPath, prefixLength) {
                 }
 
             }
-            fs.writeFile(leadingPath + file.name, content, () => { })
+            // fs.writeFile(leadingPath + file.name, content, () => { })
         }
 
     })
