@@ -143,7 +143,7 @@ h1.page-title {
     list-style: none;
 }
 
-.site-menu a {
+.site-menu .title {
     display: inline-block;
     position: relative;
     text-decoration: none;
@@ -151,13 +151,40 @@ h1.page-title {
     transition: all 0.2s ease-in-out;
     font-size: 1.25em;
     color: var(--bg);
+    margin: 0 0;
+    border: none;
 }
 
-.site-menu a:hover,
-.site-menu a:focus,
-.site-menu a:active {
+.site-menu .title:hover,
+.site-menu .title:focus,
+.site-menu .title:active {
     color: var(--bg);
     background-color: var(--fg);
+    border: none;
+}
+
+
+/* Dropdown menus */
+
+.site-menu ul .dropdown-content {
+    display: none;
+    position: absolute;
+    box-shadow: var(--aside-shadow);
+    z-index: 1;
+    padding: 0 0;
+}
+
+.dropdown-content .title {
+    width: 100%;
+}
+
+ul.dropdown-content li {
+    float: unset;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-content.active {
+    display: block !important;
 }
 
 /* HAMBURGER MENU */
@@ -218,6 +245,15 @@ a#hamburger-button {
 
     a#hamburger-button span {
         font-size: 0;
+    }
+
+
+    .site-menu ul .dropdown-content {
+        display: none;
+        position: unset;
+        box-shadow: none;
+        padding: 0 0;
+        margin-left: 0.5em;
     }
 }
 

@@ -47,10 +47,31 @@
 			<a id="hamburger-button" href="#" title="menu"></a>
 			<nav class="site-menu">
 				<ul class="active">
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="timeline.html">News &amp; Timeline</a></li>
-					<li><a href="resources.html">Resources</a></li>
-					<li><a href="action.html">Take Action</a></li>
+					<li><a href="about.html" class="title">About Us</a></li>
+					<li class="dropdown">
+						<button class="title">Placeholder</button>
+						<ul class="dropdown-content">
+							<li><a href="resources.html" class="title">Resources</a></li>
+							<li><a href="timeline.html" class="title">News & Timeline</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<button class="title">Community</button>
+						<ul class="dropdown-content">
+							<li><a href="book-club/" class="title">Book Club</a></li>
+							<li><a href="/newsletter.html" class="title">Newsletter</a></li>
+							<li><a href="/socials.html" class="title">Social Media</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<button class="title">Campaigns</button>
+						<ul class="dropdown-content">
+							<li><a href="" class="title">Danaher</a></li>
+							<li><a href="" class="title">Funding Cuts</a></li>
+							<li><a href="" class="title">Hill Day</a></li>
+						</ul>
+					</li>
+					<li><a href="action.html" class="title">Take Action</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -187,8 +208,11 @@
 		</div>
 		<section id="statement">
 			<div class="wrapper">
-				<h3>WE BELIEVE IN A WORLD WERE <span class="yellow-highlight">NO ONE</span> DIES OF
-					TUBERCULOSIS.</h3>
+				<h3 class="desktop">WE BELIEVE IN A WORLD WERE <span class="yellow-highlight">NO
+						ONE</span> DIES OF
+					<h3 class="mobile">WE BELIEVE IN A WORLD WERE <span class="yellow-highlight">NO
+							ONE</span> DIES OF
+						TB.</h3>
 			</div>
 		</section>
 		<section id="join" class="container" style="position: relative; z-index: 2;">

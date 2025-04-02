@@ -314,10 +314,19 @@
     margin-bottom: 0;
 }
 
+#statement h3.mobile {
+    display: none;
+}
+
 
 @media only screen and (max-width: 768px) {
-    #statement h3 {
-        font-size: 3.5em;
+    #statement h3.desktop {
+        display: none;
+    }
+
+    #statement h3.mobile {
+        display: block;
+        font-size: 4em;
         max-width: 99%;
     }
 }
