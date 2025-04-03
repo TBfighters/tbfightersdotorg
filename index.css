@@ -9,154 +9,424 @@
 .homepage .container {
     display: flex;
     padding: 60px 0;
-    min-height: calc(100vh - 120px);
     justify-content: space-around;
     flex-direction: column;
     background-size: cover;
 }
 
-#top {
+/* End of General */
+
+/* ===============
+ * HEADER
+ * =============== */
+
+#header .wrapper {
+    max-width: 90%;
+    margin-top: 1em;
+}
+
+#header h2 {
+    text-transform: uppercase;
+    font-size: 4.7em;
+}
+
+#header {
+    position: relative;
     padding: 3em 0;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
+    background-color: var(--accent-bg);
+    color: var(--bg);
+    z-index: 3;
+    justify-content: flex-start;
 }
 
-#top h1 {
-    text-transform: uppercase;
-    font-size: 2.7em;
-    margin-bottom: 1em;
+#header .join-left {
+    z-index: 0;
 }
 
-#top .intro p {
-    font-size: 1.5em;
-    line-height: 1.3;
-    margin: 0 1em;
+#header .join-right {
+    z-index: 1;
 }
 
+/* Image */
 
-@keyframes bob {
-    0% {
-        transform: translatey(0px);
-    }
-
-    50% {
-        transform: translatey(-15px);
-    }
-
-    100% {
-        transform: translatey(0px);
-    }
+#header .image {
+    width: 40%;
 }
 
-#top .scroll-arrow {
-    width: 28px;
-    filter: contrast(0.85);
-    animation: bob 3s ease-in-out infinite;
-    margin-top: 10vh;
+.bacteria-photos {
+    width: 170%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
 }
 
-/* Remove bobbing annimation for reduced motion */
-@media (prefers-reduced-motion) {
-    #top .scroll-arrow {
-        width: 28px;
-        filter: contrast(0.85);
-        margin-top: 10vh;
-    }
+.bacteria-photos img {
+    align-self: center;
+    border-radius: 40px;
+    box-shadow: -10px 10px 15px -3px rgba(0, 0, 0, 0.75);
+    width: 100%;
 }
 
-#top .fa-arrow-down:before {
-    font-size: 3em;
+.bacteria-photos .bg {
+    transform: translate(-120%, 20%);
+    z-index: -1;
+}
+
+/* Featured Action */
+
+.featured-action {
+    width: 100%;
+    padding: 2em 4em;
+    background-color: var(--bg2);
     color: var(--fg);
+    border-radius: 10px;
+    margin: 5em 1em;
+    margin-bottom: 0;
 }
 
-#top img {
-    max-height: 200px;
-    margin-bottom: 1em;
+.featured-action h3 {
+    text-align: center;
 }
 
-#primer {
-    background-image: url("img/red-crystal.gif");
-    background-attachment: fixed;
-    background-position: left center;
-}
 
-#twist {
-    background-image: url("img/crystals.gif");
-    background-attachment: fixed;
-    background-position: center;
-}
-
-#danaher {
-    background-image: url("img/lungs.gif");
-    background-attachment: fixed;
-    background-position: right center;
-}
-
-#profits {
-    background-image: url("img/money.gif");
-    background-attachment: fixed;
-    background-position: left center;
-}
-
-#join li {
-    list-style-image: url(img/check-solid.svg);
-}
-
-#join {
-    background-image: url("img/helix.png");
-    background-attachment: fixed;
-    background-position: left center;
-}
-
-/* MOBILE STYLES */
-
-@media only screen and (max-width: 900px) {
-    #top img {
-        max-width: 150px;
+@media only screen and (max-width: 768px) {
+    #header {
+        overflow-x: clip;
     }
+
+    #header .wrapper {
+        flex-direction: column-reverse;
+    }
+
+    #header h2 {
+        font-size: 3em;
+    }
+
+    .bacteria-photos {
+        width: 100%;
+        padding-bottom: 2em;
+        transform: translate(50%, 0%);
+        /* height: 30em; */
+    }
+
+    .bacteria-photos img {
+        border-radius: 20px;
+    }
+
+
+    .featured-action {
+        margin-right: auto;
+        margin-left: auto;
+        padding: 1em 2em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .desktop {
+        display: none;
+    }
+}
+
+/* End of Header */
+
+/* ===============
+ * INFO SECTION
+ * =============== */
+
+.info-sections {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.info-sections .wrapper {
+    max-width: 95%;
+    height: auto;
+    background: var(--bg);
+    margin: auto;
+    font-size: 1.3em;
+    padding: 3em 3em;
+
+}
+
+.info-sections .container {
+    padding: 30px 0;
+}
+
+/* Background */
+
+.info-sections::before {
+    /* content: ""; */
+    position: absolute;
+    z-index: 1;
+    background: url(./img/paper-texture.jpg);
+    background-position: left top;
+    background-size: cover;
+    mix-blend-mode: overlay;
+    filter: grayscale(100%);
+    opacity: 60%;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+#deadliest-infectous-disease {
+    padding-top: 60px;
+}
+
+#we-are-tbfighters {
+    padding-bottom: 0;
+}
+
+#deadliest-infectous-disease::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: #003049;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-50%);
+}
+
+#why-does-it-kill::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    background: #42aa8b;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-50%);
+}
+
+#we-are-tbfighters::before {
+    content: "";
+    position: absolute;
+    z-index: -3;
+    background: #4691ce;
+    /* background: var(--fg); */
+    width: 100%;
+    height: 100%;
+    transform: translateY(-50%);
+}
+
+#we-are-tbfighters::after {
+    content: "";
+    position: absolute;
+    z-index: -4;
+    background: var(--accent-bg);
+    width: 100%;
+    height: 50%;
+    /* transform: translateY(50%); */
+}
+
+#we-are-tbfighters .wrapper {
+    background-image: url(/img/homepage/we-are-tbfighters.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 5;
+}
+
+/* Content */
+
+.content {
+    width: 70%;
+}
+
+.image {
+    width: 30%;
+}
+
+.image img {
+    height: 100%;
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle
+}
+
+#we-are-tbfighters .content {
+    text-align: center;
+    width: auto;
+    margin: 1.5em 1.5em;
+    padding: 1.5em 1.5em;
+    background: var(--bg);
+    position: relative;
+    z-index: 7;
 }
 
 @media only screen and (max-width: 768px) {
-    #top img {
-        align-self: center;
-        max-width: 100px;
+    .info-sections .wrapper-columns {
+        flex-direction: column-reverse;
+    }
+
+    #why-does-it-kill .wrapper-columns {
+        flex-direction: column;
+    }
+
+    .image {
+        width: auto;
+    }
+
+    #why-does-it-kill img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 3em;
+    }
+
+    .info-sections .wrapper {
+        font-size: 1em;
+        width: 99%;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+
+    #we-are-tbfighters .content {
+        margin: 0em 0em;
+    }
+
+    #we-are-tbfighters .wrapper {
+        padding: 1em 1em;
+        background-attachment: unset;
     }
 }
 
-@media only screen and (max-width: 650px) {
-    #top h1 {
-        font-size: 3em;
-        margin-bottom: 0.6em;
-    }
-
-    #join li {
-        font-size: 1.5em;
-    }
-
-    #join p.larger,
-    #join li.larger,
-    #join strong.larger {
-        font-size: 1.75em;
-    }
-}
-
-/* ==== END OF GENERAL ==== */
+/* End of Info Section */
 
 /* ===============
-   FEATURED ACTION
-   =============== */
+ * STATEMENT
+ * =============== */
 
-h2.action-head {
-    font-size: 3.5em;
-    text-transform: uppercase;
+#statement {
+    background-color: var(--accent-bg);
+    color: var(--bg);
+    position: relative;
+    z-index: 1;
 }
 
-/* Buttons */
-
-.join-right .button-centered {
-    margin-left: 1em;
-    width: calc(100% - 4em - 8px);
+#statement .wrapper {
+    padding: 5em 3em;
+    max-width: 85%;
+    text-align: center;
 }
 
-/* ==== END OF FEATURED ACTION ==== */
+#statement h3 {
+    font-size: 5em;
+    margin-bottom: 0;
+}
+
+#statement h3.mobile {
+    display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #statement h3.desktop {
+        display: none;
+    }
+
+    #statement h3.mobile {
+        display: block;
+        font-size: 4em;
+        max-width: 99%;
+    }
+}
+
+/* End of STATEMENT */
+
+/* ===============
+ * TAKE ACTION
+ * =============== */
+
+#join::after {
+
+    content: "";
+    position: absolute;
+    z-index: 1;
+    background: var(--bg);
+    width: 100%;
+    height: 100%;
+
+}
+
+#join {
+    position: relative;
+    z-index: 2;
+}
+
+#join h3 {
+    font-size: 2.5em;
+}
+
+#join .wrapper {
+    max-width: 90%;
+}
+
+.center {
+    text-align: center;
+}
+
+.campaign {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 4.2em);
+    margin: 1em 2em;
+    vertical-align: top;
+    font-size: 1.1em;
+}
+
+.campaign h4 {
+    margin: 0 0;
+}
+
+.campaign .buttons {
+    margin-top: auto;
+
+}
+
+.campaigns .two {
+    display: flex;
+    flex-direction: row;
+    gap: 0em;
+    align-items: stretch;
+}
+
+.campaign-full {
+    width: calc(100% - 4em);
+}
+
+.campaign img {
+    height: 1.5em;
+    vertical-align: bottom;
+    margin-right: 0.5em;
+}
+
+.join-community {
+    margin: 1em 2em;
+    font-size: 1.1em;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .campaigns .two {
+        display: flex;
+        flex-direction: column;
+        gap: 0em;
+        align-items: auto;
+    }
+
+    .campaign,
+    .campaign-full {
+        width: calc(100% - 4em);
+    }
+}
+
+/* End of Take Action */
+
+.site-foot {
+    position: relative;
+    z-index: 2;
+}
