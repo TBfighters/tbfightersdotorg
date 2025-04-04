@@ -18,6 +18,7 @@
     --accent-green: #42aa8b;
     --accent-light-blue: #1e91ce;
     --accent-blue: #003049;
+    --accent-yellow: #fdbf4a;
     box-sizing: border-box;
 }
 
@@ -166,6 +167,7 @@ h1.page-title {
 
 /* Dropdown menus */
 
+
 .site-menu ul .dropdown-content {
     display: none;
     position: absolute;
@@ -178,6 +180,14 @@ h1.page-title {
     width: 100%;
 }
 
+.dropdown button.title img {
+    height: 1em;
+    vertical-align: bottom;
+    margin-right: 0.5em;
+    transition: ease-in-out 0.2s all;
+    rotate: 180deg;
+}
+
 ul.dropdown-content li {
     float: unset;
 }
@@ -185,6 +195,11 @@ ul.dropdown-content li {
 .dropdown:hover .dropdown-content,
 .dropdown-content.active {
     display: block !important;
+}
+
+.dropdown:hover button img,
+.dropdown:has(.dropdown-content.active) button img {
+    rotate: 0deg;
 }
 
 /* HAMBURGER MENU */

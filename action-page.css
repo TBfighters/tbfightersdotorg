@@ -2,160 +2,71 @@
  * CSS ONLY FOR THE ACTION PAGE
  * */
 
-/* ===============
-   SOCIAL MEDIA POSTS
-   =============== */
+.action-icon {
+    height: 1.5em;
+    vertical-align: bottom;
+    margin-right: 0.5em;
+}
 
-.post {
+.action p.larger {
+    font-size: 1.5em;
+}
+
+.action-grid-large {
     display: flex;
-    flex-direction: column;
-
-    margin: 0 5px 0.6em;
-    padding: 20px;
-    padding-bottom: 5px;
-    border: 2px solid var(--bg2);
-    font-size: 20px;
-    line-height: 1.1;
-    color: var(--fg);
-    font-family: "Atkinson Hyperlegible";
-    resize: none;
+    flex-direction: row;
+    gap: 2em;
+    flex-basis: 0;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
 }
 
-.post p:first-child {
-    margin-bottom: 0;
-}
-
-.post p:nth-child(2) {
-    font-size: 0.7em;
-}
-
-.post div {
-    margin-top: auto;
-}
-
-.post button,
-.post .button,
-.post-gallery button,
-.post-gallery .button {
-    font-size: 0.7em;
-}
-
-/* POST GALLERY */
-.wrapper-columns .post {
-    width: 33.33%;
-    /* padding-bottom: 1em; */
-}
-
-.post-gallery {
+/* ACTIONS GRID */
+.action-grid-large .action {
+    display: inline-block;
+    margin: 1em 0em;
     vertical-align: top;
-    margin: 0.5em auto 1em;
-
-    background-color: var(--bg2);
-    padding: 10px 15px;
-    margin-bottom: 0.4em;
-    box-shadow: var(--aside-shadow);
-}
-
-.post-gallery div:first-child {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    height: 21em;
-    justify-content: center;
-}
-
-.post-gallery div:nth-child(2) {
-    width: 80%;
-    max-width: 600px;
-}
-
-.post-gallery img {
-    max-height: 20em;
-    max-width: 100%;
-    vertical-align: top;
-    box-shadow: var(--aside-shadow);
+    flex: 1 1 0px;
 }
 
 /* MOBILE STYLES */
 
-@media only screen and (max-width: 1320px) {
-    .post p {
-        font-size: 18px;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    .post-gallery img {
-        max-width: 100%;
-        padding: 0.33em;
+@media only screen and (max-width: 992px) {
+    .action-grid-large {
+        flex-direction: column;
+        gap: 1em;
     }
 
-    .post-gallery div:nth-child(2) {
+    .action-grid-large .action {
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: auto;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .wrapper-columns .post {
-        width: inherit;
-    }
+/* Campaigns */
+.campaign {
+    border: 2px white solid;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
-/* ==== END OF SOCIAL MEDIA POSTS ==== */
-
-
-/* ===============
-   ACTION GRID
-   =============== */
-.expand-actions-arrow {
-    height: 0.8em;
-    filter: contrast(0.85);
-    rotate: 180deg;
-    transition: ease-in-out 0.2s all;
+.campaign h2 {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
-.expand-actions-arrow-up {
-    rotate: 0deg;
+.campaign.danaher {
+    border-color: var(--accent-light-blue);
 }
 
-.expand-actions-arrow:hover {
-    cursor: pointer;
+.campaign.funding-cuts {
+    border-color: var(--accent-yellow);
 }
 
-@keyframes slide-in {
-    0% {
-        margin-top: -10px;
-        opacity: 0;
-    }
-
-    100% {
-        margin-top: 0px;
-        opacity: 1;
-    }
+.campaign.hill-day {
+    border-color: var(--accent-green);
 }
-
-@keyframes slide-out {
-    0% {
-        margin-top: 0px;
-        opacity: 1;
-    }
-
-    100% {
-        margin-top: -10px;
-        opacity: 0;
-    }
-}
-
-.show-actions {
-    display: block;
-    animation: slide-in 0.3s linear 0s;
-}
-
-.hide-actions {
-    animation: slide-out 0.3s linear 0s;
-    opacity: 0;
-    margin-top: -10px;
-}
-
-/* ==== END OF ACTION GRID ==== */
