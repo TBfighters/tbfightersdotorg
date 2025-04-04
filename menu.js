@@ -18,5 +18,20 @@ if (window.screen.width <= 992) {
 		})
 	}
 } else {
+	let dropdownButtons = document.querySelectorAll(".dropdown button");
+	for (let i = 0; i < dropdownButtons.length; i++) {
+		let dropdownButton = dropdownButtons[i];
+		dropdownButton.addEventListener("click", (e) => {
+			if (e.originalEvent.detail !== 0) return;
+			document.querySelectorAll(".dropdown-content").forEach((e) => {
+				if (e.parentNode == dropdownButton.parentNode) {
+					return;
+				}
+				e.classList.remove("active");
+			});
+			dropdownButton.parentNode.querySelector(".dropdown-content").classList.toggle("active");
+			e.preventDefault();
+		})
+	}
 
 }
