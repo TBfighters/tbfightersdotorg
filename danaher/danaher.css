@@ -76,25 +76,25 @@
 }
 
 #primer {
-    background-image: url("../img/red-crystal.gif");
+    background-image: url("../img/danaher/red-crystal.gif");
     background-attachment: fixed;
     background-position: left center;
 }
 
 #twist {
-    background-image: url("../img/crystals.gif");
+    background-image: url("../img/danaher/crystals.gif");
     background-attachment: fixed;
     background-position: center;
 }
 
 #danaher {
-    background-image: url("../img/lungs.gif");
+    background-image: url("../img/danaher/lungs.gif");
     background-attachment: fixed;
     background-position: right center;
 }
 
 #profits {
-    background-image: url("../img/money.gif");
+    background-image: url("../img/danaher/money.gif");
     background-attachment: fixed;
     background-position: left center;
 }
@@ -104,7 +104,7 @@
 }
 
 #join {
-    background-image: url("../img/helix.png");
+    background-image: url("../img/danaher/helix.png");
     background-attachment: fixed;
     background-position: left center;
 }
