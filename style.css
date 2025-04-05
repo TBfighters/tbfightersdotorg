@@ -274,7 +274,7 @@ a#hamburger-button {
     }
 
     .dropdown:hover .dropdown-content {
-        display: none;
+        display: none !important;
     }
 }
 
