@@ -276,6 +276,10 @@ a#hamburger-button {
     .dropdown:hover .dropdown-content:not(.active) {
         display: none !important;
     }
+
+    .dropdown:hover:not(:has(.dropdown-content.active)) img {
+        rotate: 180deg;
+    }
 }
 
 /* ==== END OF HEADER ==== */
