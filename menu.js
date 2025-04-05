@@ -13,7 +13,7 @@ if (window.screen.width <= 992) {
 	for (let i = 0; i < dropdownButtons.length; i++) {
 		let dropdownButton = dropdownButtons[i];
 		dropdownButton.addEventListener("click", (e) => {
-			dropdownButton.parentNode.querySelector(".dropdown-content").classList.toggle("active");
+			dropdownButton.parentNode.parentNode.querySelector(".dropdown-content").classList.toggle("active");
 			e.preventDefault();
 		})
 	}
