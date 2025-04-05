@@ -283,6 +283,10 @@
         width: 100%;
     }
 
+    .content p {
+        font-size: 1.2em;
+    }
+
 
     #we-are-tbfighters .content {
         margin: 0em 0em;
