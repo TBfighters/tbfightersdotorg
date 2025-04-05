@@ -17,10 +17,11 @@ if (window.mobileCheck) {
 		e.preventDefault()
 	})
 
-	let navItems = ["nav-about", "nav-learn-more", "nav-community", "nav-take-action"];
+	let navItems = ["nav-about", "nav-community", "nav-take-action"];
 	for (let i = 0; i < navItems.length; i++) {
 		let id = navItems[i];
-		let query = ".dropdown#" + id + " button"
+		console.log(id)
+		let query = "#" + id + " div button"
 		let dropdownButton = document.querySelector(query);
 		dropdownButton.addEventListener("click", (e) => {
 			let queryContent = ".dropdown#" + id + " .dropdown-content";
