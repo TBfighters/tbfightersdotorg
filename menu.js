@@ -17,11 +17,14 @@ if (window.mobileCheck) {
 		e.preventDefault()
 	})
 
-	let dropdownButtons = document.querySelectorAll(".dropdown button");
-	for (let i = 0; i < dropdownButtons.length; i++) {
-		let dropdownButton = dropdownButtons[i];
+	let navItems = ["nav-about", "nav-learn-more", "nav-community", "nav-take-action"];
+	for (let i = 0; i < navItems.length; i++) {
+		let id = navItems[i];
+		let query = ".dropdown#" + id + " button"
+		let dropdownButton = document.querySelector(query);
 		dropdownButton.addEventListener("click", (e) => {
-			dropdownButton.parentNode.parentNode.querySelector(".dropdown-content").classList.toggle("active");
+			let queryContent = ".dropdown#" + id + " .dropdown-content";
+			document.querySelector(queryContent).classList.toggle("active");
 			e.preventDefault();
 		})
 	}
