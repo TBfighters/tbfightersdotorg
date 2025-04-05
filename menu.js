@@ -31,12 +31,12 @@ if (window.mobileCheck) {
 	for (let i = 0; i < dropdownButtons.length; i++) {
 		let dropdownButton = dropdownButtons[i];
 		dropdownButton.addEventListener("click", (e) => {
-			document.querySelectorAll(".dropdown-content").forEach((e) => {
-				if (e.parentNode == dropdownButton.parentNode.parentNode) {
-					return;
-				}
-				e.classList.remove("active");
-			});
+			// document.querySelectorAll(".dropdown-content").forEach((e) => {
+			// 	if (e.parentNode == dropdownButton.parentNode.parentNode) {
+			// 		return;
+			// 	}
+			// 	e.classList.remove("active");
+			// });
 			dropdownButton.parentNode.parentNode.querySelector(".dropdown-content").classList.toggle("active");
 			e.preventDefault();
 		})
