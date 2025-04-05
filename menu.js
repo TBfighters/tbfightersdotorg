@@ -41,11 +41,11 @@ if (window.mobileCheck) {
 			e.preventDefault();
 		})
 	}
-	// window.onclick = function(event) {
-	// 	if (!event.target.matches(".dropdown button img") && !event.target.matches(".dropdown button")) {
-	// 		document.querySelectorAll(".dropdown-content").forEach((e) => {
-	// 			e.classList.remove("active");
-	// 		});
-	// 	}
-	// }
+	window.onclick = function(event) {
+		if (!event.target.matches(".dropdown button img") && !event.target.matches(".dropdown button")) {
+			document.querySelectorAll(".dropdown-content").forEach((e) => {
+				e.classList.remove("active");
+			});
+		}
+	}
 }
