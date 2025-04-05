@@ -273,7 +273,7 @@ a#hamburger-button {
         margin-left: 0.5em;
     }
 
-    .dropdown:hover .dropdown-content {
+    .dropdown:hover .dropdown-content:not(.active) {
         display: none !important;
     }
 }
