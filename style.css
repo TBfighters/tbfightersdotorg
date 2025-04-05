@@ -280,6 +280,11 @@ a#hamburger-button {
     .dropdown:hover:not(:has(.dropdown-content.active)) img {
         rotate: 180deg;
     }
+
+    .site-menu .title:hover {
+        color: var(--bg);
+        background-color: unset;
+    }
 }
 
 /* ==== END OF HEADER ==== */
