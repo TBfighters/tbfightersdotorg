@@ -156,12 +156,15 @@ h1.page-title {
     border: none;
 }
 
+.site-menu .dropdown div .title {
+    padding-right: 0.2em;
+}
+
 .site-menu .title:hover,
 .site-menu .title:focus,
 .site-menu .title:active {
     color: var(--bg);
     background-color: var(--fg);
-    border: none;
 }
 
 
@@ -180,10 +183,10 @@ h1.page-title {
     width: 100%;
 }
 
-.dropdown button.title img {
+.dropdown img {
     height: 1em;
     vertical-align: bottom;
-    margin-right: 0.5em;
+    margin-right: 0.2em;
     transition: ease-in-out 0.2s all;
     rotate: 180deg;
 }
@@ -197,8 +200,8 @@ ul.dropdown-content li {
     display: block !important;
 }
 
-.dropdown:hover button img,
-.dropdown:has(.dropdown-content.active) button img {
+.dropdown:hover img,
+.dropdown:has(.dropdown-content.active) img {
     rotate: 0deg;
 }
 
@@ -261,7 +264,6 @@ a#hamburger-button {
     a#hamburger-button span {
         font-size: 0;
     }
-
 
     .site-menu ul .dropdown-content {
         display: none;
