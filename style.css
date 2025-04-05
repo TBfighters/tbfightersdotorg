@@ -272,6 +272,10 @@ a#hamburger-button {
         padding: 0 0;
         margin-left: 0.5em;
     }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
 }
 
 /* ==== END OF HEADER ==== */

@@ -23,9 +23,12 @@ if (window.mobileCheck) {
 		console.log(id)
 		let query = "#" + id + " div button"
 		let dropdownButton = document.querySelector(query);
+
+		let queryContent = "#" + id + " .dropdown-content";
+		let content = document.querySelector(queryContent);
 		dropdownButton.addEventListener("click", (e) => {
-			let queryContent = ".dropdown#" + id + " .dropdown-content";
-			document.querySelector(queryContent).classList.toggle("active");
+			console.log("click " + id)
+			content.classList.toggle("active");
 			e.preventDefault();
 		})
 	}
