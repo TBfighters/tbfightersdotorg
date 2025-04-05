@@ -267,7 +267,7 @@ a#hamburger-button {
 
     .site-menu ul .dropdown-content {
         display: none;
-        position: unset;
+        position: block;
         box-shadow: none;
         padding: 0 0;
         margin-left: 0.5em;
