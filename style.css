@@ -586,17 +586,16 @@ button {
     color: var(--bg);
 }
 
-.button-subtle,
 .button-subtle {
-    background-color: transparent;
-    color: var(--accent-bg);
+    background-color: transparent !important;
+    color: var(--accent-bg) !important;
 }
 
 .button-subtle:hover,
 .button-subtle:active,
 .button-subtle:focus {
     background-color: var(--bg);
-    color: var(--fg);
+    color: var(--fg) !important;
     border-color: var(--fg);
 }
 
