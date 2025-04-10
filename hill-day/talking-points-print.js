@@ -5,13 +5,11 @@ function printPage() {
 
         let win = window.open("./talking-points.html", '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
 
-        printWindow.addEventListener('load', function() {
-            printWindow.print();
-            printWindow.close();
-            win.addEventListener("afterprint", (_) => {
-                win.close()
-            }, { once: true });
-        }, true);
+        printWindow.print();
+        printWindow.close();
+        win.addEventListener("afterprint", (_) => {
+            win.close()
+        }, { once: true });
     } else {
         var iframe = document.createElement('iframe');
         iframe.style.display = "none";
