@@ -26,6 +26,7 @@ h1 {
     h3 {
         color: var(--accent-bg);
     }
+
     button {
         display: none !important;
     }
