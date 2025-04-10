@@ -1,0 +1,32 @@
+h1 {
+    margin-bottom: 0em;
+}
+
+@media print {
+    #site-head {
+        display: none !important;
+    }
+
+    footer {
+        display: none !important;
+    }
+
+    .wrapper {
+        max-width: 99%;
+    }
+
+    .hide-print {
+        display: none;
+    }
+
+    h2 {
+        color: var(--accent-fg);
+    }
+
+    h3 {
+        color: var(--accent-bg);
+    }
+    button {
+        display: none !important;
+    }
+}
