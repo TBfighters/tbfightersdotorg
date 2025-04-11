@@ -1,8 +1,12 @@
 h1 {
-    margin-bottom: 0em;
+    margin-bottom: 0.15em;
 }
 
 @media print {
+    body {
+        background: white;
+    }
+
     #site-head {
         display: none !important;
     }
