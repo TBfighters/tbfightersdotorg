@@ -18,7 +18,7 @@ function toggleExpand() {
         grid.style.display = "";
         grid.classList.add("show-actions")
         document.getElementsByClassName("expand-actions-arrow")[0].classList.add("expand-actions-arrow-up")
-        document.getElementById("expand-button-txt").textContent = "Less actions";
+        document.getElementById("expand-button-txt").textContent = "Fewer actions";
         expanded = true
     }
 }
