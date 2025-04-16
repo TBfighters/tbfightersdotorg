@@ -20,20 +20,24 @@
 }
 
 .featuring img {
-    width: 100%;
+    width: 75%;
     border: 3px solid var(--bg2);
     border-radius: 5px;
     box-shadow: var(--aside-shadow);
+    margin: auto;
     margin-bottom: 0.5em;
+}
+
+.featuring .about {
+    font-size: 0.9em;
 }
 
 @media only screen and (max-width: 992px) {
     .featuring div {
         max-width: calc(100% - 2%);
     }
-}
 
-/* #youtube-video-shadow { */
-/*     aspect-ratio: 1 / 2; */
-/*     width: 100%; */
-/* } */
+    .featuring img {
+        width: 100%;
+    }
+}
