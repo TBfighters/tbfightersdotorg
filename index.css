@@ -335,7 +335,11 @@
     #statement h3.mobile {
         display: block;
         font-size: 4em;
-        max-width: 99%;
+        max-width: 100%;
+    }
+
+    #statement .wrapper {
+        padding: 5em 0em;
     }
 }
 
