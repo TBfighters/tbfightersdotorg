@@ -52,6 +52,7 @@
     margin-bottom: 0.5em;
     padding-left: 1em;
     padding-right: 1em;
+    padding-bottom: 1em;
 }
 
 .campaign h2 {
@@ -59,14 +60,49 @@
     margin-bottom: 0.5em;
 }
 
+.campaign .campaign-inner {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.campaign .description {
+    width: 50%;
+}
+
 .campaign.danaher {
     border-color: var(--accent-light-blue);
+    background-color: rgba(245, 245, 245, 0.75);
+    background-image: url(./img/danaher/red-crystal.gif);
+    background-size: cover;
+    background-blend-mode: color;
 }
 
 .campaign.funding-cuts {
     border-color: var(--accent-yellow);
+    background-color: rgba(245, 245, 245, 0.95);
+    background-image: url(./img/funding-cuts/red-bacteria.png);
+    background-size: cover;
+    background-blend-mode: color;
+    background-position: center center;
 }
 
 .campaign.hill-day {
     border-color: var(--accent-green);
+    background-color: rgba(245, 245, 245, 0.85);
+    background-image: url(./img/hill-day/hill-day-placeholder.jpg);
+    background-size: cover;
+    background-blend-mode: color;
+    background-position: center center;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .campaign .campaign-inner {
+        flex-direction: column;
+    }
+
+    .campaign .description {
+        width: 100%;
+    }
 }
