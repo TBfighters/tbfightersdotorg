@@ -148,7 +148,7 @@
     margin: auto;
     font-size: 1.3em;
     padding: 3em 3em;
-
+    border-radius: 0.3em;
 }
 
 .info-sections .container {
@@ -253,6 +253,8 @@
     background: var(--bg);
     position: relative;
     z-index: 7;
+
+    border-radius: 0.3em;
 }
 
 @media only screen and (max-width: 768px) {

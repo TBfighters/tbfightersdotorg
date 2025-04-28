@@ -160,9 +160,9 @@ h1.page-title {
     padding-right: 0.2em;
 }
 
-.site-menu .title:hover,
-.site-menu .title:focus,
-.site-menu .title:active {
+.site-menu .non-dropdown .title:hover,
+.site-menu .non-dropdown .title:focus,
+.site-menu .non-dropdown .title:active {
     color: var(--bg);
     background-color: var(--fg);
 }
@@ -195,9 +195,19 @@ ul.dropdown-content li {
     float: unset;
 }
 
+.dropdown-button {
+    background: none;
+    border-color: transparent;
+}
+
 .dropdown:hover .dropdown-content,
 .dropdown-content.active {
     display: block !important;
+}
+
+.dropdown:hover, .dropdown-content.active {
+    color: var(--bg);
+    background-color: var(--fg);
 }
 
 .dropdown:hover img,
