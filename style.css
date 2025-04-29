@@ -198,6 +198,8 @@ ul.dropdown-content li {
 .dropdown-button {
     background: none;
     border-color: transparent;
+    margin: 0 0;
+    padding: 0.5em 0.7em;
 }
 
 .dropdown:hover .dropdown-content,
@@ -205,7 +207,8 @@ ul.dropdown-content li {
     display: block !important;
 }
 
-.dropdown:hover, .dropdown-content.active {
+.dropdown:hover,
+.dropdown-content.active {
     color: var(--bg);
     background-color: var(--fg);
 }
@@ -283,12 +286,27 @@ a#hamburger-button {
         margin-left: 0.5em;
     }
 
+    .dropdown-content.active {
+        color: var(--fg);
+        background-color: transparent;
+    }
+
     .dropdown:hover .dropdown-content:not(.active) {
         display: none !important;
     }
 
     .dropdown:hover:not(:has(.dropdown-content.active)) img {
         rotate: 180deg;
+    }
+
+    .dropdown div {
+        display: flex
+    }
+
+    .dropdown-button {
+        padding: 0.8em 1em;
+        flex-grow: 1;
+        display: flex;
     }
 
     .site-menu .title:hover {
