@@ -160,9 +160,9 @@ h1.page-title {
     padding-right: 0.2em;
 }
 
-.site-menu .non-dropdown .title:hover,
-.site-menu .non-dropdown .title:focus,
-.site-menu .non-dropdown .title:active {
+:is(.site-menu .non-dropdown, .dropdown-content) .title:hover,
+:is(.site-menu .non-dropdown, .dropdown-content) .title:focus,
+:is(.site-menu .non-dropdown, .dropdown-content) .title:active {
     color: var(--bg);
     background-color: var(--fg);
 }
@@ -207,8 +207,7 @@ ul.dropdown-content li {
     display: block !important;
 }
 
-.dropdown:hover,
-.dropdown-content.active {
+.dropdown:hover {
     color: var(--bg);
     background-color: var(--fg);
 }
@@ -243,6 +242,7 @@ a#hamburger-button {
         top: 140%;
         left: 0;
         padding: 0.5em;
+        padding-left: 1em;
     }
 
     .site-menu ul li {
