@@ -43,34 +43,37 @@
 
 #header .join-left {
     z-index: 0;
+    display: flex;
+    width: 40%;
 }
 
 #header .join-right {
     z-index: 1;
+    width: 60%;
 }
 
 /* Image */
 
-#header .image {
-    width: 40%;
-}
-
 .bacteria-photos {
-    width: 170%;
-    height: 80%;
     display: flex;
     justify-content: center;
+    transform: translate(30%, 0)
 }
 
 .bacteria-photos img {
     align-self: center;
     border-radius: 40px;
     box-shadow: -10px 10px 15px -3px rgba(0, 0, 0, 0.75);
-    width: 100%;
+    width: 80%;
+    flex-shrink: 0;
+}
+
+.bacteria-photos .fg {
+    transform: translate(10%, -10%);
 }
 
 .bacteria-photos .bg {
-    transform: translate(-120%, 20%);
+    transform: translate(-100%, 0%);
     z-index: -1;
 }
 
@@ -90,8 +93,52 @@
     text-align: center;
 }
 
+.tablet {
+    display: none;
+}
+
+.mobile:not(.desktop) {
+    display: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    #header h2 {
+        font-size: 3em;
+    }
+
+    .bacteria-photos img {
+        width: 120%;
+    }
+
+    .featured-action {
+        padding: 2em 2em;
+        margin-top: 1em;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+}
+
 
 @media only screen and (max-width: 768px) {
+    .tablet {
+        display: none;
+    }
+
+    .desktop:not(.mobile) {
+        display: none;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+
     #header {
         overflow-x: clip;
     }
@@ -105,9 +152,10 @@
     }
 
     .bacteria-photos {
-        width: 100%;
+        width: 70%;
+        padding-top: 5em;
         padding-bottom: 2em;
-        transform: translate(50%, 0%);
+        transform: translate(70%, 0%);
         /* height: 30em; */
     }
 
@@ -126,6 +174,14 @@
 
     .desktop {
         display: none;
+    }
+
+    #header .join-right {
+        width: 100%;
+    }
+
+    #header .join-left {
+        width: 100%;
     }
 }
 

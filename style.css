@@ -225,11 +225,20 @@ a#hamburger-button {
 
 /* MOBILE STYLES */
 
+
+@media only screen and (max-width: 1200px) {
+    .site-menu {
+        font-size: 0.8em;
+    }
+
+}
+
 @media only screen and (max-width: 992px) {
     .site-menu {
         width: 100%;
-        padding: 0.5em;
+        /* padding: 0.5em; */
         position: relative;
+        font-size: 1em;
     }
 
     .site-menu ul.active {
