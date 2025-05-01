@@ -93,15 +93,20 @@
     text-align: center;
 }
 
-.tablet {
+#header .tablet {
     display: none;
 }
 
-.mobile:not(.desktop) {
+#header .mobile:not(.desktop) {
     display: none;
 }
 
 @media only screen and (max-width: 1440px) {
+    #header .join-right {
+        display: flex;
+        align-items: center;
+    }
+
     #header h2 {
         font-size: 3em;
     }
@@ -115,11 +120,11 @@
         margin-top: 1em;
     }
 
-    .desktop {
+    #header .desktop {
         display: none;
     }
 
-    .tablet {
+    #header .tablet {
         display: block;
     }
 
@@ -127,16 +132,16 @@
 
 
 @media only screen and (max-width: 768px) {
-    .tablet {
+    #header .tablet {
         display: none;
     }
 
-    .desktop:not(.mobile) {
+    #header .desktop:not(.mobile) {
         display: none;
     }
 
-    .mobile {
-        display: block !important;
+    #header .mobile {
+        display: block;
     }
 
     #header {
@@ -145,6 +150,10 @@
 
     #header .wrapper {
         flex-direction: column-reverse;
+    }
+
+    #header .join-right {
+        flex-direction: column;
     }
 
     #header h2 {
@@ -313,6 +322,14 @@
     border-radius: 0.3em;
 }
 
+@media only screen and (max-width: 1440px) {
+    .info-sections .wrapper {
+        font-size: 1em;
+        width: 99%;
+    }
+
+}
+
 @media only screen and (max-width: 768px) {
     .info-sections .wrapper-columns {
         flex-direction: column-reverse;
@@ -324,17 +341,14 @@
 
     .image {
         width: auto;
+        display: flex;
+        justify-content: center;
     }
 
     #why-does-it-kill img {
-        width: 100%;
+        width: 70%;
         height: auto;
-        margin-bottom: 3em;
-    }
-
-    .info-sections .wrapper {
-        font-size: 1em;
-        width: 99%;
+        margin-bottom: 2em;
     }
 
     .content {
@@ -384,6 +398,12 @@
     display: none;
 }
 
+@media only screen and (max-width: 1440px) {
+    #statement h3 {
+        font-size: 4em;
+        max-width: 100%;
+    }
+}
 
 @media only screen and (max-width: 768px) {
     #statement h3.desktop {
