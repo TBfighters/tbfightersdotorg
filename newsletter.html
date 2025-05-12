@@ -23,25 +23,155 @@
 	<!-- Variable Tags -->
 	<meta name="robots" content="index, follow" />
 	<meta property="og:title" content="Newsletter | TBFighters" />
+	<meta property="og:image" content="https://tbfighters.org/img/og-image.jpg" />
+	<meta property="og:image:type" content="image/png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="og:description" content="" />
 	<meta property="og:description"
 		content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
+	<link rel="stylesheet" href="newsletter.css" />
 	<title>Newsletter | TBFighters</title>
 </head>
 
 <body class="newsletter">
-	<main>
-		<div class="wrapper" style="padding-top: 60px;">
-			<p>You are being redirected... If you are not redirected automatically, make sure you have
-				JavaScript enabled.</p><br>
-			<br>
-			<p>We lead by following and act with compassion.</p>
-			<script>
-				window.onload = function () {
-					window.location.replace("https://newsletter.tbfighters.org/subscribe");
-				}
-			</script>
+	<!--BELOW THIS GETS COPIED TO ALL PAGES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->
+	<header id="site-head"><a href="#main" class="skip">Skip to main content</a>
+		<div class="wrapper-head">
+
+			<h1 class="page-title">
+				<a href="index.html"><img src="img/simplified-hourglass.png" alt=""><span
+						class="black-highlight">TB</span>FIGHTERS</a>
+			</h1>
+			<a id="hamburger-button" href="#" title="menu"></a>
+			<nav class="site-menu">
+				<ul class="active">
+					<li class="dropdown" id="nav-about">
+						<div>
+							<a href="about.html" class="title">About Us</a><button
+								aria-label="Open menu About us"
+								class="dropdown-button"><img src="img/chevron-white.svg"
+									alt="dropdown arrow"></button>
+						</div>
+						<ul class="dropdown-content">
+							<li><a href="about.html" class="title top"><b>Learn About
+										Us</b></a></li>
+							<li><a href="stay-in-touch.html" class="title">Stay in Touch</a>
+							</li>
+							<li><a href="timeline.html" class="title">News & Timeline</a>
+							</li>
+						</ul>
+					</li>
+					<li class="non-dropdown" id="nav-learn-more"><a class="title"
+							href="resources.html">Learn About TB</a></li>
+					<li class="dropdown" id="nav-community">
+						<div>
+							<a class="title" href="stay-in-touch.html">Stay in
+								Touch</a><button aria-label="Open menu Community"
+								class="dropdown-button"><img src="img/chevron-white.svg"
+									alt="dropdown arrow"></button>
+						</div>
+						<ul class="dropdown-content">
+							<li><a href="stay-in-touch.html" class="title top"><b>Hear From
+										Us</b></a></li>
+							<li><a href="newsletter.html" class="title">Newsletter</a></li>
+							<li><a href="socials.html" class="title">Social Media</a></li>
+							<li><a href="book-club/" class="title">Book Club</a></li>
+						</ul>
+					</li>
+					<li class="dropdown" id="nav-take-action">
+						<div>
+							<a class="title" href="action.html">Take Action</a><button
+								aria-label="Open menu Take Action"
+								class="dropdown-button"><img src="img/chevron-white.svg"
+									alt="dropdown arrow"></button>
+						</div>
+						<ul class="dropdown-content">
+							<li><a href="action.html" class="title top"><b>Make a
+										Difference</b></a></li>
+							<li><a href="danaher/" class="title">Time for $5</a></li>
+							<li><a href="funding-cuts/" class="title">Funding Cuts</a></li>
+							<li><a href="hill-day/" class="title">Hill Day</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
 		</div>
+	</header>
+	<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
+	<main>
+		<section class="container container-compact title">
+			<div class="wrapper-full">
+				<h1>Join Our <span class="red">Mailing List</span></h1>
+				<p>
+					Be informed of new calls to action, campaign press releases, and other
+					TBFighters campaign updates. Emails may be authored by TBFighters and John
+					Green.
+				</p>
+				<p>
+					<b>Please add <span class="red">updates@mail.tbfighters.org</span> to your email
+						contacts to ensure you receive the newsletter!</b>
+				</p>
+				<div id="newsletter-wrapper">
+					<noscript>Please enable javascript to sign up for the newsletter!</noscript>
+				</div>
+				<div id="newsletter-wrapper">
+					<a class="button button-fill" href="https://newsletter.tbfighters.org/subscribe"
+						target="_blank">Subscribe</a>
+				</div>
+			</div>
+			<br>
+			<hr>
+			<div class="wrapper-full">
+				<div class="wrapper-columns" style="gap: 1.5em;">
+					<div class="left">
+						<h2>More <span class="red">TBFighters</span></h2>
+						<div>
+							<p class="larger">
+								Tuberculosis is curable, yet <strong>1.25 million people
+									die</strong> of tuberculosis every year. Learn
+								more and take action now to end TB!
+							</p>
+						</div>
+						<a href="index.html" class="larger button"
+							style="align-self: flex-end;">Visit
+							our homepage</a>
+					</div>
+					<div class="right">
+						<h2>Take <span class="red">Action</span> Now!</h2>
+						<a href="action.html" class="button">All actions</a>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
+	<footer class="site-foot">
+		<p class="socials-wrapper-centered">
+			<a href="https://bsky.app/profile/tbfighters.org" target="_blank"><img
+					src="img/socials/bsky.svg" aria-label="Blue Sky" class="social-icon"><img
+					src="img/socials/bsky-hover.svg" class="social-icon-hover"></a>
+			<a href="https://x.com/tbfighters" target="_blank">
+				<img src="img/socials/twitter.svg" aria-label="Twitter" class="social-icon">
+				<img src="img/socials/twitter-hover.svg" class="social-icon-hover"></a>
+			<a href="https://www.instagram.com/tbfighters" target="_blank">
+				<img src="img/socials/insta.svg" aria-label="Instagram" class="social-icon">
+				<img src="img/socials/insta-hover.svg" class="social-icon-hover"></a>
+			<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
+					src="img/socials/youtube.svg" aria-label="Youtube" class="social-icon"><img
+					src="img/socials/youtube-hover.svg" class="social-icon-hover"></a>
+			<a href="https://www.facebook.com/profile.php?id=61555332203505" target="_blank"><img
+					src="img/socials/facebook.svg" aria-label="Facebook" class="social-icon"><img
+					src="img/socials/facebook-hover.svg" class="social-icon-hover"></a>
+		</p>
+		<hr style="width: 10%; margin: 0 auto; margin-bottom: 4px;">
+		<p>
+			&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
+		</p>
+		<p class="too-small">
+
+			We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
+		</p>
+	</footer>
 </body>
 
 </html>

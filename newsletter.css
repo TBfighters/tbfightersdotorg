@@ -1,0 +1,9 @@
+.left {
+    width: 60%;
+}
+
+.right img {
+    height: 1.5em;
+    vertical-align: bottom;
+    margin-right: 0.5em;
+}

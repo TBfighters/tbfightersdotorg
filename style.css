@@ -183,10 +183,15 @@ h1.page-title {
     width: 100%;
 }
 
+.dropdown-content .top {
+    padding-top: 0.4em;
+    padding-bottom: 0.2em;
+    border-bottom: 2px solid var(--bg);
+}
+
 .dropdown img {
     height: 1em;
     vertical-align: bottom;
-    margin-right: 0.2em;
     transition: ease-in-out 0.2s all;
     rotate: 180deg;
 }
@@ -200,6 +205,7 @@ ul.dropdown-content li {
     border-color: transparent;
     margin: 0 0;
     padding: 0.5em 0.7em;
+    padding-left: 0.2em;
 }
 
 .dropdown:hover .dropdown-content,
