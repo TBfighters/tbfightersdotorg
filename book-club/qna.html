@@ -45,7 +45,7 @@
 	<!--BELOW THIS GETS COPIED TO ALL PAGES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->
 	<header id="site-head"><a href="#main" class="skip">Skip to main content</a>
 		<div class="wrapper-head">
-	
+
 				<h1 class="page-title">
 					<a href="../index.html"><img src="../img/simplified-hourglass.png" alt=""><span
 							class="black-highlight">TB</span>FIGHTERS</a>
@@ -86,7 +86,7 @@
 						</li>
 					</ul>
 				</nav>
-	
+
 		</div>
 	</header>
 	<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
@@ -95,6 +95,43 @@
 			<div class="wrapper-full">
 				<h2 style="margin-bottom: 0.1em;">TBReaders Question & Answer</h2>
 				<span class="larger"><b>On May 15th at 12pm ET</b></span>
+			</div>
+		</section>
+		<section class="container container-compact">
+			<div class="wrapper-full">
+				<h3>Livestream</h3>
+				<div class="youtube-wrapper">
+					<div class="video-embed-shadow" id="youtube-video-shadow">
+						<noscript>This video will only load if you have javascript enabled. To
+							watch the
+							video, please go to <a
+								href="https://www.youtube.com/watch?v=GnbXE3a0NhM"
+								target="_blank">youtube</a> instead.</noscript>
+					</div>
+					<script>
+						let shadow = document.getElementById("youtube-video-shadow");
+						shadow.innerHTML = `<button class="button" onclick="loadEmbed()" id="load-youtube-video">Load Youtube Video</button>
+								<em id="legal-disclaimer-youtube-video" class="smaller">By loading the video, you agree to YouTube's privacy policy. <a href="https://policies.google.com/privacy?hl=en" target="_blank">Learn more</a></em>`
+						function loadEmbed() {
+							document.getElementById("load-youtube-video").remove()
+							document.getElementById("legal-disclaimer-youtube-video").remove()
+							shadow.remove()
+
+							iframe = document.createElement("iframe");
+							iframe.classList.add("video-embed")
+							iframe.setAttribute("id", "video")
+							iframe.setAttribute("style", "display:block")
+							iframe.setAttribute("src", "https://www.youtube-nocookie.com/embed/GnbXE3a0NhM?si=D2TMZeL3_BBpFlj7")
+							iframe.setAttribute("title", "I Own Danaher")
+							iframe.setAttribute("frameborder", "0")
+							iframe.setAttribute("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share")
+							iframe.setAttribute("referrerpolicy", "strict-origin-when-cross-origin")
+							iframe.setAttribute("allowfullscreen", null)
+
+							document.getElementsByClassName("youtube-wrapper")[0].appendChild(iframe);
+						}
+					</script>
+				</div>
 			</div>
 		</section>
 		<section class="container container-compact">
@@ -158,14 +195,6 @@
 					the Discord server</a>
 			</div>
 		</section>
-		<section class="container container-compact">
-			<div class="wrapper-full">
-				<h3>Livestream</h3>
-				<div class="video-embed-shadow" id="youtube-video-shadow" style="margin: 1em 0;">
-					<em>Livestream coming soon</em>
-				</div>
-			</div>
-		</section>
 	</main>
 	<footer class="site-foot">
 		<p class="socials-wrapper-centered">
@@ -190,7 +219,7 @@
 			&copy; The TBFighters Project | <a href="../privacy.html" class="footer-link">Privacy Policy</a>
 		</p>
 		<p class="too-small">
-			
+
 			We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
 		</p>
 	</footer>
