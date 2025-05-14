@@ -183,12 +183,6 @@ h1.page-title {
     width: 100%;
 }
 
-.dropdown-content .top {
-    padding-top: 0.4em;
-    padding-bottom: 0.2em;
-    border-bottom: 2px solid var(--bg);
-}
-
 .dropdown img {
     height: 1em;
     vertical-align: bottom;
@@ -272,9 +266,9 @@ a#hamburger-button {
     }
 
     a#hamburger-button {
-        padding: 10px;
+        padding-right: 10px;
         float: right;
-        font-size: 1.5em;
+        font-size: 2.5em;
         line-height: 1;
         text-decoration: none;
         display: inline-block;
