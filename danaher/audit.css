@@ -30,7 +30,8 @@
 .wrapper-counter {
     margin-top: 2em;
     padding: 1em 2em;
-    background-color: var(--bg2);
+    border: 3px solid var(--fg);
+    border-radius: 0.5em;
     box-shadow: var(--aside-shadow);
 }
 
@@ -56,7 +57,7 @@
     color: var(--accent-fg);
     width: calc(var(--height) * (2/3));
     height: var(--height);
-    box-shadow: var(--aside-shadow);
+    box-shadow: var(--regular-shadow);
     border-radius: var(--border);
 }
 

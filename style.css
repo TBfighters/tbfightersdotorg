@@ -7,7 +7,8 @@
    =============== */
 * {
     margin: 0;
-    --aside-shadow: 0.1em 0.1em 1em rgb(10 10 10 / 35%);
+    --regular-shadow: 0.1em 0.1em 1em rgb(10 10 10 / 35%);
+    --aside-shadow: -0.5em 0.5em 0px 0px var(--accent-bg), -0.5em 0.5em 0px 3px var(--fg);
     --fg: #121212;
     --bg: #f5f5f5;
     --bg2: #dddddd;
@@ -174,7 +175,7 @@ h1.page-title {
 .site-menu ul .dropdown-content {
     display: none;
     position: absolute;
-    box-shadow: var(--aside-shadow);
+    box-shadow: var(--regular-shadow);
     z-index: 1;
     padding: 0 0;
 }
@@ -758,7 +759,8 @@ a.button-on-red-bg {
 
 div.featured {
     display: block;
-    background-color: var(--bg2);
+    border: 3px solid var(--fg);
+    border-radius: 0.5em;
     /* text-align: center; */
     padding: 20px 25px;
     margin: 0 1em 0.6em;
@@ -898,7 +900,8 @@ div.featured {
     max-width: 1260px;
     margin: 0 auto;
     padding: 20px;
-    background-color: var(--bg2);
+    border: 3px solid var(--fg);
+    border-radius: 0.5em;
     margin-bottom: 20px;
     box-shadow: var(--aside-shadow);
 }

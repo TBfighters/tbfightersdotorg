@@ -23,7 +23,7 @@
     width: 75%;
     border: 3px solid var(--bg2);
     border-radius: 5px;
-    box-shadow: var(--aside-shadow);
+    box-shadow: var(--regular-shadow);
     margin: auto;
     margin-bottom: 0.5em;
 }
