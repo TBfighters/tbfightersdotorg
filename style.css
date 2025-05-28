@@ -627,7 +627,7 @@ button,
     height: calc(310px - 44px);
 }
 
-#youtube-video-shadow {
+#youtube-video-shadow, .youtube-wrapper .video-embed-shadow {
     border: 2px solid var(--bg2);
     padding: 20px;
     display: flex;
