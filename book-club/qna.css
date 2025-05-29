@@ -33,7 +33,7 @@
 }
 
 @media only screen and (max-width: 992px) {
-    .featuring div {
+    .featuring .person {
         max-width: calc(100% - 2%);
     }
 
