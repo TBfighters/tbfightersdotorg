@@ -219,7 +219,6 @@
 
 			for (const [key, value] of Object.entries(embeds)) {
 				let shadow = document.querySelector(`#${key} .youtube-video-shadow`);
-				console.log(shadow, key, document.querySelector(`#${key}`));
 				let button = document.createElement("button");
 				shadow.appendChild(button);
 				button.innerHTML = "Load Youtube Video";
@@ -233,7 +232,6 @@
 				legalDisclaimer.classList.add("legal-disclaimer-youtube-video")
 
 				button.onclick = function () {
-					console.log("click", key)
 					document.querySelector(`#${key} .load-youtube-video`).remove();
 					document.querySelector(`#${key} .legal-disclaimer-youtube-video`).remove();
 					shadow.remove()
