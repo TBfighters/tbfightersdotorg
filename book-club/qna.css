@@ -6,7 +6,7 @@
     gap: 2%;
 }
 
-.featuring div {
+.featuring .person {
     display: flex;
     flex-direction: column;
     align-content: center;
