@@ -59,7 +59,7 @@
     padding: 20px;
     background-color: var(--bg);
     margin-bottom: 20px;
-    box-shadow: var(--aside-shadow);
+    border: var(--aside-border);
 }
 
 .space a {
@@ -67,15 +67,15 @@
 }
 
 #discord {
-    border: 3px solid var(--accent-blue);
+    box-shadow: var(--aside-shadow-dblue);
 }
 
 #social {
-    border: 3px solid var(--accent-light-blue);
+    box-shadow: var(--aside-shadow-lblue);
 }
 
 #general {
-    border: 3px solid var(--accent-bg);
+    box-shadow: var(--aside-shadow);
 }
 
 @media only screen and (max-width: 992px) {
