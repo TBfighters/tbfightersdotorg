@@ -1,7 +1,7 @@
 var fs = require('fs');
 
 let featuredActionFiles = ["index.html", "action.html"]
-let skipFiles = ["update-action", "img", ".github", ".git", ".default", "newsletter.html"]
+let skipFiles = ["update-action", "img", ".github", ".git", ".default"]
 
 let featuredAction = fs.readFileSync('./featured-action.html', 'utf8').trim();
 let headerContent = fs.readFileSync("./header.html", 'utf8').trim();
