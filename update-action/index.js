@@ -41,11 +41,9 @@ function replaceContent(files, leadingPath, prefixLength) {
         }
 
         if (file.name.endsWith(".html")) {
-            console.log(file.name);
             let content = fs.readFileSync(leadingPath + file.name, { encoding: 'utf8' });
 
             // header
-            console.log("header");
             let startHeader = content.indexOf('<!--BELOW THIS GETS COPIED TO ALL PAGES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->');
             let endHeader = content.indexOf('<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->');
 
