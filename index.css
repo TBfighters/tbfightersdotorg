@@ -54,12 +54,12 @@
 
 /* Image */
 
-.bacteria-photos {
+.bacteria-photo {
     display: flex;
     justify-content: center;
 }
 
-.bacteria-photos img {
+.bacteria-photo img {
     align-self: center;
     border-radius: 20px;
     box-shadow: 0.1em 0.1em 1em rgb(10 10 10 / 35%), var(--aside-shadow-far);
@@ -94,8 +94,8 @@
 }
 
 
-@media only screen and (max-width: 768px) {
-    .bacteria-photos {
+@media only screen and (max-width: 1024px) {
+    .bacteria-photo {
         display: none;
     }
 
