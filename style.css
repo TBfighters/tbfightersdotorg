@@ -229,10 +229,18 @@ ul.dropdown-content li {
     background-color: var(--fg);
 }
 
+@media (prefers-reduced-motion: reduce) {
+    .dropdown:hover img,
+    .dropdown:has(.dropdown-content.active) img {
+        rotate: 180deg !important;
+    }
+}
+
 .dropdown:hover img,
 .dropdown:has(.dropdown-content.active) img {
     rotate: 0deg;
 }
+
 
 /* HAMBURGER MENU */
 
