@@ -230,9 +230,8 @@ ul.dropdown-content li {
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .dropdown:hover img,
-    .dropdown:has(.dropdown-content.active) img {
-        rotate: 180deg !important;
+    .dropdown img {
+        transition: none;
     }
 }
 
