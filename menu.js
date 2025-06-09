@@ -9,7 +9,7 @@ if (window.screen.width <= 992) {
 		e.preventDefault()
 	})
 
-	let navItems = ["nav-about", "nav-community", "nav-take-action"];
+	let navItems = ["nav-about", "nav-take-action"];
 	for (let i = 0; i < navItems.length; i++) {
 		let id = navItems[i];
 		console.log(id)

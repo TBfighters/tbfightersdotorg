@@ -8,14 +8,23 @@
 * {
     margin: 0;
     --regular-shadow: 0.1em 0.1em 1em rgb(10 10 10 / 35%);
-    --aside-shadow: -0.5em 0.5em 0px 0px var(--accent-bg), -0.5em 0.5em 0px 3px var(--fg);
+
+    --aside-shadow: -0.7em 0.7em 0px 0px var(--accent-bg), -0.7em 0.7em 0px 3px var(--fg);
+    --aside-shadow-far: -1em 1em 0px 0px var(--accent-bg), -1em 1em 0px 3px var(--fg);
+
+    --aside-shadow-lblue: -0.7em 0.7em 0px 0px var(--accent-light-blue), -0.7em 0.7em 0px 3px var(--fg);
+    --aside-shadow-dblue: -0.7em 0.7em 0px 0px var(--accent-blue), -0.7em 0.7em 0px 3px var(--fg);
+    --aside-shadow-green: -0.7em 0.7em 0px 0px var(--accent-green), -0.7em 0.7em 0px 3px var(--fg);
+    --aside-shadow-yellow: -0.7em 0.7em 0px 0px var(--accent-yellow), -0.7em 0.7em 0px 3px var(--fg);
+
+    --aside-border: 3px solid var(--fg);
+
     --fg: #121212;
-    --bg: #f5f5f5;
+    --bg: #fcf3e3;
     --bg2: #dddddd;
     --accent-bg: #bc1c1a;
     --accent-bg-low-opacity: rgba(188, 28, 26, 0.2);
     --accent-fg: #d7211e;
-    --msf-blue: #3c3f60;
     --accent-green: #42aa8b;
     --accent-light-blue: #1e91ce;
     --accent-blue: #003049;
@@ -145,16 +154,23 @@ h1.page-title {
     list-style: none;
 }
 
-.site-menu .title {
-    display: inline-block;
+.site-menu .socials p, .site-menu .title {
     position: relative;
     text-decoration: none;
     padding: 0.75em;
     transition: all 0.2s ease-in-out;
-    font-size: 1.25em;
-    color: var(--bg);
     margin: 0 0;
     border: none;
+}
+
+.site-menu .socials p {
+    font-size: 1em;
+}
+
+.site-menu .title {
+    font-size: 1.25em;
+    color: var(--bg);
+    display: inline-block;
 }
 
 .site-menu .dropdown div .title {
@@ -236,10 +252,14 @@ a#hamburger-button {
 
 @media only screen and (max-width: 992px) {
     .site-menu {
-        width: 100%;
-        /* padding: 0.5em; */
-        position: relative;
-        font-size: 1em;
+        width: 70%;
+        position: absolute;
+        right: 0;
+        font-size: 1.5em;
+    }
+
+    .site-menu .mobile {
+        flex-grow: 1;
     }
 
     .site-menu ul.active {
@@ -257,8 +277,21 @@ a#hamburger-button {
 
     .site-menu ul li {
         margin: 5px 0;
-        float: none;
-        display: block;
+        width: 100%;
+    }
+
+    .site-menu ul li * {
+        text-align: end;
+    }
+
+    .site-menu li.lined {
+        width: 100%;
+        border-bottom: var(--bg) 2px solid;
+    }
+
+    .site-menu li.non-dropdown {
+        display: flex;
+        justify-content: end;
     }
 
     .site-menu li a {
@@ -293,7 +326,8 @@ a#hamburger-button {
         position: unset;
         box-shadow: none;
         padding: 0 0;
-        margin-left: 0.5em;
+
+        font-size: 1rem;
     }
 
     .dropdown-content.active {
@@ -315,13 +349,16 @@ a#hamburger-button {
 
     .dropdown-button {
         padding: 0.8em 1em;
-        flex-grow: 1;
         display: flex;
     }
 
     .site-menu .title:hover {
         color: var(--bg);
         background-color: unset;
+    }
+
+    .site-menu .social-icon-hover, .site-menu .social-icon {
+        height: 1em;
     }
 }
 
@@ -978,16 +1015,16 @@ div.featured {
 }
 
 .socials-wrapper-centered {
-    display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 0.5em;
 }
 
 .social-icon {
+    opacity: 1;
     height: 1.5em;
     vertical-align: bottom;
+    /* transition: all steps(5, end) 1.1s; */
 }
 
 .social-icon-hover {
@@ -997,13 +1034,24 @@ div.featured {
 
     position: absolute;
     transform: translateY(-100%);
-
-    transition: all ease-in-out 0.1s;
+    /* transition: all ease-in-out 1.1s; */
 }
 
-:is(.social-icon:hover + .social-icon-hover, .social-icon-hover:hover) {
+.socials-wrapper a:hover .social-icon {
+    opacity: 0;
+}
+
+.socials-wrapper a:hover .social-icon-hover {
     opacity: 1;
 }
+
+/* :is(.social-icon:hover + .social-icon-hover, .social-icon-hover:hover) { */
+/*     opacity: 1; */
+/* } */
+/**/
+/* .social-icon:hover, .social-icon-hover:hover + .social-icon { */
+/*     opacity: 0; */
+/* } */
 
 /* ==== END OF SOCIALS ==== */
 
