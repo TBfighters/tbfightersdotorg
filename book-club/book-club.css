@@ -24,6 +24,10 @@
     box-shadow: var(--regular-shadow);
 }
 
+#prev .book img {
+    width: 75%;
+}
+
 #current img {
     border-color: var(--accent-green);
 }
