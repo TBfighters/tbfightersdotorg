@@ -368,8 +368,9 @@
 }
 
 .join-community {
-    margin: 1em 2em;
     font-size: 1.1em;
+    width: 80%;
+    margin: auto auto;
 }
 
 .communities {
@@ -399,7 +400,21 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .join-community {
+        width: 100%;
+    }
+
     .campaign {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .communities {
+        flex-direction: column;
+    }
+
+    .community {
         width: 100%;
     }
 }
