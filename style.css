@@ -10,6 +10,7 @@
     --regular-shadow: 0.1em 0.1em 1em rgb(10 10 10 / 35%);
 
     --aside-shadow: -0.7em 0.7em 0px 0px var(--accent-bg), -0.7em 0.7em 0px 3px var(--fg);
+    --aside-shadow-close: -0.5em 0.5em 0px 0px var(--accent-bg), -0.5em 0.5em 0px 3px var(--fg);
     --aside-shadow-far: -1em 1em 0px 0px var(--accent-bg), -1em 1em 0px 3px var(--fg);
 
     --aside-shadow-lblue: -0.7em 0.7em 0px 0px var(--accent-light-blue), -0.7em 0.7em 0px 3px var(--fg);
@@ -737,7 +738,6 @@ a.button-on-red-bg {
     }
 
     .button {
-        padding: 0.5em 0.7em;
         border-width: 2px;
     }
 

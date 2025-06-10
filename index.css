@@ -311,7 +311,7 @@
 }
 
 #join h3 {
-    font-size: 2.5em;
+    font-size: 3.5em;
 }
 
 #join .wrapper {
@@ -322,13 +322,34 @@
     text-align: center;
 }
 
+.campaigns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+}
+
 .campaign {
     display: flex;
     flex-direction: column;
-    width: calc(50% - 4.2em);
-    margin: 1em 2em;
+    width: 80%;
     vertical-align: top;
     font-size: 1.1em;
+    border: var(--aside-border);
+    border-radius: 0.5em;
+    padding: 0.5em 0.5em;
+}
+
+#danaher {
+    box-shadow: var(--aside-shadow-lblue);
+}
+
+#funding-cuts {
+    box-shadow: var(--aside-shadow-green);
+}
+
+#hill-day {
+    box-shadow: var(--aside-shadow-yellow);
 }
 
 .campaign h4 {
@@ -338,17 +359,6 @@
 .campaign .buttons {
     margin-top: auto;
 
-}
-
-.campaigns .two {
-    display: flex;
-    flex-direction: row;
-    gap: 0em;
-    align-items: stretch;
-}
-
-.campaign-full {
-    width: calc(100% - 4em);
 }
 
 .campaign img {
@@ -362,18 +372,35 @@
     font-size: 1.1em;
 }
 
+.communities {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+}
 
-@media only screen and (max-width: 768px) {
-    .campaigns .two {
-        display: flex;
-        flex-direction: column;
-        gap: 0em;
-        align-items: auto;
-    }
+.community {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    width: calc(50% - 2em);
+    vertical-align: top;
+    font-size: 1.1em;
+    border: var(--aside-border);
+    box-shadow: var(--aside-shadow-close);
+    border-radius: 0.5em;
+    padding: 0.5em 0.5em;
+}
 
-    .campaign,
-    .campaign-full {
-        width: calc(100% - 4em);
+.community a {
+    margin-top: auto;
+    width: fit-content;
+}
+
+@media only screen and (max-width: 1024px) {
+    .campaign {
+        width: 100%;
     }
 }
 
