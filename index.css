@@ -21,7 +21,8 @@
  * =============== */
 
 #header .wrapper {
-    max-width: 90%;
+    width: 90%;
+    max-width: 1600px;
     margin-top: 1em;
 }
 
@@ -135,8 +136,8 @@
 
 .info-sections .wrapper {
     /* max-width: 95%; */
-    width: 95%;
-    max-width: 1200px;
+    width: 85%;
+    max-width: 1400px;
     height: auto;
     background: var(--bg);
     margin: auto;
@@ -284,28 +285,13 @@
  * TAKE ACTION
  * =============== */
 
-#join::after {
-
-    content: "";
-    position: absolute;
-    z-index: 1;
-    background: var(--bg);
-    width: 100%;
-    height: 100%;
-
-}
-
-#join {
-    position: relative;
-    z-index: 2;
-}
-
 #join h3 {
     font-size: 3.5em;
 }
 
 #join .wrapper {
-    max-width: 90%;
+    width: 90%;
+    max-width: 1600px;
 }
 
 .center {
