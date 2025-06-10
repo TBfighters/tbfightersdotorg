@@ -151,7 +151,7 @@
 }
 
 #second .wrapper {
-    box-shadow: var(--aside-shadow-green);
+    box-shadow: var(--aside-shadow);
 }
 
 #second {
@@ -165,11 +165,13 @@
 /* Content */
 
 .content {
-    width: 70%;
+    width: 100%;
 }
 
 .image {
-    width: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .image img {
@@ -184,7 +186,6 @@
         font-size: 1em;
         width: 90%
     }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -202,16 +203,8 @@
         flex-direction: column;
     }
 
-    .image {
-        width: auto;
-        display: flex;
-        justify-content: center;
-    }
-
-    #why-does-it-kill img {
-        width: 70%;
-        height: auto;
-        margin-bottom: 2em;
+    .image img {
+        width: 50%;
     }
 
     .content {
