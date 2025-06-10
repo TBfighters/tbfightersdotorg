@@ -142,8 +142,18 @@
 
 
 @media only screen and (max-width: 992px) {
+    div.featured {
+        box-shadow: var(--aside-shadow-close);
+    }
+
     .campaign .content {
         flex-direction: column;
+    }
+
+    .campaign {
+        width: 90%;
+        margin: auto auto;
+        margin-bottom: 0.5em;
     }
 
     .campaign .description {
