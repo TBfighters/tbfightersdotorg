@@ -25,7 +25,7 @@
     margin-top: 1em;
 }
 
-#header h2 {
+#header h1 {
     text-transform: uppercase;
     font-size: 4.7em;
 }
@@ -82,7 +82,7 @@
         align-items: center;
     }
 
-    #header h2 {
+    #header h1 {
         font-size: 3em;
     }
 }
@@ -109,12 +109,8 @@
         flex-direction: column-reverse;
     }
 
-    #header h2 {
+    #header h1 {
         font-size: 3em;
-    }
-
-    .desktop {
-        display: none;
     }
 }
 
@@ -155,7 +151,7 @@
 }
 
 #second .wrapper {
-    box-shadow: var(--aside-shadow);
+    box-shadow: var(--aside-shadow-green);
 }
 
 #second {
@@ -256,28 +252,29 @@
     text-align: center;
 }
 
-#statement h3 {
+#statement p {
     font-size: 5em;
     margin-bottom: 0;
+	font-weight: 700;
 }
 
-#statement h3.mobile {
+#statement p.mobile {
     display: none;
 }
 
 @media only screen and (max-width: 1440px) {
-    #statement h3 {
+    #statement p {
         font-size: 4em;
         max-width: 100%;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    #statement h3.desktop {
+    #statement p.desktop {
         display: none;
     }
 
-    #statement h3.mobile {
+    #statement p.mobile {
         display: block;
         font-size: 4em;
         max-width: 100%;
@@ -332,12 +329,12 @@
 .campaign {
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
     vertical-align: top;
     font-size: 1.1em;
     border: var(--aside-border);
     border-radius: 0.5em;
-    padding: 0.5em 0.5em;
+    padding: 1.2em 0.8em;
 }
 
 #danaher {
@@ -367,16 +364,20 @@
     margin-right: 0.5em;
 }
 
+#join .join-community h3 {
+	font-size: 2.5em;
+}
 .join-community {
     font-size: 1.1em;
     width: 80%;
     margin: auto auto;
+	padding-top: 2em;
 }
 
 .communities {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     gap: 2em;
 }
 
@@ -387,16 +388,22 @@
     flex-wrap: wrap;
     width: calc(50% - 2em);
     vertical-align: top;
-    font-size: 1.1em;
+    font-size: 1em;
     border: var(--aside-border);
-    box-shadow: var(--aside-shadow-close);
     border-radius: 0.5em;
-    padding: 0.5em 0.5em;
+    padding: 1.2em 0.8em;
 }
 
 .community a {
     margin-top: auto;
     width: fit-content;
+}
+
+@media only screen and (min-width: 1250px) {
+	.campaigns {
+		flex-direction: row;
+		align-items: stretch;
+	}
 }
 
 @media only screen and (max-width: 1024px) {
