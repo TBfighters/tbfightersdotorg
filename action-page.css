@@ -53,6 +53,9 @@
     position: relative;
     z-index: 2;
 }
+.campaign:last-child {
+	margin-bottom: 3em;
+}
 
 .campaign-inner {
     padding-left: 1em;
