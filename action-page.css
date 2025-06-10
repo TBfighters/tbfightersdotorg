@@ -48,10 +48,12 @@
 
 /* Campaigns */
 .campaign {
-    border: 2px white solid;
     margin-bottom: 0.5em;
     position: relative;
     z-index: 2;
+    border: var(--aside-border);
+    border-radius: 0.5em;
+    width: 80%;
 }
 .campaign:last-child {
 	margin-bottom: 3em;
@@ -79,6 +81,14 @@
     max-width: 50%;
 }
 
+.campaign .content-full .description {
+    max-width: 100%;
+}
+
+.campaign h3 {
+    margin-top: 0.5em;
+}
+
 .campaign.danaher::before {
     content: "";
     position: absolute;
@@ -88,10 +98,12 @@
     height: 100%;
     z-index: 1;
     opacity: 0.75;
+
+    border-radius: 0.5em;
 }
 
 .campaign.danaher {
-    border-color: var(--accent-light-blue);
+    box-shadow: var(--aside-shadow-lblue);
 }
 
 .campaign.funding-cuts::before {
@@ -104,10 +116,11 @@
     height: 100%;
     z-index: 1;
     opacity: 0.1;
+    border-radius: 0.5em;
 }
 
 .campaign.funding-cuts {
-    border-color: var(--accent-yellow);
+    box-shadow: var(--aside-shadow-green);
 }
 
 .campaign.hill-day::before {
@@ -120,10 +133,11 @@
     height: 100%;
     z-index: 1;
     opacity: 0.15;
+    border-radius: 0.5em;
 }
 
 .campaign.hill-day {
-    border-color: var(--accent-green);
+    box-shadow: var(--aside-shadow);
 }
 
 

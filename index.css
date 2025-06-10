@@ -142,13 +142,14 @@
     background: var(--bg);
     margin: auto;
     font-size: 1.3em;
-    padding: 3em 3em;
+    padding: 2em 3em;
     border-radius: 0.5em;
     border: var(--aside-border);
 }
 
 #first .wrapper {
     box-shadow: var(--aside-shadow-lblue);
+    /* padding-top: 1.5em; */
 }
 
 #second .wrapper {
