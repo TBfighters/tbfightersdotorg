@@ -44,16 +44,16 @@ function replaceContent(files, leadingPath, prefixLength) {
             let content = fs.readFileSync(leadingPath + file.name, { encoding: 'utf8' });
 
             // header
-            let startHeader = content.indexOf('<!--BELOW THIS GETS COPIED TO ALL PAGES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->');
-            let endHeader = content.indexOf('<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->');
+            let startHeader = content.indexOf('<header id="site-head"><a href="#main" class="skip">Skip to main content</a>');
+            let endHeader = content.indexOf('</header>');
 
             let prefix = "../".repeat(prefixLength);
             let headerPrefixed = headerContent.replaceAll("{prefix}", prefix);
 
-            headerPrefixed = addIndent("<!--BELOW THIS GETS COPIED TO ALL PAGES WHEN MENU CHANGES \\(CHANGE BODY CLASS TO PAGE NAME\\)-->", content, headerPrefixed)
+            headerPrefixed = addIndent('<header id="site-head"><a href="#main" class="skip">Skip to main content</a>', content, headerPrefixed)
 
             if (startHeader != -1 && endHeader != -1) {
-                content = content.substring(0, startHeader) + headerPrefixed + content.substring(endHeader + "<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->".length);
+                content = content.substring(0, startHeader) + headerPrefixed + content.substring(endHeader + "</header>".length);
             }
 
             // footer
