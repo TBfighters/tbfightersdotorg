@@ -68,14 +68,11 @@
     flex-shrink: 0;
 }
 
-#header .tablet {
-    display: none;
-}
-
 #header .mobile:not(.desktop) {
     display: none;
 }
 
+/* Laptop */
 @media only screen and (max-width: 1440px) {
     #header .join-right {
         display: flex;
@@ -89,6 +86,7 @@
 }
 
 
+/* Tablet */
 @media only screen and (max-width: 1024px) {
     .bacteria-photo {
         display: none;
@@ -115,6 +113,7 @@
     }
 }
 
+/* Phone */
 @media only screen and (max-width: 768px) {
     div.featured {
         font-size: 1rem;
@@ -135,7 +134,6 @@
 }
 
 .info-sections .wrapper {
-    /* max-width: 95%; */
     width: 85%;
     max-width: 1400px;
     height: auto;
@@ -149,7 +147,6 @@
 
 #first .wrapper {
     box-shadow: var(--aside-shadow-lblue);
-    /* padding-top: 1.5em; */
 }
 
 #second .wrapper {
@@ -183,6 +180,7 @@
     vertical-align: middle
 }
 
+/* Laptop + Tablet */
 @media only screen and (max-width: 1440px) {
     .info-sections .wrapper {
         font-size: 1em;
@@ -190,6 +188,7 @@
     }
 }
 
+/* Phone */
 @media only screen and (max-width: 768px) {
     .info-sections .wrapper {
         font-size: 1em;
@@ -216,7 +215,6 @@
     .content p {
         font-size: 1.1em;
     }
-
 
     #we-are-tbfighters .content {
         margin: 0em 0em;
@@ -250,7 +248,7 @@
 #statement p {
     font-size: 5em;
     margin-bottom: 0;
-	font-weight: 700;
+    font-weight: 700;
 }
 
 #statement p.mobile {
@@ -283,7 +281,7 @@
 /* End of STATEMENT */
 
 /* ===============
- * TAKE ACTION
+ * TAKE ACTION & COMMUNITY
  * =============== */
 
 #join h3 {
@@ -317,18 +315,6 @@
     padding: 1.2em 0.8em;
 }
 
-#danaher {
-    box-shadow: var(--aside-shadow-lblue);
-}
-
-#funding-cuts {
-    box-shadow: var(--aside-shadow-green);
-}
-
-#hill-day {
-    box-shadow: var(--aside-shadow-yellow);
-}
-
 .campaign h4 {
     margin: 0 0;
 }
@@ -344,14 +330,27 @@
     margin-right: 0.5em;
 }
 
-#join .join-community h3 {
-	font-size: 2.5em;
+#danaher {
+    box-shadow: var(--aside-shadow-lblue);
 }
+
+#funding-cuts {
+    box-shadow: var(--aside-shadow-green);
+}
+
+#hill-day {
+    box-shadow: var(--aside-shadow-yellow);
+}
+
+.join-community h3 {
+    font-size: 2.5em;
+}
+
 .join-community {
     font-size: 1.1em;
     width: 80%;
     margin: auto auto;
-	padding-top: 2em;
+    padding-top: 2em;
 }
 
 .communities {
@@ -366,7 +365,6 @@
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
-    width: calc(50% - 2em);
     vertical-align: top;
     font-size: 1em;
     border: var(--aside-border);
@@ -380,10 +378,10 @@
 }
 
 @media only screen and (min-width: 1250px) {
-	.campaigns {
-		flex-direction: row;
-		align-items: stretch;
-	}
+    .campaigns {
+        flex-direction: row;
+        align-items: stretch;
+    }
 }
 
 @media only screen and (max-width: 1024px) {

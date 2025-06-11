@@ -8,65 +8,19 @@
     margin-right: 0.5em;
 }
 
-.description .action-icon {
-    height: 1em;
-}
-
 .action {
-    border: 2px solid var(--bg2);
-    /* border: var(--aside-border); */
-    border-radius: 0.5em;
-    padding: 0.5em 0.5em;
     width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 1em;
 }
 
-.action .smaller a.button {
+.action a.button {
     margin-top: 1.5em;
 }
 
 .action p.smaller {
     margin-bottom: 0;
-}
-
-.action p.larger {
-    font-size: 1.5em;
-}
-
-.action-grid-large {
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    flex-basis: 0;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
-
-/* ACTIONS GRID */
-.action-grid-large .action {
-    display: inline-block;
-    margin: 1em 0em;
-    vertical-align: top;
-    flex: 1 1 0px;
-}
-
-/* MOBILE STYLES */
-
-@media only screen and (max-width: 992px) {
-    .action-grid-large {
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    .action-grid-large .action {
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 0;
-        margin-right: auto;
-    }
 }
 
 /* Campaigns */
@@ -94,6 +48,10 @@
     margin: 0.2em 0;
 }
 
+.campaign h3 {
+    margin-top: 0.5em;
+}
+
 .campaign .content {
     display: flex;
     flex-direction: row;
@@ -106,12 +64,12 @@
     flex-direction: column;
 }
 
-.campaign .content-full .description {
-    max-width: 100%;
+.campaign .description .action-icon {
+    height: 1em;
 }
 
-.campaign h3 {
-    margin-top: 0.5em;
+.campaign .content-full .description {
+    max-width: 100%;
 }
 
 .action-wrapper {
@@ -136,15 +94,15 @@
         box-shadow: var(--aside-shadow-close);
     }
 
-    .campaign .content {
-        flex-direction: column;
-        gap: 0;
-    }
-
     .campaign {
         width: 90%;
         margin: auto auto;
         margin-bottom: 0.5em;
+    }
+
+    .campaign .content {
+        flex-direction: column;
+        gap: 0;
     }
 
     .campaign .description {
