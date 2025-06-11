@@ -8,6 +8,29 @@
     margin-right: 0.5em;
 }
 
+.description .action-icon {
+    height: 1em;
+}
+
+.action {
+    border: 2px solid var(--bg2);
+    /* border: var(--aside-border); */
+    border-radius: 0.5em;
+    padding: 0.5em 0.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.action .smaller a.button {
+    margin-top: 1.5em;
+}
+
+.action p.smaller {
+    margin-bottom: 0;
+}
+
 .action p.larger {
     font-size: 1.5em;
 }
@@ -79,6 +102,8 @@
 
 .campaign .description {
     max-width: 50%;
+    display: flex;
+    flex-direction: column;
 }
 
 .campaign .content-full .description {
@@ -89,55 +114,20 @@
     margin-top: 0.5em;
 }
 
-.campaign.danaher::before {
-    content: "";
-    position: absolute;
-    background-image: url(./img/danaher/red-crystal.gif);
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.75;
-
-    border-radius: 0.5em;
+.action-wrapper {
+    width: calc(50% - 3em);
 }
 
 .campaign.danaher {
     box-shadow: var(--aside-shadow-lblue);
 }
 
-.campaign.funding-cuts::before {
-    content: "";
-    position: absolute;
-    background-image: url(./img/funding-cuts/red-bacteria.png);
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.1;
-    border-radius: 0.5em;
-}
-
 .campaign.funding-cuts {
     box-shadow: var(--aside-shadow-green);
 }
 
-.campaign.hill-day::before {
-    content: "";
-    position: absolute;
-    background-image: url(./img/hill-day/hill-day-placeholder.jpg);
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.15;
-    border-radius: 0.5em;
-}
-
 .campaign.hill-day {
-    box-shadow: var(--aside-shadow);
+    box-shadow: var(--aside-shadow-yellow);
 }
 
 
@@ -148,6 +138,7 @@
 
     .campaign .content {
         flex-direction: column;
+        gap: 0;
     }
 
     .campaign {
@@ -158,5 +149,13 @@
 
     .campaign .description {
         max-width: 100%;
+    }
+
+    .description a {
+        margin-top: 0.5em;
+    }
+
+    .action-wrapper {
+        width: 100%;
     }
 }
