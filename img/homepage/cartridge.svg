@@ -1,40 +1,42 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 137 194" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;">
-    <g transform="matrix(1,0,0,1,-20381,-8307)">
-        <g id="Artboard3" transform="matrix(1,0,0,1,-0.574774,-0.0505324)">
-            <rect x="20381.6" y="8307.05" width="136.988" height="193.867" style="fill:none;"/>
-            <clipPath id="_clip1">
-                <rect x="20381.6" y="8307.05" width="136.988" height="193.867"/>
-            </clipPath>
-            <g clip-path="url(#_clip1)">
-                <g transform="matrix(1,0,0,1,20450.6,8404.03)">
-                    <g transform="matrix(1,0,0,1,-68.494,-96.9334)">
-                        <clipPath id="_clip2">
-                            <rect x="0" y="0" width="136.988" height="193.867"/>
-                        </clipPath>
-                        <g clip-path="url(#_clip2)">
-                            <g id="Layer-1" serif:id="Layer 1" transform="matrix(11.811,0,0,11.811,-8092.86,-6246.27)">
-                                <g id="path5-2-9-9-8-7-8-04" transform="matrix(1,0,0,1.01445,0,-7.83408)">
-                                    <path d="M686.85,542.28L685.755,530.478L696.235,530.478L695.138,542.28L686.85,542.28Z" style="fill:none;fill-rule:nonzero;stroke:rgb(30,145,206);stroke-width:0.88px;"/>
-                                </g>
-                                <rect id="rect2-32-2-8-1-5-6-4" x="685.196" y="528.851" width="11.598" height="1.899" style="fill:rgb(30,145,206);"/>
-                                <g id="g5-4-0-9-1-0-0-4" transform="matrix(0.512012,0,0,0.512012,609.857,464.279)">
-                                    <g id="g4-2-8-6-9-67-3-2">
-                                        <rect id="rect3-8-1-6-8-6-7-7" x="149.593" y="151.149" width="17.752" height="5.015" style="fill:rgb(30,145,206);"/>
-                                        <rect id="rect4-88-6-4-9-6-0-1" x="147.573" y="155.412" width="8.762" height="2.758" style="fill:rgb(30,145,206);"/>
-                                        <rect id="rect4-8-3-1-3-7-2-9-9" x="160.602" y="155.412" width="8.762" height="2.758" style="fill:rgb(30,145,206);"/>
-                                    </g>
-                                </g>
-                                <rect id="rect5" x="686.45" y="530.017" width="2.598" height="1.821" style="fill:rgb(30,145,206);"/>
-                                <g transform="matrix(0.155833,0,0,0.175145,680.94,522.903)">
-                                    <path d="M86.98,56.955L84.218,96.933L44.833,96.933L42.072,56.955L86.98,56.955Z" style="fill:rgb(30,145,206);"/>
-                                </g>
-                            </g>
-                        </g>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<!-- <?xml version="1.0" encoding="UTF-8" standalone="no"?> -->
+<!-- <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"> -->
+<!-- <svg width="100%" height="100%" viewBox="0 0 137 194" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;"> -->
+<!--     <g transform="matrix(1,0,0,1,-20381,-8307)"> -->
+<!--         <g id="Artboard3" transform="matrix(1,0,0,1,-0.574774,-0.0505324)"> -->
+<!--             <rect x="20381.6" y="8307.05" width="136.988" height="193.867" style="fill:none;"/> -->
+<!--             <clipPath id="_clip1"> -->
+<!--                 <rect x="20381.6" y="8307.05" width="136.988" height="193.867"/> -->
+<!--             </clipPath> -->
+<!--             <g clip-path="url(#_clip1)"> -->
+<!--                 <g transform="matrix(1,0,0,1,20450.6,8404.03)"> -->
+<!--                     <g transform="matrix(1,0,0,1,-68.494,-96.9334)"> -->
+<!--                         <clipPath id="_clip2"> -->
+<!--                             <rect x="0" y="0" width="136.988" height="193.867"/> -->
+<!--                         </clipPath> -->
+<!--                         <g clip-path="url(#_clip2)"> -->
+<!--                             <g id="Layer-1" serif:id="Layer 1" transform="matrix(11.811,0,0,11.811,-8092.86,-6246.27)"> -->
+<!--                                 <g id="path5-2-9-9-8-7-8-04" transform="matrix(1,0,0,1.01445,0,-7.83408)"> -->
+<!--                                     <path d="M686.85,542.28L685.755,530.478L696.235,530.478L695.138,542.28L686.85,542.28Z" style="fill:none;fill-rule:nonzero;stroke:rgb(30,145,206);stroke-width:0.88px;"/> -->
+<!--                                 </g> -->
+<!--                                 <rect id="rect2-32-2-8-1-5-6-4" x="685.196" y="528.851" width="11.598" height="1.899" style="fill:rgb(30,145,206);"/> -->
+<!--                                 <g id="g5-4-0-9-1-0-0-4" transform="matrix(0.512012,0,0,0.512012,609.857,464.279)"> -->
+<!--                                     <g id="g4-2-8-6-9-67-3-2"> -->
+<!--                                         <rect id="rect3-8-1-6-8-6-7-7" x="149.593" y="151.149" width="17.752" height="5.015" style="fill:rgb(30,145,206);"/> -->
+<!--                                         <rect id="rect4-88-6-4-9-6-0-1" x="147.573" y="155.412" width="8.762" height="2.758" style="fill:rgb(30,145,206);"/> -->
+<!--                                         <rect id="rect4-8-3-1-3-7-2-9-9" x="160.602" y="155.412" width="8.762" height="2.758" style="fill:rgb(30,145,206);"/> -->
+<!--                                     </g> -->
+<!--                                 </g> -->
+<!--                                 <rect id="rect5" x="686.45" y="530.017" width="2.598" height="1.821" style="fill:rgb(30,145,206);"/> -->
+<!--                                 <g transform="matrix(0.155833,0,0,0.175145,680.94,522.903)"> -->
+<!--                                     <path d="M86.98,56.955L84.218,96.933L44.833,96.933L42.072,56.955L86.98,56.955Z" style="fill:rgb(30,145,206);"/> -->
+<!--                                 </g> -->
+<!--                             </g> -->
+<!--                         </g> -->
+<!--                     </g> -->
+<!--                 </g> -->
+<!--             </g> -->
+<!--         </g> -->
+<!--     </g> -->
+<!-- </svg> -->
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#1e91ce" d="M342.6 9.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l9.4 9.4L28.1 342.6C10.1 360.6 0 385 0 410.5L0 416c0 53 43 96 96 96l5.5 0c25.5 0 49.9-10.1 67.9-28.1L448 205.3l9.4 9.4c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-32-32-96-96-32-32zM205.3 256L352 109.3 402.7 160l-96 96-101.5 0z"/></svg>
