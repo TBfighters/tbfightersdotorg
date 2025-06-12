@@ -62,11 +62,20 @@ function replaceContent(files, leadingPath, prefixLength) {
 
             let footerContentReplaced = contentFooter.replaceAll("{prefix}", prefix);
             let name = file.name;
-            // if (leadingPath.length >= 4) {
-            //     name = leadingPath.replace("../", "") + name;
-            //
-            // }
+            if (leadingPath.length >= 4) {
+                name = leadingPath.replace("../", "") + name;
+
+            }
+            console.log(name);
+            console.log(credit[name]);
+            if (name == "action.html") {
+                console.log(footerContentReplaced)
+                console.log("-----")
+            }
             footerContentReplaced = footerContentReplaced.replaceAll("{credits}", (credit[name] == undefined) ? "" : credit[name]);
+            if (name == "action.html") {
+                console.log(footerContentReplaced)
+            }
 
             footerContentReplaced = addIndent("<footer class=\"site-foot\">", content, footerContentReplaced)
 
