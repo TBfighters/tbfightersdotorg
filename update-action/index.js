@@ -66,16 +66,7 @@ function replaceContent(files, leadingPath, prefixLength) {
                 name = leadingPath.replace("../", "") + name;
 
             }
-            console.log(name);
-            console.log(credit[name]);
-            if (name == "action.html") {
-                console.log(footerContentReplaced)
-                console.log("-----")
-            }
             footerContentReplaced = footerContentReplaced.replaceAll("{credits}", (credit[name] == undefined) ? "" : credit[name]);
-            if (name == "action.html") {
-                console.log(footerContentReplaced)
-            }
 
             footerContentReplaced = addIndent("<footer class=\"site-foot\">", content, footerContentReplaced)
 
