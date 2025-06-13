@@ -3,7 +3,7 @@
  * */
 
 .action-icon {
-    height: 1.5em;
+    height: 1em;
     vertical-align: bottom;
     margin-right: 0.5em;
 }
@@ -37,9 +37,7 @@
 }
 
 .campaign-inner {
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 1em;
+    padding: 1.5em 1.2em;
     position: relative;
     z-index: 2;
 }
@@ -62,10 +60,6 @@
     max-width: 50%;
     display: flex;
     flex-direction: column;
-}
-
-.campaign .description .action-icon {
-    height: 1em;
 }
 
 .campaign .content-full .description {
