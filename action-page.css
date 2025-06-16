@@ -126,8 +126,6 @@
 /* Filter */
 
 .wrapper-filter {
-    display: flex;
-    gap: 1em;
     padding: 0.2em 0.5em;
     border: var(--aside-border-subtle);
     border-radius: 0.5em;
@@ -151,5 +149,3 @@
     border-color: var(--fg);
     color: var(--bg);
 }
-
-
