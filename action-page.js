@@ -11,8 +11,19 @@ const actions = {
     "european-union": [],
 }
 
+// Handle initial url
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+
 let active = ["international"];
+if (urlParams.size != 0) {
+    const regionParams = urlParams.get("region").split(',');
+    active = regionParams
+}
+
 let campaigns = document.getElementsByClassName("campaign");
+
+let campaignsWrapper = document.getElementsByClassName("campaigns").item(0);
 
 function handleActions() {
 
@@ -41,10 +52,21 @@ function handleActions() {
     }
 }
 
-function toggleRegion(region, button) {
+function handleUrlUpdate() {
+    let url = window.location.origin + window.location.pathname + window.location.hash;
+    if (!active.includes("international")) {
+        let activeString = active.join(",");
+        url = window.location.origin + window.location.pathname + "?region=" + activeString + window.location.hash;
+    }
+
+    history.replaceState({}, document.title, url);
+}
+
+function handleButton(region, button) {
     if (active.includes("international")) {
         active = [region];
         button.classList.add("active");
+        campaignsWrapper.classList.add("reversed");
     } else if (active.includes(region)) {
         let index = active.indexOf(region);
         active.splice(index, 1);
@@ -53,12 +75,12 @@ function toggleRegion(region, button) {
 
         if (active.length == 0) {
             active = ["international"];
+            campaignsWrapper.classList.remove("reversed");
         }
     } else {
         active.push(region);
         button.classList.add("active");
     }
-    handleActions();
 }
 
 for (const [region, _] of Object.entries(actions)) {
@@ -67,6 +89,18 @@ for (const [region, _] of Object.entries(actions)) {
         continue;
     }
     button.onclick = function (e) {
-        toggleRegion(region, button);
+        handleButton(region, button);
+        handleActions();
+        handleUrlUpdate();
     };
+}
+
+// Handle initial url
+if (!active.includes("international")) {
+    handleActions()
+    campaignsWrapper.classList.add("reversed");
+    for (let i = 0; i < active.length; i++) {
+        let id = active[i];
+        document.getElementById(id).classList.add("active");
+    }
 }
