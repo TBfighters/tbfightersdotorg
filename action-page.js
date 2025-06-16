@@ -6,7 +6,9 @@ const actions = {
         "us-funding-cuts",
         "us-hill-day",
     ],
-    "canada": [],
+    "canada": [
+        "canada-hill-day"
+    ],
     "united-kingdom": [],
     "european-union": [],
 }

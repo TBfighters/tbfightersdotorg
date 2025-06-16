@@ -35,7 +35,11 @@
     .campaigns {
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 2em;
+    }
+
+    .campaigns:not(:has(.active)) {
+        display: none;
     }
 
     .campaigns.reversed {
@@ -43,23 +47,16 @@
     }
 
     .campaign {
-        margin-bottom: 0.5em;
         position: relative;
         z-index: 2;
         border: var(--aside-border);
         border-radius: 0.5em;
         width: 100%;
+        padding: 1.5em 1.2em;
     }
 
     .campaign:not(.active) {
         display: none;
-    }
-
-
-    .campaign-inner {
-        padding: 1.5em 1.2em;
-        position: relative;
-        z-index: 2;
     }
 
     .campaign h2 {
