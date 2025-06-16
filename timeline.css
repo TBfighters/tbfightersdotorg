@@ -4,33 +4,26 @@
 
 .container-timeline .wrapper-full {
 	display: flex;
-	width: 80%;
-	max-width: 1200px;
 	gap: 2em;
 	flex-direction: row;
 }
 
 .container-timeline .date {
 	width: 20%;
-	font-size: 0.75em;
-	text-align: right;
+}
+.container-timeline .date h2 {
+	font-size: 1.5em;
+	line-height: 1.5em;
 }
 
 .container-timeline .item {
-	width: 80%;
+	width: 90%;
 }
 
 .container-timeline:nth-child(even) {
 	background-color: var(--bg2);
 }
 
-.container-timeline:nth-child(odd) .wrapper-full {
-	flex-direction: row-reverse;
-}
-
-.container-timeline:nth-child(odd) .date {
-	text-align: left;
-}
 
 /* MOBILE STYLES */
 
