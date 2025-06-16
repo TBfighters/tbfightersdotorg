@@ -1,4 +1,4 @@
-/*
+    /*
  * CSS ONLY FOR THE ACTION PAGE
  * */
 
@@ -32,8 +32,13 @@
     border-radius: 0.5em;
     width: 80%;
 }
+
+.campaign:not(.active) {
+    display: none;
+}
+
 .campaign:last-child {
-	margin-bottom: 3em;
+    margin-bottom: 3em;
 }
 
 .campaign-inner {
@@ -117,3 +122,34 @@
         width: 100%;
     }
 }
+
+/* Filter */
+
+.wrapper-filter {
+    display: flex;
+    gap: 1em;
+    padding: 0.2em 0.5em;
+    border: var(--aside-border-subtle);
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.wrapper-filter .button-filter {
+    background-color: transparent;
+    color: var(--fg);
+}
+
+.wrapper-filter .button-filter.active {
+    background: var(--accent-bg);
+    color: var(--bg);
+}
+
+.wrapper-filter .button-filter.active:hover,
+.wrapper-filter .button-filter.active:active,
+.wrapper-filter .button-filter.active:focus {
+    background-color: var(--fg);
+    border-color: var(--fg);
+    color: var(--bg);
+}
+
+

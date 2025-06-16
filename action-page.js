@@ -1,57 +1,72 @@
-// expand button
-let expanded = false;
-let grid = document.getElementById("expand-action-grid");
-grid.style.display = "none";
+const actions = {
+    "international": [
+        "danaher"
+    ],
+    "united-states": [
+        "us-funding-cuts",
+        "us-hill-day",
+    ],
+    "canada": [],
+    "united-kingdom": [],
+    "european-union": [],
+}
 
-// This enables the buttons w/ js enabled
-document.getElementById("expand-button-container").style.display = "block";
-function toggleExpand() {
-    if (expanded) {
-        grid.classList.remove("show-actions")
-        grid.classList.add("hide-actions")
-        grid.addEventListener('animationend', () => { grid.style.display = "none" }, { once: true });
-        document.getElementsByClassName("expand-actions-arrow")[0].classList.remove("expand-actions-arrow-up")
-        document.getElementById("expand-button-txt").textContent = "More actions";
-        expanded = false
+let active = ["international"];
+let campaigns = document.getElementsByClassName("campaign");
+
+function handleActions() {
+
+    // make copy
+    let currentActions = actions["international"].slice();
+
+    if (!active.includes("international")) {
+        for (let i = 0; i < active.length; i++) {
+            for (let b = 0; b < actions[active[i]].length; b++) {
+                currentActions.push(actions[active[i]][b]);
+            }
+        }
     } else {
-        grid.classList.remove("hide-actions")
-        grid.style.display = "";
-        grid.classList.add("show-actions")
-        document.getElementsByClassName("expand-actions-arrow")[0].classList.add("expand-actions-arrow-up")
-        document.getElementById("expand-button-txt").textContent = "Fewer actions";
-        expanded = true
+        currentActions = null;
+    }
+
+    for (let i = 0; i < campaigns.length; i++) {
+        let action = campaigns.item(i);
+        if (currentActions == null) {
+            action.classList.add("active");
+        } else if (currentActions.includes(action.id)) {
+            action.classList.add("active");
+        } else {
+            action.classList.remove("active");
+        }
     }
 }
 
-// slide show
-// This enables the buttons w/ js enabled
-document.getElementById("slideshow-buttons").style.display = "block"
+function toggleRegion(region, button) {
+    if (active.includes("international")) {
+        active = [region];
+        button.classList.add("active");
+    } else if (active.includes(region)) {
+        let index = active.indexOf(region);
+        active.splice(index, 1);
 
-var slideIndex = 0;
-var x = document.getElementsByClassName("slideshow-img");
-// Initial setup
-for (i = 0; i < x.length; i++) {
-    if (i == slideIndex) {
-        x[slideIndex].style.display = "block";
+        button.classList.remove("active");
+
+        if (active.length == 0) {
+            active = ["international"];
+        }
     } else {
-        x[i].style.display = "none";
+        active.push(region);
+        button.classList.add("active");
     }
+    handleActions();
 }
 
-function incrementSlideshow(num) {
-    x[slideIndex].style.display = "none";
-
-    slideIndex += num;
-    if (slideIndex > x.length - 1) { slideIndex = 0 }
-    if (slideIndex < 0) { slideIndex = x.length - 1 };
-
-    x[slideIndex].style.display = "block";
-}
-
-async function download() {
-    downloadImage(document.getElementsByClassName("slideshow-img")[slideIndex].src)
-}
-
-function copyAltText() {
-    onclickButton(x[slideIndex].alt)
+for (const [region, _] of Object.entries(actions)) {
+    let button = document.getElementById(region);
+    if (button == null) {
+        continue;
+    }
+    button.onclick = function (e) {
+        toggleRegion(region, button);
+    };
 }

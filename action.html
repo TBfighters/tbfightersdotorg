@@ -30,6 +30,7 @@
 		content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
 
 	<script src="actions.js"></script>
+	<script src="action-page.js" defer></script>
 	<script src="header-link.js" defer></script>
 	<link rel="stylesheet" href="action-page.css">
 	<title>Take Action | TBFighters</title>
@@ -153,7 +154,15 @@
 				</div>
 			</div>
 			<br>
-			<div class="wrapper-full campaign danaher">
+			<div class="wrapper-full">
+				<div class="wrapper-filter">
+					<button class="button button-filter" id="united-states">United States</button>
+					<button class="button button-filter" id="canada">Canada</button>
+					<button class="button button-filter" id="united-kingdom">United Kingdom</button>
+					<button class="button button-filter" id="european-union">European Union</button>
+				</div>
+			</div>
+			<div class="wrapper-full campaign danaher active" id="danaher">
 				<div class="campaign-inner">
 					<div class="content">
 						<div class="description">
@@ -187,7 +196,7 @@
 				</div>
 			</div>
 			<br>
-			<div class="wrapper-full campaign funding-cuts">
+			<div class="wrapper-full campaign funding-cuts active" id="us-funding-cuts">
 				<div class="campaign-inner">
 					<div class="content">
 						<div class="description">
@@ -212,7 +221,7 @@
 				</div>
 			</div>
 			<br>
-			<div class="wrapper-full campaign hill-day">
+			<div class="wrapper-full campaign hill-day active" id="us-hill-day">
 				<div class="campaign-inner">
 					<h2><img src="/img/homepage/money.svg" alt="Money image" class="action-icon">Hill Day</h2>
 					<div class="content content-full">
