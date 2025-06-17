@@ -6,9 +6,13 @@
     }
 
     .action-icon {
-        height: 1em;
+        height: 1.25em;
         vertical-align: bottom;
-        margin-right: 0.5em;
+        margin-right: 0.25em;
+    }
+
+    .description .action-icon {
+        height: 1em;
     }
 
     .action {
