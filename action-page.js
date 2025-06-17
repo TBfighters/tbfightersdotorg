@@ -12,7 +12,7 @@ const actions = {
     "united-kingdom": [
         "uk-funding-cuts",
     ],
-    // "european-union": [],
+    "european-union": [],
 }
 
 // Handle initial url
