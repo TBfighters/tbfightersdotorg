@@ -11,6 +11,13 @@
         margin-right: 0.25em;
     }
 
+    .flag-icon {
+        height: 0.75em;
+        vertical-align: middle;
+        margin-bottom: 0.2em;
+        margin-right: 0.25em;
+    }
+
     .description .action-icon {
         height: 1em;
     }
