@@ -443,7 +443,7 @@ img {
 }
 
 .highlight {
-    background-image: url("img/highlight.svg");
+    background-image: url("img/utils/highlight.svg");
     padding: 0 0.15em;
     margin: 0 -0.15em;
     color: var(--bg);
@@ -452,7 +452,7 @@ img {
 }
 
 .yellow-highlight {
-    background-image: url("img/yellow-highlight.svg");
+    background-image: url("img/utils/yellow-highlight.svg");
     padding: 0 0.15em;
     margin: 0 -0.15em;
     color: var(--bg);
@@ -530,7 +530,7 @@ a.red:focus {
 a[target="_blank"]:not(:has(img), .internal-link)::after {
     position: relative;
     display: inline-block;
-    content: url("img/arrow-up-right-from-square-solid.svg");
+    content: url("img/icons/arrow-up-right-from-square-solid.svg");
     height: 12px;
     width: 12px;
     margin: 0 3px;
@@ -1081,7 +1081,7 @@ div.featured {
 }
 
 .header-copy::after {
-    content: url("./img/link.svg");
+    content: url("./img/icons/link.svg");
 }
 
 :is(h1, h2, h3, h4, h5, h6):hover>.header-copy,
@@ -1090,7 +1090,7 @@ div.featured {
 }
 
 .header-copy:hover::after {
-    content: url("./img/link-hover.svg");
+    content: url("./img/icons/link-hover.svg");
     opacity: 1;
     cursor: pointer;
 }
