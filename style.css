@@ -108,6 +108,7 @@ html {
 
 .page-title a img {
     height: calc(1.1em);
+    background: var(--accent-bg);
 }
 
 .page-title {
