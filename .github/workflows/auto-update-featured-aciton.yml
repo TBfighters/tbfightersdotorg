@@ -23,13 +23,20 @@ jobs:
       shell: bash
       run: cd ./update-action/ && node .
 
+    - name: Check if there are any changes
+      id: verify_diff
+      run: |
+        git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
+
     - name: Setup git config
+      if: steps.verify_diff.outputs.changed == 'true'
       shell: bash
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
 
     - name: Commit updated featured action
+      if: steps.verify_diff.outputs.changed == 'true'
       shell: bash
       run: |
         git add .
