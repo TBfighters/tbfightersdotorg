@@ -129,6 +129,7 @@ html {
 
     display: flex;
     align-items: center;
+    padding-right: 4px;
 }
 
 .page-title a:hover,
