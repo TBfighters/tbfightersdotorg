@@ -241,7 +241,7 @@
 
 #statement .wrapper {
     padding: 5em 3em;
-    max-width: 85%;
+    max-width: 90%;
     text-align: center;
 }
 
@@ -377,10 +377,13 @@
     width: fit-content;
 }
 
-@media only screen and (min-width: 1250px) {
-    .campaigns {
-        flex-direction: row;
-        align-items: stretch;
+@media only screen and (max-width: 1250px) {
+    .communities {
+        flex-direction: column
+    }
+
+    .community {
+        width: 100%;
     }
 }
 
@@ -390,14 +393,6 @@
     }
 
     .campaign {
-        width: 100%;
-    }
-
-    .communities {
-        flex-direction: column;
-    }
-
-    .community {
         width: 100%;
     }
 }

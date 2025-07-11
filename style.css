@@ -969,7 +969,7 @@ div.featured {
 
 /* MOBILE STYLES */
 
-@media only screen and (min-width: 993px) {
+@media only screen and (max-width: 993px) {
     .wrapper {
         max-width: 900px;
     }
