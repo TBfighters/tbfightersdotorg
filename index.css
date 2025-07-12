@@ -299,16 +299,14 @@
 
 .campaigns {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3em;
+    flex-direction: row;
+    gap: 1.5em;
 }
 
 .campaign {
     display: flex;
     flex-direction: column;
-    width: 90%;
-    vertical-align: top;
+    width: 33.33%;
     font-size: 1.1em;
     border: var(--aside-border);
     border-radius: 0.5em;
@@ -321,10 +319,9 @@
 
 .campaign .buttons {
     margin-top: auto;
-
 }
 
-.campaign img {
+.campaign img, .community img {
     height: 1.5em;
     vertical-align: bottom;
     margin-right: 0.5em;
@@ -355,9 +352,20 @@
 
 .communities {
     display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0em;
+    padding: 1em 1em;
+    box-shadow: var(--aside-shadow);
+    border: var(--aside-border);
+    border-radius: 0.5em;
+}
+
+.communities .two {
+    display: flex;
     flex-direction: row;
     align-items: stretch;
-    gap: 2em;
+    gap: 1em;
 }
 
 .community {
@@ -367,8 +375,6 @@
     flex-wrap: wrap;
     vertical-align: top;
     font-size: 1em;
-    border: var(--aside-border);
-    border-radius: 0.5em;
     padding: 1.2em 0.8em;
 }
 
@@ -379,10 +385,23 @@
 
 @media only screen and (max-width: 1250px) {
     .communities {
-        flex-direction: column
+        flex-direction: column;
+    }
+
+    .communities .two {
+        flex-direction: column;
+        gap: 1em;
     }
 
     .community {
+        width: 100%;
+    }
+
+    .campaigns {
+        flex-direction: column;
+    }
+
+    .campaign {
         width: 100%;
     }
 }
@@ -392,9 +411,6 @@
         width: 100%;
     }
 
-    .campaign {
-        width: 100%;
-    }
 }
 
 /* End of Take Action */
