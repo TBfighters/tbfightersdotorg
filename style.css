@@ -23,7 +23,7 @@
 
     --fg: #121212;
     --bg: #fcf3e3;
-    --bg2: #dddddd;
+    --bg2: #dddad4;
     --accent-bg: #bc1c1a;
     --accent-bg-low-opacity: rgba(188, 28, 26, 0.2);
     --accent-fg: #d7211e;
@@ -472,8 +472,10 @@ img {
 }
 
 :is(.wrapper, .block, .wrapper-full) :is(p, li) {
-    margin-bottom: 0.6em;
+    margin-top: 0.5em;
+	margin-bottom: 0.5em;
 }
+
 
 .indent {
     margin-left: 32px;
@@ -502,6 +504,10 @@ div.centered {
 
 .container ul {
     padding-left: 1.5em;
+}
+blockquote {
+	padding: 0.3em 1em;
+	margin: 0em 1em;
 }
 
 /* LINKS */

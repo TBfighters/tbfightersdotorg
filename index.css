@@ -30,7 +30,6 @@
     text-transform: uppercase;
     font-size: 4.7em;
 }
-
 #header {
     position: relative;
     padding: 3em 0;
@@ -161,6 +160,11 @@
     padding: 2em 0;
 }
 
+.info-sections h2 {
+	text-transform: uppercase;
+	font-size: 1.8em;
+}
+
 /* Content */
 
 .content {
@@ -246,6 +250,7 @@
 }
 
 #statement p {
+	text-transform: uppercase;
     font-size: 5em;
     margin-bottom: 0;
     font-weight: 700;
@@ -339,12 +344,7 @@
     box-shadow: var(--aside-shadow-yellow);
 }
 
-.join-community h3 {
-    font-size: 2.5em;
-}
-
 .join-community {
-    font-size: 1.1em;
     width: 80%;
     margin: auto auto;
     padding-top: 2em;

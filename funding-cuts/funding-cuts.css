@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
 }
 
-h2 {
+h1, h2 {
     font-size: 4em;
 }
 
