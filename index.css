@@ -252,7 +252,7 @@
 #statement p {
 	text-transform: uppercase;
     font-size: 5em;
-    margin-bottom: 0;
+    margin: 0;
     font-weight: 700;
 }
 
