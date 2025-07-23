@@ -158,7 +158,8 @@ html {
     list-style: none;
 }
 
-.site-menu .socials p, .site-menu .title {
+.site-menu .socials p,
+.site-menu .title {
     position: relative;
     text-decoration: none;
     padding: 0.75em;
@@ -368,7 +369,8 @@ a#hamburger-button {
         background-color: unset;
     }
 
-    .site-menu .social-icon-hover, .site-menu .social-icon {
+    .site-menu .social-icon-hover,
+    .site-menu .social-icon {
         height: 1em;
     }
 }
@@ -473,7 +475,7 @@ img {
 
 :is(.wrapper, .block, .wrapper-full) :is(p, li) {
     margin-top: 0.5em;
-	margin-bottom: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 
@@ -505,9 +507,10 @@ div.centered {
 .container ul {
     padding-left: 1.5em;
 }
+
 blockquote {
-	padding: 0.3em 1em;
-	margin: 0em 1em;
+    padding: 0.3em 1em;
+    margin: 0em 1em;
 }
 
 /* LINKS */
@@ -781,7 +784,8 @@ a.button-on-red-bg {
     height: calc(310px - 44px);
 }
 
-#youtube-video-shadow, .youtube-wrapper .video-embed-shadow {
+#youtube-video-shadow,
+.youtube-wrapper .video-embed-shadow {
     border: 2px solid var(--bg2);
     padding: 20px;
     display: flex;
@@ -819,7 +823,7 @@ div.featured {
     margin: 0 auto 0.6em;
     font-size: 1.2em;
     box-shadow: var(--aside-shadow);
-	max-width: 1100px;
+    max-width: 1100px;
 }
 
 .featured-columns {
@@ -1054,11 +1058,13 @@ div.featured {
     /* transition: all ease-in-out 1.1s; */
 }
 
-.socials-wrapper a:hover .social-icon {
+.socials-wrapper a:hover .social-icon,
+.socials-wrapper a:focus .social-icon {
     opacity: 0;
 }
 
-.socials-wrapper a:hover .social-icon-hover {
+.socials-wrapper a:hover .social-icon-hover,
+.socials-wrapper a:focus .social-icon-hover {
     opacity: 1;
 }
 
