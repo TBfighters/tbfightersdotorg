@@ -1058,13 +1058,11 @@ div.featured {
     /* transition: all ease-in-out 1.1s; */
 }
 
-.socials-wrapper a:hover .social-icon,
-.socials-wrapper a:focus .social-icon {
+.socials-wrapper a:is(:hover, :focus, :active) .social-icon {
     opacity: 0;
 }
 
-.socials-wrapper a:hover .social-icon-hover,
-.socials-wrapper a:focus .social-icon-hover {
+.socials-wrapper a:is(:hover, :focus, :active) .social-icon-hover {
     opacity: 1;
 }
 
