@@ -25,11 +25,11 @@
     border-radius: 5px;
     box-shadow: var(--regular-shadow);
     margin: auto;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
 }
 
 .featuring .about {
-    font-size: 0.9em;
+    font-size: 0.9rem;
 }
 
 @media only screen and (max-width: 992px) {
