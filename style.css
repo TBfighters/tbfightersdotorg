@@ -7,16 +7,16 @@
    =============== */
 * {
     margin: 0;
-    --regular-shadow: 0.1em 0.1em 1em rgb(10 10 10 / 35%);
+    --regular-shadow: 0.1rem 0.1rem 1rem rgb(10 10 10 / 35%);
 
-    --aside-shadow: -0.7em 0.7em 0px 0px var(--accent-bg), -0.7em 0.7em 0px 3px var(--fg);
-    --aside-shadow-close: -0.5em 0.5em 0px 0px var(--accent-bg), -0.5em 0.5em 0px 3px var(--fg);
-    --aside-shadow-far: -1em 1em 0px 0px var(--accent-bg), -1em 1em 0px 3px var(--fg);
+    --aside-shadow: -0.7rem 0.7rem 0px 0px var(--accent-bg), -0.7rem 0.7rem 0px 3px var(--fg);
+    --aside-shadow-close: -0.5rem 0.5rem 0px 0px var(--accent-bg), -0.5rem 0.5rem 0px 3px var(--fg);
+    --aside-shadow-far: -1rem 1rem 0px 0px var(--accent-bg), -1rem 1rem 0px 3px var(--fg);
 
-    --aside-shadow-lblue: -0.7em 0.7em 0px 0px var(--accent-light-blue), -0.7em 0.7em 0px 3px var(--fg);
-    --aside-shadow-dblue: -0.7em 0.7em 0px 0px var(--accent-blue), -0.7em 0.7em 0px 3px var(--fg);
-    --aside-shadow-green: -0.7em 0.7em 0px 0px var(--accent-green), -0.7em 0.7em 0px 3px var(--fg);
-    --aside-shadow-yellow: -0.7em 0.7em 0px 0px var(--accent-yellow), -0.7em 0.7em 0px 3px var(--fg);
+    --aside-shadow-lblue: -0.7rem 0.7rem 0px 0px var(--accent-light-blue), -0.7rem 0.7rem 0px 3px var(--fg);
+    --aside-shadow-dblue: -0.7rem 0.7rem 0px 0px var(--accent-blue), -0.7rem 0.7rem 0px 3px var(--fg);
+    --aside-shadow-green: -0.7rem 0.7rem 0px 0px var(--accent-green), -0.7rem 0.7rem 0px 3px var(--fg);
+    --aside-shadow-yellow: -0.7rem 0.7rem 0px 0px var(--accent-yellow), -0.7rem 0.7rem 0px 3px var(--fg);
 
     --aside-border: 3px solid var(--fg);
     --aside-border-accent: 3px solid var(--accent-fg);
@@ -84,7 +84,7 @@ html {
     height: auto;
     color: var(--fg);
     background: var(--bg);
-    padding: 0.3em;
+    padding: 0.3rem;
 }
 
 #site-head {
@@ -93,7 +93,7 @@ html {
     width: 100%;
     background-color: var(--accent-bg);
     color: var(--fg);
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 700;
     vertical-align: middle;
     padding: 40px 0;
@@ -107,14 +107,14 @@ html {
 }
 
 .page-title a img {
-    height: calc(1.1em);
+    height: calc(1.1rem);
     background: var(--accent-bg);
 }
 
 .page-title {
     margin-bottom: 0;
     text-transform: uppercase;
-    font-size: 3em;
+    font-size: 3rem;
     display: inline-block;
     padding: 0 4px;
 }
@@ -148,7 +148,7 @@ html {
 .site-menu ul {
     display: inline-block;
     list-style: none;
-    padding-left: 0.25em;
+    padding-left: 0.25rem;
     background-color: var(--accent-bg);
 }
 
@@ -162,24 +162,24 @@ html {
 .site-menu .title {
     position: relative;
     text-decoration: none;
-    padding: 0.75em;
+    padding: 0.75rem;
     transition: all 0.2s ease-in-out;
     margin: 0 0;
     border: none;
 }
 
 .site-menu .socials p {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 .site-menu .title {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     color: var(--bg);
     display: inline-block;
 }
 
 .site-menu .dropdown div .title {
-    padding-right: 0.2em;
+    padding-right: 0.2rem;
 }
 
 :is(.site-menu .non-dropdown, .dropdown-content) .title:hover,
@@ -206,7 +206,7 @@ html {
 }
 
 .dropdown img {
-    height: 1em;
+    height: 1rem;
     vertical-align: bottom;
     transition: ease-in-out 0.2s all;
     rotate: 180deg;
@@ -220,8 +220,8 @@ ul.dropdown-content li {
     background: none;
     border-color: transparent;
     margin: 0 0;
-    padding: 0.5em 0.7em;
-    padding-left: 0.2em;
+    padding: 0.5rem 0.7rem;
+    padding-left: 0.2rem;
 }
 
 .dropdown:hover .dropdown-content,
@@ -257,7 +257,7 @@ a#hamburger-button {
 
 @media only screen and (max-width: 1200px) {
     .site-menu {
-        font-size: 0.8em;
+        font-size: 0.8rem;
     }
 
 }
@@ -267,7 +267,7 @@ a#hamburger-button {
         width: 70%;
         position: absolute;
         right: 0;
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     .site-menu .mobile {
@@ -283,8 +283,8 @@ a#hamburger-button {
         position: absolute;
         top: 140%;
         left: 0;
-        padding: 0.5em;
-        padding-left: 1em;
+        padding: 0.5rem;
+        padding-left: 1rem;
     }
 
     .site-menu ul li {
@@ -308,13 +308,13 @@ a#hamburger-button {
 
     .site-menu li a {
         display: block;
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
 
     a#hamburger-button {
         padding-right: 10px;
         float: right;
-        font-size: 2.5em;
+        font-size: 2.5rem;
         line-height: 1;
         text-decoration: none;
         display: inline-block;
@@ -360,7 +360,7 @@ a#hamburger-button {
     }
 
     .dropdown-button {
-        padding: 0.8em 1em;
+        padding: 0.8rem 1rem;
         display: flex;
     }
 
@@ -371,7 +371,7 @@ a#hamburger-button {
 
     .site-menu .social-icon-hover,
     .site-menu .social-icon {
-        height: 1em;
+        height: 1rem;
     }
 }
 
@@ -447,8 +447,8 @@ img {
 
 .highlight {
     background-image: url("img/highlight.svg");
-    padding: 0 0.15em;
-    margin: 0 -0.15em;
+    padding: 0 0.15rem;
+    margin: 0 -0.15rem;
     color: var(--bg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -456,8 +456,8 @@ img {
 
 .yellow-highlight {
     background-image: url("img/yellow-highlight.svg");
-    padding: 0 0.15em;
-    margin: 0 -0.15em;
+    padding: 0 0.15rem;
+    margin: 0 -0.15rem;
     color: var(--bg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -465,7 +465,7 @@ img {
 }
 
 .container {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 1.3;
 }
 
@@ -474,8 +474,8 @@ img {
 }
 
 :is(.wrapper, .block, .wrapper-full) :is(p, li) {
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -490,13 +490,13 @@ li.larger,
 a.larger,
 span.larger,
 strong.larger {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 p.smaller,
 li.smaller,
 em.smaller {
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 p.centered,
@@ -505,12 +505,12 @@ div.centered {
 }
 
 .container ul {
-    padding-left: 1.5em;
+    padding-left: 1.5rem;
 }
 
 blockquote {
-    padding: 0.3em 1em;
-    margin: 0em 1em;
+    padding: 0.3rem 1rem;
+    margin: 0rem 1rem;
 }
 
 /* LINKS */
@@ -567,23 +567,23 @@ a:has(img) {
 
 /* HEADERS */
 h1 {
-    font-size: 3.5em;
+    font-size: 3.5rem;
 }
 
 h2 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 h3 {
-    font-size: 1.8em;
+    font-size: 1.8rem;
 }
 
 h4 {
-    font-size: 1.4em;
+    font-size: 1.4rem;
 }
 
 h5 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 h1,
@@ -593,32 +593,32 @@ h4,
 h5 {
     line-height: 1;
     margin-top: 0;
-    margin-bottom: 0.6em;
+    margin-bottom: 0.6rem;
 }
 
 .container-compact h2 {
-    margin-top: 0.7em;
+    margin-top: 0.7rem;
 }
 
 /* MOBILE STYLES */
 
 @media only screen and (max-width: 900px) {
     h2 {
-        font-size: 2em;
+        font-size: 2rem;
     }
 
     h3 {
-        font-size: 1.6em;
+        font-size: 1.6rem;
     }
 }
 
 @media only screen and (max-width: 650px) {
     h1 {
-        font-size: 2.5em;
+        font-size: 2.5rem;
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 2rem;
     }
 }
 
@@ -626,10 +626,10 @@ h5 {
 
 .button {
     display: inline-block;
-    -webkit-border-radius: 0.5em;
-    -moz-border-radius: 0.5em;
-    border-radius: 0.5em;
-    padding: 0.6em 1em;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.6rem 1rem;
     text-decoration: none;
 }
 
@@ -659,7 +659,7 @@ button {
     background-color: var(--accent-bg);
     border: 4px solid var(--accent-bg);
     color: var(--bg);
-    margin: 0.5em 0;
+    margin: 0.5rem 0;
     transition: all 0.2s ease-in-out;
     font-size: inherit;
 }
@@ -742,7 +742,7 @@ a.button-on-red-bg {
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: flex-start;
-        gap: 0.5em;
+        gap: 0.5rem;
     }
 
     .buttons .button {
@@ -754,15 +754,15 @@ a.button-on-red-bg {
     }
 
     .join-right .button-centered {
-        margin-left: 1em;
-        width: calc(100% - 4em + 1px);
+        margin-left: 1rem;
+        width: calc(100% - 4rem + 1px);
     }
 }
 
 /* Lists */
 @media only screen and (max-width: 650px) {
     ul {
-        padding-left: 2em;
+        padding-left: 2rem;
     }
 }
 
@@ -775,7 +775,7 @@ a.button-on-red-bg {
 .video-embed {
     width: 560px;
     height: 310px;
-    margin: 1em 0;
+    margin: 1rem 0;
 }
 
 /* Legal Issues */
@@ -817,28 +817,28 @@ a.button-on-red-bg {
 div.featured {
     display: block;
     border: 3px solid var(--fg);
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
     /* text-align: center; */
     padding: 20px 25px;
-    margin: 0 auto 0.6em;
-    font-size: 1.2em;
+    margin: 0 auto 0.6rem;
+    font-size: 1.2rem;
     box-shadow: var(--aside-shadow);
     max-width: 1100px;
 }
 
 .featured-columns {
-    margin-top: 2em;
-    padding: 1em 2em;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
     background-color: var(--bg2);
     box-shadow: var(--aside-shadow);
 }
 
 .featured-columns .button,
 .featured-columns .button-subtle {
-    margin: 0.125em 0.5em;
+    margin: 0.125rem 0.5rem;
     width: 200px;
     min-width: fit-content;
-    padding: 0.5em 0.8em;
+    padding: 0.5rem 0.8rem;
 }
 
 /* MOBILE STYLES */
@@ -846,13 +846,13 @@ div.featured {
 @media only screen and (max-width: 992px) {
     .wrapper.featured-columns {
         width: 100%;
-        padding: 1em 0.5em;
+        padding: 1rem 0.5rem;
     }
 }
 
 @media only screen and (max-width: 768px) {
     .featured-columns {
-        margin-bottom: 1.5em;
+        margin-bottom: 1.5rem;
     }
 }
 
@@ -863,20 +863,20 @@ div.featured {
    =============== */
 
 .action-icon {
-    height: 1.5em;
+    height: 1.5rem;
     vertical-align: bottom;
-    margin-right: 0.5em;
+    margin-right: 0.5rem;
 }
 
 .action p.larger {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 /* ACTIONS GRID */
 .wrapper-action-grid .action {
     display: inline-block;
-    width: calc(50% - 4.2em);
-    margin: 1em 2em;
+    width: calc(50% - 4.2rem);
+    margin: 1rem 2rem;
     vertical-align: top;
 }
 
@@ -949,7 +949,7 @@ div.featured {
     /* auto-width column children*/
     display: flex;
     flex-direction: row;
-    gap: 1em;
+    gap: 1rem;
 }
 
 .block {
@@ -959,7 +959,7 @@ div.featured {
     margin: 0 auto;
     padding: 20px;
     border: 3px solid var(--fg);
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
     margin-bottom: 20px;
     box-shadow: var(--aside-shadow);
 }
@@ -970,12 +970,12 @@ div.featured {
 
 .join-left {
     width: 40%;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .join-right {
     width: 60%;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 /* MOBILE STYLES */
@@ -1015,7 +1015,7 @@ div.featured {
 
 @media only screen and (max-width: 650px) {
     .wrapper-full {
-        margin: 0 1em;
+        margin: 0 1rem;
         width: auto;
     }
 }
@@ -1032,18 +1032,18 @@ div.featured {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.6em;
+    gap: 0.6rem;
 }
 
 .socials-wrapper-centered {
     align-items: center;
     justify-content: center;
-    gap: 0.5em;
+    gap: 0.5rem;
 }
 
 .social-icon {
     opacity: 1;
-    height: 1.5em;
+    height: 1.5rem;
     vertical-align: bottom;
     /* transition: all steps(5, end) 1.1s; */
 }
@@ -1051,7 +1051,7 @@ div.featured {
 .social-icon-hover {
     opacity: 0;
     display: block;
-    height: 1.5em;
+    height: 1.5rem;
 
     position: absolute;
     transform: translateY(-100%);
@@ -1081,8 +1081,8 @@ div.featured {
    HEADER LINK
    =============== */
 .header-copy {
-    height: 0.7em;
-    width: 1em;
+    height: 0.7rem;
+    width: 1rem;
     position: absolute;
     opacity: 0;
     display: inline;
@@ -1131,8 +1131,8 @@ div.featured {
     color: #505050;
     background-color: var(--bg2);
     text-align: center;
-    font-size: 1em;
-    padding: 1em;
+    font-size: 1rem;
+    padding: 1rem;
 }
 
 .site-foot p {
@@ -1150,7 +1150,7 @@ div.featured {
 }
 
 .too-small {
-    font-size: 0.8em;
+    font-size: 0.8rem;
 }
 
 .break-anywhere {
