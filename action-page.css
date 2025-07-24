@@ -3,20 +3,20 @@
  * */
 
 .action-icon {
-    height: 1em;
+    height: 1rem;
     vertical-align: bottom;
-    margin-right: 0.5em;
+    margin-right: 0.5rem;
 }
 
 .action {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 1em;
+    margin-top: 1rem;
 }
 
 .action .buttons {
-    margin-top: 1.5em;
+    margin-top: 1.5rem;
 }
 
 .action p.smaller {
@@ -25,35 +25,35 @@
 
 /* Campaigns */
 .campaign {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
     position: relative;
     z-index: 2;
     border: var(--aside-border);
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
     width: 80%;
 }
 .campaign:last-child {
-	margin-bottom: 3em;
+	margin-bottom: 3rem;
 }
 
 .campaign-inner {
-    padding: 1.5em 1.2em;
+    padding: 1.5rem 1.2rem;
     position: relative;
     z-index: 2;
 }
 
 .campaign h2 {
-    margin: 0.2em 0 0.5em;
+    margin: 0.2rem 0 0.5rem;
 }
 
 .campaign h3 {
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
 }
 
 .campaign .content {
     display: flex;
     flex-direction: row;
-    gap: 2em;
+    gap: 2rem;
 }
 
 .campaign .description {
@@ -67,7 +67,7 @@
 }
 
 .action-wrapper {
-    width: calc(50% - 3em);
+    width: calc(50% - 3rem);
 }
 
 .campaign.danaher {
@@ -91,7 +91,7 @@
     .campaign {
         width: 90%;
         margin: auto auto;
-        margin-bottom: 0.5em;
+        margin-bottom: 0.5rem;
     }
 
     .campaign .content {
@@ -104,7 +104,7 @@
     }
 
     .description a {
-        margin-top: 0.5em;
+        margin-top: 0.5rem;
     }
 
     .action-wrapper {
