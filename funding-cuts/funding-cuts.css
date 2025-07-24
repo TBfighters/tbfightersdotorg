@@ -3,12 +3,12 @@ body {
 }
 
 h1, h2 {
-    font-size: 4em;
+    font-size: 4rem;
 }
 
 #top {
-    --window-size: calc(100vh - (80px + 2em));
-    height: calc((100vh - (80px + 2em)) + (100vh * 2));
+    --window-size: calc(100vh - (80px + 2rem));
+    height: calc((100vh - (80px + 2rem)) + (100vh * 2));
     width: 100vw;
 }
 
@@ -24,19 +24,19 @@ h1, h2 {
 }
 
 .header {
-    height: 5em;
+    height: 5rem;
     width: 70%;
     color: var(--bg);
     margin: auto auto;
 }
 
 .header h2 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     background-color: var(--fg);
     width: 100%;
     height: fit-content;
     text-align: center;
-    padding: 1em 2em;
+    padding: 1rem 2rem;
     z-index: 3;
     position: relative;
 }
@@ -109,7 +109,7 @@ h1, h2 {
 /* -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0); */
 
 .header.one {
-    padding-top: calc(50vh - (80px + 5em));
+    padding-top: calc(50vh - (80px + 5rem));
 }
 
 .header.two {
@@ -156,8 +156,8 @@ h1, h2 {
     }
 
     .header h2 {
-        padding: 1em 1em;
-        font-size: 2em;
+        padding: 1rem 1rem;
+        font-size: 2rem;
     }
 
     .boxes {
@@ -209,13 +209,13 @@ h1, h2 {
 
 #under-threat .wrapper,
 #take-action .wrapper {
-    padding: 5em 0;
+    padding: 5rem 0;
     width: 70%;
     max-width: unset;
 }
 
 #the-super-bug .wrapper {
-    padding: 5em 0;
+    padding: 5rem 0;
     padding-bottom: 1px;
     width: 70%;
     max-width: unset;
@@ -227,7 +227,7 @@ h1, h2 {
 
 #under-threat p,
 #the-super-bug p {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 #under-threat::before {
@@ -294,7 +294,7 @@ h1, h2 {
 
 .content {
     background-color: var(--fg);
-    padding: 1em 1em;
+    padding: 1rem 1rem;
 }
 
 #the-super-bug h2,
@@ -307,17 +307,17 @@ h1, h2 {
 .combo {
     display: flex;
     flex-direction: row;
-    padding-bottom: 5em;
-    padding-top: 5em;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
 }
 
 .largest {
     position: absolute;
-    font-size: 30em;
+    font-size: 30rem;
     color: var(--fg);
     font-weight: 700;
-    top: -0.2em;
-    right: -0.1em;
+    top: -0.2rem;
+    right: -0.1rem;
     z-index: 1;
 }
 
@@ -353,7 +353,7 @@ h1, h2 {
 }
 
 #last {
-    padding-bottom: 10em;
+    padding-bottom: 10rem;
     position: relative;
 }
 
@@ -392,7 +392,7 @@ h1, h2 {
     }
 
     .largest {
-        right: -0.3em;
+        right: -0.3rem;
     }
 
     .blocks .content {
@@ -404,7 +404,7 @@ h1, h2 {
     }
 
     #second {
-        padding-top: 15em;
+        padding-top: 15rem;
     }
 
 
@@ -444,22 +444,22 @@ h1, h2 {
 
 @media only screen and (max-width: 768px) {
     .largest {
-        font-size: 20em;
+        font-size: 20rem;
         /* top: 17%; */
         /* right: 0%; */
-        top: 1em;
-        right: -0.1em;
+        top: 1rem;
+        right: -0.1rem;
         rotate: 180deg;
         /* display: none; */
     }
 
     #first {
-        padding-bottom: 10em;
+        padding-bottom: 10rem;
     }
 
     #graph {
         background-position-x: right;
-        background-position-y: 3em;
+        background-position-y: 3rem;
         background-image: url(../img/funding-cuts/tb-graph-mobile.jpg);
     }
 
