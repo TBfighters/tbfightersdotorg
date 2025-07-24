@@ -15,9 +15,9 @@
 	padding: 20px;
 	background: var(--bg);
 	border: 2px solid var(--accent-bg);
-	border-radius: 0.3em;
-	width: 20em;
-	height: 20em;
+	border-radius: 0.3rem;
+	width: 20rem;
+	height: 20rem;
 	margin: auto;
 	position: absolute;
 	top: 0;
@@ -29,7 +29,7 @@
 }
 
 .popup-content button {
-	margin-left: 0.0em
+	margin-left: 0
 }
 
 #close:after {
@@ -40,7 +40,7 @@
 	background: none;
 	border: none;
 	color: #121212;
-	font-size: 1.5em;
+	font-size: 1.5rem;
 	width: unset;
 	padding: unset;
 	transform-origin: top right;
