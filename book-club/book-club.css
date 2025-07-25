@@ -8,12 +8,16 @@
 
 .book {
     max-width: calc(25% - 2%);
-    padding-bottom: 4%;
 }
 
 @media only screen and (max-width: 992px) {
     .book {
         max-width: calc(50% - 2%);
+        padding-bottom: 4%;
+    }
+
+    .book:nth-child(3), .book:nth-child(4) {
+        padding-bottom: 0;
     }
 }
 
