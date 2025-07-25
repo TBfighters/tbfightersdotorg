@@ -4,7 +4,7 @@
 
 .container-timeline .wrapper-full {
 	display: flex;
-	gap: 2em;
+	gap: 2rem;
 	flex-direction: row;
 }
 
@@ -12,8 +12,8 @@
 	width: 20%;
 }
 .container-timeline .date h2 {
-	font-size: 1.5em;
-	line-height: 1.5em;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
 }
 
 .container-timeline .item {
@@ -32,7 +32,7 @@
 	.container-timeline .wrapper-full,
 	.container-timeline:nth-child(odd) .wrapper-full {
 		flex-direction: column;
-		gap: 0em;
+		gap: 0rem;
 	}
 
 	.container-timeline .date {

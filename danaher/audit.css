@@ -4,9 +4,9 @@
 }
 
 #counter {
-    --height: 15em;
+    --height: 15rem;
     --border: 20px;
-    --gap: 0.2em;
+    --gap: 0.2rem;
 
     display: flex;
     gap: var(--gap);
@@ -14,8 +14,8 @@
     width: fit-content;
 
     /* background: var(--fg); */
-    /* padding: 1em 2em; */
-    margin-bottom: 1.5em;
+    /* padding: 1rem 2rem; */
+    margin-bottom: 1.5rem;
     border-radius: 20px;
 }
 
@@ -28,19 +28,19 @@
 }
 
 .wrapper-counter {
-    margin-top: 2em;
-    padding: 1em 2em;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
     border: 3px solid var(--fg);
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
     box-shadow: var(--aside-shadow);
 }
 
 .wrapper-counter #counter {
-    --height: 10em;
+    --height: 10rem;
 }
 
 .wrapper-counter .circles .circle {
-    margin-bottom: calc(0.5em * (1/3));
+    margin-bottom: calc(0.5rem * (1/3));
 }
 
 .wrapper-counter .number-inner .text {
@@ -69,9 +69,9 @@
 .circles .circle {
     background: var(--fg);
     border-radius: 100%;
-    height: 0.75em;
-    width: 0.75em;
-    margin: 0.5em 0.5em;
+    height: 0.75rem;
+    width: 0.75rem;
+    margin: 0.5rem 0.5rem;
 }
 
 .number-inner .text {
@@ -85,13 +85,13 @@
 }
 
 #action-heading {
-    padding-bottom: 0.5em
+    padding-bottom: 0.5rem
 }
 
 
 @media only screen and (max-width: 768px) {
     #counter {
-        --height: 10em;
+        --height: 10rem;
         --border: calc(20px * (2/3));
     }
 
@@ -101,10 +101,10 @@
     }
 
     .circles .circle {
-        margin-bottom: calc(0.5em * (1/3));
+        margin-bottom: calc(0.5rem * (1/3));
     }
 
     .wrapper-counter .button {
-        padding: 0.7em 0.9em;
+        padding: 0.7rem 0.9rem;
     }
 }
