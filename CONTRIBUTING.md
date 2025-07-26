@@ -11,13 +11,13 @@ The simpliest way to add a new page is to copy an existing one, make any necessa
 
 Please keep javascript to a minimum and when you do use it, use `<noscript>` tags to replace functionality as best as possible and/or inform the user.
 
-### Mobile
+### Accessibility and Mobile
 
-Mobile users should be treated just as important as desktop users because they make up most of the trafic! Please do everything you can to make the mobile experiance as good as the desktop one.
+We strive for WCAG 2.1 AA (AAA whenever possible) compliance for our website including alt text, keyboard accessibility, nostyle compatibility, and high contrast. The mobile website is our main priority and should replicate the desktop experience as much as possible. Standard mobile breakpoints and constrast compliant colors are listed further down in this documentation.
 
 ## Submitting a PR
 
-Whenever you submit a pr, please notify us in the [thread](https://discord.com/channels/252701351786577920/1149204674390536262) on discrod!
+Whenever you submit a PR, please notify us in the [thread](https://discord.com/channels/252701351786577920/1149204674390536262) on discord!
 
 ## Automations
 > [!note]
@@ -46,3 +46,41 @@ To update the footers, change the [./update-action/footer.html](./update-action/
 ### Metadata
 
 To update common metadata, change the [./update-action/metadata.html](./update-action/metadata.html) file and push to a branch. A github action will run and update the headers across all files.
+
+## Standardization References
+
+References for developers on colors, font size, and other styles.
+
+### Colors
+
+`#FCF3E3` | Primary background/white replacement | css var `--bg`
+`#121212` | Primary text/black replacement | css var `--fg`
+`#BC1C1A` | Primary red accent | css var `--accent-bg`
+`#FDBF4A` | Secondary yellow accent | css var `--accent-yellow`
+`#003049` | Secondary navy blue accent | css var `--accent-blue`
+`#42AA8B` | Secondary green accent | css var `--accent-green`
+`#1E91CE` | Secondary light blue accent | css var `--accent-light-blue`
+ **Special use colors**
+`#D7211E`: Primary red accent for use on black/foreground color
+`#DDDAD4`: Alternate table row background (tinted light grey)
+
+### Mobile breakpoints and default sizing
+
+For each breakpoint, information is listed as font size / line height, if applicable. Standard font size (based on 16px brower default) in parentheses.
+
+**Maximum desktop breakpoint: `min-width: 1440px``**
+*(font sizes listed as* element/selector : font size / line height*)*
+#main: 1.25rem (20px) / 1.5rem (24px)
+`.larger`: 1.375rem (22px) / 1.75rem (28px)
+`.smaller`: 1rem (16px) / 1.25rem (20px)
+`h1`: 3.375rem (54px)
+`h2`: 2.5rem (40px)
+`h3`: 2.0rem (32px)
+`h4`: 1.5rem (24px)
+`h5`: 1.25rem (20px)
+
+Minor breakpoint for some columned boxes: `min-width: 1200px`
+Tablet breakpoint: `min-width: 1024px`
+Large mobile breakpoint: `min-width: 768px`
+**Minimum mobile breakpoint: `min-width: 650px`**
+All fonts shift down one size; most margins/paddings remain the same.

@@ -1,13 +1,10 @@
-/*
- * CSS ONLY FOR THE TIMELINE PAGE
- * */
+/* TIMELINE PAGE STYLES */
 
 .container-timeline .wrapper-full {
 	display: flex;
 	gap: 2rem;
 	flex-direction: row;
 }
-
 .container-timeline .date {
 	width: 20%;
 }
@@ -15,31 +12,23 @@
 	font-size: 1.5rem;
 	line-height: 1.5rem;
 }
-
 .container-timeline .item {
 	width: 90%;
 }
-
 .container-timeline:nth-child(even) {
 	background-color: var(--bg2);
 }
-
-
-/* MOBILE STYLES */
+/* Mobile breakpoints */
 
 @media only screen and (max-width: 900px) {
-
-	.container-timeline .wrapper-full,
-	.container-timeline:nth-child(odd) .wrapper-full {
+	.container-timeline .wrapper-full {
 		flex-direction: column;
 		gap: 0rem;
 	}
-
 	.container-timeline .date {
 		width: 100%;
 		text-align: left;
 	}
-
 	.container-timeline .item {
 		width: 100%;
 	}

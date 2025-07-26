@@ -111,7 +111,7 @@ h3 {
 	justify-content: center;
 }
 
-.secondary img:not(.action-icon) {
+.secondary img:not(.icon) {
 	height: 7em;
 	scale: 250%;
 	margin: auto;
