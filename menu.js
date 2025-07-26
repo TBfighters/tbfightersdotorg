@@ -37,9 +37,12 @@ if (mobile) {
 		console.log("first " + !event.target.matches(".dropdown"))
 		console.log("second " + !event.target.matches("#hamburger-button"))
 		if (!document.getElementsByClassName("site-menu")[0].contains(event.target) && !event.target.matches("#hamburger-button")) {
-			toggleButton.classList.remove('active');
-			document.querySelector(".site-menu ul").classList.add("active")
-			event.preventDefault()
+			if (toggleButton.classList.contains("active")) {
+				toggleButton.classList.remove('active');
+				document.querySelector(".site-menu ul").classList.add("active")
+				event.preventDefault()
+
+			}
 		}
 	}
 } else {
