@@ -27,7 +27,7 @@
 }
 #hero h1 {
     text-transform: uppercase;
-    font-size: 4.7rem;
+    font-size: 5rem;
 }
 #hero .hero-left {
     z-index: 0;
@@ -136,7 +136,7 @@
 }
 .campaign .buttons {
     font-size: 1.125rem;	
-    margin-top: 0.675rem;
+    margin-top: auto; /* keep buttons on bottom of box */
 }
 .campaign#danaher {
     box-shadow: var(--aside-shadow-lblue);

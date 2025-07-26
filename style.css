@@ -127,7 +127,7 @@ body {
     background-color: var(--fg);
 }
 .page-title a img {
-    height: calc(1.1em);
+    height: 1em;
     background: var(--accent-bg);
 }
 .page-title .black-highlight {

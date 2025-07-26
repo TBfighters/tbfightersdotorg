@@ -53,34 +53,33 @@ References for developers on colors, font size, and other styles.
 
 ### Colors
 
-`#FCF3E3` | Primary background/white replacement | css var `--bg`
-`#121212` | Primary text/black replacement | css var `--fg`
-`#BC1C1A` | Primary red accent | css var `--accent-bg`
-`#FDBF4A` | Secondary yellow accent | css var `--accent-yellow`
-`#003049` | Secondary navy blue accent | css var `--accent-blue`
-`#42AA8B` | Secondary green accent | css var `--accent-green`
-`#1E91CE` | Secondary light blue accent | css var `--accent-light-blue`
+- `#FCF3E3` | Primary background/white replacement | css var `--bg`
+- `#121212` | Primary text/black replacement | css var `--fg`
+- `#BC1C1A` | Primary red accent | css var `--accent-bg`
+- `#FDBF4A` | Secondary yellow accent | css var `--accent-yellow`
+- `#003049` | Secondary navy blue accent | css var `--accent-blue`
+- `#42AA8B` | Secondary green accent | css var `--accent-green`
+- `#1E91CE` | Secondary light blue accent | css var `--accent-light-blue`
  **Special use colors**
-`#D7211E`: Primary red accent for use on black/foreground color
-`#DDDAD4`: Alternate table row background (tinted light grey)
+- `#D7211E` | Primary red accent for use on black/foreground color | css var `--accent-fg`
+- `#DDDAD4` | Alternate table row background (tinted light grey) | css var `--bg2`
 
 ### Mobile breakpoints and default sizing
 
 For each breakpoint, information is listed as font size / line height, if applicable. Standard font size (based on 16px brower default) in parentheses.
 
-**Maximum desktop breakpoint: `min-width: 1440px``**
+**Maximum desktop breakpoint: min-width: 1440px**\
 *(font sizes listed as* element/selector : font size / line height*)*
-#main: 1.25rem (20px) / 1.5rem (24px)
-`.larger`: 1.375rem (22px) / 1.75rem (28px)
-`.smaller`: 1rem (16px) / 1.25rem (20px)
-`h1`: 3.375rem (54px)
-`h2`: 2.5rem (40px)
-`h3`: 2.0rem (32px)
-`h4`: 1.5rem (24px)
-`h5`: 1.25rem (20px)
+- `#main`: 1.25rem (20px) / 1.5rem (24px)
+- `.larger`: 1.375rem (22px) / 1.75rem (28px)
+- `.smaller`: 1rem (16px) / 1.25rem (20px)
+- `h1`: 3.375rem (54px)
+- `h2`: 2.5rem (40px)
+- `h3`: 2.0rem (32px)
+- `h4`: 1.5rem (24px)
+- `h5`: 1.25rem (20px)
 
-Minor breakpoint for some columned boxes: `min-width: 1200px`
-Tablet breakpoint: `min-width: 1024px`
-Large mobile breakpoint: `min-width: 768px`
-**Minimum mobile breakpoint: `min-width: 650px`**
-All fonts shift down one size; most margins/paddings remain the same.
+Minor breakpoint for some columned boxes: min-width: 1200px\
+Tablet breakpoint: min-width: 1024px\
+Large mobile breakpoint: min-width: 768px\
+**Minimum mobile breakpoint: min-width: 650px** (all fonts shift down one size; most margins/paddings remain the same)
