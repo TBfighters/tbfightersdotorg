@@ -70,14 +70,14 @@ For each breakpoint, information is listed as font size / line height, if applic
 
 **Maximum desktop breakpoint: min-width: 1440px**\
 *(font sizes listed as* element/selector : font size / line height*)*
-- `#main`: 1.25rem (20px) / 1.5rem (24px)
-- `.larger`: 1.375rem (22px) / 1.75rem (28px)
+- `#main`: 1.5rem (24px) / 1.75rem (28px)
+- `.larger`: 1.75rem (28px) / 1.85rem (29.6px)
 - `.smaller`: 1rem (16px) / 1.25rem (20px)
 - `h1`: 3.375rem (54px)
-- `h2`: 2.5rem (40px)
-- `h3`: 2.0rem (32px)
-- `h4`: 1.5rem (24px)
-- `h5`: 1.25rem (20px)
+- `h2`: 2.75rem (44px)
+- `h3`: 2.25rem (36px)
+- `h4`: 2rem (32`px)
+- `h5`: 1.75rem (28px)
 
 Minor breakpoint for some columned boxes: min-width: 1200px\
 Tablet breakpoint: min-width: 1024px\

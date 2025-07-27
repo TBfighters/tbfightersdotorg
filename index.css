@@ -62,12 +62,15 @@
     height: auto;
     background: var(--bg);
     margin: auto;
-    padding: 2rem 3rem;
+    padding: 3rem 4rem;
     border-radius: 0.5rem;
     border: var(--aside-border);
 }
 .info-sections section {
     padding: 2rem 0;
+}
+.info-sections section#second {
+    padding-bottom: 2.7rem;
 }
 .info-second section:last-child {
 	padding-bottom: 4rem;
@@ -128,14 +131,14 @@
     width: 33.33%;
     border: var(--aside-border);
     border-radius: 0.5rem;
-    padding: 1.2rem 0.8rem;
+    padding: 1.6rem 1.2rem;
 }
 .campaign h3 {
     margin-top: 0.5rem;
 	margin-bottom: 1.125rem;
 }
 .campaign .buttons {
-    font-size: 1.125rem;	
+    font-size: 1.125rem;
     margin-top: auto; /* keep buttons on bottom of box */
 }
 .campaign#danaher {
@@ -175,7 +178,7 @@
 }
 
 /* Mobile breakpoints */
- 
+
 @media only screen and (max-width: 1440px) {
     #hero h1 {
         font-size: 3rem;
