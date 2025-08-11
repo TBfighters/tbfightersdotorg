@@ -1,161 +1,66 @@
-/*
- * CSS ONLY FOR THE ACTION PAGE
- * */
+/* ACTION PAGE STYLES */
 
-/* ===============
-   SOCIAL MEDIA POSTS
-   =============== */
-
-.post {
+/* Campaign boxes */
+.campaign {
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
+    border: var(--aside-border);
+    border-radius: 0.5rem;
+    width: 90%;
+	max-width: 1200px;
+}
+.campaign:last-child {
+	margin-bottom: 3rem;
+}
+.campaign h2 {
+    margin-top: .25rem;
+}
+.campaign .content {
+    padding: 1.5rem 1.2rem;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.campaign .description {
+    max-width: 50%;
     display: flex;
     flex-direction: column;
-
-    margin: 0 5px 0.6em;
-    padding: 20px;
-    padding-bottom: 5px;
-    border: 2px solid var(--bg2);
-    font-size: 20px;
-    line-height: 1.1;
-    color: var(--fg);
-    font-family: "Atkinson Hyperlegible";
-    resize: none;
 }
-
-.post p:first-child {
-    margin-bottom: 0;
-}
-
-.post p:nth-child(2) {
-    font-size: 0.7em;
-}
-
-.post div {
-    margin-top: auto;
-}
-
-.post button,
-.post .button,
-.post-gallery button,
-.post-gallery .button {
-    font-size: 0.7em;
-}
-
-/* POST GALLERY */
-.wrapper-columns .post {
-    width: 33.33%;
-    /* padding-bottom: 1em; */
-}
-
-.post-gallery {
-    vertical-align: top;
-    margin: 0.5em auto 1em;
-
-    background-color: var(--bg2);
-    padding: 10px 15px;
-    margin-bottom: 0.4em;
-    box-shadow: var(--aside-shadow);
-}
-
-.post-gallery div:first-child {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    height: 21em;
-    justify-content: center;
-}
-
-.post-gallery div:nth-child(2) {
-    width: 80%;
-    max-width: 600px;
-}
-
-.post-gallery img {
-    max-height: 20em;
+.campaign .content-full .description {
     max-width: 100%;
-    vertical-align: top;
-    box-shadow: var(--aside-shadow);
+}
+.campaign.danaher {
+    box-shadow: var(--aside-shadow-lblue);
+}
+.campaign.funding-cuts {
+    box-shadow: var(--aside-shadow-green);
+}
+.campaign.hill-day {
+    box-shadow: var(--aside-shadow-yellow);
+}
+/* CTA inner section */
+.action-wrapper {
+    width: calc(50% - 3rem);
+}
+.action {
+    width: 100%;
+    margin-top: 1rem;
 }
 
-/* MOBILE STYLES */
+/* Mobile breakpoints */
 
-@media only screen and (max-width: 1320px) {
-    .post p {
-        font-size: 18px;
+@media only screen and (max-width: 992px) {
+    .campaign .content {
+        flex-direction: column;
+        gap: 0;
     }
-}
-
-@media only screen and (max-width: 900px) {
-    .post-gallery img {
+    .campaign .description {
         max-width: 100%;
-        padding: 0.33em;
     }
-
-    .post-gallery div:nth-child(2) {
+    .action-wrapper {
         width: 100%;
     }
 }
-
-@media only screen and (max-width: 768px) {
-    .wrapper-columns .post {
-        width: inherit;
-    }
-}
-
-/* ==== END OF SOCIAL MEDIA POSTS ==== */
-
-
-/* ===============
-   ACTION GRID
-   =============== */
-.expand-actions-arrow {
-    height: 0.8em;
-    filter: contrast(0.85);
-    rotate: 180deg;
-    transition: ease-in-out 0.2s all;
-}
-
-.expand-actions-arrow-up {
-    rotate: 0deg;
-}
-
-.expand-actions-arrow:hover {
-    cursor: pointer;
-}
-
-@keyframes slide-in {
-    0% {
-        margin-top: -10px;
-        opacity: 0;
-    }
-
-    100% {
-        margin-top: 0px;
-        opacity: 1;
-    }
-}
-
-@keyframes slide-out {
-    0% {
-        margin-top: 0px;
-        opacity: 1;
-    }
-
-    100% {
-        margin-top: -10px;
-        opacity: 0;
-    }
-}
-
-.show-actions {
-    display: block;
-    animation: slide-in 0.3s linear 0s;
-}
-
-.hide-actions {
-    animation: slide-out 0.3s linear 0s;
-    opacity: 0;
-    margin-top: -10px;
-}
-
-/* ==== END OF ACTION GRID ==== */

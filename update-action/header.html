@@ -1,18 +1,64 @@
-<!--BELOW THIS GETS COPIED TO ALL PAGES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->
 <header id="site-head"><a href="#main" class="skip">Skip to main content</a>
 	<div class="wrapper-head">
-		<h1 class="page-title">
-			<a href="{prefix}index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
-		</h1>
+
+		<div class="page-title">
+			<a href="{prefix}index.html"><img src="{prefix}img/simplified-hourglass.png" alt="hourglass"><span
+					class="black-highlight">TB</span>Fighters</a>
+		</div>
 		<a id="hamburger-button" href="#" title="menu"></a>
 		<nav class="site-menu">
 			<ul class="active">
-				<li><a href="{prefix}about.html">About Us</a></li>
-				<li><a href="{prefix}timeline.html">News &amp; Timeline</a></li>
-				<li><a href="{prefix}resources.html">Resources</a></li>
-				<li><a href="{prefix}action.html">Take Action</a></li>
+				<li class="dropdown lined" id="nav-about">
+					<div>
+						<div class="mobile"></div>
+						<a href="{prefix}about.html" class="title">About Us</a><button
+							aria-label="Open menu About us" class="dropdown-button"><img
+								src="{prefix}img/chevron-white.svg"
+								alt="dropdown arrow"></button>
+					</div>
+					<ul class="dropdown-content">
+						<li><a href="{prefix}book-club" class="title">TBReaders Bookclub</a>
+						</li>
+						<li><a href="{prefix}timeline.html" class="title">News & Timeline</a>
+						</li>
+					</ul>
+				</li>
+				<li class="non-dropdown lined" id="nav-learn-more"><a class="title"
+						href="{prefix}resources.html">About TB</a></li>
+				<li class="dropdown lined" id="nav-take-action">
+					<div>
+						<div class="mobile"></div>
+						<a class="title" href="{prefix}action.html">Take Action</a><button
+							aria-label="Open menu Take Action" class="dropdown-button"><img
+								src="{prefix}img/chevron-white.svg"
+								alt="dropdown arrow"></button>
+					</div>
+					<ul class="dropdown-content">
+						<li><a href="{prefix}danaher/" class="title">Affordable Testing</a></li>
+						<li><a href="{prefix}funding-cuts/" class="title">Funding Cuts</a></li>
+						<li><a href="{prefix}hill-day/" class="title">US Hill Day</a></li>
+						<li><a href="{prefix}templates/" class="title">Templates</a></li>
+					</ul>
+				</li>
+				<li class="non-dropdown socials" id="nav-socials">
+					<p class="socials-wrapper">
+						<a href="https://newsletter.tbfighters.org/subscribe" target="_blank"><img
+								src="{prefix}img/socials/newsletter-nav.svg" alt="Newsletter" aria-label="Newsletter" class="social-icon"><img
+								src="{prefix}img/socials/newsletter-nav-hover.svg" alt="" class="social-icon-hover"></a>
+						<a href="https://bsky.app/profile/tbfighters.org" target="_blank"><img
+								src="{prefix}img/socials/bsky-nav.svg" alt="Bluesky" aria-label="Bluesky" class="social-icon"><img
+								src="{prefix}img/socials/bsky-nav-hover.svg" alt="" class="social-icon-hover"></a>
+						<a href="https://www.instagram.com/tbfighters" target="_blank"><img
+								src="{prefix}img/socials/insta-nav.svg" alt="Instagram" aria-label="Instagram" class="social-icon"><img
+								src="{prefix}img/socials/insta-nav-hover.svg" alt="" class="social-icon-hover"></a>
+						<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
+								src="{prefix}img/socials/youtube-nav.svg" alt="YouTube" aria-label="Youtube" class="social-icon"><img
+								src="{prefix}img/socials/youtube-nav-hover.svg" alt="" class="social-icon-hover"></a>
+					</p>
+				</li>
 			</ul>
 		</nav>
+
 	</div>
 </header>
-<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
+

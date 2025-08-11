@@ -1,16 +1,9 @@
-section {
-	padding-top: 40px;
-	padding-bottom: 20px;
-	max-width: 900px;
-	margin: 0 auto;
-}
-
-button {
+button:not(.dropdown-button) {
 	display: inline-block;
-	-webkit-border-radius: 0.5em;
-	-moz-border-radius: .5em;
-	border-radius: 0.5em;
-	padding: 0.6em 1em;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	border-radius: 0.5rem;
+	padding: 0.6rem 1rem;
 	text-decoration: none;
 
 	background-color: var(--accent-bg);
@@ -19,13 +12,13 @@ button {
 	margin: 0.5em 0;
 	transition: all 0.2s ease-in-out;
 
-	margin: 0.125em 0.5em;
+	margin: 0.125rem 0.5rem;
 	width: 200px;
-	padding: 0.5em 0.8em;
+	padding: 0.5rem 0.8rem;
 	font-weight: 700;
 }
 
-button:hover {
+button:hover:not(.title) {
 	background-color: var(--fg);
 	border-color: var(--fg);
 }
@@ -44,7 +37,7 @@ button:hover {
 img.letter {
 	border: 2px solid var(--accent-bg);
 	margin: 20px;
-	box-shadow: 0.1em 0.1em 1em rgb(0 0 0 / 60%);
+	box-shadow: 0.1rem 0.1rem 1rem rgb(0 0 0 / 60%);
 }
 
 /* MOBILE STYLES */
@@ -61,6 +54,6 @@ img.letter {
 	}
 
 	.block button {
-		margin: 0.125em 0.125em;
+		margin: 0.125rem 0.125rem;
 	}
 }

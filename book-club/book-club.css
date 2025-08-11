@@ -25,7 +25,7 @@
     width: 100%;
     border: 3px solid var(--bg2);
     border-radius: 5px;
-    box-shadow: var(--aside-shadow);
+    box-shadow: var(--regular-shadow);
 }
 
 #prev .book img {
@@ -37,11 +37,11 @@
 }
 
 .book h4 {
-    margin-bottom: 0.1em;
+    margin-bottom: 0.1rem;
 }
 
 .book .date {
-    font-size: 1.2em;
+    font-size: 1.2rem;
 }
 
 
@@ -61,9 +61,9 @@
     max-width: calc((100%/3) - 2%);
     border-radius: 5px;
     padding: 20px;
-    background-color: var(--bg2);
+    background-color: var(--bg);
     margin-bottom: 20px;
-    box-shadow: var(--aside-shadow);
+    border: var(--aside-border);
 }
 
 .space a {
@@ -71,15 +71,15 @@
 }
 
 #discord {
-    border: 3px solid var(--accent-blue);
+    box-shadow: var(--aside-shadow-dblue);
 }
 
 #social {
-    border: 3px solid var(--accent-light-blue);
+    box-shadow: var(--aside-shadow-lblue);
 }
 
 #general {
-    border: 3px solid var(--accent-bg);
+    box-shadow: var(--aside-shadow);
 }
 
 @media only screen and (max-width: 992px) {

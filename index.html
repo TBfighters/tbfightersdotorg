@@ -1,263 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!--Meta tags-->
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!--Open Graph Tags-->
-		<meta property="og:site_name" content="TBFighters" />
-		<meta property="og:url" content="https://tbfighters.org" />
-		<meta property="og:type" content="website" />
-		<meta property="theme-color" content="#D7211E" />
-		<!-- Style Tags -->
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="libs/toastify/toastify.css">
-		<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-		<link rel="manifest" href="img/favicon/site.webmanifest">
-		<link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
-		<script src="menu.js" defer></script>
-		<script src="libs/toastify/toastify.js"></script>
-		<!-- Variable Tags -->
-		<meta name="robots" content="index, follow" />
-		<meta property="og:title" content="TBFighters | Putting People Over Profits" />
-		<meta property="og:image" content="https://tbfighters.org/img/og-image.jpg" />
-		<meta property="og:description" content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
-		<meta name="description" content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
 
-		<script src="./actions.js"></script>
-		<script src="audit-counter.js" defer></script>
-		<link rel="stylesheet" href="index.css" />
-		<link rel="stylesheet" href="audit.css" />
-		<title>TBFighters | Putting People Over Profits</title>
-	</head>
-	<body class="homepage">
-	<!--BELOW THIS GETS COPIED TO ALL PAGES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->
+<head>
+	<!--Meta tags-->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--Open Graph Tags-->
+	<meta property="og:site_name" content="TBFighters" />
+	<meta property="og:url" content="https://tbfighters.org" />
+	<meta property="og:type" content="website" />
+	<meta property="theme-color" content="#D7211E" />
+	<!-- Style Tags -->
+	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="libs/toastify/toastify.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+	<script src="menu.js" defer></script>
+	<script src="libs/toastify/toastify.js"></script>
+	<!-- Variable Tags -->
+	<meta name="robots" content="index, follow" />
+	<meta property="og:title" content="TBFighters" />
+	<meta property="og:image" content="https://tbfighters.org/img/og-image.jpg" />
+	<meta property="og:description"
+		content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
+	<meta name="description"
+		content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
+
+	<script src="./actions.js"></script>
+	<link rel="stylesheet" href="index.css" />
+	<title>TBFighters</title>
+</head>
+
+<body class="homepage">
 	<header id="site-head"><a href="#main" class="skip">Skip to main content</a>
 		<div class="wrapper-head">
-			<h1 class="page-title">
-				<a href="index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
-			</h1>
+	
+			<div class="page-title">
+				<a href="index.html"><img src="img/simplified-hourglass.png" alt="hourglass"><span
+						class="black-highlight">TB</span>Fighters</a>
+			</div>
 			<a id="hamburger-button" href="#" title="menu"></a>
 			<nav class="site-menu">
 				<ul class="active">
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="timeline.html">News &amp; Timeline</a></li>
-					<li><a href="resources.html">Resources</a></li>
-					<li><a href="action.html">Take Action</a></li>
+					<li class="dropdown lined" id="nav-about">
+						<div>
+							<div class="mobile"></div>
+							<a href="about.html" class="title">About Us</a><button
+								aria-label="Open menu About us" class="dropdown-button"><img
+									src="img/chevron-white.svg"
+									alt="dropdown arrow"></button>
+						</div>
+						<ul class="dropdown-content">
+							<li><a href="book-club" class="title">TBReaders Bookclub</a>
+							</li>
+							<li><a href="timeline.html" class="title">News & Timeline</a>
+							</li>
+						</ul>
+					</li>
+					<li class="non-dropdown lined" id="nav-learn-more"><a class="title"
+							href="resources.html">About TB</a></li>
+					<li class="dropdown lined" id="nav-take-action">
+						<div>
+							<div class="mobile"></div>
+							<a class="title" href="action.html">Take Action</a><button
+								aria-label="Open menu Take Action" class="dropdown-button"><img
+									src="img/chevron-white.svg"
+									alt="dropdown arrow"></button>
+						</div>
+						<ul class="dropdown-content">
+							<li><a href="danaher/" class="title">Affordable Testing</a></li>
+							<li><a href="funding-cuts/" class="title">Funding Cuts</a></li>
+							<li><a href="hill-day/" class="title">US Hill Day</a></li>
+							<li><a href="templates/" class="title">Templates</a></li>
+						</ul>
+					</li>
+					<li class="non-dropdown socials" id="nav-socials">
+						<p class="socials-wrapper">
+							<a href="https://newsletter.tbfighters.org/subscribe" target="_blank"><img
+									src="img/socials/newsletter-nav.svg" alt="Newsletter" aria-label="Newsletter" class="social-icon"><img
+									src="img/socials/newsletter-nav-hover.svg" alt="" class="social-icon-hover"></a>
+							<a href="https://bsky.app/profile/tbfighters.org" target="_blank"><img
+									src="img/socials/bsky-nav.svg" alt="Bluesky" aria-label="Bluesky" class="social-icon"><img
+									src="img/socials/bsky-nav-hover.svg" alt="" class="social-icon-hover"></a>
+							<a href="https://www.instagram.com/tbfighters" target="_blank"><img
+									src="img/socials/insta-nav.svg" alt="Instagram" aria-label="Instagram" class="social-icon"><img
+									src="img/socials/insta-nav-hover.svg" alt="" class="social-icon-hover"></a>
+							<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
+									src="img/socials/youtube-nav.svg" alt="YouTube" aria-label="Youtube" class="social-icon"><img
+									src="img/socials/youtube-nav-hover.svg" alt="" class="social-icon-hover"></a>
+						</p>
+					</li>
 				</ul>
 			</nav>
+	
 		</div>
 	</header>
-	<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
 	<main id="main">
-			<section id="top" class="container">
-				<div class="wrapper wrap-centered">
+		<section id="hero" class="container">
+			<div class="wrapper wrapper-columns">
+				<div class="hero-left">
+					<img src="./img/homepage/tb-bacetria-red.jpg" alt="">
+				</div>
+				<div class="hero-right">
 					<h1>
-						<span class="red">Danaher</span>, it's Time to&nbsp;put <span class="red">People</span><wbr /> over <span class="red">Profits</span>
+						Tuberculosis is Curable. <br />
+						<span class="yellow-highlight">Let's Fight&nbsp;It!</span>
 					</h1>
-					<div class="wrapper-columns intro">
-						<p>
-							Tuberculosis is curable, yet <strong>1.25 million people die</strong> of tuberculosis every year while <strong>Danaher grossly overcharges for diagnostic tests</strong> for the people who can least afford it.
+					<div class="featured">
+						<!-- featured Action Start -->
+						<p class="featured-head">
+							<img src="img/icons/book.svg" alt="book icon" class="icon">
+							<strong>Featured action:</strong>
 						</p>
-						<img src="img/hourglass.svg" alt="hourglass illustration with red sand and the letters T B in the top section" />
+						<p>
+							<a href="/book-club/">Join our book club!</a> We are currently reading Mountains Beyond Mountains, 
+							a great book that follows the late Doctor Paul Farmer and the team at Partners in Health in their relentless pursuit of lifesaving care for those with greatest need around the world. <a href="/book-club/">Read along with us!</a>
+						</p>
+						<div class="buttons">
+							<a href="https://tbfighter.link/tbreaders-server" class="button" target="_blank">Join the discord server</a>
+							<a href="/book-club/" class="button button-subtle" target="_blank">Whats this book club?</a>
+						</div>
+						<!-- featured Action End -->
 					</div>
 				</div>
-				<!--AUDIT COUNTER START-->
-			<!--	<div class="wrapper wrapper-counter"> -->
-			<!--		<h3>Days Since Danaher <span class="yellow-highlight">Promised an Audit</span>:</h3> -->
-			<!--		<noscript>
-			<!--			<span><i>Please enable javascript to get a accurate count.</i></span> -->
-			<!--		</noscript> -->
-			<!--		<div id="counter"> -->
-			<!--			<div class="number-outer"> -->
-			<!--				<div class="number-inner"> -->
-			<!--					<div class="circles"> -->
-			<!--						<div class="circle"></div> -->
-			<!--						<div class="circle"></div> -->
-			<!--					</div> -->
-			<!--					<div class="text"> -->
-			<!--						<span id="hundreds">0</span> -->
-			<!--					</div> -->
-			<!--				</div> -->
-			<!--			</div> -->
-			<!--			<div class="number-outer"> -->
-			<!--				<div class="number-inner"> -->
-			<!--					<div class="circles"> -->
-			<!--						<div class="circle"></div> -->
-			<!--						<div class="circle"></div> -->
-			<!--					</div> -->
-			<!--					<div class="text"><span id="tens">0</span></div> -->
-			<!--				</div> -->
-			<!--			</div> -->
-			<!--			<div class="number-outer"> -->
-			<!--				<div class="number-inner"> -->
-			<!--					<div class="circles"> -->
-			<!--						<div class="circle"></div> -->
-			<!--						<div class="circle"></div> -->
-			<!--					</div> -->
-			<!--					<div class="text"><span id="ones">0</span></div> -->
-			<!--				</div> -->
-			<!--			</div> -->
-			<!--		</div> -->
-			<!--		<div class="buttons"> -->
-			<!--			<a class="button" href="audit.html#action"><span class="larger">Take action</span></a> -->
-			<!--			<a class="button button-subtle" href="audit.html"><span class="larger">Learn more</span></a> -->
-			<!--		</div> -->
-			<!--	</div> -->
-				<!--AUDIT COUNTER END-->
-				<div class="wrapper wrapper-columns featured-columns">
-				 	<div>
-						<!-- featured Action Start -->
-						<img src="img/gavel.svg" alt="gavel icon" class="action-icon" style="margin-bottom: 0"><strong class="larger">FEATURED ACTION:</strong>
-						<br>
-						<div style="height: 0.5em;"></div>
-						<p>US: Congress is voting on a bill that will codify the <a href="funding-cuts/">foreign aid cuts</a>. We need your help to protect global public health. We have a short peiod of time to tell our Senate representatives that this is unacceptable. <a href="https://win.newmode.net/callaboutrescissions" target="_blank">Call now using PIH's call tool</a>, <a href="/templates/funding-cuts-us.html#email-template">email</a> or join <a href="https://tbfighter.link/calendar" target="_blank">group advocacy session.</a></p>
-						<!-- featured Action End -->
-				  	</div>
-				 	<div class="buttons" style="flex-wrap: wrap">
-				 		<a class="button" href="https://win.newmode.net/callaboutrescissions" target="_blank">Take action</a>
-				 		<a class="button button-subtle" href="https://www.politico.com/news/2025/06/03/white-house-asks-congress-to-codify-9-4b-in-doge-cuts-to-foreign-aid-npr-pbs-00382872" target="_blank">What funding is being cut?</a>
-				 	</div>
-				 </div>
-				<div class="wrapper wrap-centered">
-					<a href="#primer"><img src="img/arrow-down.svg" class="scroll-arrow" alt=""></a>
+			</div>
+		</section>
+		<div class="info-sections">
+			<section id="first">
+				<div class="wrapper">
+					<div class="content">
+						<img src="./img/homepage/tb-lungs-lblue.svg"
+							alt="illustration of lungs with an enlargement showing bacteria" class="image-right">
+						<h2>
+							Tuberculosis is the world's <span class="red">deadliest</span> infectious disease.
+						</h2>
+						<p>
+							In 2023, 10 million people were diagnosed with tuberculosis (TB), and
+							1.25 million people died of it, more than malaria, typhoid, and
+							war <em>combined</em>.
+						</p>
+						<p>
+							<strong><span class="red">Yet it’s fully curable, and has been for over seventy
+							years</span>. So why do we still let millions of
+							people die?</strong> Testing and treatment are prohibitively
+							expensive, and access to appropriate care is inequitably
+							distributed. One in four people with TB will never be diagnosed,
+							and one in three will never get treatment. <strong>It’s not a medical
+							mystery—it’s a human one.</strong>
+						</p>
+					</div>
 				</div>
 			</section>
-			<section id="primer" class="container">
+			<section id="second">
 				<div class="wrapper">
-					<h2>
-						Tuberculosis is the World's <span class="red">Deadliest</span> Infectious Disease.
-					</h2>
-					<p>
-						A total of 1.25 million people died from tuberculosis (TB) in 2023, making it the deadliest infectious disease worldwide...<wbr><strong>even though it's curable.</strong>
-					</p>
-					<p>
-						While an estimated 44 million lives were saved through TB diagnosis and treatment between 2010 and 2022, these resources are prohibitively expensive to the point that <strong>many who need them can’t afford it.</strong>
-					</p>
-					<p>
-						More than 2 in 5 patients with multidrug-resistant TB do not have access to proper testing to find out if their TB is a multidrug-resistant strain. As a result, over half of them end up receiving long, expensive treatments that won't even help.
-					</p>
+					<div class="content">
+						<h2>We are <span class="red">TBFighters</span></h2>
+						<p>
+							We are a community of Nerdfighters and global health
+							activists committed to fighting the structural causes of TB.
+						</p>
+						<p>
+							Through collaborations with global health organizations like
+							<a href="https://www.pih.org/" target="_blank">Partners
+							In Health</a>, <a href="https://www.msf.org/"
+							target="_blank" lang="fr">Médecins Sans Frontières</a>,
+							and <a href="https://www.wearetb.com/"
+							target="_blank">we are TB</a>, TBFighters has
+							advocated to lower the prices of and fund diagnostics
+							and treatments around the world. We work in community
+							to encourage governments and businesses to join us in
+							making TB care accessible to those who need it the most.
+							In all of our work, TBFighters always lead by following
+							and act with compassion.
+						</p>
+						<a href="/timeline.html" class="button button-subtle">What we've accomplished</a>
+					</div>
 				</div>
 			</section>
-			<section id="danaher" class="container">
-				<div class="wrapper">
-					<h2>Enter <span class="red">Danaher</span>.</h2>
-					<p>
-						Danaher is a large U.S. corporation that owns many smaller biotech companies, including Cepheid. Cepheid designs and manufactures diagnostic tests. Their MTB/RIF GeneXpert test determines whether someone has tuberculosis and whether it is resistant to one antibiotic, and their MTB/XDR test determines if the infection is extensively drug-resistant or not, enabling effective treatment.
+		</div>
+		<section id="statement">
+			<div class="wrapper">
+				<p class="desktop">We believe in a world where  <span
+						class="yellow-highlight">no&nbsp;one</span> dies of tuberculosis.</p>
+				<p class="mobile">We believe in a world where <span
+						class="yellow-highlight">no&nbsp;one</span> dies of TB.</p>
+			</div>
+		</section>
+		<section id="take-action" class="container">
+			<div class="wrapper">
+				<div class="centered">
+					<h2>Take <span class="red">Action</span></h2>
+				</div>
+				<div class="campaigns-wrapper">
+					<div class="campaign" id="danaher">
+						<div>
+							<h3><img src="./img/homepage/cartridge.svg" alt="Test cartridge icon" class="icon">Affordable Testing
+							</h3>
+							<p>Danaher, a biotech conglomerate, makes best-in-class, life-saving
+								TB tests, but they grossly overprice the tests for the
+								people who can least afford it.
+							</p>
+						</div>
+						<div class="buttons">
+							<a href="/danaher/#action" class="button">Tell Danaher it's Time
+								for $5</a>
+							<a href="/danaher/" class="button button-subtle">Show me
+								more</a>
+						</div>
+					</div>
+					<div class="campaign" id="funding-cuts">
+						<div>
+							<h3><img src="./img/homepage/apple.svg" alt="Apple and pill icon" class="icon">Funding
+								Cuts
+							</h3>
+							<p>Governments around the world are cutting billions in aid for
+								people suffering from TB, HIV, and malnutrition, putting
+								millions of lives in jeopardy.</p>
+						</div>
+						<div class="buttons">
+							<a href="funding-cuts/#take-action" class="button">Call your
+								representatives</a>
+							<a href="funding-cuts/" class="button button-subtle">Learn
+								more</a>
+						</div>
+					</div>
+					<div class="campaign" id="hill-day">
+						<div>
+							<h3><img src="./img/homepage/money.svg" alt="capitol building icon" class="icon">Hill Day</h3>
+							<p>Each year, TBFighters and our partners travel to ask our representatives for more funding and
+								attention for tuberculosis testing, treatment, and
+								research.</p>
+						</div>
+						<div class="buttons" id="campaign-smaller">
+							<a href="https://docs.google.com/forms/d/e/1FAIpQLSdzRRc9RiLAhFVQNeJ3dVELXDplJ4HaIAuvh9zIA8MYixvdCw/viewform" class="button" target="_blank">Join us in Ottawa, CA!</a>
+							<a href="https://www.pih.org/article/tb-hill-day-congress-advocacy-funding" class="button button-subtle" target="_blank">Relive US Hill Day</a>
+						</div>
 
-					</p>
-					<p>
-						GeneXpert tests give fast and accurate results without the need for a fully equipped laboratory, which theoretically makes them ideal for use in countries with limited health care infrastructure, where results could otherwise take days or weeks to arrive.
-					</p>
-					<p>
-						Additionally, last year Danaher agreed to lower the price of their basic tuberculosis test to $7.97, a price they claimed to be at-cost. And to back up their claim, they promised to release an independent third-party audit of the cost to produce their test!
-					</p>
-					<p>
-						Sounds great, right?
-					</p>
+					</div>
 				</div>
-			</section>
-			<section id="twist" class="container">
-				<div class="wrapper">
-					<h2><span class="red">Not</span> Quite...</h2>
-					<p>
-						Danaher uses what many call a “printer-ink” business model when it comes to the GeneXpert testing system. While a printer is usually sold for a reasonable price, the ink is often extremely expensive with a high profit margin. Danaher prices GeneXpert tests in a similar way.
-					</p>
-					<p>
-						The reusable machines used to process these tests are moderately priced, but the single-use Xpert test cartridges are extremely expensive. Even though Danaher has agreed to reduce the price of their standard TB cartridges from $10 to $8 for low- and middle-income countries, they have not published the results of any audit. Without this audit, the best information available shows that GeneXpert tests cost less than $5 to produce.
-					</p>
-				</div>
-			</section>
-			<section id="profits" class="container">
-				<div class="wrapper wrapper-right">
-					<h2><span class="red">Profits</span> Over People.</h2>
-					<p>
-						Xpert cartridges for extensively drug-resistant TB are still priced at $15, and tests for other diseases including HIV, hepatitis, Ebola, and HPV cost up to $20. This is much higher than the production costs calculated as part of independent research, and 1.5 times the median weekly wage in countries like Sierra Leone. While Danaher has procrastinated on increasing transparency for their pricing, GeneXpert tests are still priced far higher than many can afford.
-					</p>
-					<p>
-						<strong>We call on Cepheid and Danaher to prioritize people’s lives over maximizing profits by increasing transparency and fulfilling their commitment to an independent third party audit.</strong>
-					</p>
-				</div>
-			</section>
-			<section id="join" class="container">
-				<div class="wrapper">
-					<h2 class="action-head" id="take-action">Take <span class="red">Action</span>:
-						<div class="header-copy" id="take-action-header-copy" onclick="onclickButton(location.protocol + '//' + location.host + location.pathname + '#join')"><noscript><a href="#join"></a></noscript></div>
-					</h2>
-					<div class="wrapper">
-						<div class="wrapper-columns">
-							<div class="join-left">
-								<ul>
-									<li >
-										<strong>Post</strong> on social media using <em>#PeopleOverProfits</em> and <em>#TimeFor5</em>.
-									</li>
-									<li>
-										<strong>Contact</strong> Danaher at <a href="mailto:investor.relations@danaher.com">investor.relations<wbr>@danaher.com</a> or <a href="tel:+1-202-828-0850">+1-202-828-0850</a>.
-									</li>
-								</ul>
+				<div class="join-community">
+					<div class="centered">
+						<h2><span class="red">Join</span> our community</h2>
+					</div>
+					<div class="communities">
+						<div class="community-columns">
+							<div class="community">
+								<h3><img src="./img/socials/newsletter-hover.svg" alt="Email icon" class="icon"> TBFighters Newsletter</h3>
+								<p>Get all the latest TBFighting news! We’ll send you calls to
+									action and show you the real impact of your efforts.
+									Signing up for our newsletter is also a great way to
+									learn about special events, like our in-person advocacy
+									and book club livestreams with special guests!</p>
+								<a href="https://newsletter.tbfighters.org/subscribe"
+									class="button" target="_blank">Sign up for our
+									newsletter</a>
 							</div>
-							<div class="join-right">
-								 <div class="featured">
-						<!-- featured Action Start -->
-						<img src="img/gavel.svg" alt="gavel icon" class="action-icon" style="margin-bottom: 0"><strong class="larger">FEATURED ACTION:</strong>
-						<br>
-						<div style="height: 0.5em;"></div>
-						<p>US: Congress is voting on a bill that will codify the <a href="funding-cuts/">foreign aid cuts</a>. We need your help to protect global public health. We have a short peiod of time to tell our Senate representatives that this is unacceptable. <a href="https://win.newmode.net/callaboutrescissions" target="_blank">Call now using PIH's call tool</a>, <a href="/templates/funding-cuts-us.html#email-template">email</a> or join <a href="https://tbfighter.link/calendar" target="_blank">group advocacy session.</a></p>
-						<!-- featured Action End -->
-								</div>
-								<a class="button button-centered" href="action.html">More actions and templates</a>
+							<div class="community">
+								<h3><img src="./img/icons/book.svg" alt="book icon" class="icon"> TBReaders Bookclub</h3>
+								<p>Read and discuss books about tuberculosis and global health
+									together with a community of TBFighters! The club reads
+									a new book every 2 months. Find resources to help
+									thoughtfully read books past and present, and join in on
+									TBReaders discussions and events.</p>
+								<a href="./book-club/" class="button">Join our bookclub</a>
 							</div>
 						</div>
-					</div>
-					<div class="wrapper">
-						<h3 id="list">Join Our <span class="red">Mailing List</span></h2>
-						<p>
-							Be informed of new calls to action, campaign press releases, and other TBFighters campaign updates. Emails may be authored by TBFighters and John Green.
-						</p>
-						<div id="newsletter-wrapper">
-							<a class="button button-fill" href="https://newsletter.tbfighters.org/subscribe" target="_blank">Subscribe</a>
+						<div class="community">
+							<h3><img src="./img/phone.svg" alt="phone icon" class="icon"> Advocacy Sessions</h3>
+							<p>Join one of our advocacy sessions! These sessions are a great
+								place to learn about calls-to-action, contact
+								representatives alongside fellow TBFighters, help out
+								with organizing and planning efforts, or just hang out
+								with other TBFighters. These sessions are open to
+								anyone, regardless of your advocacy experience!</p>
+							<a href="http://tbfighter.link/calendar" class="button"
+								target="_blank">Join an advocacy session</a>
 						</div>
-						<br>
-					</div>
-					<div class="wrapper">
-						<h3>More From <span class="red">TBFighters</span> and TB Advocacy</h3>
-						<ul>
-							<li><a href="about.html">About the TBFighters site and movement</a></li>
-							<li><a href="timeline.html">News and milestones in the fight against TB</a></li>
-							<li><a href="resources.html">More resources to learn about TB and global health efforts</a></li>
-						</ul>
 					</div>
 				</div>
-			</section>
-		</main>
-		<footer class="site-foot">
-			<p class="socials-wrapper-centered">
+			</div>
+		</section>
+	</main>
+	<footer class="site-foot">
+			<p class="socials-wrapper-centered socials-wrapper">
+				<a href="https://newsletter.tbfighters.org/subscribe" target="_blank"><img
+					src="img/socials/newsletter.svg" alt="Newsletter" aria-label="Newsletter" class="social-icon"><img
+					src="img/socials/newsletter-hover.svg" alt="" class="social-icon-hover"></a>
 				<a href="https://bsky.app/profile/tbfighters.org" target="_blank"><img
-						src="img/socials/bsky.svg" aria-label="Blue Sky" class="social-icon"><img
-						src="img/socials/bsky-hover.svg" class="social-icon-hover"></a>
-				<a href="https://x.com/tbfighters" target="_blank">
-					<img src="img/socials/twitter.svg" aria-label="Twitter" class="social-icon">
-					<img src="img/socials/twitter-hover.svg" class="social-icon-hover"></a>
+					src="img/socials/bsky.svg" alt="Bluesky" aria-label="Bluesky" class="social-icon"><img
+					src="img/socials/bsky-hover.svg" alt="" class="social-icon-hover"></a>
+				<a href="https://x.com/tbfighters" target="_blank"><img
+					src="img/socials/twitter.svg" alt="Twitter" aria-label="Twitter" class="social-icon"><img
+					src="img/socials/twitter-hover.svg" alt="" class="social-icon-hover"></a>
 				<a href="https://www.instagram.com/tbfighters" target="_blank">
-					<img src="img/socials/insta.svg" aria-label="Instagram" class="social-icon">
-					<img src="img/socials/insta-hover.svg" class="social-icon-hover"></a>
+					<img src="img/socials/insta.svg" alt="Instagram" aria-label="Instagram" class="social-icon">
+					<img src="img/socials/insta-hover.svg" alt="" class="social-icon-hover"></a>
 				<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
-						src="img/socials/youtube.svg" aria-label="Youtube" class="social-icon"><img
-						src="img/socials/youtube-hover.svg" class="social-icon-hover"></a>
+					src="img/socials/youtube.svg" alt="YouTube" aria-label="Youtube" class="social-icon"><img
+					src="img/socials/youtube-hover.svg" alt="" class="social-icon-hover"></a>
 				<a href="https://www.facebook.com/profile.php?id=61555332203505" target="_blank"><img
-						src="img/socials/facebook.svg" aria-label="Facebook" class="social-icon"><img
-						src="img/socials/facebook-hover.svg" class="social-icon-hover"></a>
+					src="img/socials/facebook.svg" alt="Facebook" aria-label="Facebook" class="social-icon"><img
+					src="img/socials/facebook-hover.svg" alt="" class="social-icon-hover"></a>
 			</p>
 			<hr style="width: 10%; margin: 0 auto; margin-bottom: 4px;">
 			<p>
 				&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
 			</p>
 			<p class="too-small">
-				Images courtesy: laboratorio diagnostica ancona IZSUM via Wikimedia Commons; Adobe stock; Leiem via Wikimedia Commons; Icons by fontawesome - <a href='https://fontawesome.com/license/free' target='_blank'>License</a>.<br>
+				Images courtesy: TB Bacteria: NIAID; (Some) icons by fontawesome - <a href='https://fontawesome.com/license/free' target='_blank'>License</a>.<br>
 				We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
 			</p>
 		</footer>
-	</body>
+</body>
+
 </html>

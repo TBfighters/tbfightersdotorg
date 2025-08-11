@@ -25,31 +25,74 @@
 		<meta property="og:image" content="https://tbfighters.org/img/og-image.jpg" />
 		<meta property="og:description" content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
 		<meta name="description" content="Fighting for accessible tuberculosis testing and treatment to save over a million lives a year. Take action with us now." />
-
-		<link rel="stylesheet" href="resources.css" />
 		<script src="actions.js"></script>
 		<script src="./header-link.js" defer></script>
 		<title>Resources | TBFighters</title>
 	</head>
 	<body class="resources">
-		<!--BELOW THIS GETS COPIED TO ALL PAGES WHEN MENU CHANGES (CHANGE BODY CLASS TO PAGE NAME)-->
 		<header id="site-head"><a href="#main" class="skip">Skip to main content</a>
 			<div class="wrapper-head">
-				<h1 class="page-title">
-					<a href="index.html"><span class="black-highlight">TB</span>FIGHTERS</a>
-				</h1>
+		
+				<div class="page-title">
+					<a href="index.html"><img src="img/simplified-hourglass.png" alt="hourglass"><span
+							class="black-highlight">TB</span>Fighters</a>
+				</div>
 				<a id="hamburger-button" href="#" title="menu"></a>
 				<nav class="site-menu">
 					<ul class="active">
-						<li><a href="about.html">About Us</a></li>
-						<li><a href="timeline.html">News &amp; Timeline</a></li>
-						<li><a href="resources.html">Resources</a></li>
-						<li><a href="action.html">Take Action</a></li>
+						<li class="dropdown lined" id="nav-about">
+							<div>
+								<div class="mobile"></div>
+								<a href="about.html" class="title">About Us</a><button
+									aria-label="Open menu About us" class="dropdown-button"><img
+										src="img/chevron-white.svg"
+										alt="dropdown arrow"></button>
+							</div>
+							<ul class="dropdown-content">
+								<li><a href="book-club" class="title">TBReaders Bookclub</a>
+								</li>
+								<li><a href="timeline.html" class="title">News & Timeline</a>
+								</li>
+							</ul>
+						</li>
+						<li class="non-dropdown lined" id="nav-learn-more"><a class="title"
+								href="resources.html">About TB</a></li>
+						<li class="dropdown lined" id="nav-take-action">
+							<div>
+								<div class="mobile"></div>
+								<a class="title" href="action.html">Take Action</a><button
+									aria-label="Open menu Take Action" class="dropdown-button"><img
+										src="img/chevron-white.svg"
+										alt="dropdown arrow"></button>
+							</div>
+							<ul class="dropdown-content">
+								<li><a href="danaher/" class="title">Affordable Testing</a></li>
+								<li><a href="funding-cuts/" class="title">Funding Cuts</a></li>
+								<li><a href="hill-day/" class="title">US Hill Day</a></li>
+								<li><a href="templates/" class="title">Templates</a></li>
+							</ul>
+						</li>
+						<li class="non-dropdown socials" id="nav-socials">
+							<p class="socials-wrapper">
+								<a href="https://newsletter.tbfighters.org/subscribe" target="_blank"><img
+										src="img/socials/newsletter-nav.svg" alt="Newsletter" aria-label="Newsletter" class="social-icon"><img
+										src="img/socials/newsletter-nav-hover.svg" alt="" class="social-icon-hover"></a>
+								<a href="https://bsky.app/profile/tbfighters.org" target="_blank"><img
+										src="img/socials/bsky-nav.svg" alt="Bluesky" aria-label="Bluesky" class="social-icon"><img
+										src="img/socials/bsky-nav-hover.svg" alt="" class="social-icon-hover"></a>
+								<a href="https://www.instagram.com/tbfighters" target="_blank"><img
+										src="img/socials/insta-nav.svg" alt="Instagram" aria-label="Instagram" class="social-icon"><img
+										src="img/socials/insta-nav-hover.svg" alt="" class="social-icon-hover"></a>
+								<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
+										src="img/socials/youtube-nav.svg" alt="YouTube" aria-label="Youtube" class="social-icon"><img
+										src="img/socials/youtube-nav-hover.svg" alt="" class="social-icon-hover"></a>
+							</p>
+						</li>
 					</ul>
 				</nav>
+		
 			</div>
 		</header>
-		<!--ABOVE THIS GETS COPIED TO ALL PAGES MENU CHANGES-->
 		<main id="main">
 			<section class="container container-compact title">
 				<div class="wrapper-full">
@@ -146,9 +189,7 @@
 						</div>
 					</div>
 					<div class="wrapper-full">
-
-						<br>
-						<table class="glossary-list" summary="glossary and terms and definitions">
+						<table class="glossary-table" summary="glossary and terms and definitions">
 							<caption>
 								<h2 id="glossary">Glossary of Terms We Use
 									<div class="header-copy"><noscript><a href="#glossary"></a></noscript></div>
@@ -166,7 +207,15 @@
 							<tbody>
 								<tr>
 									<td><strong><a class="red" href="https://tuberculosis.miraheze.org/wiki/GeneXpert" target="_blank">GeneXpert</a>, Xpert cartridges (Xpert tests):</strong></td>
-									<td><p>A molecular testing device that can be used to diagnose a variety of diseases and strains of disease. Xpert cartridges are single-use tests used in a GeneXpert device that test for specific strains of a disease.</p></td>
+									<td><p>A molecular testing device that can be used to diagnose a variety of diseases and strains of disease. Xpert cartridges are single-use tests used in a GeneXpert device that test for specific strains of a disease.</p>
+									<ul>
+									<li><em>HBV Viral Load cartridges:</em> GeneXpert cartridges for hepatitis B virus (HBV). Used to initiate treatment and monitor treatment response. Currently sold for $15.</li>
+									<li><em>HCV Viral Load cartridges:</em> GeneXpert cartridges for hepatitis C virus (HCV). Anecessary step in testing for chronic HCV and also used in treatment monitoring. Xpert HCV cartridges are the only near point-of-care tests with WHO prequalification and give results in two hours. Currently sold for $15.</li>
+									<li><em>HIV-1 Qual cartridges:</em> GeneXpert cartridges for diagnosis of HIV. Used mostly for early infant diagnosis, where rapid turnaround is crucial. Can diagnose HIV in 1.5 hours, but are currently sold for $15.</li>
+									<li><em>HIV-1 Viral Load cartridges:</em> GeneXpert cartridges for HIV treatment monitoring. Often used in situations where fast turnaround is required, and have a 90 minute run time. Currently sold for $15.</li>
+									<li><em>MTB/RIF cartridges:</em> GeneXpert cartridges for diagnosis of tuberculosis and identifying whether a case is resistant to rifampin, one of the two most common and effective TB drugs in use. These cartridges are now sold for $7.97, after a price drop in September 2023.</li>
+									<li><em>MTB/XDR cartridges:</em> GeneXpert cartridges for use after a positive MTB/RIF test that diagnose resistance to additional TB drugs. These cartridges are currently sold for $15.</li>
+									</ul></td>
 								</tr>
 								<tr>
 									<td><strong><a class="red" href="https://tuberculosis.miraheze.org/wiki/Low-_to_Middle-income_Countries" target="_blank">LMIC(s)</a>:</strong></td>
@@ -192,61 +241,40 @@
 								<td><strong><a class="red" href="https://tuberculosis.miraheze.org/wiki/Treatment#Multi-drug_resistant_TB" target="_blank">XDR-TB</a>:</strong></td>
 								<td><p>Extensively drug-resistant tuberculosis, or TB that has developed resistance to both core drugs found in TB treatment and preventive regimens, as well as at least two additional important drugs in TB treatments.</p></td>
 							</tr>
-							<tr>
-								<td><strong><a href="https://tuberculosis.miraheze.org/wiki/GeneXpert#Tests" class="red" target="_blank">Xpert HBV Viral Load cartridges</a></strong></td>
-								<td><p>Single-use tests that are run on a GeneXpert testing device for hepatitis B virus (HBV). HBV viral load tests are used to initiate treatment and monitor treatment response. Xpert HBV cartridges are currently sold for $15.</p></td>
-							</tr>
-							<tr>
-								<td><strong><a href="https://tuberculosis.miraheze.org/wiki/GeneXpert#Tests" class="red" target="_blank">Xpert HCV Viral Load cartridges</a></strong></td>
-								<td><p>Single-use tests that are run on a GeneXpert testing device for hepatitis C virus (HCV). Viral load tests are a necessary step in testing for chronic HCV and also used in treatment monitoring. Xpert HCV cartridges are the only near point-of-care tests with WHO prequalification and give results in two hours. These cartridges are currently sold for $15.</p></td>
-							</tr>
-							<tr>
-								<td><strong><a href="https://tuberculosis.miraheze.org/wiki/GeneXpert#Tests" class="red" target="_blank">Xpert HIV-1 Qual cartridges</a></strong></td>
-								<td><p>Single-use tests that are run on a GeneXpert testing device for diagnosis of HIV. Xpert HIV Qual cartridges are used mostly for early infant diagnosis, where rapid turnaround is crucial. These cartridges can diagnose HIV in 1.5 hours, but are currently sold for $15.</p></td>
-							</tr>
-							<tr>
-								<td><strong><a href="https://tuberculosis.miraheze.org/wiki/GeneXpert#Tests" class="red" target="_blank">Xpert HIV-1 Viral Load cartridges</a></strong></td>
-								<td><p>Single-use tests that are run on a GeneXpert testing device for HIV treatment monitoring.These tests are often used in situations where fast turnaround is required, and have a 90 minute run time. Xpert HIV Viral Load cartridges are currently sold for $15.</p></td>
-							</tr>
-							<tr>
-								<td><strong><a class="red" href="https://tuberculosis.miraheze.org/wiki/GeneXpert#Tests" target="_blank">Xpert MTB/RIF cartridges</a>:</strong></td>
-								<td><p>Single-use tests that are run on a GeneXpert testing device. MTB/RIF tests diagnose tuberculosis and identify whether a case is resistant to rifampin–one of the two most common and effective TB drugs in use. These cartridges are now sold for $7.97, after a price drop in September 2023.</p></td>
-							</tr>
-							<tr>
-								<td><strong><a class="red" href="https://tuberculosis.miraheze.org/wiki/GeneXpert#Tests" target="_blank">Xpert MTB/XDR cartridges</a>:</strong></td>
-								<td><p>Single-use tests that are run on a GeneXpert testing device after receiving a positive MTB/RIF test, that diagnose resistance to additional TB drugs. These cartridges are currently sold for $15</p></td>
-							</tr>
 						</tbody>
 					</table>
 				</div>
 			</section>
 		</main>
 		<footer class="site-foot">
-			<p class="socials-wrapper-centered">
-				<a href="https://bsky.app/profile/tbfighters.org" target="_blank"><img
-						src="img/socials/bsky.svg" aria-label="Blue Sky" class="social-icon"><img
-						src="img/socials/bsky-hover.svg" class="social-icon-hover"></a>
-				<a href="https://x.com/tbfighters" target="_blank">
-					<img src="img/socials/twitter.svg" aria-label="Twitter" class="social-icon">
-					<img src="img/socials/twitter-hover.svg" class="social-icon-hover"></a>
-				<a href="https://www.instagram.com/tbfighters" target="_blank">
-					<img src="img/socials/insta.svg" aria-label="Instagram" class="social-icon">
-					<img src="img/socials/insta-hover.svg" class="social-icon-hover"></a>
-				<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
-						src="img/socials/youtube.svg" aria-label="Youtube" class="social-icon"><img
-						src="img/socials/youtube-hover.svg" class="social-icon-hover"></a>
-				<a href="https://www.facebook.com/profile.php?id=61555332203505" target="_blank"><img
-						src="img/socials/facebook.svg" aria-label="Facebook" class="social-icon"><img
-						src="img/socials/facebook-hover.svg" class="social-icon-hover"></a>
-			</p>
-			<hr style="width: 10%; margin: 0 auto; margin-bottom: 4px;">
-			<p>
-				&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
-			</p>
-			<p class="too-small">
-				
-				We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
-			</p>
-		</footer>
+				<p class="socials-wrapper-centered socials-wrapper">
+					<a href="https://newsletter.tbfighters.org/subscribe" target="_blank"><img
+						src="img/socials/newsletter.svg" alt="Newsletter" aria-label="Newsletter" class="social-icon"><img
+						src="img/socials/newsletter-hover.svg" alt="" class="social-icon-hover"></a>
+					<a href="https://bsky.app/profile/tbfighters.org" target="_blank"><img
+						src="img/socials/bsky.svg" alt="Bluesky" aria-label="Bluesky" class="social-icon"><img
+						src="img/socials/bsky-hover.svg" alt="" class="social-icon-hover"></a>
+					<a href="https://x.com/tbfighters" target="_blank"><img
+						src="img/socials/twitter.svg" alt="Twitter" aria-label="Twitter" class="social-icon"><img
+						src="img/socials/twitter-hover.svg" alt="" class="social-icon-hover"></a>
+					<a href="https://www.instagram.com/tbfighters" target="_blank">
+						<img src="img/socials/insta.svg" alt="Instagram" aria-label="Instagram" class="social-icon">
+						<img src="img/socials/insta-hover.svg" alt="" class="social-icon-hover"></a>
+					<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
+						src="img/socials/youtube.svg" alt="YouTube" aria-label="Youtube" class="social-icon"><img
+						src="img/socials/youtube-hover.svg" alt="" class="social-icon-hover"></a>
+					<a href="https://www.facebook.com/profile.php?id=61555332203505" target="_blank"><img
+						src="img/socials/facebook.svg" alt="Facebook" aria-label="Facebook" class="social-icon"><img
+						src="img/socials/facebook-hover.svg" alt="" class="social-icon-hover"></a>
+				</p>
+				<hr style="width: 10%; margin: 0 auto; margin-bottom: 4px;">
+				<p>
+					&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
+				</p>
+				<p class="too-small">
+					
+					We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
+				</p>
+			</footer>
 	</body>
 </html>

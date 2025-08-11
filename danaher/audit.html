@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--Meta tags-->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!--Open Graph Tags-->
+	<meta property="og:site_name" content="TBFighters" />
+	<meta property="og:url" content="https://tbfighters.org" />
+	<meta property="og:type" content="website" />
+	<meta property="theme-color" content="#D7211E" />
+	<!-- Style Tags -->
+	<link rel="stylesheet" href="../style.css" />
+	<link rel="stylesheet" href="../libs/toastify/toastify.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="../img/favicon/site.webmanifest">
+	<link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico">
+	<script src="../menu.js" defer></script>
+	<script src="../libs/toastify/toastify.js"></script>
+	<!-- Variable Tags -->
+	<meta name="robots" content="index, follow" />
+	<meta property="og:title" content="Where's the audit, Danaher? | TBFighters" />
+	<meta property="og:description" content="Tell Danaher to release their third party audit!" />
+	<meta name="description" content="Tell Danaher to release their third party audit!" />
+	<meta property="og:image" content="https://tbfighters.org/img/audit-page-preview.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta name="twitter:card" content="summary_large_image">
+	<link rel="stylesheet" href="../actions.css">
+	<link rel="stylesheet" href="../new-style.css">
+	<link rel="stylesheet" href="./audit.css">
+	<script src="../actions.js"></script>
+	<script src="./audit-counter.js" defer></script>
+	<script src="./header-link.js" defer></script>
+	<title>Where's the audit, Danaher? | TBFighters</title>
+</head>
+
+<body class="hill-day">
+	<header id="site-head"><a href="#main" class="skip">Skip to main content</a>
+		<div class="wrapper-head">
+	
+			<div class="page-title">
+				<a href="../index.html"><img src="../img/simplified-hourglass.png" alt="hourglass"><span
+						class="black-highlight">TB</span>Fighters</a>
+			</div>
+			<a id="hamburger-button" href="#" title="menu"></a>
+			<nav class="site-menu">
+				<ul class="active">
+					<li class="dropdown lined" id="nav-about">
+						<div>
+							<div class="mobile"></div>
+							<a href="../about.html" class="title">About Us</a><button
+								aria-label="Open menu About us" class="dropdown-button"><img
+									src="../img/chevron-white.svg"
+									alt="dropdown arrow"></button>
+						</div>
+						<ul class="dropdown-content">
+							<li><a href="../book-club" class="title">TBReaders Bookclub</a>
+							</li>
+							<li><a href="../timeline.html" class="title">News & Timeline</a>
+							</li>
+						</ul>
+					</li>
+					<li class="non-dropdown lined" id="nav-learn-more"><a class="title"
+							href="../resources.html">About TB</a></li>
+					<li class="dropdown lined" id="nav-take-action">
+						<div>
+							<div class="mobile"></div>
+							<a class="title" href="../action.html">Take Action</a><button
+								aria-label="Open menu Take Action" class="dropdown-button"><img
+									src="../img/chevron-white.svg"
+									alt="dropdown arrow"></button>
+						</div>
+						<ul class="dropdown-content">
+							<li><a href="../danaher/" class="title">Affordable Testing</a></li>
+							<li><a href="../funding-cuts/" class="title">Funding Cuts</a></li>
+							<li><a href="../hill-day/" class="title">US Hill Day</a></li>
+							<li><a href="../templates/" class="title">Templates</a></li>
+						</ul>
+					</li>
+					<li class="non-dropdown socials" id="nav-socials">
+						<p class="socials-wrapper">
+							<a href="https://newsletter.tbfighters.org/subscribe" target="_blank"><img
+									src="../img/socials/newsletter-nav.svg" alt="Newsletter" aria-label="Newsletter" class="social-icon"><img
+									src="../img/socials/newsletter-nav-hover.svg" alt="" class="social-icon-hover"></a>
+							<a href="https://bsky.app/profile/tbfighters.org" target="_blank"><img
+									src="../img/socials/bsky-nav.svg" alt="Bluesky" aria-label="Bluesky" class="social-icon"><img
+									src="../img/socials/bsky-nav-hover.svg" alt="" class="social-icon-hover"></a>
+							<a href="https://www.instagram.com/tbfighters" target="_blank"><img
+									src="../img/socials/insta-nav.svg" alt="Instagram" aria-label="Instagram" class="social-icon"><img
+									src="../img/socials/insta-nav-hover.svg" alt="" class="social-icon-hover"></a>
+							<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
+									src="../img/socials/youtube-nav.svg" alt="YouTube" aria-label="Youtube" class="social-icon"><img
+									src="../img/socials/youtube-nav-hover.svg" alt="" class="social-icon-hover"></a>
+						</p>
+					</li>
+				</ul>
+			</nav>
+	
+		</div>
+	</header>
+	<main id="main">
+		<section id="top" class="container container-compact title audit-top">
+			<div class="wrapper">
+				<h2>Days Since Danaher <span class="yellow-highlight">Promised an Audit</span>:</h2>
+				<noscript>
+					<span><i>Please enable javascript to get a accurate count.</i></span>
+				</noscript>
+				<div id="counter">
+					<div class="number-outer">
+						<div class="number-inner">
+							<div class="circles">
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+							<div class="text">
+								<span id="hundreds">0</span>
+							</div>
+						</div>
+					</div>
+					<div class="number-outer">
+						<div class="number-inner">
+							<div class="circles">
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+							<div class="text"><span id="tens">0</span></div>
+						</div>
+					</div>
+					<div class="number-outer">
+						<div class="number-inner">
+							<div class="circles">
+								<div class="circle"></div>
+								<div class="circle"></div>
+							</div>
+							<div class="text"><span id="ones">0</span></div>
+						</div>
+					</div>
+				</div>
+				<a href="#action" id="action-heading">
+					<p><b>Take Action</b> <img src="../img/arrow-right.svg" alt=""></p>
+				</a>
+			</div>
+		</section>
+		<section id="lowering-the-cost" class="container infotainer-section">
+			<div class="wrapper infotainer-wrapper">
+				<div class="content">
+					<h3>Lowering the Cost</h3>
+					<p>Following unprecedented pressure from activists—including you!—Danaher <a
+							href="danaher-rif.html">announced on September 19, 2023</a> that
+						they would be selling the GeneXpert tuberculosis tests at cost, which
+						they claim is $7.97 per test. <a
+							href="https://www.msfaccess.org/danaher-continues-charge-exorbitant-prices-lifesaving-medical-tests-despite-urgent-demands-price#:~:text=The%20price%20reduction%20announced%209%20months%20ago%20for%20the%20primary%20TB%20test%20to%20%247.97%20is%20expected%20to%20result%20in%20annual%20savings%20of%20%2432%20million%20for%20the%20international%20procurement%20agency%2C%20Global%20Fund%20to%20Fight%20AIDS%2C%20Tuberculosis%20and%20Malaria%2C%20enabling%20it%20to%20purchase%20an%20additional%203.6%20million%20tests%20every%20year."
+							target="_blank">The Global Fund estimates</a> that this price
+						reduction will save $32 million annually, potentially saving millions of
+						lives through adequate access to easy, quick and reliable diagnostics.
+					</p>
+				</div>
+				<div class="secondary">
+					<img src="../img/GeneXpert_cartridge.png"
+						alt="A GeneXpert Cartridge coming apart">
+				</div>
+			</div>
+		</section>
+		<section id="the-broken-promise" class="container infotainer-section">
+			<div class="wrapper infotainer-wrapper">
+				<div class="secondary">
+					<img src="../img/torn-audit-doc.svg"
+						alt="A document being torn apart with a GeneXpert Cartridge. The GeneXpert Cartridge has a question mark on it.">
+				</div>
+				<div class="content">
+					<h3>The Broken Promise</h3>
+					<p>In the name of transparency, Danaher also <a
+							href="https://investors.danaher.com/2023-09-19-Danaher-to-Provide-Cepheids-Tuberculosis-Test-to-the-Global-Fund-at-Cost"
+							target="_blank">committed to commissioning</a> an independent,
+						annual audit of the production cost and pricing structure and promised
+						to publish the results. Holding Danaher accountable for their claim of
+						$7.97 per test is important because any additional cost leads to
+						preventable deaths. <b>Over a year later, Danaher has not fulfilled
+							their commitment to publish the results of their audit.</b></p>
+
+				</div>
+			</div>
+		</section>
+		<section class="container infotainer-section">
+			<div class="wrapper infotainer-wrapper">
+				<div class="content-full">
+					<h3 id="action" style="margin-bottom: 0.1em;">Take Action
+						<div class="header-copy"><noscript><a href="#action"></a></noscript>
+						</div>
+					</h3>
+					<p class="smaller">
+						<em>Threats and intimidation are <strong>never okay</strong>. Please
+							read our <a href="../activism-guide.html">activism guide</a> and
+							always remember to be polite and respectful!</em>
+					</p>
+					<div class="wrapper-action-grid">
+						<div class="action">
+							<p class="larger">
+								<img src="../img/hashtag.svg" alt="hashtag icon"
+									class="icon" /><strong><span
+										class="red">Post</span></strong> on
+								Social Media
+							</p>
+							<p class="smaller">
+								Use our hashtags, <em>#People<wbr>OverProfits</em> and
+								<em>#TimeFor5</em>.
+							</p>
+							<p class="smaller">
+								Tag <em><a href="https://twitter.com/DanaherCorp"
+										target="_blank">@DanaherCorp</a></em>
+								and <em><a href="https://twitter.com/CepheidNews"
+										target="_blank">@CepheidNews</a></em> on
+								Twitter, <em>@DanaherCorporation</em> on <a
+									href="https://www.instagram.com/DanaherCorporation"
+									target="_blank">Instagram</a> and <a
+									href="https://www.threads.net/@danahercorporation"
+									target="_blank">Threads</a>, and comment on
+								their <a href="https://www.facebook.com/danahercorporation/"
+									target="_blank">Facebook</a> and <a
+									href="https://www.linkedin.com/company/danaher/posts/?feedView=all"
+									target="_blank">LinkedIn</a> posts.
+							</p>
+							<p class="smaller">
+								<a class="button" href="index.html#posts">Social media
+									templates</a>
+							</p>
+						</div>
+						<div class="action">
+							<p class="larger">
+								<img src="../img/envelopes-bulk.svg"
+									alt="several envelopes icon"
+									class="icon" /><strong><span
+										class="red">Write</span></strong> to
+								Danaher's Leadership
+							</p>
+							<p class="smaller">
+								Email: <a
+									href="mailto:investor.relations@danaher.com">investor.<wbr>relations<wbr>@danaher.com</a>
+							</p>
+							<p class="smaller">
+								<a class="button"
+									href="../templates/danaher.html#email-templates">Email
+									templates</a>
+								<a class="button"
+									href="../templates/danaher.html#letter-templates">Letter
+									guide</a>
+							</p>
+						</div>
+						<div class="action">
+							<p class="larger">
+								<img src="../img/phone.svg" alt="phone icon"
+									class="icon" /><strong><span
+										class="red">Call</span></strong>
+								Danaher's Corporate Office
+							</p>
+							<p class="smaller">
+								US Phone Number: <a
+									href="tel:+12028280850">+1-202-828-0850</a>
+							</p>
+							<p class="smaller">
+								<a class="button"
+									href="../templates/danaher.html#phone-script">Scripts and
+									tips</a>
+								<a class="button button-subtle"
+									href="https://www.cepheid.com/en-US/support/contact-us.html"
+									target="_blank">International numbers</a>
+							</p>
+						</div>
+						<div class="action">
+							<p class="larger">
+								<img src="../img/user-tie.svg" alt="user icon with a tie"
+									class="icon" />Are you a Danaher
+								<strong><span class="red">Employee?</span></strong>
+							</p>
+							<p class="smaller">
+								<strong>Please only use this if you are a current
+									employee as other reports go against our <a
+										href="../activism-guide.html">activism
+										guide</a>.</strong>
+							</p>
+							<p class="smaller">
+								Employees of Danaher or Cepheid can use the following
+								link to make a report about the lack of transparency.
+							</p>
+							<p class="smaller">
+								<a class="button"
+									href="https://secure.ethicspoint.com/domain/media/en/gui/47673/index.html">EthicsPoint
+									report form</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- <hr style="border-bottom: 1px solid var(--fg); width: 100%; color: var(--fg); border-top: none; margin: 0;"> -->
+	<footer class="site-foot">
+			<p class="socials-wrapper-centered socials-wrapper">
+				<a href="https://newsletter.tbfighters.org/subscribe" target="_blank"><img
+					src="../img/socials/newsletter.svg" alt="Newsletter" aria-label="Newsletter" class="social-icon"><img
+					src="../img/socials/newsletter-hover.svg" alt="" class="social-icon-hover"></a>
+				<a href="https://bsky.app/profile/tbfighters.org" target="_blank"><img
+					src="../img/socials/bsky.svg" alt="Bluesky" aria-label="Bluesky" class="social-icon"><img
+					src="../img/socials/bsky-hover.svg" alt="" class="social-icon-hover"></a>
+				<a href="https://x.com/tbfighters" target="_blank"><img
+					src="../img/socials/twitter.svg" alt="Twitter" aria-label="Twitter" class="social-icon"><img
+					src="../img/socials/twitter-hover.svg" alt="" class="social-icon-hover"></a>
+				<a href="https://www.instagram.com/tbfighters" target="_blank">
+					<img src="../img/socials/insta.svg" alt="Instagram" aria-label="Instagram" class="social-icon">
+					<img src="../img/socials/insta-hover.svg" alt="" class="social-icon-hover"></a>
+				<a href="https://www.youtube.com/@TB_Fighters" target="_blank"><img
+					src="../img/socials/youtube.svg" alt="YouTube" aria-label="Youtube" class="social-icon"><img
+					src="../img/socials/youtube-hover.svg" alt="" class="social-icon-hover"></a>
+				<a href="https://www.facebook.com/profile.php?id=61555332203505" target="_blank"><img
+					src="../img/socials/facebook.svg" alt="Facebook" aria-label="Facebook" class="social-icon"><img
+					src="../img/socials/facebook-hover.svg" alt="" class="social-icon-hover"></a>
+			</p>
+			<hr style="width: 10%; margin: 0 auto; margin-bottom: 4px;">
+			<p>
+				&copy; The TBFighters Project | <a href="privacy.html" class="footer-link">Privacy Policy</a>
+			</p>
+			<p class="too-small">
+				Icons by fontawesome - <a href='https://fontawesome.com/license/free' target='_blank'>License</a>.<br>
+				We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
+			</p>
+		</footer>
+</body>
+
+</html>

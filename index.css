@@ -1,162 +1,235 @@
-/*
- * CSS ONLY FOR THE INDEX PAGE
- * */
+/* HOME PAGE STYLES */
 
-/* ===============
- * GENERAL
- * =============== */
-
+/* Layout adjustments */
 .homepage .container {
     display: flex;
     padding: 60px 0;
-    min-height: calc(100vh - 120px);
     justify-content: space-around;
     flex-direction: column;
     background-size: cover;
 }
 
-#top {
-    padding: 3em 0;
+/* Hero container */
+#hero {
+    position: relative;
+    padding: 3rem 0;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
-}
-
-#top h1 {
-    text-transform: uppercase;
-    font-size: 2.7em;
-    margin-bottom: 1em;
-}
-
-#top .intro p {
-    font-size: 1.5em;
-    line-height: 1.3;
-    margin: 0 1em;
-}
-
-
-@keyframes bob {
-    0% {
-        transform: translatey(0px);
-    }
-
-    50% {
-        transform: translatey(-15px);
-    }
-
-    100% {
-        transform: translatey(0px);
-    }
-}
-
-#top .scroll-arrow {
-    width: 28px;
-    filter: contrast(0.85);
-    animation: bob 3s ease-in-out infinite;
-    margin-top: 10vh;
-}
-
-/* Remove bobbing annimation for reduced motion */
-@media (prefers-reduced-motion) {
-    #top .scroll-arrow {
-        width: 28px;
-        filter: contrast(0.85);
-        margin-top: 10vh;
-    }
-}
-
-#top .fa-arrow-down:before {
-    font-size: 3em;
+    background-color: var(--bg);
     color: var(--fg);
+    z-index: 3;
+    justify-content: flex-start;
+}
+#hero .wrapper {
+    width: 90%;
+    max-width: 1600px;
+    margin-top: 1rem;
+}
+#hero h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+#hero .hero-left {
+    z-index: 0;
+    display: flex;
+	justify-content: center;
+    width: 40%;
+    margin-bottom: 1rem;
+}
+#hero .hero-left img {
+    align-self: center;
+    border-radius: 20px;
+    box-shadow: 0.1rem 0.1rem 1rem rgb(10 10 10 / 35%), var(--aside-shadow-far);
+    width: 90%;
+    flex-shrink: 0;
+}
+#hero .hero-right {
+    z-index: 1;
+    width: 60%;
+    margin-bottom: 1rem;
 }
 
-#top img {
-    max-height: 200px;
-    margin-bottom: 1em;
+/* Informational boxes */
+.info-sections {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: var(--accent-blue);
+}
+.info-sections .wrapper {
+    width: 90%;
+    max-width: 1400px;
+    height: auto;
+    background: var(--bg);
+    margin: auto;
+    padding: 3rem 4rem;
+    border-radius: 0.5rem;
+    border: var(--aside-border);
+}
+.info-sections section {
+    padding: 4rem 0;
+}
+.info-sections section#second {
+    padding-bottom: 4.7rem;
+}
+.info-second section:last-child {
+	padding-bottom: 4rem;
+}
+.info-sections h2 {
+	text-transform: uppercase;
+	margin-top: 1rem;
+}
+#first .wrapper {
+    box-shadow: var(--aside-shadow-lblue);
+}
+#second .wrapper {
+    box-shadow: var(--aside-shadow);
+}
+.content {
+    width: 100%;
 }
 
-#primer {
-    background-image: url("img/red-crystal.gif");
-    background-attachment: fixed;
-    background-position: left center;
+/* TB statement area */
+#statement {
+    background-color: var(--accent-bg);
+    color: var(--bg);
+    position: relative;
+    z-index: 1;
+}
+#statement .wrapper {
+    padding: 4rem 2rem;
+    max-width: 90%;
+    text-align: center;
+}
+#statement p {
+    text-transform: uppercase;
+    font-size: 5rem;
+	line-height: 5rem;
+    font-weight: 700;
+    margin: 0;
+}
+#statement p.mobile {
+    display: none;
 }
 
-#twist {
-    background-image: url("img/crystals.gif");
-    background-attachment: fixed;
-    background-position: center;
+/* Take action area */
+#take-action h2 {
+    font-size: 3.5rem;
+	margin-bottom: 2rem;
+}
+#take-action .wrapper {
+    width: 90%;
+    max-width: 1600px;
+}
+.campaigns-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.campaign {
+    display: flex;
+    flex-direction: column;
+    width: 33.33%;
+    border: var(--aside-border);
+    border-radius: 0.5rem;
+    padding: 1.6rem 1.2rem;
+}
+.campaign h3 {
+    margin-top: 0.5rem;
+	margin-bottom: 1.125rem;
+}
+.campaign .buttons {
+    font-size: 1.125rem;
+    margin-top: auto; /* keep buttons on bottom of box */
+}
+.campaign#danaher {
+    box-shadow: var(--aside-shadow-lblue);
+}
+.campaign#funding-cuts {
+    box-shadow: var(--aside-shadow-green);
+}
+.campaign#hill-day {
+    box-shadow: var(--aside-shadow-yellow);
+}
+/* Join community area */
+
+.join-community {
+    width: 80%;
+    margin: auto auto;
+    padding-top: 2rem;
+}
+.communities {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0rem;
+    padding: 1rem 1rem;
+    box-shadow: var(--aside-shadow);
+    border: var(--aside-border);
+    border-radius: 0.5em;
+}
+.communities .community-columns {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 1rem;
+}
+.community {
+    padding: 1.125rem 0.75rem;
 }
 
-#danaher {
-    background-image: url("img/lungs.gif");
-    background-attachment: fixed;
-    background-position: right center;
+/* Mobile breakpoints */
+
+@media only screen and (max-width: 1440px) {
+    #statement p {
+	font-size: 4rem;
+	line-height: 4rem;
+	max-width: 100%;
+    }
 }
 
-#profits {
-    background-image: url("img/money.gif");
-    background-attachment: fixed;
-    background-position: left center;
+@media only screen and (max-width: 1200px) {
+    .campaigns-wrapper {
+        flex-direction: column;
+    }
+    .campaign, .join-community {
+        width: 100%;
+    }
 }
 
-#join li {
-    list-style-image: url(img/check-solid.svg);
-}
-
-#join {
-    background-image: url("img/helix.png");
-    background-attachment: fixed;
-    background-position: left center;
-}
-
-/* MOBILE STYLES */
-
-@media only screen and (max-width: 900px) {
-    #top img {
-        max-width: 150px;
+@media only screen and (max-width: 1024px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    #hero {
+        overflow-x: clip;
+    }
+	#hero .hero-right {
+        width: 100%;
+    }
+    #hero .hero-left {
+        display: none;
+	height: 0;
+	width: 0;
+	visibility: hidden;
+    }
+	.communities .community-columns {
+        flex-direction: column;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    #top img {
-        align-self: center;
-        max-width: 100px;
+    .info-sections .wrapper {
+        padding: 1.5rem;
+    }
+    #statement p.desktop {
+        display: none;
+    }
+    #statement p.mobile {
+        display: block;
+        max-width: 100%;
+    }
+    #statement .wrapper {
+        padding: 3rem 0;
     }
 }
-
-@media only screen and (max-width: 650px) {
-    #top h1 {
-        font-size: 3em;
-        margin-bottom: 0.6em;
-    }
-
-    #join li {
-        font-size: 1.5em;
-    }
-
-    #join p.larger,
-    #join li.larger,
-    #join strong.larger {
-        font-size: 1.75em;
-    }
-}
-
-/* ==== END OF GENERAL ==== */
-
-/* ===============
-   FEATURED ACTION
-   =============== */
-
-h2.action-head {
-    font-size: 3.5em;
-    text-transform: uppercase;
-}
-
-/* Buttons */
-
-.join-right .button-centered {
-    margin-left: 1em;
-    width: calc(100% - 4em - 8px);
-}
-
-/* ==== END OF FEATURED ACTION ==== */

@@ -1,0 +1,111 @@
+@font-face {
+    font-family: DSEG14ClassicMini-Regular;
+    src: url(/fonts/DSEG14ClassicMini-Regular.ttf);
+}
+
+#counter {
+    --height: 15rem;
+    --border: 20px;
+    --gap: 0.2rem;
+
+    display: flex;
+    gap: var(--gap);
+    justify-content: center;
+    width: fit-content;
+
+    /* background: var(--fg); */
+    /* padding: 1rem 2rem; */
+    margin-bottom: 1.5rem;
+    border-radius: 20px;
+}
+
+.audit-top .wrapper,
+.wrapper-counter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-counter {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
+    box-shadow: var(--aside-shadow);
+}
+
+.wrapper-counter #counter {
+    --height: 10rem;
+}
+
+.wrapper-counter .circles .circle {
+    margin-bottom: calc(0.5rem * (1/3));
+}
+
+.wrapper-counter .number-inner .text {
+    height: calc(100% - (0.75rem + (0.5rem * (2/3)) + 0.5rem));
+}
+
+.number-outer {
+    width: min-content;
+    height: min-content;
+}
+
+.number-inner {
+    background: var(--bg);
+    color: var(--accent-fg);
+    width: calc(var(--height) * (2/3));
+    height: var(--height);
+    box-shadow: var(--regular-shadow);
+    border-radius: var(--border);
+}
+
+.circles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circles .circle {
+    background: var(--fg);
+    border-radius: 100%;
+    height: 0.75rem;
+    width: 0.75rem;
+    margin: 0.5rem 0.5rem;
+}
+
+.number-inner .text {
+    font-size: calc(var(--height) * (2/3));
+    font-family: DSEG14ClassicMini-Regular;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+}
+
+#action-heading {
+    padding-bottom: 0.5rem
+}
+
+
+@media only screen and (max-width: 768px) {
+    #counter {
+        --height: 10rem;
+        --border: calc(20px * (2/3));
+    }
+
+    .number-inner .text {
+        height: calc(100% - (0.75rem + (0.5rem * (2/3)) + 0.5rem));
+        font-size: calc(var(--height) * (5/8));
+    }
+
+    .circles .circle {
+        margin-bottom: calc(0.5rem * (1/3));
+    }
+
+    .wrapper-counter .button {
+        padding: 0.7rem 0.9rem;
+    }
+}
