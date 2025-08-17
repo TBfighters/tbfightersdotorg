@@ -3,7 +3,7 @@ body {
 }
 
 h1, h2 {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 #top {
@@ -36,7 +36,7 @@ h1, h2 {
     width: 100%;
     height: fit-content;
     text-align: center;
-    padding: 1rem 2rem;
+    padding: 3rem 5rem;
     z-index: 3;
     position: relative;
 }
@@ -225,15 +225,10 @@ h1, h2 {
     z-index: unset;
 }
 
-#under-threat p,
-#the-super-bug p {
-    font-size: 1.5rem;
-}
-
 #under-threat::before {
     content: "";
     background-image: url(../img/funding-cuts/black-bacteria-in-dish.png);
-    background-size: 55%;
+    background-size: 45%;
     background-repeat: no-repeat;
     background-position: center center;
     opacity: 40%;
@@ -293,12 +288,15 @@ h1, h2 {
 }
 
 .content {
+}
+
+.content p {
     background-color: var(--fg);
-    padding: 1rem 1rem;
+    padding: 1.5rem 1.5rem;
 }
 
 #the-super-bug h2,
-.content {
+.content p {
     position: relative;
     z-index: 5;
     font-weight: 700;
@@ -310,18 +308,6 @@ h1, h2 {
     padding-bottom: 5rem;
     padding-top: 5rem;
 }
-
-.largest {
-    position: absolute;
-    font-size: 30rem;
-    color: var(--fg);
-    font-weight: 700;
-    top: -0.2rem;
-    right: -0.1rem;
-    z-index: 1;
-}
-
-
 
 #drug-resistance {
     min-height: 100%;
@@ -350,6 +336,10 @@ h1, h2 {
 
 #first {
     padding-top: 0;
+}
+
+#first .content {
+    width: 100%;
 }
 
 #last {
@@ -391,22 +381,15 @@ h1, h2 {
         width: 90%;
     }
 
-    .largest {
-        right: -0.3rem;
-    }
-
     .blocks .content {
-        width: 100%
+        width: 100%;
+        height: min-content;
     }
 
     .blocks .image {
-        width: unset;
+        width: 0%;
+        height: 1em;
     }
-
-    #second {
-        padding-top: 15rem;
-    }
-
 
     #drug-resistance {
         width: 100%;
@@ -415,11 +398,10 @@ h1, h2 {
 
     #drug-resistance img {
         width: 100%;
-        left: 0;
+        left: 1;
         top: 0;
         -webkit-transform: translate(0%, -50%);
         transform: translate(0%, -50%);
-
     }
 
     #drug-resistance img.mobile {
@@ -443,20 +425,6 @@ h1, h2 {
 /* Phone */
 
 @media only screen and (max-width: 768px) {
-    .largest {
-        font-size: 20rem;
-        /* top: 17%; */
-        /* right: 0%; */
-        top: 1rem;
-        right: -0.1rem;
-        rotate: 180deg;
-        /* display: none; */
-    }
-
-    #first {
-        padding-bottom: 10rem;
-    }
-
     #graph {
         background-position-x: right;
         background-position-y: 3rem;

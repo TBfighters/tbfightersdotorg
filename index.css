@@ -1,11 +1,6 @@
-/*
- * CSS ONLY FOR THE INDEX PAGE
- * */
+/* HOME PAGE STYLES */
 
-/* ===============
- * GENERAL
- * =============== */
-
+/* Layout adjustments */
 .homepage .container {
     display: flex;
     padding: 60px 0;
@@ -14,23 +9,8 @@
     background-size: cover;
 }
 
-/* End of General */
-
-/* ===============
- * HEADER
- * =============== */
-
-#header .wrapper {
-    width: 90%;
-    max-width: 1600px;
-    margin-top: 1rem;
-}
-
-#header h1 {
-    text-transform: uppercase;
-    font-size: 4.7rem;
-}
-#header {
+/* Hero container */
+#hero {
     position: relative;
     padding: 3rem 0;
     display: flex;
@@ -40,316 +20,144 @@
     z-index: 3;
     justify-content: flex-start;
 }
-
-#header .join-left {
+#hero .wrapper {
+    width: 90%;
+    max-width: 1600px;
+    margin-top: 1rem;
+}
+#hero h1 {
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+#hero .hero-left {
     z-index: 0;
     display: flex;
+	justify-content: center;
     width: 40%;
+    margin-bottom: 1rem;
 }
-
-#header .join-right {
-    z-index: 1;
-    width: 60%;
-}
-
-/* Image */
-
-.bacteria-photo {
-    display: flex;
-    justify-content: center;
-}
-
-.bacteria-photo img {
+#hero .hero-left img {
     align-self: center;
     border-radius: 20px;
     box-shadow: 0.1rem 0.1rem 1rem rgb(10 10 10 / 35%), var(--aside-shadow-far);
     width: 90%;
     flex-shrink: 0;
 }
-
-#header .mobile:not(.desktop) {
-    display: none;
+#hero .hero-right {
+    z-index: 1;
+    width: 60%;
+    margin-bottom: 1rem;
 }
 
-/* Laptop */
-@media only screen and (max-width: 1440px) {
-    #header .join-right {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #header h1 {
-        font-size: 3rem;
-    }
-}
-
-
-/* Tablet */
-@media only screen and (max-width: 1024px) {
-    .bacteria-photo {
-        display: none;
-    }
-
-    #header .join-right {
-        width: 100%;
-    }
-
-    #header .join-left {
-        width: 0%;
-    }
-
-    #header {
-        overflow-x: clip;
-    }
-
-    #header .wrapper {
-        flex-direction: column-reverse;
-    }
-
-    #header h1 {
-        font-size: 3rem;
-    }
-}
-
-/* Phone */
-@media only screen and (max-width: 768px) {
-    div.featured {
-        font-size: 1rem;
-    }
-}
-
-/* End of Header */
-
-/* ===============
- * INFO SECTION
- * =============== */
-
+/* Informational boxes */
 .info-sections {
     height: 100%;
     position: relative;
     z-index: 1;
     background: var(--accent-blue);
 }
-
 .info-sections .wrapper {
-    width: 85%;
+    width: 90%;
     max-width: 1400px;
     height: auto;
     background: var(--bg);
     margin: auto;
-    font-size: 1.3rem;
-    padding: 2rem 3rem;
+    padding: 3rem 4rem;
     border-radius: 0.5rem;
     border: var(--aside-border);
 }
-
+.info-sections section {
+    padding: 4rem 0;
+}
+.info-sections section#second {
+    padding-bottom: 4.7rem;
+}
+.info-second section:last-child {
+	padding-bottom: 4rem;
+}
+.info-sections h2 {
+	text-transform: uppercase;
+	margin-top: 1rem;
+}
 #first .wrapper {
     box-shadow: var(--aside-shadow-lblue);
 }
-
 #second .wrapper {
     box-shadow: var(--aside-shadow);
 }
-
-#second {
-    padding-bottom: 4rem;
-}
-
-.info-sections .container {
-    padding: 2rem 0;
-}
-
-.info-sections h2 {
-	text-transform: uppercase;
-	font-size: 1.8rem;
-}
-
-/* Content */
-
 .content {
     width: 100%;
 }
 
-.image {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.image img {
-    height: 100%;
-    max-width: 100%;
-    display: inline-block;
-    vertical-align: middle
-}
-
-/* Laptop + Tablet */
-@media only screen and (max-width: 1440px) {
-    .info-sections .wrapper {
-        font-size: 1rem;
-        width: 90%
-    }
-}
-
-/* Phone */
-@media only screen and (max-width: 768px) {
-    .info-sections .wrapper {
-        font-size: 1rem;
-        width: 90%;
-        padding: 1rem 1rem;
-    }
-
-    .info-sections .wrapper-columns {
-        flex-direction: column-reverse;
-    }
-
-    #why-does-it-kill .wrapper-columns {
-        flex-direction: column;
-    }
-
-    .image img {
-        width: 50%;
-    }
-
-    .content {
-        width: 100%;
-    }
-
-    .content p {
-        font-size: 1.1rem;
-    }
-
-    #we-are-tbfighters .content {
-        margin: 0rem 0rem;
-    }
-
-    #we-are-tbfighters .wrapper {
-        padding: 1rem 1rem;
-        background-attachment: unset;
-    }
-}
-
-/* End of Info Section */
-
-/* ===============
- * STATEMENT
- * =============== */
-
+/* TB statement area */
 #statement {
     background-color: var(--accent-bg);
     color: var(--bg);
     position: relative;
     z-index: 1;
 }
-
 #statement .wrapper {
-    padding: 5rem 3rem;
+    padding: 4rem 2rem;
     max-width: 90%;
     text-align: center;
 }
-
 #statement p {
     text-transform: uppercase;
     font-size: 5rem;
-    margin: 0;
+	line-height: 5rem;
     font-weight: 700;
+    margin: 0;
 }
-
 #statement p.mobile {
     display: none;
 }
 
-@media only screen and (max-width: 1440px) {
-    #statement p {
-        font-size: 4rem;
-        max-width: 100%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #statement p.desktop {
-        display: none;
-    }
-
-    #statement p.mobile {
-        display: block;
-        font-size: 4rem;
-        max-width: 100%;
-    }
-
-    #statement .wrapper {
-        padding: 5rem 0;
-    }
-}
-
-/* End of STATEMENT */
-
-/* ===============
- * TAKE ACTION & COMMUNITY
- * =============== */
-
-#join h3 {
+/* Take action area */
+#take-action h2 {
     font-size: 3.5rem;
+	margin-bottom: 2rem;
 }
-
-#join .wrapper {
+#take-action .wrapper {
     width: 90%;
     max-width: 1600px;
 }
-
-.center {
-    text-align: center;
-}
-
-.campaigns {
+.campaigns-wrapper {
     display: flex;
     flex-direction: row;
-    gap: 1.5rem;
+    gap: 2rem;
 }
-
 .campaign {
     display: flex;
     flex-direction: column;
     width: 33.33%;
-    font-size: 1.1rem;
     border: var(--aside-border);
     border-radius: 0.5rem;
-    padding: 1.2rem 0.8rem;
+    padding: 1.6rem 1.2rem;
 }
-
-.campaign h4 {
-    margin: 0 0;
+.campaign h3 {
+    margin-top: 0.5rem;
+	margin-bottom: 1.125rem;
 }
-
 .campaign .buttons {
-    margin-top: auto;
+    font-size: 1.125rem;
+    margin-top: auto; /* keep buttons on bottom of box */
 }
-
-.campaign img, .community img {
-    height: 1.5rem;
-    vertical-align: bottom;
-    margin-right: 0.5rem;
-}
-
-#danaher {
+.campaign#danaher {
     box-shadow: var(--aside-shadow-lblue);
 }
-
-#funding-cuts {
+.campaign#funding-cuts {
     box-shadow: var(--aside-shadow-green);
 }
-
-#hill-day {
+.campaign#hill-day {
     box-shadow: var(--aside-shadow-yellow);
 }
+/* Join community area */
 
 .join-community {
     width: 80%;
     margin: auto auto;
     padding-top: 2rem;
 }
-
 .communities {
     display: flex;
     flex-direction: column;
@@ -360,62 +168,68 @@
     border: var(--aside-border);
     border-radius: 0.5em;
 }
-
-.communities .two {
+.communities .community-columns {
     display: flex;
     flex-direction: row;
     align-items: stretch;
     gap: 1rem;
 }
-
 .community {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    flex-wrap: wrap;
-    vertical-align: top;
-    font-size: 1rem;
-    padding: 1.2rem 0.8rem;
+    padding: 1.125rem 0.75rem;
 }
 
-.community a {
-    margin-top: auto;
-    width: fit-content;
+/* Mobile breakpoints */
+
+@media only screen and (max-width: 1440px) {
+    #statement p {
+	font-size: 4rem;
+	line-height: 4rem;
+	max-width: 100%;
+    }
 }
 
-@media only screen and (max-width: 1250px) {
-    .communities {
+@media only screen and (max-width: 1200px) {
+    .campaigns-wrapper {
         flex-direction: column;
     }
-
-    .communities .two {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .community {
-        width: 100%;
-    }
-
-    .campaigns {
-        flex-direction: column;
-    }
-
-    .campaign {
+    .campaign, .join-community {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .join-community {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+    #hero {
+        overflow-x: clip;
+    }
+	#hero .hero-right {
         width: 100%;
     }
-
+    #hero .hero-left {
+        display: none;
+	height: 0;
+	width: 0;
+	visibility: hidden;
+    }
+	.communities .community-columns {
+        flex-direction: column;
+    }
 }
 
-/* End of Take Action */
-
-.site-foot {
-    position: relative;
-    z-index: 2;
+@media only screen and (max-width: 768px) {
+    .info-sections .wrapper {
+        padding: 1.5rem;
+    }
+    #statement p.desktop {
+        display: none;
+    }
+    #statement p.mobile {
+        display: block;
+        max-width: 100%;
+    }
+    #statement .wrapper {
+        padding: 3rem 0;
+    }
 }
