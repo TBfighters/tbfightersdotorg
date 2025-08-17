@@ -19,8 +19,8 @@
     margin-top: 1rem;
 }
 
-.action a.button {
-    margin-top: 1.5rem;
+.action p.larger {
+    margin-top: 0 !important;
 }
 
 .action p.smaller {
