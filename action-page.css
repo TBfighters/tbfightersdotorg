@@ -1,168 +1,66 @@
-    /*
- * CSS ONLY FOR THE ACTION PAGE
- * */
-    .container-compact.title {
-        padding-bottom: 0;
-    }
+/* ACTION PAGE STYLES */
 
-    .action-icon {
-        height: 1.25em;
-        vertical-align: bottom;
-        margin-right: 0.25rem;
-    }
+/* Campaign boxes */
+.campaign {
+    margin-bottom: 0.5rem;
+    position: relative;
+    z-index: 2;
+    border: var(--aside-border);
+    border-radius: 0.5rem;
+    width: 90%;
+	max-width: 1200px;
+}
+.campaign:last-child {
+	margin-bottom: 3rem;
+}
+.campaign h2 {
+    margin-top: .25rem;
+}
+.campaign .content {
+    padding: 1.5rem 1.2rem;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.campaign .description {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.campaign .content-full .description {
+    max-width: 100%;
+}
+.campaign.danaher {
+    box-shadow: var(--aside-shadow-lblue);
+}
+.campaign.funding-cuts {
+    box-shadow: var(--aside-shadow-green);
+}
+.campaign.hill-day {
+    box-shadow: var(--aside-shadow-yellow);
+}
+/* CTA inner section */
+.action-wrapper {
+    width: calc(50% - 3rem);
+}
+.action {
+    width: 100%;
+    margin-top: 1rem;
+}
 
-    .flag-icon {
-        height: 0.75em;
-        vertical-align: middle;
-        margin-bottom: 0.2rem;
-        margin-right: 0.25rem;
-    }
+/* Mobile breakpoints */
 
-    .description .action-icon {
-        height: 1em;
-    }
-
-    .action {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-top: 1rem;
-    }
-
-    .action a.button {
-        margin-top: 1.5rem;
-    }
-
-    .action p.smaller {
-        margin-bottom: 0;
-    }
-
-    /* Campaigns */
-
-    #campaigns {
-        margin-bottom: 3rem;
-    }
-
-    .campaigns {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .campaigns:not(:has(.active)) {
-        display: none;
-    }
-
-    .campaigns.reversed {
-        flex-direction: column-reverse;
-    }
-
-    .campaign {
-        position: relative;
-        z-index: 2;
-        border: var(--aside-border);
-        border-radius: 0.5rem;
-        width: 100%;
-        padding: 1.5rem 1.2rem;
-    }
-
-    .campaign:not(.active) {
-        display: none;
-    }
-
-    .campaign h2 {
-        margin: 0.2em 0 0.5em;
-    }
-
-    .campaign h3 {
-        margin-top: 0.5em;
-    }
-
+@media only screen and (max-width: 992px) {
     .campaign .content {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-    }
-
-    .campaign .description {
-        max-width: 50%;
-        display: flex;
         flex-direction: column;
+        gap: 0;
     }
-
-    .campaign .content-full .description {
+    .campaign .description {
         max-width: 100%;
     }
-
     .action-wrapper {
-        width: calc(50% - 3rem);
+        width: 100%;
     }
-
-    .campaign.danaher {
-        box-shadow: var(--aside-shadow-lblue);
-    }
-
-    .campaign.funding-cuts {
-        box-shadow: var(--aside-shadow-green);
-    }
-
-    .campaign.hill-day {
-        box-shadow: var(--aside-shadow-yellow);
-    }
-
-
-    @media only screen and (max-width: 992px) {
-        div.featured {
-            box-shadow: var(--aside-shadow-close);
-        }
-
-        .campaign {
-            width: 90%;
-            margin: auto auto;
-            margin-bottom: 0.5rem;
-        }
-
-        .campaign .content {
-            flex-direction: column;
-            gap: 0;
-        }
-
-        .campaign .description {
-            max-width: 100%;
-        }
-
-        .description a {
-            margin-top: 0.5em;
-        }
-
-        .action-wrapper {
-            width: 100%;
-        }
-    }
-
-    /* Filter */
-
-    .wrapper-filter {
-        padding: 0.2rem 0.5rem;
-        border: var(--aside-border-subtle);
-        border-radius: 0.5rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .wrapper-filter .button-filter {
-        background-color: transparent;
-        color: var(--fg);
-    }
-
-    .wrapper-filter .button-filter.active {
-        background: var(--accent-bg);
-        color: var(--bg);
-    }
-
-    .wrapper-filter .button-filter.active:hover,
-    .wrapper-filter .button-filter.active:active,
-    .wrapper-filter .button-filter.active:focus {
-        background-color: var(--fg);
-        border-color: var(--fg);
-        color: var(--bg);
-    }
+}
