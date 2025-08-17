@@ -17,6 +17,7 @@
     --aside-shadow-yellow: -0.7em 0.7em 0px 0px var(--accent-yellow), -0.7em 0.7em 0px 3px var(--fg);
 
     --aside-border: 3px solid var(--fg);
+    --aside-border-subtle: 3px solid var(--bg2);
     --aside-border-accent: 3px solid var(--accent-fg);
 
     --fg: #121212;
