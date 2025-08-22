@@ -8,7 +8,6 @@
 
 .featuring .person {
     display: flex;
-    flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
     max-width: calc((100%/2) - 2%);
