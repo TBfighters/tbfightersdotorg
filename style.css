@@ -309,11 +309,11 @@ a#hamburger-button {
 #main ul {
     padding-left: 2rem;
 }
-#main p, #main li {
+p, #main li {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-#main .wrap-centered {
+.wrap-centered {
     text-align: center;
 }
 .larger {

@@ -24,13 +24,12 @@
 
 #top h1 {
     text-transform: uppercase;
-    font-size: 2.7rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 #top .intro p {
-    font-size: 1.5rem;
-    line-height: 1.3;
+    font-size: 2rem;
+    line-height: 2.25rem;
     margin: 0 1rem;
 }
 
@@ -162,12 +161,12 @@
     resize: none;
 }
 
-.post p:first-child {
-    margin-bottom: 0;
+.post p:nth-child(2) {
+    margin: 0.5rem 0;
 }
 
-.post p:nth-child(2) {
-    font-size: 0.7rem;
+.post p:nth-child(3) {
+    margin: 0.5rem 0;
 }
 
 .post div {
@@ -178,7 +177,7 @@
 .post .button,
 .post-gallery button,
 .post-gallery .button {
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 
 /* POST GALLERY */
