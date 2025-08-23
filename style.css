@@ -412,7 +412,7 @@ a.red:hover, a.red:active, a.red:focus {
 a[target="_blank"]:not(:has(img), .internal-link)::after {
     position: relative;
     display: inline-block;
-    content: url("img/utils/arrow-up-right-from-square-solid.svg");
+    content: url("img/icons/arrow-up-right-from-square-solid.svg");
     height: .6em;
 	width: .6em;
     margin: 0 3px;

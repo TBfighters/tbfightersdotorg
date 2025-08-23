@@ -8,11 +8,7 @@ const actions = {
     ],
     "canada": [
         "canada-hill-day",
-    ],
-    "united-kingdom": [
-        "uk-funding-cuts",
-    ],
-    "european-union": [],
+    ]
 }
 
 // Handle initial url
