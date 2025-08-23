@@ -306,7 +306,7 @@ a#hamburger-button {
     font-size: 1.5rem;
     line-height: 1.875rem;
 }
-#main ul {
+ul {
     padding-left: 2rem;
 }
 p, #main li {
