@@ -19,6 +19,18 @@ We strive for WCAG 2.1 AA (AAA whenever possible) compliance for our website inc
 
 Whenever you submit a PR, please notify us in the [thread](https://discord.com/channels/252701351786577920/1149204674390536262) on discord!
 
+## Adding an action to the action page
+The action page has a filter to allow people to see only actions for *their* country. Follow the steps below to add a new action or country to this filter.
+### Adding a new country
+- Add a new button to the filter buttons
+- Create a new wrapper at the bottom with the classes `[country]-campaigns campaigns`
+- In `action-page.js` add the country to the `actions` dict
+
+### Adding a new action
+- Copy an existing action in the `action.html` page and modify it to your liking.
+- Change the class to one that describes the action in name. *These must be unique*
+- Add that class name to the country's list in the `actions` dict in `action-page.js`
+
 ## Automations
 > [!note]
 > - If you ever add a new folder to the repo that **doesn't** contain files public on the website, add it to the `skipDirectories` list in the [./update-action/index.js](./update-action/index.js) file.
