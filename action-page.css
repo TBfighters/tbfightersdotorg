@@ -1,65 +1,159 @@
-/* ACTION PAGE STYLES */
+.container-compact.title {
+    padding-bottom: 0;
+}
 
-/* Campaign boxes */
+.flag-icon {
+    height: 1em;
+    vertical-align: top;
+    margin-right: 0.25rem;
+}
+
+.description .action-icon {
+    height: 1em;
+}
+
+.action {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.action p.larger {
+    margin-top: 0 !important;
+}
+
+.action p.smaller {
+    margin-bottom: 0;
+}
+
+/* Campaigns */
+
+#campaigns {
+    margin-bottom: 3rem;
+}
+
+.campaigns {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.campaigns:not(:has(.active)) {
+    display: none;
+}
+
+.campaigns.reversed {
+    flex-direction: column-reverse;
+}
+
 .campaign {
-    margin-bottom: 0.5rem;
     position: relative;
     z-index: 2;
     border: var(--aside-border);
     border-radius: 0.5rem;
-    width: 90%;
-	max-width: 1200px;
-}
-.campaign:last-child {
-	margin-bottom: 3rem;
-}
-.campaign h2 {
-    margin-top: .25rem;
-}
-.campaign .content {
+    width: 100%;
     padding: 1.5rem 1.2rem;
-    position: relative;
-    z-index: 2;
+}
+
+.campaign:not(.active) {
+    display: none;
+}
+
+.campaign h2 {
+    margin: 0.2rem 0 0.5rem;
+}
+
+.campaign h3 {
+    margin-top: 0.5rem;
+}
+
+.campaign .content {
     display: flex;
     flex-direction: row;
     gap: 2rem;
 }
+
 .campaign .description {
     max-width: 50%;
     display: flex;
     flex-direction: column;
 }
+
 .campaign .content-full .description {
     max-width: 100%;
 }
-.campaign.danaher {
-    box-shadow: var(--aside-shadow-lblue);
-}
-.campaign.funding-cuts {
-    box-shadow: var(--aside-shadow-green);
-}
-.campaign.hill-day {
-    box-shadow: var(--aside-shadow-yellow);
-}
-/* CTA inner section */
+
 .action-wrapper {
     width: calc(50% - 3rem);
 }
-.action {
-    width: 100%;
-    margin-top: 1rem;
+
+.campaign.danaher {
+    box-shadow: var(--aside-shadow-lblue);
 }
 
-/* Mobile breakpoints */
+.campaign.funding-cuts {
+    box-shadow: var(--aside-shadow-green);
+}
+
+.campaign.hill-day {
+    box-shadow: var(--aside-shadow-yellow);
+}
+
+
+
+/* Filter */
+
+.wrapper-filter {
+    padding: 0.2rem 0.5rem;
+    border: var(--aside-border-subtle);
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.wrapper-filter .button-filter {
+    background-color: transparent;
+    color: var(--fg);
+    font-size: 1.25rem;
+}
+
+.wrapper-filter .button-filter.active {
+    background: var(--accent-bg);
+    color: var(--bg);
+}
+
+.wrapper-filter .button-filter.active:hover,
+.wrapper-filter .button-filter.active:active,
+.wrapper-filter .button-filter.active:focus {
+    background-color: var(--fg);
+    border-color: var(--fg);
+    color: var(--bg);
+}
 
 @media only screen and (max-width: 992px) {
+    div.featured {
+        box-shadow: var(--aside-shadow-close);
+    }
+
+    .campaign {
+        width: 90%;
+        margin: auto auto;
+        margin-bottom: 0.5rem;
+    }
+
     .campaign .content {
         flex-direction: column;
         gap: 0;
     }
+
     .campaign .description {
         max-width: 100%;
     }
+
+    .description a {
+        margin-top: 0.5em;
+    }
+
     .action-wrapper {
         width: 100%;
     }
