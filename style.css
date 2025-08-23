@@ -309,7 +309,7 @@ a#hamburger-button {
 ul {
     padding-left: 2rem;
 }
-p, li {
+p, #main li {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
