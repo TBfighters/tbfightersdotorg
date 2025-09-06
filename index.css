@@ -175,7 +175,14 @@
     gap: 1rem;
 }
 .community {
+    display: flex;
+    flex-direction: column;
     padding: 1.125rem 0.75rem;
+}
+
+.community .button {
+    margin-top: auto;
+    width: max-content;
 }
 
 /* Mobile breakpoints */
