@@ -9,9 +9,13 @@
 }
 
 #hero h1 {
-    text-transform: uppercase;
     font-size: 5rem;
     margin-bottom: 0rem;
+    text-align: center;
+}
+
+#hero h1 .no-bold {
+    font-weight: normal;
 }
 
 #hero .hero-right {
@@ -35,7 +39,7 @@
 
 #hero .hero-left {
     margin-left: auto;
-    margin-right: 5rem;
+    margin-right: auto;
     z-index: 1;
     width: 40%;
     margin-bottom: 1rem;
@@ -103,50 +107,41 @@
     box-shadow: var(--aside-shadow-green);
 }
 
+.youtube-wrapper .video-embed-shadow {
+    margin: 0 auto;
+}
+
 
 @media only screen and (max-width: 768px) {
     #hero {
         height: 25rem;
     }
+
     #hero .hero-right {
         height: 25rem;
         width: 100%;
         position: absolute;
         background-size: cover;
     }
+
     #hero h1 {
         font-size: 4.5rem;
     }
+
     #hero-description {
         font-size: 1.25rem;
         font-weight: 500;
     }
 
     .hero-right::before {
-        content: '';
-        z-index: 1;
         width: 100%;
         height: 25rem;
-        display: block;
-        position: absolute;
         background: linear-gradient(0deg, var(--bg) 1%, rgba(252, 243, 227, 0.75) 50%, rgba(252, 243, 277, 0.5) 100%);
     }
 
     #hero .hero-left {
-        position: relative;
-        margin-left: auto;
-        margin-right: auto;
         z-index: 2;
         width: 90%;
-        margin-bottom: 1rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #hero h1 {
-        text-align: center;
     }
 
     .up-next-block {
