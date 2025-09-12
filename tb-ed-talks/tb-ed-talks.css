@@ -107,10 +107,43 @@
     box-shadow: var(--aside-shadow-green);
 }
 
+.youtube-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
 .youtube-wrapper .video-embed-shadow {
     margin: 0 auto;
 }
 
+.youtube-wrapper .thumbnail-preview {
+    border-color: var(--fg);
+    border-radius: 0.5rem;
+    border-width: 3px;
+    background: url(../img/tb-ed-talks/thumbnail.png);
+    background-size: cover;
+}
+
+.youtube-wrapper .thumbnail-preview:hover .play {
+    opacity: 1;
+}
+
+.play {
+    opacity: 0.85;
+    transition: ease-in-out all 0.1s;
+    width: 15%;
+    aspect-ratio: 1/1;
+    background: var(--bg2);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play img {
+    align-self: center;
+}
 
 @media only screen and (max-width: 768px) {
     #hero {
