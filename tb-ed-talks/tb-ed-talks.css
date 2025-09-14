@@ -51,6 +51,7 @@
 
 #hero-description {
     text-align: center;
+    width: 80%;
 }
 
 #next-up {
@@ -84,7 +85,7 @@
 }
 
 .split-right {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
 
