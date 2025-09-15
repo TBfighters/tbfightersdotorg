@@ -42,6 +42,8 @@
     box-shadow: 0.1rem 0.1rem 1rem rgb(10 10 10 / 35%), var(--aside-shadow-far);
     width: 90%;
     flex-shrink: 0;
+    border: 3px solid var(--fg);
+    background-color: var(--fg);
 }
 #hero .hero-right {
     z-index: 1;
@@ -154,7 +156,7 @@
 /* Join community area */
 
 .join-community {
-    width: 80%;
+    width: 85%;
     margin: auto auto;
     padding-top: 2rem;
 }
