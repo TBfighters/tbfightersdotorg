@@ -1,7 +1,7 @@
 ---
 name: TB Ed Talks New Speaker
 about: Template to request new TB Ed Talk Speaker be added to website
-title: ''
+title: TB Ed Talks New Speaker
 labels: ''
 assignees: ''
 
@@ -15,6 +15,6 @@ About the talk:
 About the speaker:
 Date to officially announce speaker (merge changes): 
 
-Web Dev Timeline:
-PR submitted and approved by 
+Web Dev Timeline
+PR submitted and approved by:
 **But hold merging until the following day**
