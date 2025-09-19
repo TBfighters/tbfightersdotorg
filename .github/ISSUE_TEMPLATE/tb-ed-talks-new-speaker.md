@@ -16,5 +16,5 @@ About the speaker:
 Date to officially announce speaker (merge changes): 
 
 Web Dev Timeline
-PR submitted and approved by:
+PR submitted and approved 1 day before the official announcement date (listed above)
 **But hold merging until the following day**
