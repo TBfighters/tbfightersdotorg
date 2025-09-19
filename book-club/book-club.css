@@ -69,7 +69,7 @@ section#read h3,
     border: 3px solid var(--fg);
     border-radius: 0.5rem;
     padding: 1.5rem 1rem;
-    max-width: calc(25% - 2%);
+    max-width: calc((100% / 3) - 2%);
     margin-bottom: 1.5rem;
 }
 
@@ -88,10 +88,6 @@ section#read h3,
     box-shadow: var(--regular-shadow);
 }
 
-#prev .book img {
-    width: 75%;
-}
-
 #current img {
     margin: 0 auto;
     justify-self: center;
@@ -99,6 +95,7 @@ section#read h3,
 
 .book h4 {
     margin-bottom: 0.1rem;
+    margin-top: 0;
 }
 
 .book .date {
@@ -106,9 +103,18 @@ section#read h3,
 }
 
 @media only screen and (max-width: 992px) {
+    .desktop {
+        display: none;
+    }
+
     .book {
-        max-width: calc(50% - 2%);
+        width: 75%;
+        max-width: 100%;
         padding-bottom: 4%;
+    }
+
+    .book#current {
+        scale: 100%;
     }
 
     .book img {
