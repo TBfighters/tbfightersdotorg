@@ -29,6 +29,10 @@ section#join {
     background-color: var(--accent-green);
 }
 
+section#current {
+    background: var(--accent-blue);
+}
+
 .wrapper-block {
     width: 100%;
     background-color: var(--bg);
@@ -73,11 +77,11 @@ section#read h3,
     margin-bottom: 1.5rem;
 }
 
-.book#current {
+.book#active {
     box-shadow: var(--aside-shadow-green);
 }
 
-.book#current {
+.book#active {
     scale: 110%;
 }
 
@@ -88,7 +92,7 @@ section#read h3,
     box-shadow: var(--regular-shadow);
 }
 
-#current img {
+#active img {
     margin: 0 auto;
     justify-self: center;
 }
@@ -113,7 +117,7 @@ section#read h3,
         padding-bottom: 4%;
     }
 
-    .book#current {
+    .book#active {
         scale: 100%;
     }
 
