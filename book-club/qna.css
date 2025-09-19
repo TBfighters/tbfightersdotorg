@@ -45,3 +45,33 @@ article {
     border-radius: 0.5rem;
     box-shadow: var(--aside-shadow-green);
 }
+
+.youtube-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.youtube-wrapper .video-embed-shadow {
+    margin: 0 auto;
+}
+
+#eitb-1 .thumbnail-preview {
+    background: url("../img/book-club/eitb-thumbnail-1.jpg");
+    background-size: cover;
+}
+
+#eitb-2 .thumbnail-preview {
+    background: url("../img/book-club/eitb-thumbnail-2.jpg");
+    background-size: cover;
+}
+
+#pp-1 .thumbnail-preview {
+    background: url("../img/book-club/phantom-plague-thumbnail-1.jpg");
+    background-size: cover;
+}
+
+#mbm-1 .thumbnail-preview {
+    background: url("../img/book-club/mbm-thumbnail.jpg");
+    background-size: cover;
+}
