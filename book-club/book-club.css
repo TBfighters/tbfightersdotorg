@@ -126,8 +126,6 @@ section#read h3,
     }
 }
 
-
-
 .spaces {
     width: 100%;
     display: flex;
@@ -177,6 +175,6 @@ section#read h3,
     }
 
     .hero-inner h1 {
-        font-size: 4rem;
+        font-size: 3.75rem;
     }
 }
