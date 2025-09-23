@@ -1,49 +1,130 @@
+#hero {
+    position: relative;
+    flex-direction: row;
+    background-color: var(--bg);
+    color: var(--fg);
+    justify-content: flex-start;
+    display: flex;
+    padding-top: 0;
+    height: 35rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-inner {
+    display: block;
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
+    padding: 1.5rem 1rem;
+    box-shadow: var(--aside-shadow-green);
+}
+
+.hero-inner h1 {
+    font-size: 5rem;
+    margin-bottom: 0rem;
+    text-align: center;
+}
+
+section#join {
+    background-color: var(--accent-green);
+}
+
+section#current {
+    background: var(--accent-blue);
+}
+
+.wrapper-block {
+    width: 100%;
+    background-color: var(--bg);
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
+    padding: 1.0rem 1rem;
+}
+
+section#read {
+    background-color: var(--accent-blue);
+}
+
+
+section#read h3,
+#read-desciption {
+    color: var(--bg);
+}
+
+.wrapper-block h3 {
+    margin: 0 0;
+}
+
 .books {
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
-    gap: 2%;
+    justify-content: space-evenly;
+
+    /* background-color: var(--bg); */
+    /* border: 3px solid var(--fg); */
+    /* border-radius: 0.5rem; */
+    /* padding: 1.0rem 1rem; */
 }
 
 .book {
-    max-width: calc(25% - 2%);
+    background: var(--bg);
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
+    padding: 1.5rem 1rem;
+    max-width: calc((100% / 3) - 2%);
+    margin-bottom: 1.5rem;
 }
 
-@media only screen and (max-width: 992px) {
-    .book {
-        max-width: calc(50% - 2%);
-        padding-bottom: 4%;
-    }
+.book#active {
+    box-shadow: var(--aside-shadow-green);
+}
 
-    .book:nth-child(3), .book:nth-child(4) {
-        padding-bottom: 0;
-    }
+.book#active {
+    scale: 110%;
 }
 
 .book img {
-    width: 100%;
+    height: 15vw;
     border: 3px solid var(--bg2);
     border-radius: 5px;
     box-shadow: var(--regular-shadow);
 }
 
-#prev .book img {
-    width: 75%;
-}
-
-#current img {
-    border-color: var(--accent-green);
+#active img {
+    margin: 0 auto;
+    justify-self: center;
 }
 
 .book h4 {
     margin-bottom: 0.1rem;
+    margin-top: 0;
 }
 
 .book .date {
     font-size: 1.2rem;
 }
 
+@media only screen and (max-width: 992px) {
+    .desktop {
+        display: none;
+    }
+
+    .book {
+        width: 75%;
+        max-width: 100%;
+        padding-bottom: 4%;
+    }
+
+    .book#active {
+        scale: 100%;
+    }
+
+    .book img {
+        height: 10rem;
+    }
+}
 
 .spaces {
     width: 100%;
@@ -91,5 +172,9 @@
     .space {
         max-width: calc(100% - 2%);
         padding: 10px;
+    }
+
+    .hero-inner h1 {
+        font-size: 3.75rem;
     }
 }
