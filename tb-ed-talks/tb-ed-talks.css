@@ -114,8 +114,12 @@
     margin-bottom: 1rem;
 }
 
-.youtube-wrapper .thumbnail-preview {
-    background: url(../img/tb-ed-talks/thumbnail.png);
+.youtube-wrapper .video-embed-shadow {
+    margin: 0 auto;
+}
+
+.youtube-wrapper#chloe .thumbnail-preview {
+    background: url(../img/tb-ed-talks/chloe-thumbnail.png);
     background-size: cover;
 }
 
