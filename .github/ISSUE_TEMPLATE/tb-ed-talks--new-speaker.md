@@ -1,7 +1,7 @@
 ---
-name: TB Ed Talks New Speaker
+name: 'TB Ed Talks: New Speaker'
 about: Template to request new TB Ed Talk Speaker be added to website
-title: TB Ed Talks New Speaker
+title: 'Update TB Ed Talk page with Next Speaker: *input speaker name*'
 labels: ''
 assignees: ''
 
