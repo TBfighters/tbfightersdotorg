@@ -2,7 +2,7 @@
 name: 'TB Ed Talks: New Speaker'
 about: Template to request new TB Ed Talk Speaker be added to website
 title: 'Update TB Ed Talk page with Next Speaker: *input speaker name*'
-labels: ''
+labels: enhancement, help wanted
 assignees: ''
 
 ---
