@@ -94,11 +94,6 @@
     display: flex;
 }
 
-.split-left .button {
-    margin-top: 2rem;
-    width: 100%;
-}
-
 .split-left img {
     align-self: center;
     width: 100%;
