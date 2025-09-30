@@ -1,3 +1,4 @@
+// Button id: ["id of action (on the article element)"] The class for the div containing the countries actions is NOT used
 const actions = {
     "international": [
         "danaher"
@@ -94,7 +95,7 @@ for (const [region, _] of Object.entries(actions)) {
     if (button == null) {
         continue;
     }
-    button.onclick = function(e) {
+    button.onclick = function(_) {
         handleButton(region, button);
         handleActions();
         handleUrlUpdate();
