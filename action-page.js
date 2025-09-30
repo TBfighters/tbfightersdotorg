@@ -8,6 +8,12 @@ const actions = {
     ],
     "canada": [
         "canada-hill-day",
+    ],
+    "uk": [
+        "global-fund",
+    ],
+    "australia": [
+        "global-fund",
     ]
 }
 
@@ -88,7 +94,7 @@ for (const [region, _] of Object.entries(actions)) {
     if (button == null) {
         continue;
     }
-    button.onclick = function (e) {
+    button.onclick = function(e) {
         handleButton(region, button);
         handleActions();
         handleUrlUpdate();

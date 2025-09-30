@@ -6,6 +6,7 @@
     height: 1em;
     vertical-align: top;
     margin-right: 0.25rem;
+    border-radius: 0.1em;
 }
 
 .description .action-icon {
@@ -99,8 +100,6 @@
 .campaign.hill-day {
     box-shadow: var(--aside-shadow-yellow);
 }
-
-
 
 /* Filter */
 
