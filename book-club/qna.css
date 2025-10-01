@@ -1,42 +1,97 @@
-.featuring {
-    width: 100%;
+#hero {
+    position: relative;
+    flex-direction: row;
+    background-color: var(--accent-green);
+    color: var(--fg);
+    justify-content: flex-start;
+    display: flex;
+    padding-top: 0;
+    height: 35rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-inner {
+    display: block;
+    background-color: var(--bg);
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
+    padding: 1.5rem 1rem;
+}
+
+.hero-inner h1 {
+    font-size: 5rem;
+    margin-bottom: 0rem;
+    text-align: center;
+}
+
+article {
+    background-color: var(--bg);
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
+    padding: 1.5rem 1rem;
+}
+
+.split {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 1.5rem;
     flex-flow: row wrap;
-    gap: 2%;
+    gap: 1rem;
 }
 
-.featuring .person {
+.split img {
+    height: 20vw;
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
+    box-shadow: var(--aside-shadow-green);
+}
+
+.youtube-wrapper {
     display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    max-width: calc((100%/2) - 2%);
-    border-radius: 5px;
-    padding: 20px;
-    /* background-color: var(--bg2); */
-    margin-bottom: 20px;
-    /* box-shadow: var(--aside-shadow); */
-}
-
-.featuring img {
-    width: 75%;
-    border: 3px solid var(--bg2);
-    border-radius: 5px;
-    box-shadow: var(--regular-shadow);
-    margin: auto;
+    justify-content: center;
     margin-bottom: 0.5rem;
 }
 
-.featuring .about {
-    font-size: 0.9rem;
+.youtube-wrapper .video-embed-shadow {
+    margin: 0 auto;
+}
+
+#eitb-1 .thumbnail-preview {
+    background: url("../img/book-club/eitb-thumbnail-1.jpg");
+    background-size: cover;
+}
+
+#eitb-2 .thumbnail-preview {
+    background: url("../img/book-club/eitb-thumbnail-2.jpg");
+    background-size: cover;
+}
+
+#pp-1 .thumbnail-preview {
+    background: url("../img/book-club/phantom-plague-thumbnail-1.jpg");
+    background-size: cover;
+}
+
+#mbm-1 .thumbnail-preview {
+    background: url("../img/book-club/mbm-thumbnail.jpg");
+    background-size: cover;
 }
 
 @media only screen and (max-width: 992px) {
-    .featuring .person {
-        max-width: calc(100% - 2%);
+    h4 {
+        font-size: 2rem;
     }
 
-    .featuring img {
-        width: 100%;
+    h5 {
+        font-size: 1.75rem;
+    }
+
+    .split img {
+        height: 24vw;
+    }
+
+    .hero-inner h1 {
+        font-size: 4rem;
     }
 }
