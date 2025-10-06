@@ -116,39 +116,33 @@
 		</div>
 	</header>
 	<main id="main">
-		<section class="container container-compact title">
-			<div class="wrapper-full">
-				<h2 style="margin-bottom: 0.1em;">TBReaders Book Club</h2>
-				<span class="large">
-					Welcome to the TBReaders Book Club! Read and discuss books about TB and global
-					health together, with a new book every two months! Below you can find resources
-					to help thoughtfully read books both past and present, and join in TBReaders
-					discussions and events.
-				</span>
+		<section id="hero" class="container">
+			<div class="hero-inner wrapper-full">
+				<h1>TBReaders <span class="yellow-highlight">Book Club</span></h1>
+				<p>Welcome to the TBReaders Book Club! Read and discuss books about TB and global health
+					together, with a new book every two months! Below you can find resources to help
+					thoughtfully read books both past and present, and join in TBReaders discussions
+					and events.</p>
 			</div>
 		</section>
-		<!-- <section class="container container-compact"> -->
-		<!-- 	<div class="wrapper-full"> -->
-		<!-- 		<div class="featured" style="margin-top: 1.4em;"> -->
-		<!-- 			<img src="../img/icons/question.svg" alt="question mark icon" -->
-		<!-- 				class="icon" style="margin-bottom: 0; vertical-align: unset;"><strong -->
-		<!-- 				class="larger">Question & Answer:</strong> -->
-		<!-- 			<br> -->
-		<!-- 			<div style="height: 0.5em;"></div> -->
-		<!-- 			<p>Participate in our Q&A with <b>Dr. Joia Mukherjee</b> on September -->
-		<!-- 				15th at 1pm ET!</p> -->
-		<!-- 			<a href="qna.html" class="button">Learn more about our Q&A!</a> -->
-		<!-- 		</div> -->
-		<!-- 	</div> -->
-		<!-- </section> -->
-		<section class="container container-compact">
+		<section class="container container-compact" id="current">
 			<div class="wrapper-full">
-				<h3 style="margin-bottom: 0.1em" id="join">Join the club!
-					<div class="header-copy"><noscript><a href="#join"></a></noscript></div>
-				</h3>
-				<span class="large">We welcome participation across a variety of formats and
-					platforms:</span>
-				<br>
+				<div class="wrapper-block">
+					<h3>Current book:</h3>
+					<p class="larger" style="margin-bottom: 0rem;"><b><i>The Underdream</i> by
+							Aiyana Masla</b></p>
+					<p style="margin-top: 0;">September 18th-October 31st</p>
+					<a href="#books" class="button">Learn more</a>
+				</div>
+			</div>
+		</section>
+		<section class="container container-compact" id="join">
+			<div class="wrapper-full">
+				<div class="wrapper-block">
+					<h3 style="margin-bottom: 0.1em" id="join">Join the club!
+						<div class="header-copy"><noscript><a href="#join"></a></noscript></div>
+					</h3>
+				</div>
 				<br>
 				<div class="spaces">
 					<article class="space" id="discord">
@@ -188,15 +182,14 @@
 				</div>
 			</div>
 		</section>
-		<section class="container container-compact">
+		<section class="container container-compact" id="read">
 			<div class="wrapper-full">
 				<h3 style="margin-bottom: 0.1em;" id="books">Read the books
 					<div class="header-copy"><noscript><a href="#books"></a></noscript></div>
 				</h3>
-				<p>One book every 2 months (with some exceptions). <b>Join anytime!</b></p>
-				<hr>
+				<br>
 				<div class="books">
-					<article class="book">
+					<article class="book" id="active">
 						<div class="image">
 							<img src="../img/book-club/the_underdream.jpg"
 								alt="Book cover of The Underdream">
@@ -204,9 +197,12 @@
 						<h4>The Underdream</h4>
 						<span class="date">September 18th–October 31st</span>
 						<br>
-						<span class="link"><a href="https://www.aiyanamasla.com/poetry" target="_blank">Info and purchase</a></span>
+						<a class="smaller" href="https://www.aiyanamasla.com/poetry"
+							target="_blank">Info and purchase</a>
 						<br>
-						<a href="https://docs.google.com/document/d/e/2PACX-1vSMDW90jiy-f1VJ3kOhK2HDiFSMEwEtYH7v8vbH5HD1WO3U-rRj6z5zH0dxKiG3dHPHqN7KIqlenFlf/pub" target="_blank">Guide and
+						<a class="smaller"
+							href="https://docs.google.com/document/d/e/2PACX-1vSMDW90jiy-f1VJ3kOhK2HDiFSMEwEtYH7v8vbH5HD1WO3U-rRj6z5zH0dxKiG3dHPHqN7KIqlenFlf/pub"
+							target="_blank">Guide and
 							warnings</a>
 					</article>
 					<article class="book">
@@ -217,50 +213,37 @@
 						<h4>The Black Angels</h4>
 						<span class="date">November 1st–January 31st</span>
 						<br>
-						<span class="link"><a
-								href="https://www.penguinrandomhouse.com/books/722957/the-black-angels-by-maria-smilios/"
-								target="_blank">Info and purchase</a></span>
+						<a class="smaller"
+							href="https://www.penguinrandomhouse.com/books/722957/the-black-angels-by-maria-smilios/"
+							target="_blank">Info and purchase</a>
 						<br>
-						<a onclick="comingSoonToast()" title="Coming soon...">Guide and
+						<a class="smaller" onclick="comingSoonToast()"
+							title="Coming soon...">Guide and
 							warnings</a>
 					</article>
-					<article class="book">
+					<article class="book desktop">
 						<div class="image">
 							<img src="../img/book-club/unknown-book.png"
 								alt="To be announced">
 						</div>
 						<h4>TBD</h4>
 						<span class="date">Feburary 1st - April 31st</span>
-						<br>
-						<!-- <span class="buy"> and purchase</span> -->
-						<br>
-						<!-- <a href="">Guide and Warnings</a> -->
-					</article>
-					<article class="book">
-						<div class="image">
-							<img src="../img/book-club/unknown-book.png"
-								alt="To be announced">
-						</div>
-						<h4>TBD</h4>
-						<span class="date">May 1st - July 31st</span>
-						<br>
-						<!-- <span class="buy"> and purchase</span> -->
-						<br>
-						<!-- <a href="">Guide and Warnings</a> -->
 					</article>
 				</div>
 			</div>
+			<br>
 		</section>
-		<!-- <section class="container container-compact"> -->
-		<!-- 	<div class="wrapper-full"> -->
-		<!-- 		<h3 id="qna">Participate in Q&As -->
-		<!-- 			<div class="header-copy"><noscript><a href="#qna"></a></noscript></div> -->
-		<!-- 		</h3> -->
-		<!-- 		<p>Alongside each book we read, we also host a question and answer session with the author or an expert to answer <b>your</b> questions! Questions are both submitted and voted on by book club participants.</p> -->
-		<!-- 		<a href="qna.html" class="button">Watch past Q&As</a> -->
-		<!-- 	</div> -->
-		<!-- </section> -->
-		<hr>
+		<section class="container container-compact">
+			<div class="wrapper-full">
+				<h3 id="qna">Participate in Q&As
+					<div class="header-copy"><noscript><a href="#qna"></a></noscript></div>
+				</h3>
+				<p>Alongside each book we read, we also host a question and answer session with the
+					author or an expert to answer <b>your</b> questions! Questions are both
+					submitted and voted on by book club participants.</p>
+				<a href="qna.html" class="button">Watch past Q&As</a>
+			</div>
+		</section>
 		<section class="container container-compact">
 			<div class="wrapper-full">
 				<h3 style="margin-bottom: 0.1em;" id="past">Previous Books
@@ -276,12 +259,15 @@
 						<h4>Mountains Beyond Mountains</h4>
 						<span class="date">July 18th–September 17th</span>
 						<br>
-						<span class="link"><a
-								href="https://www.penguinrandomhouse.com/books/92351/mountains-beyond-mountains-by-tracy-kidder/"
-								target="_blank">Info and purchase</a></span>
+						<a class="smaller"
+							href="https://www.penguinrandomhouse.com/books/92351/mountains-beyond-mountains-by-tracy-kidder/"
+							target="_blank">Info and purchase</a>
 						<br>
-						<a href="https://docs.google.com/document/d/e/2PACX-1vRht8sZwDPZRvquIYakj4SPrZwyfz7lJuknXfjWumeOn7H_ejb4c89u0Nwz5poaOunD3Qf5lTJ0Kcnb/pub"
+						<a class="smaller"
+							href="https://docs.google.com/document/d/e/2PACX-1vRht8sZwDPZRvquIYakj4SPrZwyfz7lJuknXfjWumeOn7H_ejb4c89u0Nwz5poaOunD3Qf5lTJ0Kcnb/pub"
 							target="_blank">Guide and warnings</a>
+						<a href="qna.html#mbm" class="button button-subtle smaller">Watch the
+							Q&A</a>
 					</article>
 					<article class="book">
 						<div class="image">
@@ -291,12 +277,14 @@
 						<h4>Phantom Plague</h4>
 						<span class="date">May 18th - July 17th</span>
 						<br>
-						<span class="link"><a
-								href="https://www.penguin.co.in/book/phantom-plague/"
-								target="_blank">Info and purchase</a></span>
+						<a class="smaller" href="https://www.penguin.co.in/book/phantom-plague/"
+							target="_blank">Info and purchase</a>
 						<br>
-						<a href="https://docs.google.com/document/d/e/2PACX-1vRvjZnSsgwnzTIdJpW5GBee5X7s0Y6PxM-wJt2U78zIAzLLTP0idOzgCvgRPo-RCct9XxarOdo7GjRi/pub"
+						<a class="smaller"
+							href="https://docs.google.com/document/d/e/2PACX-1vRvjZnSsgwnzTIdJpW5GBee5X7s0Y6PxM-wJt2U78zIAzLLTP0idOzgCvgRPo-RCct9XxarOdo7GjRi/pub"
 							target="_blank">Guide and warnings</a>
+						<a href="qna.html#phantom-plague"
+							class="button button-subtle smaller">Watch the Q&A</a>
 					</article>
 					<article class="book">
 						<div class="image">
@@ -306,12 +294,16 @@
 						<h4>Everything is Tuberculosis</h4>
 						<span class="date">March 18th - May 17th</span>
 						<br>
-						<span class="link"><a href="https://everythingistb.com/"
-								target="_blank">Info and purchase</a></span>
+						<a class="smaller" href="https://everythingistb.com/"
+							target="_blank">Info and purchase</a>
 						<br>
-						<a href="https://docs.google.com/document/d/e/2PACX-1vSvyEdSXtmjwsEL05Yfivv9wmcY3wb56Oyj0mNpMee5URb06PMb8ardcWzJD5ZhGxkNAPY6KqIQGPcP/pub"
+						<a class="smaller"
+							href="https://docs.google.com/document/d/e/2PACX-1vSvyEdSXtmjwsEL05Yfivv9wmcY3wb56Oyj0mNpMee5URb06PMb8ardcWzJD5ZhGxkNAPY6KqIQGPcP/pub"
 							target="_blank">Guide and
 							warnings</a>
+						<a href="qna.html#eitb-pt2" class="button button-subtle smaller">Watch
+							the
+							Q&A</a>
 					</article>
 				</div>
 			</div>
