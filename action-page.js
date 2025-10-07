@@ -1,5 +1,6 @@
 // Button id: ["id of action (on the article element)"] The class for the div containing the countries actions is NOT used
 const actions = {
+    "all": [],
     "international": [
         "danaher"
     ],
@@ -22,9 +23,9 @@ const actions = {
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
 
-let active = ["international"];
+let active = "all";
 if (urlParams.size != 0) {
-    const regionParams = urlParams.get("region").split(',');
+    const regionParams = urlParams.get("region");
     active = regionParams
 }
 
@@ -37,14 +38,20 @@ function handleActions() {
     // make copy
     let currentActions = actions["international"].slice();
 
-    if (!active.includes("international")) {
-        for (let i = 0; i < active.length; i++) {
-            for (let b = 0; b < actions[active[i]].length; b++) {
-                currentActions.push(actions[active[i]][b]);
+    for (let i = 0; i < Object.keys(actions).length; i++) {
+        let key = Object.keys(actions)[i];
+        if (active != "all") {
+            if (active != key) {
+                continue;
             }
         }
-    } else {
-        currentActions = null;
+        if (key == "all" || key == "international") {
+            continue;
+        }
+        let a = actions[key];
+        for (let b = 0; b < a.length; b++) {
+            currentActions.push(a[b]);
+        }
     }
 
     for (let i = 0; i < campaigns.length; i++) {
@@ -61,8 +68,8 @@ function handleActions() {
 
 function handleUrlUpdate() {
     let url = window.location.origin + window.location.pathname + window.location.hash;
-    if (!active.includes("international")) {
-        let activeString = active.join(",");
+    if (active != "all") {
+        let activeString = active;
         url = window.location.origin + window.location.pathname + "?region=" + activeString + window.location.hash;
     }
 
@@ -70,23 +77,13 @@ function handleUrlUpdate() {
 }
 
 function handleButton(region, button) {
-    if (active.includes("international")) {
-        active = [region];
-        button.classList.add("active");
+    document.getElementById(active).classList.remove("active")
+    active = region;
+    button.classList.add("active");
+    if (active != "all") {
         campaignsWrapper.classList.add("reversed");
-    } else if (active.includes(region)) {
-        let index = active.indexOf(region);
-        active.splice(index, 1);
-
-        button.classList.remove("active");
-
-        if (active.length == 0) {
-            active = ["international"];
-            campaignsWrapper.classList.remove("reversed");
-        }
     } else {
-        active.push(region);
-        button.classList.add("active");
+        campaignsWrapper.classList.remove("reversed");
     }
 }
 
@@ -102,12 +99,5 @@ for (const [region, _] of Object.entries(actions)) {
     };
 }
 
-// Handle initial url
-if (!active.includes("international")) {
-    handleActions()
-    campaignsWrapper.classList.add("reversed");
-    for (let i = 0; i < active.length; i++) {
-        let id = active[i];
-        document.getElementById(id).classList.add("active");
-    }
-}
+handleButton(active, document.getElementById(active))
+handleActions()
