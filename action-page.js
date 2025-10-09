@@ -1,3 +1,5 @@
+let activateButton = document.getElementById("filter-activate");
+let activeButtonInner = document.querySelector("#filter-activate span")
 // Button id: ["id of action (on the article element)"] The class for the div containing the countries actions is NOT used
 const actions = {
     "all": [],
@@ -74,6 +76,7 @@ function handleUrlUpdate() {
     }
 
     history.replaceState({}, document.title, url);
+
 }
 
 function handleButton(region, button) {
@@ -85,6 +88,8 @@ function handleButton(region, button) {
     } else {
         campaignsWrapper.classList.remove("reversed");
     }
+
+    activeButtonInner.innerHTML = document.getElementById(active).innerHTML;
 }
 
 for (const [region, _] of Object.entries(actions)) {
@@ -100,4 +105,52 @@ for (const [region, _] of Object.entries(actions)) {
 }
 
 handleButton(active, document.getElementById(active))
-handleActions()
+handleActions();
+
+// filter
+
+let filter = document.querySelector(".wrapper-filter menu");
+let focused = null;
+let buttons = document.querySelectorAll(".wrapper-filter menu button");
+
+let wrapper = document.querySelector(".wrapper-filter")
+
+function toggleMenu() {
+    filter.classList.toggle("active")
+    activateButton.classList.toggle("active")
+    if (filter.classList.contains("active")) {
+        focused = 0;
+        buttons[0].focus();
+    }
+}
+
+activateButton.onclick = () => {
+    toggleMenu()
+}
+
+wrapper.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") { // Space or Enter key
+        toggleMenu()
+        return;
+    }
+    if (e.key == "ArrowDown") {
+        e.preventDefault(); // Prevent the default action to stop scrolling when pressing Space
+        focused++;
+        if (focused == buttons.length) {
+            focused = 0;
+        }
+        buttons[focused].focus();
+    }
+    if (e.key == "ArrowUp") {
+        e.preventDefault(); // Prevent the default action to stop scrolling when pressing Space
+        focused--;
+        if (focused == -1) {
+            focused = buttons.length - 1;
+        }
+        buttons[focused].focus();
+    }
+
+    if (e.key == "Tab") {
+        toggleMenu();
+    }
+})
