@@ -115,12 +115,17 @@ let buttons = document.querySelectorAll(".wrapper-filter menu button");
 
 let wrapper = document.querySelector(".wrapper-filter")
 
+let menuActive = false;
+
 function toggleMenu() {
     filter.classList.toggle("active")
     activateButton.classList.toggle("active")
-    if (filter.classList.contains("active")) {
+    if (!menuActive) {
         focused = 0;
         buttons[0].focus();
+        menuActive = true;
+    } else {
+        menuActive = false;
     }
 }
 
@@ -152,5 +157,14 @@ wrapper.addEventListener("keydown", (e) => {
 
     if (e.key == "Tab") {
         toggleMenu();
+    }
+})
+
+window.addEventListener("click", (event) => {
+    if (!menuActive) {
+        return;
+    }
+    if (!event.target.matches(".wrapper-filter *")) {
+        toggleMenu()
     }
 })
