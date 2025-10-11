@@ -1,5 +1,73 @@
 let activateButton = document.getElementById("filter-activate");
 let activeButtonInner = document.querySelector("#filter-activate span")
+
+let filter = document.querySelector(".wrapper-filter menu");
+let focused = null;
+let buttons = document.querySelectorAll(".wrapper-filter menu button");
+
+let wrapper = document.querySelector(".wrapper-filter")
+
+let menuActive = false;
+
+function toggleMenu() {
+    filter.classList.toggle("active")
+    activateButton.classList.toggle("active")
+    if (!menuActive) {
+        focused = 0;
+        if (!mobile) {
+            buttons[0].focus();
+        }
+        menuActive = true;
+    } else {
+        menuActive = false;
+    }
+}
+
+activateButton.onclick = () => {
+    toggleMenu()
+}
+
+wrapper.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") { // Space or Enter key
+        toggleMenu()
+        return;
+    }
+    if (e.key == "ArrowDown") {
+        e.preventDefault(); // Prevent the default action to stop scrolling when pressing Space
+        focused++;
+        if (focused == buttons.length) {
+            focused = 0;
+        }
+        if (!mobile) {
+            buttons[focused].focus();
+        }
+    }
+    if (e.key == "ArrowUp") {
+        e.preventDefault(); // Prevent the default action to stop scrolling when pressing Space
+        focused--;
+        if (focused == -1) {
+            focused = buttons.length - 1;
+        }
+        if (!mobile) {
+            buttons[focused].focus();
+        }
+    }
+
+    if (e.key == "Tab") {
+        toggleMenu();
+    }
+})
+
+window.addEventListener("click", (event) => {
+    if (!menuActive) {
+        return;
+    }
+    if (!event.target.matches(".wrapper-filter *")) {
+        toggleMenu()
+    }
+})
+
+
 // Button id: ["id of action (on the article element)"] The class for the div containing the countries actions is NOT used
 const actions = {
     "all": [],
@@ -90,6 +158,11 @@ function handleButton(region, button) {
     }
 
     activeButtonInner.innerHTML = document.getElementById(active).innerHTML;
+
+    if (mobile && menuActive) {
+        toggleMenu()
+    }
+
 }
 
 for (const [region, _] of Object.entries(actions)) {
@@ -109,62 +182,3 @@ handleActions();
 
 // filter
 
-let filter = document.querySelector(".wrapper-filter menu");
-let focused = null;
-let buttons = document.querySelectorAll(".wrapper-filter menu button");
-
-let wrapper = document.querySelector(".wrapper-filter")
-
-let menuActive = false;
-
-function toggleMenu() {
-    filter.classList.toggle("active")
-    activateButton.classList.toggle("active")
-    if (!menuActive) {
-        focused = 0;
-        buttons[0].focus();
-        menuActive = true;
-    } else {
-        menuActive = false;
-    }
-}
-
-activateButton.onclick = () => {
-    toggleMenu()
-}
-
-wrapper.addEventListener("keydown", (e) => {
-    if (e.key === "Enter" || e.key === " ") { // Space or Enter key
-        toggleMenu()
-        return;
-    }
-    if (e.key == "ArrowDown") {
-        e.preventDefault(); // Prevent the default action to stop scrolling when pressing Space
-        focused++;
-        if (focused == buttons.length) {
-            focused = 0;
-        }
-        buttons[focused].focus();
-    }
-    if (e.key == "ArrowUp") {
-        e.preventDefault(); // Prevent the default action to stop scrolling when pressing Space
-        focused--;
-        if (focused == -1) {
-            focused = buttons.length - 1;
-        }
-        buttons[focused].focus();
-    }
-
-    if (e.key == "Tab") {
-        toggleMenu();
-    }
-})
-
-window.addEventListener("click", (event) => {
-    if (!menuActive) {
-        return;
-    }
-    if (!event.target.matches(".wrapper-filter *")) {
-        toggleMenu()
-    }
-})
