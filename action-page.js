@@ -177,7 +177,7 @@ for (const [region, _] of Object.entries(actions)) {
     };
 }
 
-handleButton(active, document.getElementById(active))
+// handleButton(active, document.getElementById(active))
 handleActions();
 
 // filter
