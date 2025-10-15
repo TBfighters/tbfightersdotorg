@@ -114,8 +114,15 @@
 		<section class="container container-compact title">
 			<div class="wrapper-full">
 				<h1 class="break-anywhere">Take <span class="red">Action</span></h1>
-				<p>Tuberculosis is a complex social justice issue, so we tackle it from multiple angles. This includes government policy, funding, and access to testing and treatments. You can join us and help save lives by demanding affordable testing, advocating to protect government global health funding, or educating yourself and others. Pick the lanes that look most interesting, fun, or important to you! </p>
-				<p>Things change quickly in the TB landscape! To stay updated on the latest calls to action, follow TBFighters on social media and subscribe to our <a href="https://newsletter.tbfighters.org/subscribe" target="_blank">newsletter</a>.</p>
+				<p>Tuberculosis is a complex social justice issue, so we tackle it from multiple angles.
+					This includes government policy, funding, and access to testing and treatments.
+					You can join us and help save lives by demanding affordable testing, advocating
+					to protect government global health funding, or educating yourself and others.
+					Pick the lanes that look most interesting, fun, or important to you! </p>
+				<p>Things change quickly in the TB landscape! To stay updated on the latest calls to
+					action, follow TBFighters on social media and subscribe to our <a
+						href="https://newsletter.tbfighters.org/subscribe"
+						target="_blank">newsletter</a>.</p>
 				<p class="socials-wrapper">
 					<a href="https://newsletter.tbfighters.org/subscribe" target="_blank"><img
 							src="img/socials/newsletter.svg" alt="Newsletter"
@@ -161,26 +168,54 @@
 						<strong>Featured action:</strong>
 					</p>
 					<p>
-						US: PEPFAR money isn't being spent! Funding already approved by Congress on a bipartisan basis is being withheld by OMB. We can help by <a href="https://act.pih.org/pepfar-apportionment" target="_blank">calling on our representatives</a> to demand OMB releases the funds NOW!
+						US: PEPFAR money isn't being spent! Funding already approved by Congress on a bipartisan basis is being withheld
+						by OMB. We can help by <a href="https://act.pih.org/pepfar-apportionment" target="_blank">calling on our
+							representatives</a> to demand OMB releases the funds NOW!
 					</p>
 					<div class="buttons">
-						<a href="https://act.pih.org/pepfar-apportionment" class="button" target="_blank">Email your senators!</a>
-						<a href="https://www.cnn.com/2025/09/13/africa/hiv-aids-program-cuts-trump-pepfar-intl?cid=external-feeds_iluminar_flipboard" class="button button-subtle" target="_blank">Learn more</a>
+						<a href="https://act.pih.org/pepfar-apportionment" class="button" target="_blank">Email your
+							representatives!</a>
+						<a href="https://www.cnn.com/2025/09/13/africa/hiv-aids-program-cuts-trump-pepfar-intl?cid=external-feeds_iluminar_flipboard"
+							class="button button-subtle" target="_blank">Learn more</a>
 					</div>
 					<!-- featured Action End -->
 				</div>
 			</div>
 			<br>
+		</section>
+		<section class="container" id="tabs">
 			<div class="wrapper-full">
 				<div class="wrapper-filter">
-					<button class="button button-filter" id="united-states"><img
-							src="/img/icons/flags/us.svg" alt="" class="flag-icon">
-						US</button>
-					<button class="button button-filter" id="canada"><img
-							src="/img/icons/flags/ca.svg" alt="" class="flag-icon">
-						Canada</button>
+					<button id="filter-activate" class="button-subtle button"><img
+							src="img/icons/chevron.svg" alt="dropdown arrow"
+							class="icon"><span>Filter by region</span></button>
+					<menu tabindex="-1">
+						<li><button class="button button-filter" id="all"
+								tabindex="-1">All</button>
+						</li>
+						<li><button class="button button-filter" id="international"
+								tabindex="-1">🌐
+								International</button></li>
+						<li><button class="button button-filter" id="united-states"
+								tabindex="-1"><img src="/img/icons/flags/us.svg" alt=""
+									class="flag-icon">
+								US</button></li>
+						<li><button class="button button-filter" id="canada" tabindex="-1"><img
+									src="/img/icons/flags/ca.svg" alt=""
+									class="flag-icon">
+								Canada</button></li>
+						<li><button class="button button-filter" id="uk" tabindex="-1"><img
+									src="/img/icons/flags/uk.svg" alt=""
+									class="flag-icon">
+								UK</button></li>
+						<li><button class="button button-filter" id="australia"
+								tabindex="-1"><img src="/img/icons/flags/au.svg" alt=""
+									class="flag-icon">
+								Australia</button></li>
+					</menu>
 				</div>
 			</div>
+			<br>
 		</section>
 		<section class="container" id="campaigns">
 			<div class="campaigns wrapper-full">
@@ -199,10 +234,12 @@
 									href="/articles/danaher-rif.html">Danaher
 									promised to sell their basic GeneXpert tests at
 									cost</a>. Since then, we have seen no proof that
-								their tests truly are being sold at cost. TBFighters are keeping up
+								their tests truly are being sold at cost. TBFighters are
+								keeping up
 								an active campaign to remind Danaher of their promises
 								and urge them to lower the prices on all of their tests,
-								such as drug-resistant TB, HIV, hepatitis, and many sexually transmitted
+								such as drug-resistant TB, HIV, hepatitis, and many
+								sexually transmitted
 								infections.</p>
 							<p><a href="/danaher/">Learn more about Danaher and
 									GeneXpert</a></p>
@@ -210,8 +247,8 @@
 						<div class="action-wrapper">
 							<div class="action">
 								<p class="larger">
-									<img src="./img/icons/envelope.svg" alt="email icon"
-										class="icon" />
+									<img src="./img/icons/envelope.svg"
+										alt="email icon" class="icon" />
 									<strong>Act Now: <span
 											class="red">Email</span></strong>
 									Danaher's Leadership
@@ -238,7 +275,9 @@
 						<div class="content">
 							<div class="description">
 								<h2><img src="/img/homepage/apple.svg" alt="Apple icon"
-										class="icon">US Funding Cuts
+										class="icon"><a
+										href="./funding-cuts/">US Funding
+										Cuts</a>
 								</h2>
 								<p>Many countries, led by the United States,
 									have
@@ -259,16 +298,19 @@
 								<div class="action">
 									<p class="larger">
 										<img src="./img/icons/phone.svg"
-											alt="phone icon"
-											class="icon" />
+											alt="phone icon" class="icon" />
 										<strong>Act Now: <span
 												class="red">Prevent</span></strong>
 										Foreign Aid Cuts
 									</p>
-									<p>Email now to ensure foreign aid funding is spent.
+									<p>Email now to ensure foreign aid funding is
+										spent.
 									</p>
 									<div class="buttons">
-                    <a href="https://act.pih.org/sept-30-funding" class="button" target="_blank">Contact lawmakers</a>
+										<a href="https://act.pih.org/sept-30-funding"
+											class="button"
+											target="_blank">Contact
+											lawmakers</a>
 										<a href="funding-cuts/#take-action"
 											class="button button-subtle">More
 											actions</a>
@@ -278,8 +320,8 @@
 						</div>
 					</article>
 					<article class="campaign hill-day active" id="us-hill-day">
-						<h2><img src="/img/homepage/money.svg" alt="Money image"
-								class="icon">US Hill Day</h2>
+						<h2><img src="/img/homepage/money.svg" alt="Money image" class="icon">US
+							Hill Day</h2>
 						<div class="content content-full">
 							<div class="description">
 								<p>TBFighters and partners travel to Washington
@@ -292,7 +334,8 @@
 									fantastic
 									opportunity to learn directly from TB
 									experts
-									and survivors, participate in extremely effective
+									and survivors, participate in extremely
+									effective
 									advocacy,
 									and have fun!</p>
 								<span class="larger"><a href="hill-day/">Show me
@@ -303,27 +346,84 @@
 				</div>
 				<div class="canadian-campaings campaigns">
 					<article class="campaign hill-day active" id="canada-hill-day">
-						<h2><img src="/img/homepage/money.svg" alt="Money image"
-								class="icon">Canadian Hill Day</h2>
-						<div class="content content-full">
+						<div class="content">
 							<div class="description">
-								<p>TBFighters and partners travel to Ottawa
-									each
-									year to advocate to Congressional
-									offices for
-									increased funding for tuberculosis
-									prevention,
-									testing, and treatment. This is a
-									fantastic
-									opportunity to learn directly from TB
-									experts
-									and survivors, do extremely effective
-									advocacy,
-									and have fun!</p>
-								<div class="buttons">
-									<a class="button"
-										href="https://docs.google.com/forms/d/e/1FAIpQLSfPkbT55Rs_sSVcbpuoRuL7xNTLjm0aX_HJo58M2k0SeHgjZA/viewform"
-										target="_blank">Get involved</a>
+								<h2><img src="/img/homepage/money.svg" alt="Money image"
+										class="icon">Tell Canada to <span
+										class="red">#LeadOnTB</span></h2>
+								<p>Many in wealthy countries think tuberculosis is
+									history, but the reality is stark: over 80% of
+									TB cases and deaths occur in low- and
+									middle-income countries. And here in Canada,
+									Inuit in Nunavut experience TB rates more than
+									300 times higher than the non-Indigenous
+									population. TB is not just a global issue-it's a
+									Canadian one too.</p>
+								<span class="larger"><a
+										href="https://pihcanada.org/LeadOnTB-on-the-Hill"
+										target="_blank">Learn more</a></span>
+							</div>
+							<div class="action-wrapper">
+								<div class="action">
+									<p class="larger">
+										<img src="./img/icons/envelope.svg"
+											alt="phone icon" class="icon" />
+										<strong>Act Now: <span
+												class="red">Urge</span></strong>
+										Canada to <span
+											class="red">#LeadOnTB</span>
+									</p>
+									<p>Email your MP and urge Canada to lead the
+										fight to end TB.</p>
+									<div class="buttons">
+										<a href="https://win.newmode.net/pih/pihchillday-2"
+											class="button"
+											target="_blank">Email now!</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+				</div>
+				<div class="uk-campaings australia-campaigns campaigns">
+					<article class="campaign funding-cuts active" id="global-fund">
+						<div class="content">
+							<div class="description">
+								<h2><img src="/img/homepage/apple.svg" alt="Apple Icon"
+										class="icon">Global
+									Fund</h2>
+								<p>The Global Fund is the world's largest funder of
+									global health grants, fighting tuberculosis,
+									HIV/AIDS, and Malaria. Its continued funding is
+									crucial to the fight against TB around the
+									world. This year nations are considering how
+									much funding they should give to the Global Fund
+									as a part of its 2026-2028 replenishment cycle.
+									We need to remind our governments to keep their
+									commitments to global health and replenish the
+									Global Fund!</p>
+							</div>
+							<div class="action-wrapper">
+								<div class="action">
+									<p class="larger">
+										<img src="./img/icons/envelope.svg"
+											alt="phone icon" class="icon" />
+										<strong>Act Now: <span
+												class="red">Protect</span></strong>
+										the Global Fund
+									</p>
+									<p>Email your representatives to urge them to
+										fund the Global Fund</p>
+									<div class="buttons">
+										<a href="https://results.org.uk/news/uk-must-deliver-1-billion-for-the-global-fund/"
+											class="button"
+											target="_blank">UK: Email the
+											Foreign Secretary!</a>
+										<a href="https://www.results.org.au/write-to-your-mp"
+											class="button"
+											target="_blank">Australia: Write
+											to your MP!</a>
+									</div>
 								</div>
 							</div>
 						</div>

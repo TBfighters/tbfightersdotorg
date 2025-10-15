@@ -78,6 +78,11 @@ article {
     background-size: cover;
 }
 
+#underdream-1 .thumbnail-preview {
+    background: url("../img/book-club/the-underdream-thumbnail.jpg");
+    background-size: cover;
+}
+
 @media only screen and (max-width: 992px) {
     h4 {
         font-size: 2rem;
