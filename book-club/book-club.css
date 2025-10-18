@@ -38,20 +38,19 @@ section#current {
     background-color: var(--bg);
     border: 3px solid var(--fg);
     border-radius: 0.5rem;
-    padding: 1.0rem 1rem;
+    padding: 1rem 1rem;
 }
 
 section#read {
     background-color: var(--accent-blue);
 }
 
-
-section#read h3,
+section#read h2,
 #read-desciption {
     color: var(--bg);
 }
 
-.wrapper-block h3 {
+.wrapper-block h2 {
     margin: 0 0;
 }
 
@@ -97,7 +96,7 @@ section#read h3,
     justify-self: center;
 }
 
-.book h4 {
+.book h3 {
     margin-bottom: 0.1rem;
     margin-top: 0;
 }
@@ -139,7 +138,7 @@ section#read h3,
     flex-direction: column;
     align-content: center;
     flex-wrap: wrap;
-    max-width: calc((100%/3) - 2%);
+    max-width: calc((100% / 3) - 2%);
     border-radius: 5px;
     padding: 20px;
     background-color: var(--bg);
