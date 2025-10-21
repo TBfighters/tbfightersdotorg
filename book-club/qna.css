@@ -83,13 +83,13 @@ article {
     background-size: cover;
 }
 
+h2 {
+    margin-top: 1rem;
+}
+
 @media only screen and (max-width: 992px) {
-
-    h5 {
-        font-size: 1.75rem;
-    }
-
     .split img {
+
         height: 24vw;
     }
 
@@ -97,4 +97,3 @@ article {
         font-size: 4rem;
     }
 }
-
