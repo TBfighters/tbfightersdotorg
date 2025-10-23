@@ -122,6 +122,11 @@
     background-size: cover;
 }
 
+#stijn .youtube-wrapper .thumbnail-preview {
+    background: url(../img/tb-ed-talks/stijn-thumbnail.jpg);
+    background-size: cover;
+}
+
 .up-next-block#chloe .split-left img,
 .up-next-block#chloe {
     box-shadow: var(--aside-shadow-green);
@@ -130,6 +135,11 @@
 .up-next-block#carole .split-left img,
 .up-next-block#carole {
     box-shadow: var(--aside-shadow-yellow);
+}
+
+.up-next-block#stijn .split-left img,
+.up-next-block#stijn {
+    box-shadow: var(--aside-shadow-lblue);
 }
 
 #past-talks {
