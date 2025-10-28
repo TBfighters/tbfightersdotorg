@@ -78,9 +78,9 @@ const actions = {
         "us-funding-cuts",
         "us-hill-day",
     ],
-    "canada": [
-        "canada-hill-day",
-    ],
+    // "canada": [
+    //     "canada-hill-day",
+    // ],
     "uk": [
         "global-fund",
     ],
