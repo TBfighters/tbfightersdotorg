@@ -76,6 +76,11 @@ section#read h2,
     margin-bottom: 1.5rem;
 }
 
+.book.tbd {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
 .book#active {
     box-shadow: var(--aside-shadow-green);
 }
@@ -106,7 +111,7 @@ section#read h2,
 }
 
 @media only screen and (max-width: 992px) {
-    .desktop {
+    .tbd {
         display: none;
     }
 
