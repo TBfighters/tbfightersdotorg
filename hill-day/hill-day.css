@@ -32,6 +32,17 @@
     z-index: 2;
 }
 
+#hero-inner .image {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#hero-inner img {
+    width: 50%;
+    align-self: center;
+}
+
 #hero::before {
     content: '';
     z-index: 1;
@@ -44,6 +55,14 @@
 
 #hill-day {
     padding-top: 8rem;
+}
+
+#impact {
+    padding-top: 6rem;
+}
+
+#about, #apply {
+    padding-top: 4rem;
 }
 
 .byline {
@@ -68,6 +87,7 @@ h2 {
 
 .image-split img {
     width: 100%;
+    margin: 0 auto;
     display: block;
     border: 3px solid var(--fg);
     border-radius: 0.5rem;
@@ -75,30 +95,36 @@ h2 {
     box-shadow: var(--aside-shadow-lblue);
 }
 
-.outlined-block {
-    display: block;
-    margin: 0 auto;
-    padding: 0 1rem;
-    border: 3px solid var(--fg);
-    border-radius: 0.5rem;
-}
-
-#about, #impact, #apply {
-    padding-top: 5rem;
-}
-
-#about .image-split {
-    width: 40%;
-}
-
-#about .content {
-    width: 60%;
+#hill-day .image-split img {
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
 #about .image-split img {
     box-shadow: var(--aside-shadow-green);
 }
 
+#hill-day .content {
+    width: 60%;
+}
+
+#about .content {
+    width: 90%;
+}
+
+#hill-day .image-split {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+#hill-day .block {
+    margin-bottom: 2rem;
+}
+
+#hill-day .mobile {
+    display: none;
+}
 
 .quote {
     font-size: 2rem;
@@ -107,6 +133,7 @@ h2 {
     font-style: italic;
     display: flex;
     justify-content: center;
+    padding-top: 6rem;
 }
 
 .quote::before {
@@ -124,11 +151,14 @@ h2 {
 }
 
 .quote p {
+    position: relative;
+    z-index: 1;
     width: 80%;
 }
 
 .quote strong {
-    font-size: 2.5rem;
+    font-weight: 800;
+    /* font-size: 2.5rem; */
 }
 
 .wrapper-full {
@@ -210,28 +240,48 @@ h3.impact {
     width: fit-content;
 }
 
+#faq {
+	background-color: var(--bg2);
+        margin-top: 3rem;
+}
+
+#faq .wrapper {
+	max-width: 70%;
+	padding: 5em 1em;
+}
+
+#faq article .question {
+	padding: 1em 1em 0.5em 1em;
+	border-bottom: 1px solid var(--accent-fg);
+	font-weight: 800;
+}
+
+#faq article .answer {
+	padding: 1em 1em 0.5em 1em;
+}
+
 @media only screen and (max-width: 992px) {
     #hero h1 {
         font-size: 3rem;
     }
 
-    .hero-background {
-        align-self: start;
-        justify-self: start;
-        margin: 0;
-    }
+    /* .hero-background { */
+    /*     align-self: start; */
+    /*     justify-self: start; */
+    /*     margin: 0; */
+    /* } */
 
-    .hero-background:before {
-        content: '';
-        z-index: 1;
-        width: 100%;
-        margin: 0;
-        left: 0;
-        height: var(--total-height);
-        display: block;
-        position: absolute;
-        background: linear-gradient(0deg, var(--bg) 1%, rgba(0, 0, 0, 0) 35%);
-    }
+    /* .hero-background:before { */
+    /*     content: ''; */
+    /*     z-index: 1; */
+    /*     width: 100%; */
+    /*     margin: 0; */
+    /*     left: 0; */
+    /*     height: var(--total-height); */
+    /*     display: block; */
+    /*     position: absolute; */
+    /*     background: linear-gradient(0deg, var(--bg) 1%, rgba(0, 0, 0, 0) 35%); */
+    /* } */
 
     .byline {
         margin-top: 0.1rem;
@@ -244,14 +294,10 @@ h3.impact {
     }
 
     #hero {
-        /* background-position: center; */
+        background-position: center;
         /* background: none; */
     }
 
-    #hero {
-        background-attachment: scroll;
-
-    }
     /* #hero::before { */
     /*     content: ''; */
     /*     z-index: 0; */
@@ -262,21 +308,6 @@ h3.impact {
     /*     background-image: url("../img/hill-day/hero.jpg"); */
     /*     background-size: cover; */
     /*     background-position: center; */
-    /*     background-attachment: scroll; */
-    /* } */
-
-    /* .container:not(#hero), header, footer { */
-    /*     position: relative; */
-    /*     z-index: 1; */
-    /*     background: var(--bg); */
-    /* } */
-    /**/
-    /* header#site-head { */
-    /*     background-color: var(--accent-bg); */
-    /* } */
-    /**/
-    /* footer { */
-    /*     background: var(--bg2) */
     /* } */
 
     #about .split {
@@ -285,10 +316,15 @@ h3.impact {
     }
 
     #about .image-split {
-        width: 80%;
+        width: 60%;
     }
+
     #about .content {
         width: 100%;
+    }
+
+    .quote {
+        padding-top: 4rem;
     }
 
     .quote p {
@@ -304,8 +340,20 @@ h3.impact {
     }
 
     #hill-day h2 {
-        padding-top: 2rem;
+        padding-top: 0rem;
         margin-top: 0;
+    }
+
+    #hill-day .image-split {
+        width: 50%;
+    }
+
+    #hill-day .mobile {
+        display: block;
+    }
+
+    #hill-day .desktop {
+        display: none;
     }
 
     #impact p:last-of-type {
@@ -313,8 +361,16 @@ h3.impact {
         margin-bottom: 0;
     }
 
-    #about, #impact, #apply {
+    #impact {
+        padding-top: 4rem;
+    }
+
+    #about, #apply {
         padding-top: 2rem;
+    }
+
+    #faq .wrapper {
+            max-width: 100%;
     }
 }
 

@@ -12,6 +12,7 @@
     --aside-shadow-far: -1em 1em 0px 0px var(--accent-bg), -1em 1em 0px 3px var(--fg);
 
     --aside-shadow-lblue: -0.7em 0.7em 0px 0px var(--accent-light-blue), -0.7em 0.7em 0px 3px var(--fg);
+    --aside-shadow-lblue-close: -0.5em 0.5em 0px 0px var(--accent-light-blue), -0.5em 0.5em 0px 3px var(--fg);
     --aside-shadow-dblue: -0.7em 0.7em 0px 0px var(--accent-blue), -0.7em 0.7em 0px 3px var(--fg);
     --aside-shadow-green: -0.7em 0.7em 0px 0px var(--accent-green), -0.7em 0.7em 0px 3px var(--fg);
     --aside-shadow-yellow: -0.7em 0.7em 0px 0px var(--accent-yellow), -0.7em 0.7em 0px 3px var(--fg);
