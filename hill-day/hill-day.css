@@ -43,7 +43,7 @@
 }
 
 #hill-day {
-    margin-top: 8rem;
+    padding-top: 8rem;
 }
 
 .byline {
@@ -83,8 +83,8 @@ h2 {
     border-radius: 0.5rem;
 }
 
-#about, #impact {
-    margin-top: 5rem;
+#about, #impact, #apply {
+    padding-top: 5rem;
 }
 
 #about .image-split {
@@ -210,7 +210,6 @@ h3.impact {
     width: fit-content;
 }
 
-
 @media only screen and (max-width: 992px) {
     #hero h1 {
         font-size: 3rem;
@@ -239,31 +238,46 @@ h3.impact {
     }
 
     #hero-inner {
-        padding: 1rem;
+        padding: 0.5rem;
+        /*account for shadow since it will be much more noticable on mobile*/
+        margin-left: 0.7em;
     }
 
     #hero {
-        background-position: center;
-        background: none;
+        /* background-position: center; */
+        /* background: none; */
     }
 
-    #hero::before {
-        content: '';
-        z-index: 0;
-        width: 100%;
-        height: var(--total-height);
-        display: block;
-        position: fixed;
-        background-image: url("../img/hill-day/hero.jpg");
-        background-size: cover;
-        background-position: center;
-        /* background-attachment: fixed; */
-    }
+    #hero {
+        background-attachment: scroll;
 
-    .container:not(#hero), header, footer {
-        position: relative;
-        z-index: 1;
     }
+    /* #hero::before { */
+    /*     content: ''; */
+    /*     z-index: 0; */
+    /*     width: 100%; */
+    /*     height: var(--total-height); */
+    /*     display: block; */
+    /*     position: absolute; */
+    /*     background-image: url("../img/hill-day/hero.jpg"); */
+    /*     background-size: cover; */
+    /*     background-position: center; */
+    /*     background-attachment: scroll; */
+    /* } */
+
+    /* .container:not(#hero), header, footer { */
+    /*     position: relative; */
+    /*     z-index: 1; */
+    /*     background: var(--bg); */
+    /* } */
+    /**/
+    /* header#site-head { */
+    /*     background-color: var(--accent-bg); */
+    /* } */
+    /**/
+    /* footer { */
+    /*     background: var(--bg2) */
+    /* } */
 
     #about .split {
         flex-direction: column;
@@ -283,6 +297,24 @@ h3.impact {
 
     #impact .stats .half {
         width: 100%;
+    }
+
+    #hill-day {
+        padding-top: 0rem;
+    }
+
+    #hill-day h2 {
+        padding-top: 2rem;
+        margin-top: 0;
+    }
+
+    #impact p:last-of-type {
+        padding-bottom: 1rem;
+        margin-bottom: 0;
+    }
+
+    #about, #impact, #apply {
+        padding-top: 2rem;
     }
 }
 
