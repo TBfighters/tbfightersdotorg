@@ -256,8 +256,8 @@ h3.impact {
         position: absolute;
         background-image: url("../img/hill-day/hero.jpg");
         background-size: cover;
-        background-position: center bottom;
-        background-attachment: fixed;
+        background-position: center;
+        /* background-attachment: fixed; */
     }
 
     #about .split {
