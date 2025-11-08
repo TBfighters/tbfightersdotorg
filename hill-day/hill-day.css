@@ -253,11 +253,16 @@ h3.impact {
         width: 100%;
         height: var(--total-height);
         display: block;
-        position: absolute;
+        position: fixed;
         background-image: url("../img/hill-day/hero.jpg");
         background-size: cover;
         background-position: center;
         /* background-attachment: fixed; */
+    }
+
+    .container:not(#hero), header, footer {
+        position: relative;
+        z-index: 1;
     }
 
     #about .split {
