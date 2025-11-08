@@ -12,7 +12,6 @@
     background-size: cover;
     background-position: center 60%;
     background-attachment: fixed;
-    /* todo: actually convert this into the correct way of doing this with JS or just rems */
     height: var(--total-height);
 }
 
@@ -37,7 +36,6 @@
     content: '';
     z-index: 1;
     width: 100%;
-    /* todo: actually convert this into the correct way of doing this with JS or just rems */
     height: var(--total-height);
     display: block;
     position: absolute;
@@ -230,7 +228,6 @@ h3.impact {
         width: 100%;
         margin: 0;
         left: 0;
-        /* todo: actually convert this into the correct way of doing this with JS or just rems */
         height: var(--total-height);
         display: block;
         position: absolute;
@@ -254,7 +251,6 @@ h3.impact {
         content: '';
         z-index: 0;
         width: 100%;
-        /* todo: actually convert this into the correct way of doing this with JS or just rems */
         height: var(--total-height);
         display: block;
         position: absolute;
