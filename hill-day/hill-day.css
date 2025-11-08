@@ -1,0 +1,292 @@
+#hero {
+    --total-height: 70lvh;
+    position: relative;
+    flex-direction: row;
+    background-color: var(--bg);
+    color: var(--fg);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 0;
+    background-image: url("../img/hill-day/hero.jpg");
+    background-size: cover;
+    background-position: center 60%;
+    background-attachment: fixed;
+    /* todo: actually convert this into the correct way of doing this with JS or just rems */
+    height: var(--total-height);
+}
+
+#hero h1 {
+    font-size: 5rem;
+    margin-bottom: 0rem;
+    text-align: center;
+}
+
+#hero-inner {
+    padding: 2rem;
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
+    box-shadow: var(--aside-shadow);
+    background: var(--bg);
+    height: fit-content;
+    position: relative;
+    z-index: 2;
+}
+
+#hero::before {
+    content: '';
+    z-index: 1;
+    width: 100%;
+    /* todo: actually convert this into the correct way of doing this with JS or just rems */
+    height: var(--total-height);
+    display: block;
+    position: absolute;
+    background: linear-gradient(0deg, var(--bg) 1%, rgba(0, 0, 0, 0) 35%);
+}
+
+#hill-day {
+    margin-top: 8rem;
+}
+
+.byline {
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3.25rem;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.split div {
+    width: calc(50% - 1rem);
+}
+
+.image-split img {
+    width: 100%;
+    display: block;
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+    box-shadow: var(--aside-shadow-lblue);
+}
+
+.outlined-block {
+    display: block;
+    margin: 0 auto;
+    padding: 0 1rem;
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
+}
+
+#about, #impact {
+    margin-top: 5rem;
+}
+
+#about .image-split {
+    width: 40%;
+}
+
+#about .content {
+    width: 60%;
+}
+
+#about .image-split img {
+    box-shadow: var(--aside-shadow-green);
+}
+
+
+.quote {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    width: 100%;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+}
+
+.quote::before {
+    --height: 5rem;
+    content: '';
+    z-index: 0;
+    width: calc(var(--height) * 1.28);
+    height: var(--height);
+    display: block;
+    position: absolute;
+    left: 5%;
+    background: url(../img/hill-day/quote.svg);
+    background-size: cover;
+    opacity: 1;
+}
+
+.quote p {
+    width: 80%;
+}
+
+.quote strong {
+    font-size: 2.5rem;
+}
+
+.wrapper-full {
+    max-width: 100%;
+    width: 100%;
+}
+
+#impact .wrapper-full {
+    background: var(--accent-bg);
+    color: var(--bg);
+    padding: 1.5rem 0;
+}
+
+#impact .wrapper-full h2 {
+    padding: 0;
+    margin: 0;
+}
+
+#impact .stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+#impact .stats .full {
+    width: 100%;
+    background: var(--accent-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 3rem 0;
+    margin-top: 0.5rem;
+}
+
+#impact .stats .half {
+    width: 50%;
+    background: var(--accent-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 3rem 0;
+    margin-top: 0rem;
+}
+
+#impact .stats .half#stats-states {
+    background: var(--accent-bg);
+    color: var(--bg);
+}
+
+#impact .stats .half#stats-meetings {
+    background: var(--accent-blue);
+    color: var(--bg);
+}
+
+#impact .stats .larger {
+    font-size: 6rem;
+    line-height: 6rem;
+}
+
+#impact .stats .smaller {
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+#impact .stats p {
+    margin: 0;
+    padding: 0;
+}
+
+h3.impact {
+    color: var(--bg);
+    background: var(--accent-bg);
+    padding: 0.5rem 0.75rem;
+    width: fit-content;
+}
+
+
+@media only screen and (max-width: 992px) {
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero-background {
+        align-self: start;
+        justify-self: start;
+        margin: 0;
+    }
+
+    .hero-background:before {
+        content: '';
+        z-index: 1;
+        width: 100%;
+        margin: 0;
+        left: 0;
+        /* todo: actually convert this into the correct way of doing this with JS or just rems */
+        height: var(--total-height);
+        display: block;
+        position: absolute;
+        background: linear-gradient(0deg, var(--bg) 1%, rgba(0, 0, 0, 0) 35%);
+    }
+
+    .byline {
+        margin-top: 0.1rem;
+    }
+
+    #hero-inner {
+        padding: 1rem;
+    }
+
+    #hero {
+        background-position: center;
+        background: none;
+    }
+
+    #hero::before {
+        content: '';
+        z-index: 0;
+        width: 100%;
+        /* todo: actually convert this into the correct way of doing this with JS or just rems */
+        height: var(--total-height);
+        display: block;
+        position: absolute;
+        background-image: url("../img/hill-day/hero.jpg");
+        background-size: cover;
+        background-position: center bottom;
+        background-attachment: fixed;
+    }
+
+    #about .split {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    #about .image-split {
+        width: 80%;
+    }
+    #about .content {
+        width: 100%;
+    }
+
+    .quote p {
+        width: 90%;
+    }
+
+    #impact .stats .half {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .wrapper-full {
+        margin: 0;
+    }
+}

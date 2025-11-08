@@ -45,6 +45,23 @@
     src: url(/fonts/AtkinsonHyperlegibleNext-Italic-VariableFont_wght.ttf)
 }
 
+@font-face {
+    font-family: "Merriweather";
+    font-style: normal;
+    src: url(/fonts/Merriweather.ttf)
+}
+
+@font-face {
+    font-family: "Merriweather";
+    font-style: italic;
+    src: url(/fonts/Merriweather-Italic.ttf)
+}
+
+.serif {
+    font-family: "Merriweather";
+    font-weight: 300;
+}
+
 html {
     scroll-behavior: smooth;
 }
