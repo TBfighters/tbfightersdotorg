@@ -1,3 +1,64 @@
+/* General */
+h2 {
+    font-size: 3.25rem;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.split div {
+    width: calc(50% - 1rem);
+}
+
+.image-split img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+}
+
+.quote {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    width: 100%;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    padding-top: 6rem;
+}
+
+.quote::before {
+    --height: 5rem;
+    content: '';
+    z-index: 0;
+    width: calc(var(--height) * 1.28);
+    height: var(--height);
+    display: block;
+    position: absolute;
+    left: 5%;
+    background: url(../img/hill-day/quote.svg);
+    background-size: cover;
+    opacity: 1;
+}
+
+.quote p {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+}
+
+.quote strong {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+/* Hero */
 #hero {
     --total-height: 70lvh;
     position: relative;
@@ -40,64 +101,19 @@
     right: 2rem;
 }
 
-#hill-day {
-    padding-top: 8rem;
-}
-
-#impact {
-    padding-top: 6rem;
-}
-
-#about, #apply {
-    padding-top: 4rem;
-}
-
 .byline {
     width: 100%;
     text-align: center;
 }
 
-h2 {
-    font-size: 3.25rem;
+/* Hill Day 2026 */
+
+#hill-day {
+    padding-top: 8rem;
 }
 
-.split {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    align-items: center;
-}
-
-.split div {
-    width: calc(50% - 1rem);
-}
-
-.image-split img {
-    width: 100%;
-    margin: 0 auto;
-    display: block;
-    border: 3px solid var(--fg);
-    border-radius: 0.5rem;
-    margin-bottom: 20px;
-    box-shadow: var(--aside-shadow-lblue);
-}
-
-#hill-day .image-split img {
-    border-radius: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-}
-
-#about .image-split img {
-    box-shadow: var(--aside-shadow-green);
-}
-
-#hill-day .content {
-    width: 60%;
-}
-
-#about .content {
-    width: 90%;
+#hill-day .mobile {
+    display: none;
 }
 
 #hill-day .image-split {
@@ -105,55 +121,47 @@ h2 {
     margin-bottom: 1rem;
 }
 
+#hill-day .image-split img {
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-shadow: var(--aside-shadow-lblue);
+}
+
+#hill-day .content {
+    width: 60%;
+}
+
 #hill-day .block {
-    margin-bottom: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 3rem;
 }
 
-#hill-day .mobile {
-    display: none;
+/* About */
+
+#about, #apply {
+    padding-top: 4rem;
 }
 
-.quote {
-    font-size: 2rem;
-    line-height: 2.7rem;
-    width: 100%;
-    font-style: italic;
-    display: flex;
-    justify-content: center;
+#about .image-split img {
+    box-shadow: var(--aside-shadow-green);
+}
+
+
+#about .content {
+    width: 90%;
+}
+
+/* Impact */
+
+#impact {
     padding-top: 6rem;
 }
 
-.quote::before {
-    --height: 5rem;
-    content: '';
-    z-index: 0;
-    width: calc(var(--height) * 1.28);
-    height: var(--height);
-    display: block;
-    position: absolute;
-    left: 5%;
-    background: url(../img/hill-day/quote.svg);
-    background-size: cover;
-    opacity: 1;
-}
-
-.quote p {
-    position: relative;
-    z-index: 1;
-    width: 80%;
-}
-
-.quote strong {
-    font-weight: 800;
-    /* font-size: 2.5rem; */
-}
-
-.wrapper-full {
+#impact .wrapper-full {
     max-width: 100%;
     width: 100%;
-}
-
-#impact .wrapper-full {
     background: var(--accent-bg);
     color: var(--bg);
     padding: 1.5rem 0;
@@ -227,6 +235,8 @@ h3.impact {
     width: fit-content;
 }
 
+/* FAQ */
+
 #faq {
 	background-color: var(--bg2);
         margin-top: 3rem;
@@ -248,6 +258,16 @@ h3.impact {
 }
 
 @media only screen and (max-width: 992px) {
+    /* General */
+    .quote {
+        padding-top: 4rem;
+    }
+
+    .quote p {
+        width: 90%;
+    }
+
+    /* Hero */
     #hero h1 {
         font-size: 3rem;
     }
@@ -262,35 +282,7 @@ h3.impact {
         margin-left: 0.7em;
     }
 
-    #hero {
-        background-position: center;
-    }
-
-    #about .split {
-        flex-direction: column;
-        gap: 0rem;
-    }
-
-    #about .image-split {
-        width: 60%;
-    }
-
-    #about .content {
-        width: 100%;
-    }
-
-    .quote {
-        padding-top: 4rem;
-    }
-
-    .quote p {
-        width: 90%;
-    }
-
-    #impact .stats .half {
-        width: 100%;
-    }
-
+    /* Hill Day */
     #hill-day {
         padding-top: 2rem;
     }
@@ -312,19 +304,38 @@ h3.impact {
         display: none;
     }
 
+    /* About */
+    #about, #apply {
+        padding-top: 2rem;
+    }
+
+    #about .split {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    #about .image-split {
+        width: 60%;
+    }
+
+    #about .content {
+        width: 100%;
+    }
+    /* Impact */
+    #impact {
+        padding-top: 4rem;
+    }
+
+    #impact .stats .half {
+        width: 100%;
+    }
+
     #impact p:last-of-type {
         padding-bottom: 1rem;
         margin-bottom: 0;
     }
 
-    #impact {
-        padding-top: 4rem;
-    }
-
-    #about, #apply {
-        padding-top: 2rem;
-    }
-
+    /* FAQ */
     #faq .wrapper {
             max-width: 100%;
     }
