@@ -15,7 +15,8 @@ h2 {
 }
 
 .image-split img {
-    width: 100%;
+
+        max-height: 200px;
     margin: 0 auto;
     display: block;
     border: 3px solid var(--fg);
@@ -30,7 +31,7 @@ h2 {
     font-style: italic;
     display: flex;
     justify-content: center;
-    padding-top: 6rem;
+    padding-top: 4rem;
 }
 
 .quote::before {
@@ -57,7 +58,9 @@ h2 {
     font-weight: 800;
     font-size: 2.5rem;
 }
-
+section {
+	padding-top: 3rem;
+}
 /* Hero */
 #hero {
     --total-height: 70lvh;
@@ -78,7 +81,7 @@ h2 {
 
 #hero h1 {
     font-size: 5rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0.875rem;
     text-align: center;
 }
 
@@ -109,7 +112,7 @@ h2 {
 /* Hill Day 2026 */
 
 #hill-day {
-    padding-top: 8rem;
+    padding-top: 6rem;
 }
 
 #hill-day .mobile {
@@ -135,14 +138,10 @@ h2 {
 #hill-day .block {
     padding-top: 0;
     padding-bottom: 0;
-    margin-bottom: 3rem;
+    margin: 1rem auto 4rem;
 }
 
 /* About */
-
-#about, #apply {
-    padding-top: 4rem;
-}
 
 #about .image-split img {
     box-shadow: var(--aside-shadow-green);
@@ -154,10 +153,6 @@ h2 {
 }
 
 /* Impact */
-
-#impact {
-    padding-top: 6rem;
-}
 
 #impact .wrapper-full {
     max-width: 100%;
@@ -175,7 +170,7 @@ h2 {
 #impact .stats {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 1.5rem;
+    margin: 1rem 0 2rem;
 }
 
 #impact .stats .full {
@@ -228,7 +223,7 @@ h2 {
     padding: 0;
 }
 
-h3.impact {
+h3.red-highlight {
     color: var(--bg);
     background: var(--accent-bg);
     padding: 0.5rem 0.75rem;
@@ -238,13 +233,14 @@ h3.impact {
 /* FAQ */
 
 #faq {
-	background-color: var(--bg2);
-        margin-top: 3rem;
+	background-color: var(--accent-bg-low-opacity);
+    margin-top: 3rem;
+	padding-bottom: 2rem;
 }
 
 #faq .wrapper {
 	max-width: 70%;
-	padding: 5em 1em;
+	padding: 1em;
 }
 
 #faq article .question {
@@ -260,7 +256,7 @@ h3.impact {
 @media only screen and (max-width: 992px) {
     /* General */
     .quote {
-        padding-top: 4rem;
+        padding-top: 3rem;
     }
 
     .quote p {
@@ -277,7 +273,7 @@ h3.impact {
     }
 
     #hero-inner {
-        padding: 0.5rem;
+        padding: 1.25rem;
         /*account for shadow since it will be much more noticable on mobile*/
         margin-left: 0.7em;
     }
@@ -293,15 +289,7 @@ h3.impact {
     }
 
     #hill-day .image-split {
-        width: 50%;
-    }
-
-    #hill-day .mobile {
-        display: block;
-    }
-
-    #hill-day .desktop {
-        display: none;
+        max-width: 30%;
     }
 
     /* About */
@@ -312,10 +300,6 @@ h3.impact {
     #about .split {
         flex-direction: column;
         gap: 0rem;
-    }
-
-    #about .image-split {
-        width: 60%;
     }
 
     #about .content {
@@ -345,4 +329,11 @@ h3.impact {
     .wrapper-full {
         margin: 0;
     }
+	.split {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	#hill-day .content {
+		width: 100%;
+	}
 }
