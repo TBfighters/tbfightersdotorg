@@ -10,7 +10,7 @@
     padding-top: 0;
     background-image: url("../img/hill-day/hero.jpg");
     background-size: cover;
-    background-position: center 60%;
+    background-position: center;
     background-attachment: fixed;
     height: var(--total-height);
 }
@@ -33,19 +33,15 @@
     margin-bottom: 0.7em;
 }
 
-#hero-inner .image {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
 #hero-inner img {
-    width: 50%;
-    align-self: center;
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
 }
 
 #hero::before {
-    content: '';
+    /* content: ''; */
     z-index: 1;
     width: 100%;
     height: var(--total-height);
@@ -299,17 +295,18 @@ h3.impact {
         /* background: none; */
     }
 
-    /* #hero::before { */
-    /*     content: ''; */
-    /*     z-index: 0; */
-    /*     width: 100%; */
-    /*     height: var(--total-height); */
-    /*     display: block; */
-    /*     position: absolute; */
-    /*     background-image: url("../img/hill-day/hero.jpg"); */
-    /*     background-size: cover; */
-    /*     background-position: center; */
-    /* } */
+    #hero::before {
+        content: '';
+        z-index: 0;
+        width: 100%;
+        height: var(--total-height);
+        display: block;
+        position: absolute;
+	background: var(--bg);
+	opacity: 50%;
+        background-size: cover;
+        background-position: center;
+    }
 
     #about .split {
         flex-direction: column;
@@ -337,7 +334,7 @@ h3.impact {
     }
 
     #hill-day {
-        padding-top: 0rem;
+        padding-top: 2rem;
     }
 
     #hill-day h2 {
