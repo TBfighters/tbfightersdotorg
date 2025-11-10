@@ -12,6 +12,7 @@
     --aside-shadow-far: -1em 1em 0px 0px var(--accent-bg), -1em 1em 0px 3px var(--fg);
 
     --aside-shadow-lblue: -0.7em 0.7em 0px 0px var(--accent-light-blue), -0.7em 0.7em 0px 3px var(--fg);
+    --aside-shadow-lblue-close: -0.5em 0.5em 0px 0px var(--accent-light-blue), -0.5em 0.5em 0px 3px var(--fg);
     --aside-shadow-dblue: -0.7em 0.7em 0px 0px var(--accent-blue), -0.7em 0.7em 0px 3px var(--fg);
     --aside-shadow-green: -0.7em 0.7em 0px 0px var(--accent-green), -0.7em 0.7em 0px 3px var(--fg);
     --aside-shadow-yellow: -0.7em 0.7em 0px 0px var(--accent-yellow), -0.7em 0.7em 0px 3px var(--fg);
@@ -43,6 +44,23 @@
     font-family: "Atkinson Hyperlegible";
     font-style: italic;
     src: url(/fonts/AtkinsonHyperlegibleNext-Italic-VariableFont_wght.ttf)
+}
+
+@font-face {
+    font-family: "Merriweather";
+    font-style: normal;
+    src: url(/fonts/Merriweather.ttf)
+}
+
+@font-face {
+    font-family: "Merriweather";
+    font-style: italic;
+    src: url(/fonts/Merriweather-Italic.ttf)
+}
+
+.serif {
+    font-family: "Merriweather";
+    font-weight: 300;
 }
 
 html {
@@ -723,8 +741,14 @@ img {
 
 .image-right {
     float: right;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    margin-left: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+
+.image-left {
+    float: left;
+    margin-right: 1.25rem;
+    margin-bottom: 0.625rem;
 }
 
 .icon {

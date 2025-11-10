@@ -1,0 +1,363 @@
+/* General */
+h2 {
+    font-size: 3.25rem;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.image-split {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+.image-split img {
+	width: 100%;
+    margin: 0 auto;
+    display: block;
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
+    margin-bottom: 20px;
+}
+
+
+.quote {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    width: 100%;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+}
+
+.quote::before {
+    --height: 5rem;
+    content: '';
+    z-index: 0;
+    width: calc(var(--height) * 1.28);
+    height: var(--height);
+    display: block;
+    position: absolute;
+    left: 5%;
+    background: url(../img/hill-day/quote.svg);
+    background-size: cover;
+    opacity: 1;
+}
+
+.quote p {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+}
+
+.quote strong {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+section {
+	padding-top: 3rem;
+}
+/* Hero */
+#hero {
+    --total-height: 70lvh;
+    position: relative;
+    flex-direction: row;
+    background-color: var(--bg);
+    color: var(--fg);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-top: 0;
+    background-image: url("../img/hill-day/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: var(--total-height);
+}
+
+#hero h1 {
+    font-size: 5rem;
+    margin-bottom: 0.875rem;
+    text-align: center;
+}
+
+#hero-inner {
+    padding: 2rem;
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
+    box-shadow: var(--aside-shadow);
+    background: var(--bg);
+    height: fit-content;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0.7em;
+}
+
+#hero-inner img {
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+}
+
+.byline {
+    width: 100%;
+    text-align: center;
+}
+
+/* Hill Day 2026 */
+
+#hill-day {
+    padding-top: 6rem;
+}
+
+#hill-day .mobile {
+    display: none;
+}
+#hill-day .image-split img {
+    border-radius: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-shadow: var(--aside-shadow-lblue);
+}
+
+#hill-day .content {
+    width: 60%;
+}
+
+#hill-day .block {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin: 1rem auto 4rem;
+}
+
+/* About */
+
+#about img {
+    width: 100%;
+    border-radius: 0.5em;
+    box-shadow: var(--aside-shadow-green);
+}
+
+#about .content {
+    width: 70%;
+}
+
+#about .image-split {
+    width: 30%;
+}
+
+/* Impact */
+
+#impact .wrapper-full {
+    max-width: 100%;
+    width: 100%;
+    background: var(--accent-bg);
+    color: var(--bg);
+    padding: 1.5rem 0;
+}
+
+#impact .wrapper-full h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem 0 2rem;
+}
+
+.stats .full {
+    width: 100%;
+    background: var(--accent-yellow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 3rem 0;
+    margin-top: 0.5rem;
+}
+
+.stats .half {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 3rem 0;
+    margin-top: 0rem;
+}
+
+#stats-states {
+    background: var(--accent-bg);
+    color: var(--bg);
+}
+
+#stats-meetings {
+    background: var(--accent-blue);
+    color: var(--bg);
+}
+
+.stats p {
+    margin: 0;
+    padding: 0;
+}
+
+.number {
+    font-size: 6rem;
+    line-height: 5rem;
+}
+
+.desc {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    text-align: center;
+}
+
+h3.red-highlight {
+    color: var(--bg);
+    background: var(--accent-bg);
+    padding: 0.5rem 0.75rem;
+    width: fit-content;
+}
+
+/* FAQ */
+
+#faq {
+	padding-bottom: 2rem;
+}
+
+#faq .wrapper {
+	max-width: 70%;
+	padding: 1em;
+}
+
+#faq article .question {
+	padding: 1em 1em 0.5em 1em;
+	border-bottom: 1px solid var(--accent-fg);
+	font-weight: 800;
+}
+
+#faq article .answer {
+	padding: 1em 1em 0.5em 1em;
+}
+
+@media only screen and (max-width: 992px) {
+    /* General */
+    .quote {
+        padding-top: 3rem;
+    }
+
+    .quote p {
+        width: 90%;
+    }
+
+    /* Hero */
+    #hero h1 {
+        font-size: 3rem;
+    }
+
+    .byline {
+        margin-top: 0.1rem;
+    }
+
+    #hero-inner {
+        padding: 1.25rem;
+        /*account for shadow since it will be much more noticable on mobile*/
+        margin-left: 0.7em;
+    }
+
+    /* Hill Day */
+    #hill-day {
+        padding-top: 2rem;
+    }
+
+    #hill-day h2 {
+        padding-top: 0rem;
+        margin-top: 0;
+    }
+
+    #hill-day .image-split {
+        width: 30%;
+    }
+
+    /* About */
+    #about, #apply {
+        padding-top: 2rem;
+    }
+
+    #about .split {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    #about .image-split {
+	width: 60%;
+	margin-bottom: 0;
+    }
+
+    #about .content {
+        width: 100%;
+    }
+    /* Impact */
+    #impact {
+        padding-top: 4rem;
+    }
+	.stats .half, .stats .full {
+		padding: 2rem 0;
+    }
+	.number {
+		font-size: 3rem;
+		line-height: 2rem;
+	}
+	.desc {
+		font-size: 1.5rem;
+		line-height: 1.25rem;
+	}
+    #impact p:last-of-type {
+        padding-bottom: 1rem;
+        margin-bottom: 0;
+    }
+
+    /* FAQ */
+    #faq .wrapper {
+            max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .wrapper-full {
+        margin: 0;
+    }
+	.split {
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	#hill-day .content {
+		width: 100%;
+	}
+	#hill-day .image-split {
+		visibility: hidden;
+		display: none;
+	}
+	img, #hill-day .image-split {
+		width: 80%;
+	}
+	.stats {
+		display: block;
+		text-align: center;
+		margin: 1rem auto 2rem;
+	}
+    .stats .half, .stats .full {
+        width: 100%;
+		padding: 1.5rem;
+    }
+}

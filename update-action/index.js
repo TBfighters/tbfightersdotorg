@@ -41,6 +41,7 @@ function replaceContent(files, leadingPath, prefixLength) {
         }
 
         if (file.name.endsWith(".html")) {
+            console.log(leadingPath + file.name)
             let content = fs.readFileSync(leadingPath + file.name, { encoding: 'utf8' });
 
             // header
