@@ -343,25 +343,25 @@ h3.red-highlight {
     .wrapper-full {
         margin: 0;
     }
-	.split {
-		flex-direction: column;
-		gap: 0.5rem;
-	}
-	#hill-day .content {
-		width: 100%;
-	}
-	#hill-day .image-split {
-		visibility: hidden;
-		display: none;
-	}
-	.image-split img {
-		width: 80%;
-	}
-	.stats {
-		display: block;
-		text-align: center;
-		margin: 1rem auto 2rem;
-	}
+    .split {
+	    flex-direction: column;
+	    gap: 0.5rem;
+    }
+    #hill-day .content {
+	    width: 100%;
+    }
+    #hill-day .image-split {
+	    visibility: hidden;
+	    display: none;
+    }
+    .image-split img {
+	    width: 80%;
+    }
+    .stats {
+	    display: block;
+	    text-align: center;
+	    margin: 1rem auto 2rem;
+    }
     .stats .half, .stats .full {
         width: 100%;
 		padding: 1.5rem;
