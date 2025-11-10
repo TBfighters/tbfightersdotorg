@@ -10,19 +10,20 @@ h2 {
     align-items: center;
 }
 
-.split div {
-    width: calc(50% - 1rem);
+.image-split {
+    width: 30%;
+    margin-bottom: 1rem;
 }
 
 .image-split img {
-
-        max-height: 200px;
+	width: 100%;
     margin: 0 auto;
     display: block;
-    border: 3px solid var(--fg);
-    border-radius: 0.5rem;
+/*    border: 3px solid var(--fg);
+    border-radius: 0.5rem;*/
     margin-bottom: 20px;
 }
+
 
 .quote {
     font-size: 2rem;
@@ -118,18 +119,13 @@ section {
 #hill-day .mobile {
     display: none;
 }
-
-#hill-day .image-split {
-    width: 30%;
-    margin-bottom: 1rem;
-}
-
+/* 
 #hill-day .image-split img {
     border-radius: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
     box-shadow: var(--aside-shadow-lblue);
-}
+} */
 
 #hill-day .content {
     width: 60%;
@@ -143,13 +139,13 @@ section {
 
 /* About */
 
-#about .image-split img {
+
+/* #about .image-split img {
     box-shadow: var(--aside-shadow-green);
 }
-
-
-#about .content {
-    width: 90%;
+ */
+#about img {
+	width: 35%;
 }
 
 /* Impact */
@@ -167,13 +163,13 @@ section {
     margin: 0;
 }
 
-#impact .stats {
+.stats {
     display: flex;
     flex-wrap: wrap;
     margin: 1rem 0 2rem;
 }
 
-#impact .stats .full {
+.stats .full {
     width: 100%;
     background: var(--accent-yellow);
     display: flex;
@@ -185,9 +181,8 @@ section {
     margin-top: 0.5rem;
 }
 
-#impact .stats .half {
+.stats .half {
     width: 50%;
-    background: var(--accent-yellow);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,30 +192,30 @@ section {
     margin-top: 0rem;
 }
 
-#impact .stats .half#stats-states {
+#stats-states {
     background: var(--accent-bg);
     color: var(--bg);
 }
 
-#impact .stats .half#stats-meetings {
+#stats-meetings {
     background: var(--accent-blue);
     color: var(--bg);
 }
 
-#impact .stats .larger {
-    font-size: 6rem;
-    line-height: 6rem;
-}
-
-#impact .stats .smaller {
-    font-size: 2rem;
-    line-height: 2rem;
-    text-align: center;
-}
-
-#impact .stats p {
+.stats p {
     margin: 0;
     padding: 0;
+}
+
+.number {
+    font-size: 6rem;
+    line-height: 5rem;
+}
+
+.desc {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    text-align: center;
 }
 
 h3.red-highlight {
@@ -233,8 +228,6 @@ h3.red-highlight {
 /* FAQ */
 
 #faq {
-	background-color: var(--accent-bg-low-opacity);
-    margin-top: 3rem;
 	padding-bottom: 2rem;
 }
 
@@ -289,7 +282,7 @@ h3.red-highlight {
     }
 
     #hill-day .image-split {
-        max-width: 30%;
+        width: 30%;
     }
 
     /* About */
@@ -309,11 +302,17 @@ h3.red-highlight {
     #impact {
         padding-top: 4rem;
     }
-
-    #impact .stats .half {
-        width: 100%;
+	.stats .half, .stats .full {
+		padding: 2rem 0;
     }
-
+	.number {
+		font-size: 3rem;
+		line-height: 2rem;
+	}
+	.desc {
+		font-size: 1.5rem;
+		line-height: 1.25rem;
+	}
     #impact p:last-of-type {
         padding-bottom: 1rem;
         margin-bottom: 0;
@@ -336,4 +335,20 @@ h3.red-highlight {
 	#hill-day .content {
 		width: 100%;
 	}
+	/* #hill-day .image-split {
+		visibility: hidden;
+		display: none;
+	}*/
+	img, #hill-day .image-split {
+		width: 80%;
+	}
+	.stats {
+		display: block;
+		text-align: center;
+		margin: 1rem auto 2rem;
+	}
+    .stats .half, .stats .full {
+        width: 100%;
+		padding: 1.5rem;
+    }
 }

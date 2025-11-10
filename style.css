@@ -741,8 +741,14 @@ img {
 
 .image-right {
     float: right;
-    margin-left: 20px;
-    margin-bottom: 10px;
+    margin-left: 1.25rem;
+    margin-bottom: 0.625rem;
+}
+
+.image-left {
+    float: left;
+    margin-right: 1.25rem;
+    margin-bottom: 0.625rem;
 }
 
 .icon {
