@@ -19,8 +19,8 @@ h2 {
 	width: 100%;
     margin: 0 auto;
     display: block;
-/*    border: 3px solid var(--fg);
-    border-radius: 0.5rem;*/
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
     margin-bottom: 20px;
 }
 
@@ -119,13 +119,12 @@ section {
 #hill-day .mobile {
     display: none;
 }
-/* 
 #hill-day .image-split img {
     border-radius: 100%;
     aspect-ratio: 1/1;
     object-fit: cover;
     box-shadow: var(--aside-shadow-lblue);
-} */
+}
 
 #hill-day .content {
     width: 60%;
@@ -139,13 +138,18 @@ section {
 
 /* About */
 
-
-/* #about .image-split img {
+#about img {
+    width: 100%;
+    border-radius: 0.5em;
     box-shadow: var(--aside-shadow-green);
 }
- */
-#about img {
-	width: 35%;
+
+#about .content {
+    width: 70%;
+}
+
+#about .image-split {
+    width: 30%;
 }
 
 /* Impact */
@@ -295,6 +299,11 @@ h3.red-highlight {
         gap: 0rem;
     }
 
+    #about .image-split {
+	width: 60%;
+	margin-bottom: 0;
+    }
+
     #about .content {
         width: 100%;
     }
@@ -335,10 +344,10 @@ h3.red-highlight {
 	#hill-day .content {
 		width: 100%;
 	}
-	/* #hill-day .image-split {
+	#hill-day .image-split {
 		visibility: hidden;
 		display: none;
-	}*/
+	}
 	img, #hill-day .image-split {
 		width: 80%;
 	}
