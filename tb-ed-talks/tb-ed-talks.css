@@ -142,6 +142,11 @@
     box-shadow: var(--aside-shadow-lblue);
 }
 
+.up-next-block#pih .split-left img,
+.up-next-block#pih {
+    box-shadow: var(--aside-shadow);
+}
+
 #past-talks {
     padding: 2rem 0;
     padding-bottom: calc(4rem + 0.7rem);
