@@ -127,6 +127,11 @@
     background-size: cover;
 }
 
+#year-in-tb-2025 .youtube-wrapper .thumbnail-preview {
+    background: url(../img/tb-ed-talks/2025-year-in-tb-thumbnail.jpg);
+    background-size: cover;
+}
+
 .up-next-block#chloe .split-left img,
 .up-next-block#chloe {
     box-shadow: var(--aside-shadow-green);
@@ -142,8 +147,8 @@
     box-shadow: var(--aside-shadow-lblue);
 }
 
-.up-next-block#pih .split-left img,
-.up-next-block#pih {
+.up-next-block#year-in-tb-2025 .split-left img,
+.up-next-block#year-in-tb-2025 {
     box-shadow: var(--aside-shadow);
 }
 
