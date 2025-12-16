@@ -152,6 +152,11 @@
     box-shadow: var(--aside-shadow);
 }
 
+.up-next-block#salmaan .split-left img,
+.up-next-block#salmaan {
+    box-shadow: var(--aside-shadow-green);
+}
+
 #past-talks {
     padding: 2rem 0;
     padding-bottom: calc(4rem + 0.7rem);
