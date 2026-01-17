@@ -25,17 +25,20 @@ h2 {
 }
 
 
-.quote {
+blockquote {
     font-size: 2rem;
     line-height: 2.7rem;
     width: 100%;
     font-style: italic;
-    display: flex;
     justify-content: center;
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
-.quote::before {
+cite {
+	font-style: normal;
+}
+
+blockquote::before {
     --height: 5rem;
     content: '';
     z-index: 0;
@@ -49,19 +52,20 @@ h2 {
     opacity: 1;
 }
 
-.quote p {
+blockquote p {
     position: relative;
     z-index: 1;
     width: 80%;
 }
 
-.quote strong {
+blockquote strong {
     font-weight: 800;
     font-size: 2.5rem;
 }
 section {
 	padding-top: 3rem;
 }
+	
 /* Hero */
 #hero {
     --total-height: 70lvh;
@@ -108,7 +112,7 @@ section {
 .byline {
     width: 100%;
     text-align: center;
-    /* margin-bottom: 5rem; */
+    margin-bottom: 5rem;
 }
 
 /* Hill Day 2026 */
