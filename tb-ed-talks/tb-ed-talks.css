@@ -132,6 +132,11 @@
     background-size: cover;
 }
 
+#salmaan .youtube-wrapper .thumbnail-preview {
+    background: url(../img/tb-ed-talks/stp-thumbnail.jpg);
+    background-size: cover;
+}
+
 .up-next-block#chloe .split-left img,
 .up-next-block#chloe {
     box-shadow: var(--aside-shadow-green);
