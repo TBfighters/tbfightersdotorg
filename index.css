@@ -187,6 +187,29 @@
     width: max-content;
 }
 
+/* Purchase merch area */
+
+.merch {
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    background: var(--accent-blue);
+}
+.merch .wrapper {
+    width: 90%;
+    max-width: 1400px;
+    height: auto;
+    background: var(--bg);
+    margin: auto;
+    padding: 3rem 4rem;
+    border-radius: 0.5rem;
+    border: var(--aside-border);
+	box-shadow: var(--aside-shadow-lblue);
+}
+.merch section {
+    padding: 4rem 0;
+}
+
 /* Mobile breakpoints */
 
 @media only screen and (max-width: 1440px) {
