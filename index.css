@@ -212,6 +212,8 @@
 .merch section {
     padding: 4rem 0;
 }
+.merch-content {
+    width: 100%;
 
 /* Mobile breakpoints */
 
