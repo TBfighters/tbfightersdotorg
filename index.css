@@ -194,26 +194,24 @@
 }
 
 .merch {
-    height: 100%;
-    position: relative;
-    z-index: 1;
-}
-.merch .wrapper {
-	width: 100%;
-    max-width: 600px;
-    height: auto;
+    height: fit-content;
+    max-width: 85%;
     background: var(--bg);
     margin: auto;
-    padding: 3rem 4rem;
+    padding: 1rem 1rem;
     border-radius: 0.5rem;
     border: var(--aside-border);
-	box-shadow: var(--aside-shadow-lblue);
+    box-shadow: var(--aside-shadow-lblue);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
 }
-.merch section {
-    padding: 4rem 0;
-}
-.merch-content {
-    width: 100%;
+
+.merch img {
+    height: 20vw;
 }
 
 /* Mobile breakpoints */
@@ -269,5 +267,19 @@
     }
     #statement .wrapper {
         padding: 3rem 0;
+    }
+
+    .merch {
+	max-width: 100%;
+	flex-direction: column-reverse;
+    }
+
+    .merch div:has(img) {
+	width: 60%;
+    }
+
+    .merch img {
+	height: unset;
+	width: 100%;
     }
 }
