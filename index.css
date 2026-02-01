@@ -187,6 +187,33 @@
     width: max-content;
 }
 
+/* Purchase merch area */
+
+.purchase-our-merch{
+	padding-top: 2rem;
+}
+
+.merch {
+    height: fit-content;
+    max-width: 85%;
+    background: var(--bg);
+    margin: auto;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    border: var(--aside-border);
+    box-shadow: var(--aside-shadow-lblue);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.merch img {
+    height: 20vw;
+}
+
 /* Mobile breakpoints */
 
 @media only screen and (max-width: 1440px) {
@@ -240,5 +267,19 @@
     }
     #statement .wrapper {
         padding: 3rem 0;
+    }
+
+    .merch {
+	max-width: 100%;
+	flex-direction: column-reverse;
+    }
+
+    .merch div:has(img) {
+	width: 60%;
+    }
+
+    .merch img {
+	height: unset;
+	width: 100%;
     }
 }
