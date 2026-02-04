@@ -82,7 +82,7 @@ const actions = {
         "uk-funding-cuts",
     ],
     "australia": [
-        "global-fund",
+        "australia-budget",
     ]
 }
 
