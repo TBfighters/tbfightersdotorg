@@ -78,14 +78,11 @@ const actions = {
         "us-funding-cuts",
         "us-hill-day",
     ],
-    "canada": [
-        "canada-hill-day",
-    ],
     "uk": [
-        "global-fund",
+        "uk-funding-cuts",
     ],
     "australia": [
-        "global-fund",
+        "australia-budget",
     ]
 }
 
