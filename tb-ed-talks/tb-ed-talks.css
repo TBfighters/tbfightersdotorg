@@ -167,6 +167,10 @@
     box-shadow: var(--aside-shadow-green);
 }
 
+.up-next-block#feb-bonus {
+    box-shadow: -0.7em 0.7em 0px 0px var(--bg), -0.7em 0.7em 0px 3px var(--fg);
+}
+
 #past-talks {
     padding: 2rem 0;
     padding-bottom: calc(4rem + 0.7rem);
