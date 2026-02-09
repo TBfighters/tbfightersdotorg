@@ -137,6 +137,11 @@
     background-size: cover;
 }
 
+#feb-bonus .youtube-wrapper .thumbnail-preview {
+    background: url(../img/tb-ed-talks/tb-101.jpg);
+    background-size: cover;
+}
+
 .up-next-block#chloe .split-left img,
 .up-next-block#chloe {
     box-shadow: var(--aside-shadow-green);
