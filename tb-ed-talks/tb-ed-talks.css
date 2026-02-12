@@ -94,6 +94,26 @@
     display: flex;
 }
 
+.split-equal {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.split-equal h4:last-of-type {
+    margin-top: auto;
+    padding-top: 1.5rem;
+}
+
+.split-equal .video-embed-shadow {
+  width: calc(516px/ 1.5);
+  height: calc(266px/ 1.5);
+}
+
+.split-equal .youtube-wrapper {
+    justify-content: start;
+}
+
 .split-left img {
     align-self: center;
     width: 100%;
