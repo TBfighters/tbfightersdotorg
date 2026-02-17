@@ -157,8 +157,13 @@
     background-size: cover;
 }
 
-#feb-bonus .youtube-wrapper .thumbnail-preview {
+#tb-101.youtube-wrapper .thumbnail-preview {
     background: url(../img/tb-ed-talks/tb-101.jpg);
+    background-size: cover;
+}
+
+#innovations.youtube-wrapper .thumbnail-preview {
+    background: url(../img/tb-ed-talks/tb-innovations-thumbnail.jpg);
     background-size: cover;
 }
 
@@ -253,4 +258,14 @@
     .byline {
         font-size: 1.25rem;
     }
+
+  .split-equal .video-embed-shadow {
+    width: calc(336px - 44px);
+    width: calc(336px - 44px);
+    height: calc(186px - 44px);
+  }
+
+  .split-equal {
+      width: 100%;
+  }
 }
