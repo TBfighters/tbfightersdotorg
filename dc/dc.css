@@ -15,7 +15,8 @@
     text-transform: none;
 }
 .container {
-	padding-top: 20px;
+	padding-top:20px;
+	padding-bottom:60px;
 }
 #main {
 	font-size: 1.5rem;
