@@ -1,0 +1,34 @@
+#site-head {
+	padding:20px;
+}
+.wrapper-head {
+	margin: 0 auto;
+    display: block;
+    width: 99.9%;
+    max-width: 900px;
+    clear: both;
+}
+.page-title {
+    text-decoration: none;
+    color: var(--bg);
+    align-items: center;	
+    text-transform: none;
+}
+.container {
+	padding-top:20px;
+	padding-bottom:60px;
+}
+#main {
+	font-size: 1.5rem;
+}
+#main li {
+	margin-top:0.4rem;
+	margin-bottom:0.4rem;
+}
+
+@media only screen and (max-width: 650px) {
+	#main {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+}
