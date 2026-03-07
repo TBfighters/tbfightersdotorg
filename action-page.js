@@ -72,7 +72,8 @@ window.addEventListener("click", (event) => {
 const actions = {
     "all": [],
     "international": [
-        "danaher"
+        "danaher",
+        "world-tb-day"
     ],
     "united-states": [
         "us-funding-cuts",

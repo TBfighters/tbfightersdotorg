@@ -93,6 +93,10 @@
     box-shadow: var(--aside-shadow-lblue);
 }
 
+.campaign.world-tb-day {
+    box-shadow: var(--aside-shadow);
+}
+
 .campaign.funding-cuts {
     box-shadow: var(--aside-shadow-green);
 }
