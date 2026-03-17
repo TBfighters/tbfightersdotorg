@@ -167,7 +167,8 @@
     background-size: cover;
 }
 
-#furin-eitb-b-day.youtube-wrapper .thumbnail-preview {
+#furin-eitb-b-day .youtube-wrapper .thumbnail-preview {
+    background: url(../img/tb-ed-talks/furin-eitb-thumbnail.jpg);
     background-size: cover;
 }
 
