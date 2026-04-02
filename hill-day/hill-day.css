@@ -65,7 +65,7 @@ blockquote strong {
 section {
 	padding-top: 3rem;
 }
-	
+
 /* Hero */
 #hero {
     --total-height: 70lvh;
@@ -128,6 +128,7 @@ section {
     aspect-ratio: 1/1;
     object-fit: cover;
     box-shadow: var(--aside-shadow-lblue);
+    width: 80%;
 }
 
 #hill-day .content {
