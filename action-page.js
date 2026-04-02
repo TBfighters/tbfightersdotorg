@@ -72,7 +72,8 @@ window.addEventListener("click", (event) => {
 const actions = {
     "all": [],
     "international": [
-        "danaher"
+        "danaher",
+        "gilead",
     ],
     "united-states": [
         "us-funding-cuts",
