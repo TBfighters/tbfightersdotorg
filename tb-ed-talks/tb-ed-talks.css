@@ -199,7 +199,12 @@
 
 .up-next-block#furin-eitb-b-day .split-left img,
 .up-next-block#furin-eitb-b-day {
-    box-shadow: var(--aside-shadow);
+    box-shadow: var(--aside-shadow-yellow);
+}
+
+.up-next-block#melino .split-left img,
+.up-next-block#melino {
+    box-shadow: var(--aside-shadow-lblue);
 }
 
 .up-next-block#feb-bonus {
