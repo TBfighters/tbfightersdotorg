@@ -172,6 +172,11 @@
     background-size: cover;
 }
 
+#melino .youtube-wrapper .thumbnail-preview {
+    background: url(../img/tb-ed-talks/melino-thumbnail.jpg);
+    background-size: cover;
+}
+
 .up-next-block#chloe .split-left img,
 .up-next-block#chloe {
     box-shadow: var(--aside-shadow-green);
@@ -199,7 +204,12 @@
 
 .up-next-block#furin-eitb-b-day .split-left img,
 .up-next-block#furin-eitb-b-day {
-    box-shadow: var(--aside-shadow);
+    box-shadow: var(--aside-shadow-yellow);
+}
+
+.up-next-block#melino .split-left img,
+.up-next-block#melino {
+    box-shadow: var(--aside-shadow-lblue);
 }
 
 .up-next-block#feb-bonus {
