@@ -1,0 +1,204 @@
+#hero {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 10lvh 0;
+    padding: 10lvh 0;
+    border-bottom: var(--accent-fg) 5px solid;
+}
+
+#hero h1 {
+    font-size: 5rem;
+    margin-bottom: 0.875rem;
+    text-align: center;
+}
+
+#learn-more h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#learn-more {
+    display: flex;
+    flex-direction: column;
+    gap: 10lvh;
+    margin-bottom: 10lvh;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.split > p, .split .content {
+    width: 50%;
+}
+
+.split .animation {
+    width: 50%;
+}
+
+.split p {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 3.25rem;
+}
+
+#statement {
+    background-color: var(--accent-bg);
+    color: var(--bg);
+    position: relative;
+    z-index: 1;
+}
+#statement .wrapper {
+    padding: 4rem 2rem;
+    max-width: 90%;
+    text-align: center;
+}
+
+#statement p {
+    text-transform: uppercase;
+    font-size: 5rem;
+	line-height: 5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+blockquote {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    width: 100%;
+    font-style: italic;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+blockquote::before {
+    --height: 5rem;
+    content: '';
+    z-index: 0;
+    width: calc(var(--height) * 1.28);
+    height: var(--height);
+    display: block;
+    position: absolute;
+    left: 5%;
+    background: url(../img/hill-day/quote.svg);
+    background-size: cover;
+    opacity: 1;
+}
+
+cite {
+	font-style: normal;
+}
+
+blockquote p {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+}
+
+blockquote strong {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.action {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.sessions {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.sessions .session {
+    width: 45%;
+    border: 3px solid var(--fg);
+    border-radius: 0.5rem;
+    box-shadow: var(--aside-shadow-close);
+    background: var(--bg);
+    padding: 0.5rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .split {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        margin-top: 0rem;
+    }
+
+    .split > p, .split .content {
+        width: 100%;
+    }
+
+    .split .animation {
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .split p {
+        font-size: 1.75rem;
+        line-height: 1.7rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    #hero {
+        margin: 5lvh 0;
+        margin-top: 2lvh;
+        padding: 5lvh 0;
+    }
+
+    #learn-more {
+        gap: 5lvh;
+        margin-bottom: 5lvh;
+    }
+
+    #statement .wrapper {
+        padding: 4rem 1rem;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #statement p {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    blockquote {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+
+    blockquote strong {
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .sessions {
+        flex-direction: column;
+    }
+
+    .sessions .session {
+        width: 100%;
+    }
+}
