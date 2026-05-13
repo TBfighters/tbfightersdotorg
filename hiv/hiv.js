@@ -1,3 +1,5 @@
+const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
 const options = {
   root: null,
   rootMargin: "0px",
@@ -5,6 +7,9 @@ const options = {
   threshold: 0.2,
 };
 
+if (!!isReduced) {} else {
+
+}
 IntersectingAnimation({
 	id: "immune-cells",
 	path: "../img/hiv/immune-cells.json"
@@ -25,13 +30,40 @@ function IntersectingAnimation(config) {
 		autoplay: false, // Optional
 		name: "Hello World", // Name for future reference. Optional.
 	})
-	const observer = new IntersectionObserver((entries) => {
-		if (entries[0].isIntersecting == true) {
+	paused = true
+	let button = document.getElementById(config.id + "-control")
+	let img = document.querySelector("#" + config.id + "-control img")
+	button.addEventListener("click", () => {
+		if (paused) {
 			animation.play();
+			img.setAttribute("src", "../img/icons/pause.svg")
+			img.setAttribute("alt", "Pause")
+			paused = false
 		} else {
 			animation.pause();
+			img.setAttribute("src", "../img/icons/play.svg")
+			img.setAttribute("alt", "Play")
+			paused = true
 		}
-	}, options);
+	})
 
-	observer.observe(box)
+	if (!!isReduced) {
+		animation.pause()
+	} else {
+		const observer = new IntersectionObserver((entries) => {
+			if (entries[0].isIntersecting == true) {
+				animation.play();
+				img.setAttribute("src", "../img/icons/pause.svg")
+				img.setAttribute("alt", "Pause")
+				paused = false
+			} else {
+				animation.pause();
+				img.setAttribute("src", "../img/icons/play.svg")
+				img.setAttribute("alt", "Play")
+				paused = false
+			}
+		}, options);
+
+		observer.observe(box)
+	}
 }

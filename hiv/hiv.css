@@ -44,8 +44,39 @@
     width: 50%;
 }
 
+.split .animation noscript img {
+    width: 50%;
+}
+
+.split .animation noscript {
+    display: flex;
+    justify-content: center;
+}
+
 .split p {
     font-size: 1.75rem;
+}
+
+.controls button {
+    font-size: 1rem;
+    background-color: var(--bg);
+    border: 3px var(--bg2) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+    margin: 0 0;
+}
+
+.controls button:hover,
+.controls button:focus,
+.controls button:active {
+    background-color: var(--bg2);
+}
+
+.controls button img {
+    height: 1rem;
+    width: 1rem;
 }
 
 h2 {
