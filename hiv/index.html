@@ -22,15 +22,17 @@
 	<script src="../libs/toastify/toastify.js"></script>
 	<!-- Variable Tags -->
 	<meta name="robots" content="index, follow" />
-	<meta property="og:title" content="US Government Cuts Critical TB Funding | TBFighters" />
+	<meta property="og:title" content="Gilead: Make Lenacapavir Accessible" />
 	<meta property="og:description" content="" />
-	<meta name="description" content="Learn more about the foreign aid cuts and how to take action against them!" />
-	<meta property="og:image" content="https://tbfighters.org/img/funding-cuts/og-image.jpg" />
-	<meta property="og:image:type" content="./image/png">
+	<meta name="description" content="Tell Gilead to Make Lenacapavir Accessible" />
+	<meta property="og:image" content="https://tbfighters.org/img/og-image.jpg" />
+	<meta property="og:image:type" content="../image/png">
 	<meta name="twitter:card" content="summary_large_image">
 
-	<link rel="stylesheet" href="./funding-cuts.css">
-	<title>US Government Cuts Critical TB Funding | TBFighters</title>
+	<link rel="stylesheet" href="./hiv.css">
+	<script src="../libs/lottie/lottie.js"></script>
+	<script src="./hiv.js" defer></script>
+	<title>HIV and TB | TBFighters</title>
 </head>
 
 <body class="hill-day">
@@ -110,138 +112,55 @@
 		</div>
 	</header>
 	<main id="main">
-		<section id="top" class="container">
-			<div class="wrapper-top">
-				<div class="header-photos one">
-					<div class="bacetria"></div>
-					<div class="signing"></div>
-				</div>
-				<div class="image-reveal boxes">
-					<img src="../img/funding-cuts/boxes.webp"
-						onerror="if (this.src != '../img/funding-cuts/boxes.webp') this.src = '../img/funding-cuts/boxes.png';"
-						alt="">
-				</div>
-				<div class="header one">
-					<h2>In 1961, Congress created the US Agency for International Development
-						(USAID).</h2>
-				</div>
-				<div class="header two">
-					<h2>Every year, it supports programs across the world that help end
-						tuberculosis.</h2>
-				</div>
-				<div class="image-reveal under-threat">
-					<div class="red">
-					</div>
-					<img src="../img/funding-cuts/header-picture-last.webp"
-						onerror="if (this.src != '../img/funding-cuts/header-picture-last.webp') this.src = '../img/funding-cuts/header-picture-last.jpg';"
-						alt="">
-				</div>
-				<div class="header three">
-					<h2>But now it is under threat.</h2>
-				</div>
+		<section id="hero" class="container">
+			<h1>TB Is The <span class="red">#1 Killer</span> Of People With HIV</h1>
+			<div class="buttons larger">
+				<a href="#action" class="button">Take action</a>
+				<a href="#learn-more" class="button button-subtle">Learn more</a>
 			</div>
 		</section>
-		<section class="container" id="under-threat">
+		<section class="container" id="learn-more">
 			<div class="wrapper">
-				<h1>UNDER THREAT</h1>
-				<p>As Trump took office in January, his administration swiftly moved to dismantle USAID.
-				</p>
-				<br>
-				<p>In his first week in office, <b>he signed an executive order freezing foreign
-						aid</b>,
-					including all USAID funding, for 90 days while the administration reviewed the
-					funding. But experts questioned the legitimacy of this review.</p>
-				<br>
-				<p>Later that week, the Secretary of State issued a temporary waiver for life-saving
-					treatment, which, according to experts, has only been sparingly granted.</p>
-				<br>
-				<p>As the weeks progressed, <b>USAID’s website was taken down</b> while <b>thousands of
-						employees were fired</b>, including overseas workers who were providing
-					care to millions of people around the world.</p>
-				<br>
-				<p>Finally, the administration has announced that it will <b>permanently shutter 90% of
-						USAID's contracts </b>as workers get their last chance to retrieve their
-					belongings after being fired.</p>
-			</div>
-		</section>
-		<section class="container" id="the-super-bug">
-			<div class="wrapper">
-				<h2>THE SUPER BUG</h2>
-				<div class="blocks">
-					<div class="combo" id="first">
-						<div class="content">
-							<p class="larger">These illegal actions <i>will</i> cause many
-								to die and
-								accelerate the spread of drug-resistant tuberculosis,
-								all to save less than 1% of the US's budget.</p>
-						</div>
-					</div>
-					<div class="combo" id="second">
-						<div class="image" id="drug-resistance">
-							<img src="../img/funding-cuts/drug-resistance-desktop.svg"
-								alt="" class="desktop">
-							<img src="../img/funding-cuts/drug-resistance-mobile.svg" alt=""
-								class="mobile">
-						</div>
-						<div class="content">
-							<p class="larger">Stopping TB treatment before it’s completed is
-								known to cause
-								drug-resistant TB, making treatment more difficult and
-								expensive. When this happens on a large scale, the
-								resistance can spread around the world, threatening
-								people from the US to Nigeria. These cuts could also
-								cause a “superbug” to develop that is resistant to
-								<i>all</i>
-								our current medications.
-							</p>
-						</div>
-					</div>
-					<div class="combo" id="last">
-						<div class="image" id="graph"></div>
-						<div class="content">
-							<p class="larger">These cuts are estimated to result in a
-								<i>28-32% increase in
-									tuberculosis globally</i>, which will set us
-								back decades in the fight against TB. But we can still
-								fight back.
-							</p>
-						</div>
+				<h2>People With HIV are <span class="yellow-highlight">18 Times</span> More Likely to Develpe Active TB</h2>
+				<div class="split">
+					<p>Because people living with HIV have a weakened immune system, latent TB is more likely to develop into active TB. Active TB is deadlier for people with weakened immune systems.</p>
+					<div class="animation">
+						<div id="immune-cells" aria-label="Animation of immune cells becoming grey and slow."><noscript><img src="../img/hiv/immune-cells-thumbnail.svg" alt=""></noscript></div>
+						<div class="controls"><button id="immune-cells-control" data-action="stop"><img src="../img/icons/play.svg" alt="Play"></button></div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<section class="container" id="take-action">
 			<div class="wrapper">
-				<h2 style="margin-bottom: 0;">TAKE ACTION</h2>
-				<br>
-				<p>
-					PEPFAR money still isn't being spent! Funding already approved by Congress on a
-					bipartisan basis is being withheld by the White House. We can help by calling on
-					our representatives to demand the White House releases the funds NOW!
-				</p>
-				<div class="buttons">
-					<a href="https://act.pih.org/pepfar-apportionment" class="button"
-						target="_blank">Email your representatives!</a>
+				<h2>HIV/AIDS Contributes to <span class="red">15% of all TB Deaths</span> World Wide</h2>
+				<div class="split">
+					<div class="animation">
+						<div id="world" aria-label="Animation of 15% of the world becoming red."><noscript><img src="../img/hiv/world-thumbnail.svg" alt=""></noscript></div>
+						<div class="controls"><button id="world-control" data-action="stop"><img src="../img/icons/play.svg" alt="Play"></button></div>
+					</div>
 
-				</div>
-				<br>
-				<p>
-					Around the world, nations are considering how much funding they should give to
-					the Global Fund as a part of its 2026-2028 replenishment cycle. The Global Fund
-					is the world's largest funder of global health grants, fighting tuberculosis,
-					HIV/AIDS, and Malaria. Its continued funding is crucial to the fight against TB
-					around the world. We need to remind our governments to keep their commitments to
-					global health and replenish the Global Fund!
-				</p>
-				<div class="buttons">
-					<a href="https://results.org.uk/news/uk-must-deliver-1-billion-for-the-global-fund/"
-						class="button" target="_blank">UK: Email the
-						Foreign Secretary!</a>
-					<a href="https://www.results.org.au/write-to-your-mp" class="button"
-						target="_blank">Australia: Write
-						to your MP!</a>
+					<p>Reducing HIV means we will reduce TB burden around the world. It means fewer cases of inactive TB will progress into active TB. It means there will be less cases of TB world wide. And it means fewer people will be die of TB.</p>
 				</div>
 			</div>
+		</section>
+		<section id="statement">
+			<div class="wrapper">
+				<p>We Can Change This!</p>
+			</div>
+		</section>
+		<section class="container" id="action">
+			<article class="wrapper">
+				<h2>Make Lenacapavir More Accessible</h2>
+				<p>Lenacapavir is a new injectable drug made by Gilead that is highly effective at both treating and preventing HIV.</p>
+				<p>Gilead recently struck a deal with The Global Fund to provide Lenacapavir for 3 million people by 2028. This deal is incredible and will save a lot of lives. But it also leaves out many lower and middle income countries where HIV is on the rise and tuberculosis is more prevalent.</p>
+				<p>To fill that gap, Doctors Without Borders (M&#233;decins Sans Fronti&#232;res/MSF) tried to buy Lenacapavir from Gilead directly, but Gilead refused.</p>
+				<h3 style="margin-bottom: 0;">Learn more</h3>
+				<div class="buttons smaller">
+					<a href="https://www.doctorswithoutborders.org/latest/gilead-wont-sell-msf-its-hiv-drug-its-shareholders-should-ask-why" class="button button-subtle" target="_blank">MSF Press Release</a>
+					<a href="https://en.wikipedia.org/wiki/Lenacapavir" class="button button-subtle" target="_blank">Lean more about Lenacapavir</a>
+				</div>
+				<br>
+				<h3 class="action">Take Action</h3>
+			</article>
 		</section>
 	</main>
 	<footer class="site-foot">
@@ -270,7 +189,7 @@
 			&copy; The TBFighters Project | <a href="../privacy.html" class="footer-link">Privacy Policy</a>
 			</p>
 			<p class="too-small">
-				Images courtesy of (in order): TB Graph (top): Wellcome collection; TB Bacteria: NIAID; JFK signing: Abbie Rowe. White House Photographs. John F. Kennedy Presidential Library and Museum, Boston; USAID boxes: USAID via flickr; USAID sign covered up: Free Malaysia Today; Bacteria in dish: tay.be.me.<br>
+				
 				We lead by following and we act with compassion. Get in touch: contact at tbfighters dot org
 			</p>
 		</footer>
