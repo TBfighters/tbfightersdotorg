@@ -147,22 +147,6 @@ blockquote strong {
     font-size: 3rem;
 }
 
-.sessions {
-    display: flex;
-    flex-direction: row;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.sessions .session {
-    width: 45%;
-    border: 3px solid var(--fg);
-    border-radius: 0.5rem;
-    box-shadow: var(--aside-shadow-close);
-    background: var(--bg);
-    padding: 0.5rem;
-}
-
 @media only screen and (max-width: 992px) {
     .split {
         display: flex;
