@@ -20,6 +20,11 @@ IntersectingAnimation({
 	path: "../img/hiv/world-fill.json"
 });
 
+IntersectingAnimation({
+	id: "lenacapavir",
+	path: "../img/hiv/lenacapavir.json"
+});
+
 function IntersectingAnimation(config) {
 	const box = document.getElementById(config.id);
 	const animation = bodymovin.loadAnimation({
