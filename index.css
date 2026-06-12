@@ -204,6 +204,10 @@
     margin: auto;
     padding: 1rem 1rem;
     border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
     /* border: var(--aside-border); */
     /* box-shadow: var(--aside-shadow-lblue); */
 }
@@ -211,6 +215,7 @@
 .merch-list {
     display: flex;
     flex-direction: row;
+    margin: auto;
     gap: 1rem;
     width: 80%;
 }
