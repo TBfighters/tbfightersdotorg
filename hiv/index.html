@@ -32,6 +32,7 @@
 	<link rel="stylesheet" href="./hiv.css">
 	<script src="../libs/lottie/lottie.js"></script>
 	<script src="./hiv.js" defer></script>
+	<script src="../actions.js"></script>
 	<title>HIV and TB | TBFighters</title>
 </head>
 
@@ -150,23 +151,85 @@
 		<section class="container" id="action">
 			<article class="wrapper">
 				<h2>2 Shots, 40 Dollars, Everywhere</h2>
-				<div class="split">
-					<div class="animation">
-						<div id="lenacapavir" aria-label="Animation of a syringe."><noscript><img src="../img/hiv/lenacapavir-thumbnail.svg" alt=""></noscript></div>
-						<div class="controls"><button id="lenacapavir-control" data-action="stop"><img src="../img/icons/play.svg" alt="Play"></button></div>
-					</div>
-
-					<p>Lenacapavir is a new injectable drug made by Gilead that is highly effective at both treating and preventing HIV.</p>
-				</div>
+				<p>Lenacapavir is a new injectable drug made by Gilead that is highly effective at both treating and preventing HIV.</p>
 				<p>Gilead recently struck a deal with The Global Fund to provide Lenacapavir for 3 million people by 2028. This deal is incredible and will save a lot of lives. But it also leaves out many lower and middle income countries where HIV is on the rise and tuberculosis is more prevalent.</p>
 				<p>To fill that gap, Doctors Without Borders (M&#233;decins Sans Fronti&#232;res/MSF) tried to buy Lenacapavir from Gilead directly, <strong>but Gilead refused.</strong></p>
+				<p><b>We stand with MSF in calling for Gilead to increase access to this important drug.</b></p>
 				<h3 style="margin-bottom: 0;">Learn more</h3>
 				<div class="buttons smaller">
-					<a href="https://www.doctorswithoutborders.org/latest/gilead-wont-sell-msf-its-hiv-drug-its-shareholders-should-ask-why" class="button button-subtle" target="_blank">MSF Press Release</a>
+					<a href="https://www.doctorswithoutborders.org/access-to-LEN" class="button button-subtle" target="_blank">MSF Campaign Page</a>
 					<a href="https://en.wikipedia.org/wiki/Lenacapavir" class="button button-subtle" target="_blank">Lean more about Lenacapavir</a>
 				</div>
 				<br>
 				<h3 class="action">Take Action</h3>
+				<h4>Spread the Word at Pride</h4>
+				<div class="pride-split">
+					<div class="block">
+						<h5>Join MSF and TAG at NYC Pride Fest</h5>
+						<p class="smaller info">Sunday, June 28 @ 11 AM - 6 PM</p>
+						<p class="smaller info">4th Avenue between Union Square and Astor Place Manhattan, NY 10003</p>
+						<div class="buttons">
+							<a href="" class="button smaller" target="_blank">Learn more about MSF</a>
+							<a href="" class="button smaller" target="_blank">Learn more about TAG</a>
+						</div>
+						<a href="https://nycpride.org/" class="button button-subtle smaller full" target="_blank">Learn more about Pride Fest</a>
+					</div>
+					<div class="block">
+						<h5>Other Pride Events</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis accusamus nisi id similique iure numquam distinctio eum? Rem eos, iusto impedit asperiores ipsam suscipit nemo unde, error totam neque accusamus?</p>
+					</div>
+				</div>
+			</article>
+			<article>
+				<div class="wrapper">
+					<h4>Spread the Word Online</h4>
+					<h5>Social Media Posts</h5>
+				</div>
+				<div class="wrapper-full wrapper-columns" id="social-posts">
+					<div class="post">
+						<strong class="larger">Dave Green</strong>
+						<p class="red">@DaveGreen</p>
+						<p id="post-1">People are dying undiagnosed and untreated every day for more
+							than a year while <span class="red">@DanaherCorp</span> ignores their
+							promise to release an audit. It’s <span class="red">#TimeFor5</span></p>
+						<div style="margin-left: 5px;">
+							<button class="button copy"
+								onclick="onclickButton(document.getElementById('post-1').textContent)">Copy
+								text</button>
+						</div>
+					</div>
+					<div class="post">
+						<strong class="larger">Dave Green</strong>
+						<p class="red">@DaveGreen</p>
+						<p id="post-2">It’s <span class="red">#TimeFor5</span>, <span
+								class="red">@DanaherCorp</span> and it’s time for you to release
+							that audit! It’s been over a year since you promised to release one! ⏰
+						</p>
+						<div style="margin-left: 5px;">
+							<button class="button copy"
+								onclick="onclickButton(document.getElementById('post-2').textContent)">Copy
+								text</button>
+						</div>
+					</div>
+					<div class="post">
+						<strong class="larger">Dave Green</strong>
+						<p class="red">@DaveGreen</p>
+						<p id="post-3">.<span class="red">@DanaherCorp</span> promised to release an
+							audit of the cost to produce their life-saving tests, but a year later
+							they still haven’t released it! <span
+								class="red">#PeopleOverProfits</span></p>
+						<div style="margin-left: 5px;">
+							<button class="button copy"
+								onclick="onclickButton(document.getElementById('post-2').textContent)">Copy
+								text</button>
+						</div>
+					</div>
+				</div>
+				<div class="wrapper">
+					<h5>Social Media Graphics</h5>
+				</div>
+				<div class="wrapper-full">
+				</div>
 			</article>
 		</section>
 	</main>

@@ -36,6 +36,17 @@
     margin-top: 2rem;
 }
 
+.pride-split {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: stretch;
+}
+
+.pride-split div {
+    width: 50%;
+}
+
 .split > p, .split .content {
     width: 50%;
 }
@@ -142,9 +153,70 @@ blockquote strong {
     font-weight: 800;
     font-size: 2.5rem;
 }
+
 .action {
     text-align: center;
     font-size: 3rem;
+}
+
+.info {
+    margin: 0;
+    margin-bottom: 0.125rem;
+}
+
+.pride-split .buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.pride-split .buttons a {
+    width: calc(50% - 0.5rem);
+    padding: 0.25em 0.5em;
+}
+
+.pride-split a.button.full {
+    width: 100%;
+    margin-top: 0;
+}
+
+/* ===============
+   SOCIAL MEDIA POSTS
+   =============== */
+
+.post {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 5px 0.6rem;
+    padding: 20px;
+    padding-bottom: 5px;
+    border: 2px solid var(--bg2);
+    font-size: 20px;
+    line-height: 1.1;
+    color: var(--fg);
+    font-family: "Atkinson Hyperlegible";
+    resize: none;
+}
+
+.post p:nth-child(2) {
+    margin: 0.5rem 0;
+}
+
+.post p:nth-child(3) {
+    margin: 0.5rem 0;
+}
+
+.post div {
+    margin-top: auto;
+}
+
+.post button,
+.post .button,
+.post-gallery button,
+.post-gallery .button {
+    font-size: 1rem;
 }
 
 @media only screen and (max-width: 992px) {
