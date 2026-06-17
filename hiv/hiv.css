@@ -214,7 +214,7 @@ blockquote strong {
         justify-self: center;
     }
 
-    .split p {
+    .split p, .split li {
         font-size: 1.75rem;
         line-height: 1.7rem;
     }
