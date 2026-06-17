@@ -1,0 +1,272 @@
+#hero {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 15lvh 0;
+    margin-top: 0;
+    padding: 15lvh 0;
+    border-bottom: var(--accent-fg) 5px solid;
+}
+
+#hero h1 {
+    font-size: 5rem;
+    margin-bottom: 0.875rem;
+    text-align: center;
+}
+
+#learn-more h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#learn-more {
+    display: flex;
+    flex-direction: column;
+    gap: 10lvh;
+    margin-bottom: 10lvh;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.split > p, .split .content {
+    width: 50%;
+}
+
+.split .animation {
+    width: 50%;
+}
+
+.split .animation noscript img {
+    width: 50%;
+}
+
+.split .animation noscript {
+    display: flex;
+    justify-content: center;
+}
+
+.split p {
+    font-size: 1.75rem;
+}
+
+.block-blue {
+    box-shadow: var(--aside-shadow-lblue);
+}
+
+.controls button {
+    font-size: 1rem;
+    background-color: var(--bg);
+    border: 3px var(--bg2) solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px;
+    margin: 0 0;
+}
+
+.controls button:hover,
+.controls button:focus,
+.controls button:active {
+    background-color: var(--bg2);
+}
+
+.controls button img {
+    height: 1rem;
+    width: 1rem;
+}
+
+h2 {
+    font-size: 3.25rem;
+}
+
+#statement {
+    background-color: var(--accent-bg);
+    color: var(--bg);
+    position: relative;
+    z-index: 1;
+}
+#statement .wrapper {
+    padding: 4rem 2rem;
+    max-width: 90%;
+    text-align: center;
+}
+
+#statement p {
+    text-transform: uppercase;
+    font-size: 5rem;
+	line-height: 5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+
+blockquote {
+    font-size: 2rem;
+    line-height: 2.7rem;
+    width: 100%;
+    font-style: italic;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+blockquote::before {
+    --height: 5rem;
+    content: '';
+    z-index: 0;
+    width: calc(var(--height) * 1.28);
+    height: var(--height);
+    display: block;
+    position: absolute;
+    left: 5%;
+    background: url(../img/hill-day/quote.svg);
+    background-size: cover;
+    opacity: 1;
+}
+
+cite {
+	font-style: normal;
+}
+
+blockquote p {
+    position: relative;
+    z-index: 1;
+    width: 80%;
+}
+
+blockquote strong {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.action {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.info {
+    margin: 0;
+    margin-bottom: 0.125rem;
+}
+
+/* ===============
+   SOCIAL MEDIA POSTS
+   =============== */
+
+.post {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 5px 0.6rem;
+    padding: 20px;
+    padding-bottom: 5px;
+    border: 2px solid var(--bg2);
+    font-size: 20px;
+    line-height: 1.1;
+    color: var(--fg);
+    font-family: "Atkinson Hyperlegible";
+    resize: none;
+}
+
+.post p:nth-child(2) {
+    margin: 0.5rem 0;
+}
+
+.post p:nth-child(3) {
+    margin: 0.5rem 0;
+}
+
+.post div {
+    margin-top: auto;
+}
+
+.post button,
+.post .button,
+.post-gallery button,
+.post-gallery .button {
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .split {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        align-items: center;
+        margin-top: 0rem;
+    }
+
+    .split > p, .split .content {
+        width: 100%;
+    }
+
+    .split .animation {
+        width: 100%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .split p, .split li {
+        font-size: 1.75rem;
+        line-height: 1.7rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    #hero {
+        margin: 5lvh 0;
+        margin-top: 2lvh;
+        padding: 5lvh 2rem;
+    }
+
+    #hero h1 {
+        font-size: 3.5rem;
+    }
+
+    #learn-more {
+        gap: 5lvh;
+        margin-bottom: 5lvh;
+    }
+
+    #statement .wrapper {
+        padding: 4rem 1rem;
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #statement p {
+        font-size: 4rem;
+        line-height: 4rem;
+    }
+
+    blockquote {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+
+    blockquote strong {
+        font-weight: 800;
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .sessions {
+        flex-direction: column;
+    }
+
+    .sessions .session {
+        width: 100%;
+    }
+}
