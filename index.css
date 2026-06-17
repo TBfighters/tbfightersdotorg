@@ -189,29 +189,63 @@
 
 /* Purchase merch area */
 
-.purchase-our-merch{
-	padding-top: 2rem;
+.purchase-our-merch {
+    padding-top: 2rem;
+    width: 85%;
+    margin: auto auto;
+}
+
+.purchase-our-merch h2 {
+    margin-bottom: 0 !important;
 }
 
 .merch {
-    height: fit-content;
-    max-width: 85%;
     background: var(--bg);
     margin: auto;
     padding: 1rem 1rem;
     border-radius: 0.5rem;
-    border: var(--aside-border);
-    box-shadow: var(--aside-shadow-lblue);
-    position: relative;
     display: flex;
-    flex-direction: row;
-
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
+    /* border: var(--aside-border); */
+    /* box-shadow: var(--aside-shadow-lblue); */
 }
 
-.merch img {
-    height: 20vw;
+.merch-list {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    gap: 1rem;
+    width: 80%;
+}
+
+.merch-list img {
+    object-fit: contain;
+    width: 100%;
+}
+
+.merch-item {
+    width: calc(33% - 1rem);
+    border: var(--aside-border);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.merch-item:hover, .merch-item:focus, .merch-item:active {
+    border: var(--aside-border-accent)
+}
+
+a.merch-item {
+    font-weight: unset;
+    text-decoration: unset;
+    text-shadow: none;
+    display: block !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.merch-item:hover img, .merch-item:focus img, .merch-item:active img {
+    scale: 1.1;
 }
 
 /* Mobile breakpoints */
@@ -231,6 +265,15 @@
     .campaign, .join-community {
         width: 100%;
     }
+    .merch-list {
+	width: 100%;
+	flex-wrap: wrap;
+    }
+
+    .merch-item {
+	width: calc(50% - 1rem);
+    }
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -252,6 +295,7 @@
 	.communities .community-columns {
         flex-direction: column;
     }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -268,18 +312,11 @@
     #statement .wrapper {
         padding: 3rem 0;
     }
+}
 
-    .merch {
-	max-width: 100%;
-	flex-direction: column-reverse;
-    }
-
-    .merch div:has(img) {
-	width: 60%;
-    }
-
-    .merch img {
-	height: unset;
+/* special case */
+@media only screen and (max-width: 650px) {
+    .merch-item {
 	width: 100%;
     }
 }
