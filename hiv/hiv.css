@@ -195,6 +195,19 @@ blockquote strong {
     font-size: 1rem;
 }
 
+.button.resource {
+    background: var(--bg);
+    border-color: var(--bg2);
+    color: var(--fg);
+    border-radius: 0.2em;
+}
+
+.button.resource:hover,
+.button.resource:active,
+.button.resource:focus {
+    background: var(--bg2);
+}
+
 @media only screen and (max-width: 992px) {
     .split {
         display: flex;
