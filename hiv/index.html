@@ -20,6 +20,8 @@
 	<link rel="icon" type="image/x-icon" href="../img/favicon/favicon.ico">
 	<script src="../menu.js" defer></script>
 	<script src="../libs/toastify/toastify.js"></script>
+	<script src="../libs/gsap/gsap.min.js"></script>
+	<!-- <script src="../libs/gsap/ScrollTrigger.js"></script> -->
 	<!-- Variable Tags -->
 	<meta name="robots" content="index, follow" />
 	<meta property="og:title" content="Gilead: Make Lenacapavir Accessible" />
@@ -160,16 +162,203 @@
 				<p>Lenacapavir is a new injectable drug made by Gilead that is highly effective at both treating and preventing HIV.</p>
 				<p>Gilead recently struck a deal with The Global Fund to provide Lenacapavir for 3 million people by 2028. This deal is incredible, and it will save a lot of lives. But it also leaves out many lower- and middle-income countries where HIV is on the rise and tuberculosis is more prevalent.</p>
 				<p>To fill that gap, Doctors Without Borders (M&#233;decins Sans Fronti&#232;res/MSF) tried to buy Lenacapavir from Gilead directly, <strong>but Gilead refused.</strong></p>
-				<p><b>We stand with MSF in calling for Gilead to make Lenacapavir available to all.</b></p>
+				<h3 class="centered">Gilead is for everyone, everywhere... except</h3>
+			</article>
+			<article id="countries">
+				<div class="row" id="top">
+					<div class="country split">
+						<img src="../img/hiv/countries/iran.svg" alt="">
+						<div>
+							<b>Iran</b>
+							<p>40,000 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/iraq.svg" alt="">
+						<div>
+							<b>Iraq</b>
+							<p>3,400 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/peru.svg" alt="">
+						<div>
+							<b>Peru</b>
+							<p>130,000 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/china.svg" alt="">
+						<div>
+							<b>China</b>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/bosnia.svg" alt="">
+						<div>
+							<b>Bosnia and Herzegovina</b>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/brazil.svg" alt="">
+						<div>
+							<b>Brazil</b>
+							<p>1,100,000 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/jordan.svg" alt="">
+						<div>
+							<b>Jordan</b>
+							<p>680 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/kosovo.svg" alt="">
+						<div>
+							<b>Kosovo</b>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/mexico.svg" alt="">
+						<div>
+							<b>Mexico</b>
+							<p>400,000 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/serbia.svg" alt="">
+						<div>
+							<b>Serbia</b>
+							<p>4,100 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/albania.svg" alt="">
+						<div>
+							<b>Albania</b>
+							<p>1,600 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/algeria.svg" alt="">
+						<div>
+							<b>Algeria</b>
+							<p>30,000 people denied</p>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="btm">
+					<div class="country split">
+						<img src="../img/hiv/countries/ecuador.svg" alt="">
+						<div>
+							<b>Ecuador</b>
+							<p>52,000 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/lebanon.svg" alt="">
+						<div>
+							<b>Lebanon</b>
+							<p>3000 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/turkiye.svg" alt="">
+						<div>
+							<b>Türkiye</b>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/columbia.svg" alt="">
+						<div>
+							<b>Columbia</b>
+							<p>230,000 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/malaysia.svg" alt="">
+						<div>
+							<b>Malaysia</b>
+							<p>84,000 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/paraguay.svg" alt="">
+						<div>
+							<b>Paraguay</b>
+							<p>23,000 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/argentina.svg" alt="">
+						<div>
+							<b>Argentina</b>
+							<p>140,000 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/guatemala.svg" alt="">
+						<div>
+							<b>Guatemala</b>
+							<p>33,000 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/palestine.svg" alt="">
+						<div>
+							<b>Palestine</b>
+							<p>125 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/venezuela.svg" alt="">
+						<div>
+							<b>Venezuela</b>
+							<p>110,000 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/costa rica.svg" alt="">
+						<div>
+							<b>Costa Rica</b>
+							<p>21,000 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/montenegro.svg" alt="">
+						<div>
+							<b>Montenegro</b>
+							<p>500 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/el salvador.svg" alt="">
+						<div>
+							<b>El Salvador</b>
+							<p>21,000 people denied</p>
+						</div>
+					</div>
+					<div class="country split">
+						<img src="../img/hiv/countries/north macedonia.svg" alt="">
+						<div>
+							<b>North Macedonia</b>
+							<p>740 people denied</p>
+						</div>
+					</div>
+				</div>
+				<br>
+			</article>
+			<article class="wrapper">
+				<p class="larger"><b>We stand with MSF in calling for Gilead to make Lenacapavir available to all.</b></p>
 				<h3 style="margin-bottom: 0;">Learn more</h3>
 				<div class="buttons smaller">
 					<a href="https://www.doctorswithoutborders.org/access-to-LEN" class="button button-subtle" target="_blank">MSF Campaign Page</a>
 					<a href="https://en.wikipedia.org/wiki/Lenacapavir" class="button button-subtle" target="_blank">Learn more about Lenacapavir</a>
 				</div>
-				<br>
-				<h3 class="action">Take Action</h3>
 			</article>
 			<article>
+				<h3 class="action">Take Action</h3>
 				<div class="wrapper wrap-centered">
 					<h4>Contact Gilead</h4>
 				</div>
@@ -228,18 +417,9 @@
 			</article>
 			<article class="wrapper">
 				<div class="wrap-centered">
-					<h4>Spread the word at Pride</h4>
+					<h4>Spread the word</h4>
 				</div>
-				<div class="block block-blue">
-					<h5>New York City, June 28</h5>
-					<ul>
-						<li class="smaller info"><strong>MSF: </strong><a href="https://nycpride.org/" target="_blank">NYC PrideFest</a>, 11am-6pm, 4th Ave btwn Union Sqand Astor Pl</li>
-						<li class="smaller info"><strong>Treatment Action Group: </strong><a href="https://www.instagram.com/p/DZqtU-0OAF3/" target="_blank">NY Pride Health Fair</a>, 11am-6pm, Thompson St outside Judson Memorial Church</li>
-					</ul>
-				</div>
-				<br>
-				<h5>Local pride events</h5>
-				<p>Spread the word at your local pride event! We have resources below:</p>
+				<p>Spread the word using the resources below:</p>
 				<a href="../img/hiv/lenacapavir zine.pdf" target="_blank" class="button resource"><img src="../img/icons/book-black.svg" alt="book icon " class="icon">Lenacapavir zine</a>
 				<a href="https://docs.google.com/document/d/1Tzr5jm_Rzn1mv9BrlYelQDyam-fVFZ6Xj9zTfxE4-tw/edit?tab=t.50ljpjv25ze1" target="_blank" class="button resource"><img src="../img/icons/paper.svg" alt="paper icon " class="icon">Lenacapavir fliers</a>
 			</article>
