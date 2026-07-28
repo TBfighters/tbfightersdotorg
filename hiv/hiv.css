@@ -159,10 +159,14 @@ blockquote strong {
 
 #countries {
     width: 100%;
-    overflow: hidden;
 }
 
 #countries .row {
+  display: flex;
+    overflow: hidden;
+}
+
+#countries .row .inner {
     margin-bottom: 0.5rem;
     display: flex;
     position: relative;
@@ -196,6 +200,20 @@ blockquote strong {
 
 #countries .controls {
     margin-left: 0.5rem;
+}
+
+#countries .row .inner {
+  animation: marquee var(--speed) linear infinite;
+}
+
+#countries .row.stop .inner {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+  100% {
+    transform: translateX(calc(-1* var(--width)));
+  }
 }
 
 /* ===============
