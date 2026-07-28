@@ -194,6 +194,10 @@ blockquote strong {
     height: 6rem;
 }
 
+#countries .controls {
+    margin-left: 0.5rem;
+}
+
 /* ===============
    SOCIAL MEDIA POSTS
    =============== */
