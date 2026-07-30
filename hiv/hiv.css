@@ -157,6 +157,65 @@ blockquote strong {
     margin-bottom: 0.125rem;
 }
 
+#countries {
+    width: 100%;
+}
+
+#countries .row {
+  display: flex;
+    overflow: hidden;
+}
+
+#countries .row .inner {
+    margin-bottom: 0.5rem;
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+    align-items: stretch;
+}
+
+#countries .country {
+    border: 3px solid var(--bg2);
+    border-radius: 0.5rem;
+    width: fit-content;
+    padding: 1rem;
+    margin-left: 0.5rem;
+    margin-left: 0.5rem;
+    flex-grow: 1;
+}
+
+#countries .country:hover {
+    border-color: var(--accent-fg);
+}
+
+#countries .country p {
+    margin-top: 0;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+}
+
+.country img {
+    height: 6rem;
+}
+
+#countries .controls {
+    margin-left: 0.5rem;
+}
+
+#countries .row .inner {
+  animation: marquee var(--speed) linear infinite;
+}
+
+#countries .row.stop .inner {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+  100% {
+    transform: translateX(calc(-1* var(--width)));
+  }
+}
+
 /* ===============
    SOCIAL MEDIA POSTS
    =============== */
@@ -209,12 +268,17 @@ blockquote strong {
 }
 
 @media only screen and (max-width: 992px) {
+    #countries .country img {
+        margin: auto auto;
+    }
+
     .split {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
         align-items: center;
         margin-top: 0rem;
+        justify-content: center;
     }
 
     .split > p, .split .content {

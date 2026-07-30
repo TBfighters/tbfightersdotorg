@@ -418,13 +418,20 @@ p,
     line-height: 1.85rem;
 }
 
+h3.larger {
+    font-size: 1.75em;
+    line-height: 1.85em;
+}
+
 .smaller {
     font-size: 1.125rem;
     line-height: 1.25rem;
 }
 
 p.centered,
-div.centered {
+div.centered,
+h3.centered
+{
     align-items: center;
     text-align: center;
 }
