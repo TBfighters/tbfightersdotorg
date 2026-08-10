@@ -78,6 +78,7 @@ const actions = {
     "united-states": [
         "us-funding-cuts",
         "us-hill-day",
+        "us-legislation"
     ],
     "uk": [
         "uk-funding-cuts",

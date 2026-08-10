@@ -150,6 +150,9 @@
 .campaign#funding-cuts {
     box-shadow: var(--aside-shadow-green);
 }
+.campaign#legislation {
+    box-shadow: var(--aside-shadow-dblue);
+}
 .campaign#hill-day {
     box-shadow: var(--aside-shadow-yellow);
 }
